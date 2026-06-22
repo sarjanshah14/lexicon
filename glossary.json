@@ -1,0 +1,5427 @@
+[
+ {
+  "word": "aberration",
+  "star": true,
+  "mean": "1] Departure from what is right. 2] A deviation from the normal or the typical. 3] Mental derangement or lapse.",
+  "syn": "abnormality, anomaly, deviation",
+  "ant": "conformity, regularity, mean, norm"
+ },
+ {
+  "word": "abeyance",
+  "star": true,
+  "mean": "A holding up or putting aside for future action.",
+  "syn": "suspension, dormancy, deferral",
+  "ant": "continuation, revival"
+ },
+ {
+  "word": "abject",
+  "star": false,
+  "mean": "1] Sunk to a low condition; despicable: an abject coward. 2] Hopelessly low; wretched: abject poverty",
+  "syn": "contemptible, degraded, shameful, miserable, squalid",
+  "ant": "dignified, noble, comfortable, exalted"
+ },
+ {
+  "word": "abjure",
+  "star": false,
+  "mean": "To renounce rights on oath or give up publicly opinion, stance.",
+  "syn": "renonouce, relinquish, retract, abdicate",
+  "ant": "retain, take charge, claim, usurp"
+ },
+ {
+  "word": "abnegate",
+  "star": false,
+  "mean": "Deny oneself; renounce",
+  "syn": "resignate, relinquish",
+  "ant": "appropriate, usurp"
+ },
+ {
+  "word": "abscond",
+  "star": true,
+  "mean": "Run away and hide especially in order to escape the law.",
+  "syn": "slip away, decamp remain",
+  "ant": "endure, give up"
+ },
+ {
+  "word": "absolve",
+  "star": false,
+  "mean": "1] To free from a debt, obligation, promise; or ruling: His illness absolved him from attending the meeting. 2] To acquit, as of guilt or wrong-doing; forgive: A priest absolves sinners.",
+  "syn": "excuse, exempt, pardon, exonerate",
+  "ant": "oblige, bind, condemn, convict, blame"
+ },
+ {
+  "word": "abstemious",
+  "star": true,
+  "mean": "1] Moderate, especially in eating and drinking. 2] Characterised by abstinence.",
+  "syn": "temperate",
+  "ant": "self-indulgent"
+ },
+ {
+  "word": "abstinence",
+  "star": false,
+  "mean": "Refraining from doing without certain foods, drinks, or pleasures: He was proud of his abstinence from smoking and drinking.",
+  "syn": "temperance, self-deprivation",
+  "ant": "indulgence, intemperance"
+ },
+ {
+  "word": "abstruse",
+  "star": true,
+  "mean": "Difficult to understand: For most people nuclear physics is an obscure, abstruse subject.",
+  "syn": "complex, mysterious",
+  "ant": "simple, plain, intelligible"
+ },
+ {
+  "word": "abut",
+  "star": false,
+  "mean": "To touch or join at the edge or side; border: Our farm abuts our neighbor's property.",
+  "syn": "adjoin, border",
+  "ant": "separate, disconnect"
+ },
+ {
+  "word": "abrasive",
+  "star": false,
+  "mean": "Tending to wear down or rub away: the abrasive action of an emery board.",
+  "syn": "biting, wearing, polishing",
+  "ant": "pleasing, smooth"
+ },
+ {
+  "word": "abrogate",
+  "star": false,
+  "mean": "Repeal, cancel. Abrogation of the treaty with a foreign power. The word differs in meaning from 'arrogate' which is to claim power, privilege, etc. unduly.",
+  "syn": "reverse, retract, abolish",
+  "ant": "approve, sanction"
+ },
+ {
+  "word": "accolade",
+  "star": true,
+  "mean": "An honor or award: They heaped accolades upon the astronaut.",
+  "syn": "praise, tribute, laurels",
+  "ant": "criticism, rebuke"
+ },
+ {
+  "word": "accost",
+  "star": false,
+  "mean": "To approach and speak to: A beggar accosted him in the street. address, Usage: The word accost is unpleasant or threatening in tone.",
+  "syn": "hail, confront",
+  "ant": "avoid, ignore, shun"
+ },
+ {
+  "word": "accouterments",
+  "star": false,
+  "mean": "soldier's equipment, other than clothing and weaponary: accessory, napsacks, canteens, gun belts, and other military accounterments.",
+  "syn": "furnishing, trappings",
+  "ant": ""
+ },
+ {
+  "word": "accrue",
+  "star": false,
+  "mean": "1] To come as a natural result, addition, or advantage: Many benefits accrued to the nation when women became eligible to vote. 2] To be added periodically: One year's interest had accrued on his savings account.",
+  "syn": "accumulate, collect, aggregate",
+  "ant": "lose, disperse"
+ },
+ {
+  "word": "acme",
+  "star": false,
+  "mean": "The highest point: A Rolls Royce is considered the acme of height, automotive excellence.",
+  "syn": "peak, summit",
+  "ant": "nadir"
+ },
+ {
+  "word": "acolyte",
+  "star": false,
+  "mean": "An attendant, follower or helper, generally of an important person.",
+  "syn": "helper, attendant",
+  "ant": ""
+ },
+ {
+  "word": "acquiescent",
+  "star": true,
+  "mean": "Willing to go along with something: Because there was a school complaint, dance that night, the teacher was acquiescent to their request for less homework.",
+  "syn": "agreeable",
+  "ant": "opposed, adverse"
+ },
+ {
+  "word": "acrid",
+  "star": false,
+  "mean": "1] Disagreeably sharp, bitter, or pungent: the acrid odor of acid. 2] Sharp and biting in manner. His acrid attack on his enemy caustic, included charges of extortion, bribery, and deceit.",
+  "syn": "penetrating, irritating. sarcastic, vitriolic",
+  "ant": "bland, mild. kind, gentle"
+ },
+ {
+  "word": "actuate",
+  "star": false,
+  "mean": "1] To set into action or motion: a lever actuated by an electric move, current. 2] To influence or impel to action: He was actuated by feelings of pity.",
+  "syn": "drive, start, urge stop",
+  "ant": "discourage, prevent"
+ },
+ {
+  "word": "acumen",
+  "star": false,
+  "mean": "Shrewdness in understanding or dealing with a situation: Business acumen.",
+  "syn": "cleverness, smartness",
+  "ant": "naivete"
+ },
+ {
+  "word": "adduce",
+  "star": false,
+  "mean": "To bring forward examples, reason, or proof for consideration in cite, a discussion or analysis: to adduce evidence on automobile safety records.",
+  "syn": "allege",
+  "ant": "repudiate"
+ },
+ {
+  "word": "adroit",
+  "star": false,
+  "mean": "Skillful or prepared in the use of bodily or mental powers; dexterous or expert: adroit in mathematics.",
+  "syn": "clever, deft, handy",
+  "ant": "awkward, clumsy, dull"
+ },
+ {
+  "word": "adulation",
+  "star": true,
+  "mean": "Excessive praise or admiration. Despite her criminal conviction, she enjoyed considerable adulation.",
+  "syn": "applause, tribute",
+  "ant": "criticism"
+ },
+ {
+  "word": "adulterate",
+  "star": true,
+  "mean": "Corrupt, debase, or make impure by adding a foreign or inferior substance; often by replacing valuable ingredients with inferior",
+  "syn": "debase, dilute, pollute ones",
+  "ant": "cleanse, purify, refine"
+ },
+ {
+  "word": "adventitious",
+  "star": true,
+  "mean": "Accidental, coming by chance. What the girl's parents look for in the boy is much more than some adventitious gifts like speech or manners.",
+  "syn": "accidental, fortuitous premeditated",
+  "ant": "planned, intentional"
+ },
+ {
+  "word": "aegis",
+  "star": false,
+  "mean": "With the partronage or support. The students spearheaded a auspices, campaign under the aegis of Amnesty International.",
+  "syn": "protection",
+  "ant": ""
+ },
+ {
+  "word": "aesthetic",
+  "star": true,
+  "mean": "Of or showing appreciation of beauty, artistic, tasteful.",
+  "syn": "artistic, virtuoso, connoissuer, dilettante",
+  "ant": "displeasing, ugly"
+ },
+ {
+  "word": "affable",
+  "star": true,
+  "mean": "Pleasant and easy to approach: the interviewer was affable and cordial, friendly.",
+  "syn": "genial",
+  "ant": "disagreeable"
+ },
+ {
+  "word": "affectation",
+  "star": true,
+  "mean": "An artificial display or manner: Grandfather's love of classical music was mere affectation.",
+  "syn": "pretense, pose, air",
+  "ant": "artlessness"
+ },
+ {
+  "word": "affluence",
+  "star": false,
+  "mean": "Abundant wealth: New cars and expensive homes attest to the opulence, affluence of a nation.",
+  "syn": "abundance, riches deprivation",
+  "ant": "poverty, destitution"
+ },
+ {
+  "word": "affray",
+  "star": false,
+  "mean": "A noisy and violent fight, especially in a public place. The men were charged with causing an affray.",
+  "syn": "altercation, fracas tranquility",
+  "ant": "agreement"
+ },
+ {
+  "word": "affront",
+  "star": false,
+  "mean": "To insult openly or purposely. They were affronted by their abrupt dismissal.",
+  "syn": "abuse, offend, slander compliment",
+  "ant": "appease"
+ },
+ {
+  "word": "aficionado",
+  "star": false,
+  "mean": "Devoted follower of some sport. Cricket aficionados have received the news of Australia pulling out of World Cup with chagrin.",
+  "syn": "buff, devotee",
+  "ant": ""
+ },
+ {
+  "word": "aggrandizement",
+  "star": true,
+  "mean": "* The accumulation of power, rank, or wealth: He put the welfare of his country above personal aggrandizement.",
+  "syn": "advancement",
+  "ant": "degradation"
+ },
+ {
+  "word": "agnostic",
+  "star": false,
+  "mean": "One who believes that there can be no proof of the existence of - God, but does not deny the possibility that God exists.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "alacrity",
+  "star": true,
+  "mean": "Willingness or readiness to respond or act quickly: The President responded with alacrity to the imminent danger by calling the speed, National Guard.",
+  "syn": "quickness, promptness, swiftness, liveliness",
+  "ant": "sluggishness, hesitation, reluctance"
+ },
+ {
+  "word": "alibi",
+  "star": false,
+  "mean": "1] A legal defense by which an accused person tries to show that he was somewhere else when the crime was committed: His alibi was that he was in the hospital at the time of the murder. 2] Informal; an excuse: He used a faulty alarm clock as his alibi being late to work.",
+  "syn": "excuse for",
+  "ant": ""
+ },
+ {
+  "word": "allege",
+  "star": false,
+  "mean": "1] To assert as true in the absence of proof. They alleged that he had been seen purchasing the murder weapon. 2] To plead as an excuse or reason: He alleged over-work as the cause of his neglect.",
+  "syn": "cite, claim, profess antipathy",
+  "ant": "hostility, enmity"
+ },
+ {
+  "word": "allegiance",
+  "star": true,
+  "mean": "Loyalty; faithful adherence: allegiance to the flag.",
+  "syn": "dedication, devotion, fidelity",
+  "ant": "severe, dissociate, separate."
+ },
+ {
+  "word": "allude",
+  "star": false,
+  "mean": "To make direct or casual mention (used with 'to'): At the interview, she alluded to her father's influential friends.",
+  "syn": "insinuate, suggest",
+  "ant": ""
+ },
+ {
+  "word": "ally",
+  "star": false,
+  "mean": "1] To affiliate in a common cause or defense: Political bosses often join, ally themselves with the leading candidate. 2] A person, nation, etc. associated with another for a specific purpose: wartime allies.",
+  "syn": "link, friend, backer, associate",
+  "ant": "enemy, foe, opponent"
+ },
+ {
+  "word": "altercation",
+  "star": false,
+  "mean": "A heated dispute, wrangling (often accompanied by blows): The controversy, union meeting remained free of any altercations.",
+  "syn": "debate, quarrel",
+  "ant": "cooperation, agreement"
+ },
+ {
+  "word": "alternate",
+  "star": true,
+  "mean": "1] To follow or cause to follow one another by turns: Good and bad times alternate. 2] To take turns at: Soldiers alternated sentry duty. 2] Every other; every second: The city museum is open on alternate weekends. 4] A substitute: An alternate is available if a delegate becomes ill.",
+  "syn": "interchange, additional, extra deputy, replacement, proxy",
+  "ant": ""
+ },
+ {
+  "word": "altruism",
+  "star": true,
+  "mean": "Selfless devotion to the well-being an other: The Peace Corps unselfishness, appeals to youthful altruism.",
+  "syn": "idealism",
+  "ant": "egoism, selfishness"
+ },
+ {
+  "word": "amalgam",
+  "star": true,
+  "mean": "A combination or mingling of two or more things: Her confused union, feelings were an amalgam of love, hate, and fear.",
+  "syn": "alloy, mixture",
+  "ant": "hateful"
+ },
+ {
+  "word": "ambivalence",
+  "star": true,
+  "mean": "Simultaneous conflicting feelings towards a person or thing, such doubt, as love and hate. She was in a state of ambivalence about having children.",
+  "syn": "oscillation unequivocal",
+  "ant": "certain"
+ },
+ {
+  "word": "ameliorate",
+  "star": true,
+  "mean": "To make or become better: Congress was urged to pass legislation improve, to ameliorate the condition of the American Indian.",
+  "syn": "upgrade deteriorate",
+  "ant": "worsen, damage"
+ },
+ {
+  "word": "amenable",
+  "star": false,
+  "mean": "Willing to be persuaded or to submit to direction or authority: The union was amenable to a proposal for wage increase.",
+  "syn": "pliable, tractable",
+  "ant": "uncooperative"
+ },
+ {
+  "word": "amiable",
+  "star": true,
+  "mean": "Likeable, friendly, pleasant ... The bluff and amiable manner of the successful American man.",
+  "syn": "affable",
+  "ant": "ill-natured, surly"
+ },
+ {
+  "word": "amicable",
+  "star": false,
+  "mean": "Characterised by goodwill or friendship: Both parties reached an amicable settlement to the dispute. Usage: Amicable is normally used to describe a person.",
+  "syn": "peaceable, well-intentioned",
+  "ant": "unfriendly, hostile"
+ },
+ {
+  "word": "amnesty",
+  "star": true,
+  "mean": "1] A warrant granting release from punishment for an offense. 2] The formal act of liberating someone",
+  "syn": "absolution, pardon",
+  "ant": "sentencing"
+ },
+ {
+  "word": "amorphous",
+  "star": false,
+  "mean": "Having no clear shape, structure, or boundaries: a large and nebulous, amorphous department. vague",
+  "syn": "unformed",
+  "ant": "defined, distinct"
+ },
+ {
+  "word": "amplitude",
+  "star": false,
+  "mean": "1] Breadth or width: To Imran's yorkers, Vishy unleashed the full gamut, amplitude of his strokes. 2] Abundance",
+  "syn": "range, scale",
+  "ant": ""
+ },
+ {
+  "word": "anachronism",
+  "star": false,
+  "mean": "1] Something located at a time when it could not have existed or occurred. 2] An artifact that belongs to another time",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "analogy",
+  "star": true,
+  "mean": "A comparison or similarity between two things that are alike in some way. He drew an analogy between his mother and God, watching over everything.",
+  "syn": "comparision, parallel",
+  "ant": "difference"
+ },
+ {
+  "word": "anchorite",
+  "star": false,
+  "mean": "A person who lives alone, apart from society, for religious ascetic, meditation; a hermit; a recluse",
+  "syn": "monk",
+  "ant": "sybarite"
+ },
+ {
+  "word": "angst",
+  "star": false,
+  "mean": "An anxious, often neurotic feeling, caused by worrying about anxiety the state of the world: She was full of uncertainty and angst that reflected in her writings.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "anomalous",
+  "star": true,
+  "mean": "Deviating from the ordinary rule or condition, or from what would normally be expected; unusual: The incorruptible politician was an anomalous person in the depraved system.",
+  "syn": "abnormal, atypical, aberrant",
+  "ant": "normal, usual, typical"
+ },
+ {
+  "word": "antagonistic",
+  "star": false,
+  "mean": "Being hostile; acting in opposition.",
+  "syn": "hostile, antipathy, enmity, opponent",
+  "ant": "pacific, concord, cooperation"
+ },
+ {
+  "word": "antipathy",
+  "star": true,
+  "mean": "A feeling of intense dislike",
+  "syn": "animus, aversion",
+  "ant": "affection, liking"
+ },
+ {
+  "word": "antithesis",
+  "star": false,
+  "mean": "1] The direct opposite; a strong contrast: Pleasure is the antithesis of pain. 2] Opposition, contrast: the antithesis of cold and hot.",
+  "syn": "reverse, contrary",
+  "ant": "agreement, accord"
+ },
+ {
+  "word": "apathy",
+  "star": true,
+  "mean": "1] Lack of emotion: the apathy of a depressed person. 2] Lack of interest; indifference: the apathy toward religion in coolness, modern times.",
+  "syn": "insensibility, unconcern, neutrality concern, involvement",
+  "ant": "feeling, excitement, sensitivity, interest"
+ },
+ {
+  "word": "aphorism",
+  "star": false,
+  "mean": "A short and clever or witty sentence which expresses a general maxim, truth. ... The proper study of mankind is man.",
+  "syn": "adage, apothegm",
+  "ant": ""
+ },
+ {
+  "word": "aplomb",
+  "star": true,
+  "mean": "Assurance, self-confidence: She acted with aplomb in the most poise, difficult social situations.",
+  "syn": "self-possession, calmness, surety embarrassment",
+  "ant": "confusion, doubt, discomposure"
+ },
+ {
+  "word": "apocalyptic",
+  "star": false,
+  "mean": "Of, like, or having to do with a revelation: a sermon with almost prophetic, apocalyptic overtones.",
+  "syn": "revelatory",
+  "ant": ""
+ },
+ {
+  "word": "apocryphal",
+  "star": true,
+  "mean": "Having little or no authencity: He told an apocryphal story about lassoing a grizzly bear.",
+  "syn": "questionable, spurious, dubious",
+  "ant": "authentic, genuine, reliable"
+ },
+ {
+  "word": "apostasy",
+  "star": false,
+  "mean": "Desertion of one's faith, religion, party, principles, etc.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "apposite",
+  "star": false,
+  "mean": "Strikingly appropriate; apt. An apposite remark.",
+  "syn": "apt, pertinent",
+  "ant": "unsuitable"
+ },
+ {
+  "word": "apprise",
+  "star": true,
+  "mean": "To notify, as of some event: to be apprised of a friend's engagement.",
+  "syn": "inform, tell, advise",
+  "ant": ""
+ },
+ {
+  "word": "arable",
+  "star": false,
+  "mean": "Capable of being plowed or cultivated: Rocky soil is usually not arable.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "arbitrary",
+  "star": false,
+  "mean": "1] Based merely on one's own opinion, judgment, prejudice, etc: 1] When he finally learned all the facts he regretted his arbitrary 2] decision. 2] Bound by no law or rules: an arbitrary dictator.",
+  "syn": "capricious, absolute, despotic.",
+  "ant": "1] reasonable, 2] restricted, limited"
+ },
+ {
+  "word": "arcane",
+  "star": false,
+  "mean": "Secret; hidden",
+  "syn": "mysterious, obscure, esoteric",
+  "ant": "commonplace, familiar"
+ },
+ {
+  "word": "archaic",
+  "star": false,
+  "mean": "1] Belonging to an earlier period and no longer in common use, as 1] a word or phrase: 'Methinks' is an archaic word. 2] Belonging to a former time: antiquated: an exhibition of archaic pottery.",
+  "syn": "old-fashioned, obsolete, 2] primitive, ancient",
+  "ant": "1] current, 2] new, modern"
+ },
+ {
+  "word": "archetype",
+  "star": false,
+  "mean": "A first model, form, or pattern from which others are derived ideal, or copied: Daniel Boone was the archetype of the American frontiersman.",
+  "syn": "prototype",
+  "ant": ""
+ },
+ {
+  "word": "ardor",
+  "star": true,
+  "mean": "Strong emotion or enthusiasm: He spoke of his country with the passion, ardor of a true patriot.",
+  "syn": "fervor, zeal",
+  "ant": ""
+ },
+ {
+  "word": "arraign",
+  "star": true,
+  "mean": "To call into court to answer to a charge or accusation: The prisoner will be arraigned tomorrow.",
+  "syn": "incriminate, indict",
+  "ant": "acquit, exonerate"
+ },
+ {
+  "word": "arrant",
+  "star": false,
+  "mean": "Out-and-out; thorough (used in a negative sense): arrant nonsense; arrant fool.",
+  "syn": "downright, utter",
+  "ant": ""
+ },
+ {
+  "word": "array",
+  "star": false,
+  "mean": "An array of things or people, especially when they are impressive or attractive: They looked at the tempting array of cakes and cookies.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "arrogate",
+  "star": false,
+  "mean": "Take or claim unjustly: She arrogated her father's tea estates to herself.",
+  "syn": "appropriate, seize, usurp",
+  "ant": "renounce, relinquish"
+ },
+ {
+  "word": "artifice",
+  "star": false,
+  "mean": "The clever use of tricks to deceive",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "askance",
+  "star": false,
+  "mean": "1] With distrust: Farmers look askance at city slickers. 2] With a side glance, obliquely: She looked askance at the mirror as she hurried by.",
+  "syn": "2] indirect, sidelong",
+  "ant": ""
+ },
+ {
+  "word": "assay",
+  "star": false,
+  "mean": "1] To test the fineness, purity 2] An appraisal of the state of affairs 3] A trial or an attempt.",
+  "syn": "2] attempt, check",
+  "ant": ""
+ },
+ {
+  "word": "assiduous",
+  "star": true,
+  "mean": "Showing or marked by constant effort and attention; an assiduous student; assiduous research.",
+  "syn": "diligent",
+  "ant": "lazy, lax"
+ },
+ {
+  "word": "assuage",
+  "star": true,
+  "mean": "1] To make less harsh or severe: Time will assuage his grief. 2] To satisfy: The cold spring water assuaged his thirst.",
+  "syn": "alleviate, appease, mitigate, sate",
+  "ant": "aggravate, exacerbate"
+ },
+ {
+  "word": "astute",
+  "star": false,
+  "mean": "Having or coming from a shrewd, clever mind: Psychiatrists are sharp, astute observers of people.",
+  "syn": "keen unintelligent",
+  "ant": "stupid"
+ },
+ {
+  "word": "attrition",
+  "star": false,
+  "mean": "1] A gradual wearing down or weakening: a war of attrition; the attrition of a nation's economy. 2] A rubbing or grinding down, as by friction: the attrition of by glaciers.",
+  "syn": "erosion, abrasion rocks",
+  "ant": "strengthening"
+ },
+ {
+  "word": "audacity",
+  "star": true,
+  "mean": "1] Boldness; daring: The Apaches were famous for their skill and 1] audacity as warriors. 2] Disregard of decency or courtesy: She had the audacity to ask how much I had paid for my dress.",
+  "syn": "bravery, 2] impudence, brazenness, nerve",
+  "ant": ""
+ },
+ {
+  "word": "augment",
+  "star": false,
+  "mean": "To make or become greater, as in size, number, or amount: He increase, augmented his small income by driving a taxi on weekends.",
+  "syn": "enlarge, enhance",
+  "ant": "decrease, reduce, degrade"
+ },
+ {
+  "word": "augur",
+  "star": false,
+  "mean": "1] A person who foretells the future. 2] To be a sign or omen of: Her good nature augurs lifelong popularity.",
+  "syn": "soothsayer, prophet",
+  "ant": ""
+ },
+ {
+  "word": "august",
+  "star": false,
+  "mean": "1] Inspiring awe or reverence, imposing: the august aura of the old cathedral. 2] Of high rank or birth: an august justice of the Supreme Court.",
+  "syn": "1] majestic, stately, awesome, 2] honoured, eminent",
+  "ant": ""
+ },
+ {
+  "word": "autarchy",
+  "star": false,
+  "mean": "Absolute rule or sovereignty; autocracy, despotism. Note that this word differs in meaning from 'Autarky' which implies economic self-sufficiency",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "avant-garde",
+  "star": false,
+  "mean": "The group, especially in the arts, regarded as being the most experimental: Op art and pop art were the rage among the avant- garde. Having to do with the bold, new, or experimental: New novels often exhibit avant-garde tendencies. Etym: In French, this word literally means 'advance guard'.",
+  "syn": "innovative, radical, far-out, extreme traditional",
+  "ant": "conservative, old-fashioned, routine"
+ },
+ {
+  "word": "avarice",
+  "star": false,
+  "mean": "Passion for accumulating riches: greed: Some politicians are motivated by avarice.",
+  "syn": "philanthropy, charity",
+  "ant": ""
+ },
+ {
+  "word": "aver",
+  "star": true,
+  "mean": "To declare to be true; state positively; affirm.",
+  "syn": "assert, avow",
+  "ant": ""
+ },
+ {
+  "word": "avid",
+  "star": false,
+  "mean": "1] Eager; enthusiastic: He was an avid football fan. 2] Greedy: The whole family was avid for success.",
+  "syn": "1] zealous 2] rapacious",
+  "ant": "1] indifferent, uninterested"
+ },
+ {
+  "word": "avocation",
+  "star": false,
+  "mean": "A casual or occasional occupation: Her avocation was collecting hobby, stamps.",
+  "syn": "diversion, pastime",
+  "ant": ""
+ },
+ {
+  "word": "awry",
+  "star": false,
+  "mean": "1] Toward one side: Your cap is awry. 2] Wrong; out of the right course: Our picnic plans went awry because of the rain.",
+  "syn": "amiss, askew",
+  "ant": "aligned, even"
+ },
+ {
+  "word": "axiom",
+  "star": false,
+  "mean": "A self-evident or universally recognized truth: It is an axiom that nature abhors a vacuum.",
+  "syn": "theorem, law, truism, principle",
+  "ant": ""
+ },
+ {
+  "word": "baffle",
+  "star": false,
+  "mean": "To confuse, bewilder, perplex: The unsolved crime baffled the befuddle, police.",
+  "syn": "confound, mystify",
+  "ant": "explain, enlighten"
+ },
+ {
+  "word": "bacchanal",
+  "star": false,
+  "mean": "Wild, drunken merry-making. Etym: From the Roman festival debauch, Bacchanalia, in honour of Bacchus the god of wine who was also known as Dionysus: A night of Bacchanalian revelry.",
+  "syn": "revelry, jollity",
+  "ant": ""
+ },
+ {
+  "word": "badger",
+  "star": false,
+  "mean": "To nag at or harass: He badgered me into going to a football game with him.",
+  "syn": "pester, pressure, irritate, hound",
+  "ant": ""
+ },
+ {
+  "word": "bailiwick",
+  "star": false,
+  "mean": "One's particular area of activity, authority or interest; generally used in the context of politician's strong constituency, or an area which a private company's products dominate the market.",
+  "syn": "in",
+  "ant": ""
+ },
+ {
+  "word": "balderdash",
+  "star": false,
+  "mean": "Senseless talk or writing; nonsense",
+  "syn": "rubbish, twaddle",
+  "ant": "meaningful, sensible"
+ },
+ {
+  "word": "baleful",
+  "star": false,
+  "mean": "Evil, sinister, harmful. The prisoner gave the judge a baleful look.",
+  "syn": "menacing, ominous",
+  "ant": "benign, innocuous"
+ },
+ {
+  "word": "balk",
+  "star": false,
+  "mean": "1] To stop short and refuse to proceed or take action: The donkey balked when he saw the steep cliff. 2] To render unsuccessful; thwart: Quick police action balked the attempted robbery. 3] A hindrance, defeat, or disappointment: Timidity is a balk to success. Spelling tip: Be sure to write the l in this word but do pronouncce it.",
+  "syn": "deterrent, impediment not",
+  "ant": ""
+ },
+ {
+  "word": "baloney",
+  "star": false,
+  "mean": "Nonsense: The plot of the film is pure baloney.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "bamboozle",
+  "star": false,
+  "mean": "To deceive or cheat by trickery; dupe; to confuse; to puzzle: Their sermons were intended to bamboozle the workers into obedience.",
+  "syn": "mystify, stump",
+  "ant": ""
+ },
+ {
+  "word": "banal",
+  "star": true,
+  "mean": "Meaningless from overuse; trite: His speech on brotherly love, delivered at the peak of the riot, sounded banal and out of",
+  "syn": "stereotyped, vapid place.",
+  "ant": "original"
+ },
+ {
+  "word": "bane",
+  "star": false,
+  "mean": "The cause of distress, death or ruin; curse. The costly system of and folders is the bane of hospital administration.",
+  "syn": "files curse, nemesis, scourge",
+  "ant": ""
+ },
+ {
+  "word": "banter",
+  "star": false,
+  "mean": "Playful ridicule: He was amused by their banter about his late arrival.",
+  "syn": "badinage, raillery, repartee, riposte",
+  "ant": ""
+ },
+ {
+  "word": "barb",
+  "star": false,
+  "mean": "Pointedness or sting, as of wit; also, a stinging remark: attacking political candidates with personal barbs.",
+  "syn": "jibe",
+  "ant": "compliment"
+ },
+ {
+  "word": "baroque",
+  "star": false,
+  "mean": "Of or characteristic of the art and architecture of the 17th century, which was elaborately ornate and had curved rather than straight lines: The building's baroque style looked out of place in the of modern buildings.",
+  "syn": "midst",
+  "ant": ""
+ },
+ {
+  "word": "bastion",
+  "star": false,
+  "mean": "1] In fortifications, the part of a rampart that projects so as to a wider firing range. 2] Any fortified or strongly defended place, position, thing, etc.: bastion of democracy.",
+  "syn": "give defense a",
+  "ant": ""
+ },
+ {
+  "word": "bathos",
+  "star": false,
+  "mean": "A literary term; an anticlimax or sudden descent from the sublime to the commonplace.",
+  "syn": "anticlimax",
+  "ant": ""
+ },
+ {
+  "word": "bawdy",
+  "star": false,
+  "mean": "Obscene language.",
+  "syn": "lewd, dirty, vulgar",
+  "ant": ""
+ },
+ {
+  "word": "beatific",
+  "star": false,
+  "mean": "Giving or expressing blessedness or bliss: the Madonna's beatific smile.",
+  "syn": "angelic, seraphic",
+  "ant": ""
+ },
+ {
+  "word": "becoming",
+  "star": false,
+  "mean": "Appropriate or attractive: a very becoming, dress.",
+  "syn": "flattering, suiting",
+  "ant": ""
+ },
+ {
+  "word": "bedlam",
+  "star": false,
+  "mean": "Scene of uproar with noise and confusion: A nightmarish bedlam of shrieking, weeping and vomiting.",
+  "syn": "chaos, pandemonium",
+  "ant": ""
+ },
+ {
+  "word": "beguile",
+  "star": false,
+  "mean": "Mislead by cheating or tricking. He used newspapers to beguile the readers into buying shares in his company.",
+  "syn": "captivate, bewitch",
+  "ant": ""
+ },
+ {
+  "word": "behemoth",
+  "star": false,
+  "mean": "Any large beast or thing.",
+  "syn": "colossus, mammoth",
+  "ant": ""
+ },
+ {
+  "word": "behoove",
+  "star": false,
+  "mean": "To be necessary, fit, or proper (used impersonally): It behooves me to leave before I overstay my welcome.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "beleaguer",
+  "star": false,
+  "mean": "1] To force: The town was beleaguered for two weeks before 1] beset, friendly troops arrived. 2] To beset; harass: The widow was beleaguered by the problems of raising five children.",
+  "syn": "beseige 2] badger, worry",
+  "ant": ""
+ },
+ {
+  "word": "bellicose",
+  "star": false,
+  "mean": "Having or showing a ready disposition to fight.",
+  "syn": "aggressive, combative",
+  "ant": ""
+ },
+ {
+  "word": "belligerent",
+  "star": false,
+  "mean": "having or showing a tendency to fight: His belligerent attitude consistently gets him into trouble.",
+  "syn": "pugnacious, quarrelsome, hostile",
+  "ant": ""
+ },
+ {
+  "word": "bemused",
+  "star": false,
+  "mean": "Confused, bewildered: She was faintly bemused by his questions. baffled, She gave him a bemused look.",
+  "syn": "confounded",
+  "ant": ""
+ },
+ {
+  "word": "benchmark",
+  "star": false,
+  "mean": "Something whose quality, quantity, or capability is known and criterion, which can therefore, be used as a standard, with which other things can be compared: ... having used economic criteria as the sole benchmark for success, value or achievement.",
+  "syn": "yardstick",
+  "ant": ""
+ },
+ {
+  "word": "benediction",
+  "star": false,
+  "mean": "The expression of a blessing or good wishes: He received his approval, father's benediction before he went overseas.",
+  "syn": "encouragement, curse, sanction",
+  "ant": "malediction, denunciation"
+ },
+ {
+  "word": "beneficence",
+  "star": true,
+  "mean": "Goodness or kindness: Her beneficence touched everyone around charity, her.",
+  "syn": "benevolence generosity, graciousness",
+  "ant": "economy, meanness, stinginess, selfishness"
+ },
+ {
+  "word": "beneficial",
+  "star": false,
+  "mean": "Helpful: Country air is beneficial to health.",
+  "syn": "advantageous, useful, good, salutary",
+  "ant": "harmful, bad, injurious, detrimental"
+ },
+ {
+  "word": "benevolence",
+  "star": true,
+  "mean": "Kindliness or charitableness: the benevolence of nuns in caring for the homeless.",
+  "syn": "altruism, kindness, humaneness, philanthropy",
+  "ant": "cruelty, destructiveness, misanthropy"
+ },
+ {
+  "word": "benign",
+  "star": true,
+  "mean": "1] Favorable or mild: a benign influence; a benign climate. 2] Not dangerous or harmful: a benign tumor.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "bequeath",
+  "star": false,
+  "mean": "To leave as an inheritance: In his will he bequeathed his estate to his son. Moral concepts bequeathed to us by the Victorian era.",
+  "syn": "will, devise, transmit",
+  "ant": "disinherit"
+ },
+ {
+  "word": "berate",
+  "star": true,
+  "mean": "To scold severely: She berated him for his cowardice.",
+  "syn": "lambast, upbraid, chide, censure, rebuke, reprove laud",
+  "ant": "praise, acclaim, extol, commend"
+ },
+ {
+  "word": "bereavement",
+  "star": false,
+  "mean": "State of sorrow over the death or departure of a loved one. The mourning young widow bore her bereavement bravely.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "berserk",
+  "star": false,
+  "mean": "In a frenzy of wild rage; violently destructive: The wounded beast went berserk with pain.",
+  "syn": "crazy, mad, frenzied, out calm, of control, amok",
+  "ant": "peaceful, placid, tranquil"
+ },
+ {
+  "word": "bete noire",
+  "star": false,
+  "mean": "Aperson or thing feared or disliked and avoided :... declaration of personal assets to the Income Tax department is a politician's bete noire.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "bigotry",
+  "star": false,
+  "mean": "Bitter, hostile prejudice, as against a group race, religion, etc: shameless bigotry of the whites against the blacks in South Africa.",
+  "syn": "The dogmatism",
+  "ant": ""
+ },
+ {
+  "word": "bilious",
+  "star": false,
+  "mean": "Peevish in temper: a bilious old codger.",
+  "syn": "ill-tempered, choleric, cross, irritable humoured",
+  "ant": "amiable, sweet tempered, good"
+ },
+ {
+  "word": "bizarre",
+  "star": false,
+  "mean": "Very different from what is usual or normal: bizarre art forms.",
+  "syn": "fantastic, odd, eccentric, weird",
+  "ant": "common, natural, ordinary"
+ },
+ {
+  "word": "blanch",
+  "star": false,
+  "mean": "To whiten, turn pale: The men returned from the graveyard, their pale faces blanched.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "blandishment",
+  "star": true,
+  "mean": "attering speech or actions: It was difficult to resist the cajolery, andishments of the salesman.",
+  "syn": "coaxing, palaver abuse",
+  "ant": "criticism"
+ },
+ {
+  "word": "blase",
+  "star": false,
+  "mean": "Someone who is blase shows no excitement, interest or pleasure bored, in things that other people consider exciting or interesting, usually because they have experienced them before; used for people's behaviour and attitudes: her superior, blase air.",
+  "syn": "sophisticated, uninterested",
+  "ant": ""
+ },
+ {
+  "word": "blasphemy",
+  "star": true,
+  "mean": "Words or actions that deliberately mock or show contempt for heresy, sacred things, especially for God: His blasphemies against God and country made him unpopular.",
+  "syn": "sacrilege",
+  "ant": "piety, reverence"
+ },
+ {
+  "word": "blatant",
+  "star": false,
+  "mean": "1] Disagreeably loud: a blatant jukebox. 2] Completely or crassly obvious: Some young people show a blatant contempt for tradition.",
+  "syn": "1] noisy, piercing, clamorous. 2] obtrusive, brazen",
+  "ant": "quiet, subdued"
+ },
+ {
+  "word": "bleak",
+  "star": false,
+  "mean": "Cold; dismal; barren: a bleak coast: The future looks pretty bleak.",
+  "syn": "cheerless, bare, gloomy",
+  "ant": "sunny"
+ },
+ {
+  "word": "blithe",
+  "star": false,
+  "mean": "Joyous, gay: a blithe spirit.",
+  "syn": "jocund, sprightly",
+  "ant": "morose, somber"
+ },
+ {
+  "word": "bohemian",
+  "star": true,
+  "mean": "A person, especially an artist, poet, etc. who lives in an nonconformist unconventional, non-conforming way. his Bohemian ways of handling problems.",
+  "syn": "traditionalist",
+  "ant": ""
+ },
+ {
+  "word": "boisterous",
+  "star": true,
+  "mean": "Noisy and wild: a boisterous mob.",
+  "syn": "raucous, rowdy, riotous",
+  "ant": "restrained"
+ },
+ {
+  "word": "bondage",
+  "star": false,
+  "mean": "Slavery, serfdom. How distinctly 'bond' and 'bondage' differ in their meanings is brought out by Oscar Wilde: \"It is he who has broken the bond of marriage - not I. I only break its bondage.\"",
+  "syn": "slavery, thrall",
+  "ant": "emancipation"
+ },
+ {
+  "word": "bolster",
+  "star": true,
+  "mean": "To encourage, support.: The alarm bolstered their sense of security.",
+  "syn": "reinforce, shore",
+  "ant": "undermine, weaken"
+ },
+ {
+  "word": "bon mot",
+  "star": false,
+  "mean": "(From French) An apt, clever, or witty remark: His speech was - spiced with bons mots and much homespun wisdom.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "bowdlerize",
+  "star": false,
+  "mean": "To prudishly remove supposedly objectionable matter from a censor, manuscript, etc.: The censor bowdlerized the avant-garde movie.",
+  "syn": "expurgate",
+  "ant": ""
+ },
+ {
+  "word": "braggadocio",
+  "star": false,
+  "mean": "Empty boasting, or a person who engages in such boasting: the braggadocio of a teenager.",
+  "syn": "bluster",
+  "ant": "humility"
+ },
+ {
+  "word": "bravado",
+  "star": false,
+  "mean": "A pretense of bravery: His attempt at resistance was sheer bravado.",
+  "syn": "bluster, bombast",
+  "ant": "cowardice, modesty"
+ },
+ {
+  "word": "bravura",
+  "star": false,
+  "mean": "1] A bold attempt or display of daring; dashing: A brilliant display of bravura and temperament at a critical point in the match. 2] In music, a brilliant passage that displays the performer's and technique.",
+  "syn": "ostentatious, showy skill",
+  "ant": ""
+ },
+ {
+  "word": "brawl",
+  "star": false,
+  "mean": "A noisy quarrel or fight: A drunken brawl.",
+  "syn": "affray, altercation, ruckus, wrangle, scrap",
+  "ant": "fracas, concord, peace, union"
+ },
+ {
+  "word": "breakthrough",
+  "star": false,
+  "mean": "A major advance in knowledge or negotiations: then the discovery, breakthrough came with Einstein's Theory of Relativity.",
+  "syn": "insight",
+  "ant": ""
+ },
+ {
+  "word": "broach",
+  "star": false,
+  "mean": "1] To mention or suggest for the first time: He finally broached subject of marriage. 2] To pierce, so as to withdraw a liquid: to broach a cask of",
+  "syn": "the address, initiate wine.",
+  "ant": ""
+ },
+ {
+  "word": "brook",
+  "star": false,
+  "mean": "Tolerate, allow.: He is too authoritarian in his ways to brook any interference in his plans.",
+  "syn": "bear, stomach, tolerate",
+  "ant": ""
+ },
+ {
+  "word": "brusque",
+  "star": true,
+  "mean": "Rough and abrupt in manner; blunt: The doctor is a kindly man but brusque.",
+  "syn": "curt, terse, laconic, uncivil",
+  "ant": "expansive, talkative, warm, ingratiating"
+ },
+ {
+  "word": "bucolic",
+  "star": false,
+  "mean": "Rustic; of country life and farming: In his Wessex novels, Thomas Hardy depicts scenes of bucolic simplicity and charm.",
+  "syn": "loutish, pastoral, provincial",
+  "ant": "cultured, refined, polite"
+ },
+ {
+  "word": "bug",
+  "star": false,
+  "mean": "To annoy, bother, or anger: I have been seeing you sit at the same place every day for the past one week, doing nothing. What is bugging you?",
+  "syn": "badger, beleaguer",
+  "ant": ""
+ },
+ {
+  "word": "bungle",
+  "star": false,
+  "mean": "The thief bungled and set off the alarm while trying to open the",
+  "syn": "safe. blunder",
+  "ant": ""
+ },
+ {
+  "word": "buoyancy",
+  "star": false,
+  "mean": "Highness of spirits; cheerfulness: his buoyancy at finding a new job.",
+  "syn": "vivacity, hopefulness, jubilation",
+  "ant": "dejection, depression"
+ },
+ {
+  "word": "bumptious",
+  "star": false,
+  "mean": "Disagreeably conceited or self-important: The bumptious customs officials.",
+  "syn": "arrogant, brash, conceited, cocky",
+  "ant": "humble, tentative, timid, uncertain"
+ },
+ {
+  "word": "burgeon",
+  "star": true,
+  "mean": "To grow or develop rapidly; proliferate; flourish: a burgeoning flourish, manufacturing industry.",
+  "syn": "thrive",
+  "ant": "shrivel, wither"
+ },
+ {
+  "word": "burnish",
+  "star": true,
+  "mean": "To polish by rubbing; make or become shiny or lustrous: to burnish metal: The burnished shield shimmered in the sunlight. A lustrous or polished surface.",
+  "syn": "shine buff, glaze, gloss, luster, sheen",
+  "ant": "dull, tarnish"
+ },
+ {
+  "word": "bustle",
+  "star": false,
+  "mean": "Excited activity; noisy stir: the bustle of a crowded market.",
+  "syn": "fuss, flutter, scurry, commotion, flurry, haste",
+  "ant": "relax, inertia"
+ },
+ {
+  "word": "buttress",
+  "star": true,
+  "mean": "Something that strengthens, defends, or upholds: a buttress of reinforce, world peace.",
+  "syn": "strengthen, brace, prop",
+  "ant": "undermine, weaken"
+ },
+ {
+  "word": "cabal",
+  "star": false,
+  "mean": "1] A number of persons secretly united in a plot or plan, especially one to overthrow a ruler. 2] An intrigue or plot by such a group.",
+  "syn": "1] junta, gang 2] scheme, conspiracy, plan, machination",
+  "ant": ""
+ },
+ {
+  "word": "cache",
+  "star": false,
+  "mean": "1] To conceal or store in a secret place: My grandfather cached accrue, silver dollars in an old trunk. 2] Save up as for future use. A hidden storage space (for money or provisions or weapons). Spelling tip: It's dangeorus to turn cache to cash. Watch the spelling of the two words that are pronounced alike but have different meanings.",
+  "syn": "amalgamate hoard, stash",
+  "ant": "1] expose 2] disperse, spend"
+ },
+ {
+  "word": "cacophony",
+  "star": true,
+  "mean": "Disagreeable or discordant sound: the cacophony of a flock of discord, crows.",
+  "syn": "dissonance, noise, clamor, hubbub, racket, uproar",
+  "ant": "harmony"
+ },
+ {
+  "word": "cadence",
+  "star": false,
+  "mean": "1] Rhythmic or measured flow or beat.: He tapped his feet in tune with the cadence of the music. 2] Modulation, as of the voice: intonation. 3] The falling inflection of the voice, as at the end of a 4] A melodic, harmonic, or rhythmic formula ending part of a of music.",
+  "syn": "inflection, modulation, swing, tempo sentence. piece",
+  "ant": ""
+ },
+ {
+  "word": "cahoots",
+  "star": false,
+  "mean": "Questionable or illegal collaboration. In cahoots with a dishonest politician.",
+  "syn": "collusion, connivance",
+  "ant": ""
+ },
+ {
+  "word": "caitiff",
+  "star": false,
+  "mean": "A mean, evil or cowardly person.",
+  "syn": "dastard, knave corrupt, degenerate, nefariou",
+  "ant": "hero"
+ },
+ {
+  "word": "cajole",
+  "star": false,
+  "mean": "To coax with flattery: She begged and cajoled her parents until consented to let her go to the party.",
+  "syn": "they beguile, coax, inveigle, palaver",
+  "ant": "bully, force"
+ },
+ {
+  "word": "callow",
+  "star": false,
+  "mean": "Inexperienced: immature. A callow youth is an immature or inexperienced one.",
+  "syn": "green, naive, immature, juvenile, puerile, unsophisticated",
+  "ant": "adult, experienced, mature, sophisticated"
+ },
+ {
+  "word": "caper",
+  "star": false,
+  "mean": "1] Wild foolish action or prank 2] A crime or illegal activity.",
+  "syn": "escapade, gag, prank",
+  "ant": ""
+ },
+ {
+  "word": "capitulate",
+  "star": false,
+  "mean": "To surrender, often on stipulated terms: The enemy capitulated after being promised fair treatment.",
+  "syn": "buckle, cede, yield, give up, give in, succumb, surrender",
+  "ant": "hold out, resist"
+ },
+ {
+  "word": "capricious",
+  "star": true,
+  "mean": "Resulting from caprice: The actions of diplomats must never be capricious.",
+  "syn": "arbitrary, impulsive, whimsical, fickle, fanciful",
+  "ant": "thoughtful, reasoned, careful, deliberate"
+ },
+ {
+  "word": "carte blanche",
+  "star": false,
+  "mean": "Unrestricted authority: They gave him carte blanche to print - controversial views in the newspaper.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "castigate",
+  "star": true,
+  "mean": "To censure severely or unremittingly: She endlessly castigated husband over every small failing.",
+  "syn": "her berate, rebuke, reprimand",
+  "ant": "commend, laud, praise"
+ },
+ {
+  "word": "categorical",
+  "star": false,
+  "mean": "Definite: unambiguously explicit and direct. his categorical denial of the charges.",
+  "syn": "absolute, unequivocal, unreserved, positive, complete, total",
+  "ant": "partial, tentative, limited, qualified"
+ },
+ {
+  "word": "catharsis",
+  "star": false,
+  "mean": "A purifying or purging of pity, terror, or other emotions, through witnessing a work of art such as tragic drama.",
+  "syn": "purgation",
+  "ant": ""
+ },
+ {
+  "word": "catholic",
+  "star": false,
+  "mean": "1] Broad-minded or liberal: a catholic respect for different customs. 2] Broad or universal in scope: a grasp of human knowledge that is catholic. 3] a member of a Christian church.",
+  "syn": "1] tolerant, generous, cosmopolitan. 2] general, comprehensive, all-embracing.",
+  "ant": "1] provincial, restricted 2] narrow, limited"
+ },
+ {
+  "word": "caustic",
+  "star": true,
+  "mean": "Extremely hostile or biting: Ignore the caustic slurs of your",
+  "syn": "enemy. 1] burning, corrosive. 2] sarcastic, acerbic, venomous, satiric, scathing, trenchant",
+  "ant": "1] mild, soothing 2] admiring, flattering, approving"
+ },
+ {
+  "word": "cavil",
+  "star": false,
+  "mean": "To find fault with or raise trivial objections to: He caviled every departure from the letter of the law. A severe objection to minor failings: His cavils over procedure prevented them from coping with the emergency.",
+  "syn": "about carp, quibble, squabble, grouse, censure",
+  "ant": "agree, concur, compliment"
+ },
+ {
+  "word": "chagrin",
+  "star": false,
+  "mean": "1] A feeling of annoyance or embarassment caused by failure, disappointment, etc.: the chagrin she felt when publicly insulted by her husband. 2] To annoy or embarass. The student was chagrined at failing exam.",
+  "syn": "dismay, distress, humiliation, mortification, disconcert the",
+  "ant": "pride, delight"
+ },
+ {
+  "word": "charlatan",
+  "star": true,
+  "mean": "A person who claims to have skill and knowledge he does not fake, possess: A medical charlatan can endanger your life.",
+  "syn": "quack, imposter, fraud, rogue",
+  "ant": ""
+ },
+ {
+  "word": "cheeseparing",
+  "star": false,
+  "mean": "Miserly, stingy. Something of little or no value; Stinginess; parsimony.",
+  "syn": "penny-pinching profligate",
+  "ant": "lavish, prodigal"
+ },
+ {
+  "word": "chimera",
+  "star": false,
+  "mean": "Wild or impossible idea or fancy.",
+  "syn": "delusion, fantasy, phantom",
+  "ant": "reality, truth"
+ },
+ {
+  "word": "chide",
+  "star": false,
+  "mean": "To scold: to chide a child for being lazy.",
+  "syn": "rebuke, reprimand, criticise, upbraid",
+  "ant": "praise, commend, compliment, applaud"
+ },
+ {
+  "word": "choleric",
+  "star": false,
+  "mean": "Often angry.: His choleric bouts often kept his sons away.",
+  "syn": "hot tempered, irritable, nettled, grouchy",
+  "ant": "cheerful, pleasant"
+ },
+ {
+  "word": "churlish",
+  "star": false,
+  "mean": "Rude and ill-tempered: a churlish brute who muttered menacingly when asked to move.",
+  "syn": "surly, boorish, sullen, insolent",
+  "ant": "polite, civil courteous, well-mannered"
+ },
+ {
+  "word": "chutzpah",
+  "star": false,
+  "mean": "Tremendous self-confidence; barefaced effrontery; shameless audacity",
+  "syn": "audacity, cheek, nerve timidity",
+  "ant": "diffidence, humility"
+ },
+ {
+  "word": "circumlocution",
+  "star": false,
+  "mean": "direct or roundabout expression involving the use of more words an necessary: 'Refrain from perambulating on the growing green rpet' is a circumlocation for 'Don't walk on the grass'.",
+  "syn": "wordiness, verbosity, pleonasm, periphrasis, tautology",
+  "ant": "brevity, conciseness, terseness"
+ },
+ {
+  "word": "clairvoyant",
+  "star": false,
+  "mean": "Having alleged unnatural powers to see or know things not present to the senses.",
+  "syn": "psychic, telepathic, medium, spiritualist",
+  "ant": ""
+ },
+ {
+  "word": "coalesce",
+  "star": false,
+  "mean": "To grow or come together into one: A number of small businesses coalesced into a large corporation.",
+  "syn": "fuse, blend, unite, amalgamate, merge",
+  "ant": "fragment, split, diffuse, disperse"
+ },
+ {
+  "word": "cogent",
+  "star": true,
+  "mean": "Appealing to the mind so as to influence it powerfully: a cogent argument for calling a cease-fire.",
+  "syn": "forceful, convincing, persuasive, potent, influential",
+  "ant": "weak, ineffectual, ineffective"
+ },
+ {
+  "word": "cogitate",
+  "star": false,
+  "mean": "Consider carefully and deeply; reflect upon; turn over in one's",
+  "syn": "mind contemplate, meditate, deliberate",
+  "ant": "ignore"
+ },
+ {
+  "word": "cognizant",
+  "star": false,
+  "mean": "Having knowledge, especially special or certain knowledge as from first-hand sources (used with of): Although cognizant of his own weaknesses, he was sure he could do the job.",
+  "syn": "aware, informed, conscious",
+  "ant": "unaware, ignorant, oblivious"
+ },
+ {
+  "word": "cohere",
+  "star": false,
+  "mean": "1] To stick or hold firmly together: The grains of damp salt 2] To be logically connected; be consisitent, as the parts of a",
+  "syn": "cohered. cling, adhere, coalesce, story. consolidate",
+  "ant": "separate"
+ },
+ {
+  "word": "coincident",
+  "star": false,
+  "mean": "1] Occurring at exactly the same time: It was coincident that he arrived at the same time as she did. 2] In exact agreement; harmonious: Her tastes were coincident with her husband's.",
+  "syn": "1] concurring, parallel, simultaneous, 2] coinciding, corresponding, indistinguishable",
+  "ant": "like"
+ },
+ {
+  "word": "collate",
+  "star": false,
+  "mean": "1] To assemble pages of a manuscript, etc. in proper order: The secretary collated the loose sheets of the report and stapled complete set. 2] To compare critically as writings or facts: Scholars collated existing copies of the Shakespeare Folio.",
+  "syn": "adduce, consolidate each all",
+  "ant": "disorganise"
+ },
+ {
+  "word": "colossal",
+  "star": false,
+  "mean": "1] Of immense size: a colossal skyscraper. 2] Informal: Beyond comprehension or credibility: colossal pride.",
+  "syn": "huge, gigantic, tremendous, titanic, vast, mammoth miniaturised",
+  "ant": "tiny, minuscule, miniature, infinitesimal"
+ },
+ {
+  "word": "comely",
+  "star": false,
+  "mean": "Of pleasing appearance; handsome; graceful: Barbara and Joe were a comely young couple.",
+  "syn": "attractive, pleasant, winsome",
+  "ant": "plain, repelling, awkward, homely"
+ },
+ {
+  "word": "commensurate",
+  "star": true,
+  "mean": "Corresponding in size or degree or extent",
+  "syn": "adequate, appropriate",
+  "ant": "disproportionate"
+ },
+ {
+  "word": "commiserate",
+  "star": false,
+  "mean": "1] To feel or express pity for: Don't just commiserate, help the survivors. 2] To sympathize: He commiserated with the injured strikers.",
+  "syn": "sympathize, condole",
+  "ant": ""
+ },
+ {
+  "word": "complacent",
+  "star": false,
+  "mean": "Satisfied with oneself; smug: Early success made him complacent and, from then on he never tried to improve.",
+  "syn": "smug, unconcerned, self-assured",
+  "ant": "insecure, unsatsfied"
+ },
+ {
+  "word": "complaisant",
+  "star": true,
+  "mean": "Willing to please: He was lucky to find a complaisant housekeeper.",
+  "syn": "agreeable, conciliatory, yielding, compliant, obedient, deferential",
+  "ant": "antagonistic, difficult, surly"
+ },
+ {
+  "word": "concomitant",
+  "star": false,
+  "mean": "Accompanying. The infirmities that are concomitants of old age.",
+  "syn": "ancillary, attendant, incidental",
+  "ant": ""
+ },
+ {
+  "word": "concord",
+  "star": false,
+  "mean": "Unity of feeling; agreement: The U.N. strives to achieve concord among nations.",
+  "syn": "accord, peace, harmony, rapport",
+  "ant": "discord, disharmony, conflict"
+ },
+ {
+  "word": "condescend",
+  "star": false,
+  "mean": "1] To come down voluntarily to equal terms with inferiors: The 2] prince often condescended to chat with his subjects. 2] To lower oneself to do something: Her boss would not even condescend to get his own coffee. 3] To act in a superior or patronizing way.",
+  "syn": "deign, stoop, concede, - 3] patronise, look down on",
+  "ant": ""
+ },
+ {
+  "word": "confabulate",
+  "star": false,
+  "mean": "To talk together in an informal way; chat",
+  "syn": "confer, discourse, converse",
+  "ant": ""
+ },
+ {
+  "word": "confute",
+  "star": false,
+  "mean": "To prove (statement, person) wrong. He confuted Mark's statement by reading out figures from the last audit report.",
+  "syn": "negate, refute, contradict, repudiate",
+  "ant": "affirm, verify"
+ },
+ {
+  "word": "congeal",
+  "star": false,
+  "mean": "To change from a fluid to a solid condition: The custard congealed after being refrigerated.",
+  "syn": "harden, set, solidify",
+  "ant": "melt, soften, liquefy"
+ },
+ {
+  "word": "congenial",
+  "star": false,
+  "mean": "1] Having similar character, nature, or tastes: a congenial group 1] of friends. 2] Suited to one's needs or disposition: She enjoyed her job because of the congenial surroundings.",
+  "syn": "kindred, sympathetic, 2] agreeable, likable 2] disagreeable, repugnant, undesirable",
+  "ant": "1] dissimilar, unsympathetic."
+ },
+ {
+  "word": "conjecture",
+  "star": false,
+  "mean": "Guess: His conjecture that Alice would have joined the excursion party came true ... Under the circumstances, the army could only conjecture as to what the militants would do.",
+  "syn": "hypothecate, speculate, supposition",
+  "ant": "prove, certainty, fact"
+ },
+ {
+  "word": "consecrate",
+  "star": false,
+  "mean": "1] To cause to be revered, honored, or treated as sacred. King 1] Edward consecrated the original church here, in 1065. 2] To devote entirely; dedicated. I have consecrated my life to",
+  "syn": "bless, sanctify 2] devote, commit art.",
+  "ant": "desecrate"
+ },
+ {
+  "word": "consort",
+  "star": false,
+  "mean": "1] A spouse, companion, or escort: Prince Albert was Queen associate, Victoria's consort. 2] To keep company: He was accused of consorting with known criminals.",
+  "syn": "fraternize, affiliate, associate, mate",
+  "ant": "avoid, part company, estrange, foe, rival"
+ },
+ {
+  "word": "construe",
+  "star": false,
+  "mean": "To interpret: They construed his silence as consent.",
+  "syn": "understand, explain.",
+  "ant": "obscure, confuse"
+ },
+ {
+  "word": "contingent",
+  "star": false,
+  "mean": "Dependent upon an uncertain event, condition, or outcome: An fortuitous, increase in your allowance is contingent upon your grades.",
+  "syn": "probable",
+  "ant": "certain, predictable"
+ },
+ {
+  "word": "contentious",
+  "star": true,
+  "mean": "Always ready to argue; quarrelsome. We didn't quite bargain for contentious neighbours.",
+  "syn": "bellicose, combative, martial, litigious",
+  "ant": "calm, peaceful, passive"
+ },
+ {
+  "word": "contrite",
+  "star": true,
+  "mean": "Deeply and humbly sorry for one's sin or sins; penitent: Reformed and contrite, he begged forgiveness.",
+  "syn": "apologetic, chastened, penitent",
+  "ant": "recalcitrant, unrepentant"
+ },
+ {
+  "word": "contumacy",
+  "star": false,
+  "mean": "Obstinate resistance, stubborn disobedience.",
+  "syn": "defiance, insubordination, rebelliousness, noncompliance",
+  "ant": "deference, submission"
+ },
+ {
+  "word": "contumely",
+  "star": false,
+  "mean": "Abusive language or treatment; scornful insult. If Europeans face this kind of contumely in that small country, the Asians fare no better.",
+  "syn": "insult, abuse, vilifacation, invective",
+  "ant": "compliment, credit"
+ },
+ {
+  "word": "convalescence",
+  "star": false,
+  "mean": "e A gradual recovery after the termination of an illness or after surgery, or the period of such a recovery: The heart operation was successful, but complications prolonged his convalescence.",
+  "syn": "recovery, recuperation",
+  "ant": ""
+ },
+ {
+  "word": "convivial",
+  "star": false,
+  "mean": "Characterised by good fellowship; a convivial college reunion.",
+  "syn": "jovial, sociable, companionable, merry",
+  "ant": "unfriendly, cold, stiff, gloomy"
+ },
+ {
+  "word": "copious",
+  "star": false,
+  "mean": "Plentiful; consisting of a large quantity or rich assortment",
+  "syn": "abundant, bountiful, lavish",
+  "ant": "meager, insufficient, minimal, spare"
+ },
+ {
+  "word": "cornucopia",
+  "star": false,
+  "mean": "A symbol of abundance, represented as a curved horn overflowing horn with fruits, vegetables, grains, etc.",
+  "syn": "of plenty scarcity",
+  "ant": "dearth, paucity"
+ },
+ {
+  "word": "corporal",
+  "star": false,
+  "mean": "Of the human body. Corporal punishment in school is now banned by law. 'Corporal' is different from 'corporeal' which means of tangible material nature, perceptible by the senses, as opposed to An ascetic is concerned very little with corporeal affairs.",
+  "syn": "anatomical, physical, mental, spiritual spiritual:",
+  "ant": "cerebral, intangible"
+ },
+ {
+  "word": "corroborate",
+  "star": true,
+  "mean": "To confirm: Eyewitness testimony corroborated the circumstantial evidence.",
+  "syn": "confirm, verify, substantiate, support",
+  "ant": "disprove, contradict, controvert"
+ },
+ {
+  "word": "covenant",
+  "star": false,
+  "mean": "An agreement entered into by two or more persons or parties: a pact, covenant among neighboring powers to keep peace.",
+  "syn": "treaty, concordat. agree, contract",
+  "ant": "break off, disagree, renege"
+ },
+ {
+  "word": "covet",
+  "star": false,
+  "mean": "To desire eagerly; long for: Many people coveted invitations to the party.",
+  "syn": "desire, crave, yearn, lust detest, content",
+  "ant": "renounce, reject"
+ },
+ {
+  "word": "crass",
+  "star": false,
+  "mean": "Grossly vulgar or stupid: She always makes crass remarks about crude, the cost of things;",
+  "syn": "ignorant, unmannerly",
+  "ant": "kind, nice, refined, sensitive"
+ },
+ {
+  "word": "credible",
+  "star": false,
+  "mean": "1] Capable of being delivered: He told a credible story to explain his delay. 2] Worthy of confidence; reliable: a credible witness. Usage: Be careful not to confuse 'credible' with 'creditable' and 'credulous'. 'Creditable' means deserving credit or esteem; 'credulous' means apt to believe anything without questioning. Both 'credible' and 'creditable' apply to people and statements; 'credulous' applies only to people.",
+  "syn": "believable, colorable, conceivable, conclusive, creditable, dependable, reliable, trustworthy, valid but",
+  "ant": "doubtful, implausible, impossible, incredible, unbelievable, unlikely"
+ },
+ {
+  "word": "credo",
+  "star": false,
+  "mean": "A set of beliefs; creed: the credo of a socialist.",
+  "syn": "doctrine, tenets, principles",
+  "ant": "disbelief, unbelief"
+ },
+ {
+  "word": "crotchet",
+  "star": false,
+  "mean": "An odd or perverse notion or whim: One of the old man's crotchets was going to bed with all his clothes on.",
+  "syn": "eccentricity, quirk, vagary, caprice",
+  "ant": "regularity, normality, norm"
+ },
+ {
+  "word": "culpable",
+  "star": true,
+  "mean": "Deserving blame or censure: a nurse guilty of culpable neglect.",
+  "syn": "blameworthy, reproachable, censurable, reprehensible",
+  "ant": "blameless, guiltless, innocent, faultless"
+ },
+ {
+  "word": "cynosure",
+  "star": false,
+  "mean": "Centre of attraction. At the Navy Ball, She was the cynosure of all star, eyes.",
+  "syn": "focal point, limelight",
+  "ant": "nobody, unknown"
+ },
+ {
+  "word": "daunt",
+  "star": true,
+  "mean": "To dishearten, frighten, or discourage: Failure did not daunt him.",
+  "syn": "intimidate, cow, dismay, abash",
+  "ant": "encourage, hearten, embolden"
+ },
+ {
+  "word": "dawdle",
+  "star": false,
+  "mean": "To waste time in slow trifling: Hurry up, don't dawdle.",
+  "syn": "idle, dally, loiter, fiddle",
+  "ant": "hurry, rush, hasten"
+ },
+ {
+  "word": "debauch",
+  "star": false,
+  "mean": "1] To corrupt in morals or principles: debauched by evil associates. 1] 2] To overindulge one's sensual appetites. An act or period of gross 2] sensual indulgence or riotous living: a week's debauch.",
+  "syn": "seduce, degrade dissipate, carouse. orgy, carousal temperance",
+  "ant": "1] purify, uplift 2] abstain self denial, continence"
+ },
+ {
+  "word": "debilitate",
+  "star": false,
+  "mean": "To make feeble or languid: a body debiliated by a lingering illness; a hot, humid, debilitating climate.",
+  "syn": "weaken, enfeeble, enervate",
+  "ant": "strengthen, invigorate, enliven"
+ },
+ {
+  "word": "debrief",
+  "star": false,
+  "mean": "To receive information from (a pilot emissary, intelligence agent, etc.) concerning flight or mission just completed and, often, to instruct as to restrictions in making the information public.",
+  "syn": "disclose, divulge, apprise back",
+  "ant": "conceal, hide, hold"
+ },
+ {
+  "word": "decadence",
+  "star": false,
+  "mean": "A process or period of deterioration or decline, as in art or morals: the decadence of the Roman Empire in its last years.",
+  "syn": "decay, degeneration, wane, retrogression.",
+  "ant": "rise, flowering, blossoming, progress"
+ },
+ {
+  "word": "decimate",
+  "star": true,
+  "mean": "To destroy or kill a large proportion of: Disease decimated their ranks. Etym: 'Decimate' derives from the Latin 'decimare', meaning to exterminate, take a part from. Hence, 'decimate' came to indicate the killing of one out of every ten of a given group. Now it points to an event of more disastrous reduction.",
+  "syn": "massacre, slaughter, ambush build",
+  "ant": "construct, preserve, create, fix, restore"
+ },
+ {
+  "word": "decorous",
+  "star": true,
+  "mean": "Proper and correct in a restrained or formal way: the decorous behavior of Sunday churchgoers.",
+  "syn": "seemly, conventional, demure",
+  "ant": "unconventional, unorthodox"
+ },
+ {
+  "word": "defamation",
+  "star": false,
+  "mean": "Slanderous abuse of the character or reputation of an individual group: The politician sued the magazine for defamation of character.",
+  "syn": "or slander, libel, vilification, disparagement, aspersion, calumny",
+  "ant": "laudation, puffery, adulation, compliments, flattery"
+ },
+ {
+  "word": "delineation",
+  "star": false,
+  "mean": "Pictorial or verbal portrayal: delineation of a face; delineation character.",
+  "syn": "of depiction, representation",
+  "ant": ""
+ },
+ {
+  "word": "demagogue",
+  "star": false,
+  "mean": "A leader who influences the populace by appealing to prejudices and passion: Hitler was a demagogue.",
+  "syn": "haranguer, rabble-rouse, agitator",
+  "ant": "pacifier, peacemaker"
+ },
+ {
+  "word": "demur",
+  "star": false,
+  "mean": "To offer objections; to take exception: The others agreed, but Jim demurred. Spelling Tip: Do not confuse this word with 'demure' (di-myoor'), meaning prim or sedate.",
+  "syn": "dissent, object, hedge comply, concur",
+  "ant": "agree, consent"
+ },
+ {
+  "word": "denotation",
+  "star": false,
+  "mean": "The literal meaning of a word, as distinguished from its connotation (what it suggests): The denotation of \"a blonde\" is \"a girl with golden hair.\"",
+  "syn": "meaning, designation",
+  "ant": ""
+ },
+ {
+  "word": "denouement",
+  "star": false,
+  "mean": "Final outcome of a story or play; a French word borrowed by English.",
+  "syn": "cessation, closure, completion",
+  "ant": "beginning, opening, commence"
+ },
+ {
+  "word": "depravity",
+  "star": false,
+  "mean": "Wickedness or sexual immortality: Nero's depravity.",
+  "syn": "sinfulness, vice",
+  "ant": "purity, chastity, virtue"
+ },
+ {
+  "word": "derelict",
+  "star": false,
+  "mean": "1] Neglectful; remiss: The filthy house proved she was derelict performing household chores. 2] A social outcast, as a tramp or vagrant.",
+  "syn": "in negligent, bum, wastrel, panhandler, wino",
+  "ant": "responsible dutiful, solid citizen"
+ },
+ {
+  "word": "deride",
+  "star": true,
+  "mean": "To treat scornfully, ridicule; He derided the idea that poverty be eliminated simply by handing out money to the poor.",
+  "syn": "could make fun of, scorn, mock admire, praise",
+  "ant": "appreciate, respect"
+ },
+ {
+  "word": "desecrate",
+  "star": false,
+  "mean": "To treat sacrilegiously something held sacred: to desecrate the shrine by herding goats into it.",
+  "syn": "profane, defile, sully hallow",
+  "ant": "revere, consecrate"
+ },
+ {
+  "word": "despicable",
+  "star": false,
+  "mean": "Contemptible, vile: despicable men who profit by human suffering.",
+  "syn": "mean, wicked, awful",
+  "ant": "admirable, wonderful"
+ },
+ {
+  "word": "desultory",
+  "star": true,
+  "mean": "Passing abruptly from one thing to another; disconnected: a desultory conversation.",
+  "syn": "haphazard, stray, unguided",
+  "ant": "focused, guided, thorough"
+ },
+ {
+  "word": "devious",
+  "star": false,
+  "mean": "1] Winding or leading away from the regular, straight, or direct course: a devious country lane that led nowhere. 2] Straying from the proper or accepted way: devious behavior.",
+  "syn": "1] roundabout, rambling, indirect 2] untrustworthy, dishonest, erring",
+  "ant": "1] straight direct, simple 2] honest, trustworthy, correct"
+ },
+ {
+  "word": "diaphanous",
+  "star": false,
+  "mean": "So thin in substance that light shows though: a diaphanous curtain.",
+  "syn": "translucent, transparent, sheer, gauzy, gossamer",
+  "ant": "opaque, thick, dense"
+ },
+ {
+  "word": "diatribe",
+  "star": true,
+  "mean": "A bitter or malicious speech or piece of writing, usually critical often long: Castro's frequent diatribes against the U.S.",
+  "syn": "and harangue, tirade, vilification",
+  "ant": "laudation, puffery, adulation"
+ },
+ {
+  "word": "didactic",
+  "star": false,
+  "mean": "1] Intended to instruct or guide: a didactic essay. 2] Inclined to teach or moralise: a very stuffy person whose most casual conversation revealed his didactic nature.",
+  "syn": "1] instructive, expository, information 2] pedantic, moralistic, pedagogic",
+  "ant": "1] uneducat-ional, un-instructional 2] unethical, unrighteous"
+ },
+ {
+  "word": "diffidence",
+  "star": true,
+  "mean": "Lack of confidence in oneself; timidity or shyness: the diffidence the trainee in addressing the company president.",
+  "syn": "of hesitation, reluctant, shyness, timidity boldness, forwardness",
+  "ant": "self-confidence, self-assurance"
+ },
+ {
+  "word": "diffuse",
+  "star": true,
+  "mean": "1] To spread about in all directions: heat from the fireplace diffused throughout the room. 2] Characterised by the excessive use of words: a diffuse prose style.",
+  "syn": "1] circulate, permeate dispersed, scattered, widespread. 2] verbose, wordy, long-winded",
+  "ant": "1] compress, confined, restricted 2] brief, terse, abridged, succinct attached"
+ },
+ {
+  "word": "discrete",
+  "star": true,
+  "mean": "Disconnected from others; distinct or separate: A molecule is composed of discrete atoms.",
+  "syn": "disjoined, divided, isolate, separate, severed, fastened, unaccompanied, unconnected",
+  "ant": "connected, coupled, linked, united"
+ },
+ {
+  "word": "disheveled",
+  "star": false,
+  "mean": "Untidy or unkempt: After traveling by train for three days, he looked somewhat disheveled.",
+  "syn": "tousled, rumpled, slovenly, sloppy",
+  "ant": "neat, tidy, spruce, well-groomed"
+ },
+ {
+  "word": "disinterested",
+  "star": true,
+  "mean": "Impartial and objective; without selfish motives: Judges must disinterested decisions. Usage: 'disinterested' is often wrongly used as a synonym for 'uninterested'. However, careful speakers will use it more to mean 'impartial and unbiased.'",
+  "syn": "make impartial, unbiased, unprejudiced, impersonal, fair precisely",
+  "ant": "biased, prejudiced, unjust, partial, inequitable"
+ },
+ {
+  "word": "dissemble",
+  "star": true,
+  "mean": "1] To cover up one's true feelings or intentions by pretending: dissembled her jealously with a bright smile. 2] To pretend: Hamlet dissembled madness to deceive the king.",
+  "syn": "She 1] camouflage, conceal, disguise. 2] feign, counterfeit, simulate",
+  "ant": "1] reveal, expose, show, manifest"
+ },
+ {
+  "word": "disseminate",
+  "star": true,
+  "mean": "To spread far and wide, as if sowing seeds: Television and radio disseminate ideas and information.",
+  "syn": "broadcast, circulate, propagate",
+  "ant": "conceal, repress, suppress, hide"
+ },
+ {
+  "word": "dissipate",
+  "star": false,
+  "mean": "1] To break up and scatter away: With daylight, their fears 1] dissipated. 2] To spend wastefully: Don't dissipate your strength on projects. 3] To over-indulge in destructive pleasures: dissipating until he became an alcoholic.",
+  "syn": "disperse, dispel. 2] squander useless recklessly",
+  "ant": "conserve, collect, hoard, save"
+ },
+ {
+  "word": "dolorous",
+  "star": false,
+  "mean": "Mournful; sad: the dolorous expression of a basset hound.",
+  "syn": "melancholy, gloomy, woebegone",
+  "ant": "happy, cheerful, merry"
+ },
+ {
+  "word": "double entendre",
+  "star": false,
+  "mean": "dre A term with two meanings, especially when one of them has risque double or indecorous connotation.",
+  "syn": "meaning, dubiety unambiguity",
+  "ant": "explicitness, lucidity"
+ },
+ {
+  "word": "dregs",
+  "star": false,
+  "mean": "1] The sediment of liquids, especially of beverages: the dregs of wine. 2] The poorest or least desirable part: the dregs of society.",
+  "syn": "1] refuse, husk, crust 2] scrapings, rejects",
+  "ant": "1] fruitful scum"
+ },
+ {
+  "word": "duress",
+  "star": false,
+  "mean": "Coercion or compulsion by means of force or threats: a confession extracted under duress.",
+  "syn": "constraint, pressure free will",
+  "ant": "freedom, liberty"
+ },
+ {
+  "word": "ebullient",
+  "star": true,
+  "mean": "Bubbling over with enthusiasm or excitement: the ebullient exuberant, performance of Carol Chanting.",
+  "syn": "high-spirited, vivacious bored",
+  "ant": "unenthusiastic, blase"
+ },
+ {
+  "word": "eclectic",
+  "star": true,
+  "mean": "1] Selecting and using what seems best from various sources, systems, or schools of thought. 2] Broad in acceptance of ideas or approval from other sources: An eclectic mixture of both western and Asian thought.",
+  "syn": "1] fastidious, selective, particular 2] open- minded, liberal, tolerant parochial",
+  "ant": "1] unfussy undemanding, undiscriminating, 2] limited, narrow"
+ },
+ {
+  "word": "efface",
+  "star": false,
+  "mean": "1] To rub out, as written characters: a tombstone inscription effaced 1] by time. 2] To destroy or get rid of, as a memory 3] To make oneself inconspicuous or insignificant: trying to efface herself after making a disastrous social blunder.",
+  "syn": "erase, cancel, delete. 2] blot out, obliterate create",
+  "ant": "1] include, record, 2] establish, uphold"
+ },
+ {
+  "word": "effete",
+  "star": false,
+  "mean": "1] Having lost strength, vitality, creativity, etc.: effete noblemen unable to perform any useful functions in society. 2] Incapable of further production; barren, as an animal, plant or the soil.",
+  "syn": "1] worn out, exhausted, spent 2] unfruitful, sterile, unprolific",
+  "ant": "1] lively, tireless, vigorous, vital 2] fecund, productive, prolific"
+ },
+ {
+  "word": "efficacious",
+  "star": true,
+  "mean": "Producing the desired result; effective.",
+  "syn": "efficient, productive, capable",
+  "ant": "futile, inadequate, ineffective, ineffectual"
+ },
+ {
+  "word": "effrontery",
+  "star": true,
+  "mean": "Shameless or insolent boldness: The dinner guest had the effrontery to criticise everything about the meal.",
+  "syn": "audacity, impudence, nerve, gall",
+  "ant": "courtesy, deference, respect, humbleness"
+ },
+ {
+  "word": "effulgent",
+  "star": false,
+  "mean": "Shining brilliantly: the effulgent beauty of her smile.",
+  "syn": "radiant, glowing, dazzling",
+  "ant": "dark, dim, dull, gloomy, murky"
+ },
+ {
+  "word": "effusive",
+  "star": false,
+  "mean": "Overflowing with sentiment or enthusiasm: He was embarrassed gushing, by her effusive introduction.",
+  "syn": "profuse, exuberant",
+  "ant": "restrained, cold, reserved"
+ },
+ {
+  "word": "egoism",
+  "star": false,
+  "mean": "1] Great concern for one's own welfare and interests; selfishness: the egoism of a person who demands the largest share for himself. 2] Self-conceit; egotism. Usage: Although 'egoism' and 'egotism' are sometimes used interchangeably, 'egoism' usually refers to a person's tendency to view things as they bear upon himself. 'Egotism' is more commonly used of these two words, as 'egoism' is now largely a philosophical term.",
+  "syn": "self-absorption, self-regard humility",
+  "ant": "altruism, selfabnegation"
+ },
+ {
+  "word": "egregious",
+  "star": false,
+  "mean": "Conspicuously bad, as in taste or quality: failing to greet one's flagrant, guests is an egregious social blunder. Etym: Egregious comes from the Latin words 'e'(out) and 'grex', gregis (herd), meaning out of the herd or outstanding.",
+  "syn": "glaring, intolerable, shocking ordinary, trivial",
+  "ant": "conventional, moderate, normal"
+ },
+ {
+  "word": "elan",
+  "star": false,
+  "mean": "Spirited self-assurance; verve, dash: it was his revolutionary elan, fervor, his ruthless use of organised force, that made history.",
+  "syn": "zeal, zest",
+  "ant": ""
+ },
+ {
+  "word": "elegiac",
+  "star": true,
+  "mean": "1] Expressing sorrow or regret, especially for something in the nostalgic, past: elegiac laments about one's lost, idyllic childhood. melancholy 2] Of or having to do with meditative poems or musical works of lamentation: elegiac verse.",
+  "syn": "poignant",
+  "ant": "joyful, happy, jubilant"
+ },
+ {
+  "word": "elicit",
+  "star": true,
+  "mean": "To draw out or bring forth: to elicit the truth. Usage: Although they are pronounced alike, 'elicit' and 'illicit' wring have completely different meanings. Illicit is an adjective meaning unlawful or not permitted: The district attorney elicited information about the illicit selling of narcotics.",
+  "syn": "extract, obtain, wrest, forestall, stem",
+  "ant": "suppress, cover, hide"
+ },
+ {
+  "word": "emaciated",
+  "star": false,
+  "mean": "Very thin or wasted away, as from illness or poor nutrition.",
+  "syn": "gaunt, skinny, skeletal",
+  "ant": "plump, fat, obese"
+ },
+ {
+  "word": "emasculate",
+  "star": false,
+  "mean": "Weaken or impoverish. The Moghul empire in the post - Aurangzeb cripple, period was emasculated by the regular depredations carried out by deprive, the Marathas.",
+  "syn": "debilitate, vitalize",
+  "ant": "energize, strengthen"
+ },
+ {
+  "word": "embellish",
+  "star": true,
+  "mean": "1] To beautify by adding ornamental features; decorate: to embellish 1] adorn, a room with fine paintings. 2] To heighten the interest of a story by adding extra or fanciful details: He embellished the description of the party by relating antics of the guests",
+  "syn": "garnish. 2] enliven",
+  "ant": "1] disfigure, deface, mar, spoil, strip"
+ },
+ {
+  "word": "embezzle",
+  "star": false,
+  "mean": "To take illegally for one's own use another person's money, steal, appropriate securities, etc.: It was discovered that the bank clerk had embezzled thousands of dollars.",
+  "syn": "bequeath, bestow, give, return",
+  "ant": ""
+ },
+ {
+  "word": "emulation",
+  "star": true,
+  "mean": "Desire or ambition to equal or surpass. Emulation is not same as drive, zeal, imitation which is plain copying or impersonating or mimicing. striving",
+  "syn": "fervor",
+  "ant": "apathy, sloth, laziness"
+ },
+ {
+  "word": "encomium",
+  "star": false,
+  "mean": "A formal expression of praise: political encomiums exchanged by eulogy, panegyric members of the party during an election year.",
+  "syn": "vilification, attack, disparagement",
+  "ant": ""
+ },
+ {
+  "word": "endemic",
+  "star": true,
+  "mean": "Commonly found in a specified area or people: ... the rich variety of indigenous, flora and fauna endemic to the Seychelles. (N.B.): Do not confuse original, this word with 'epidemic' (meaning outbreak of a disease, e.g., primeval plague spreading through a community).",
+  "syn": "native, primary",
+  "ant": "alien, foreign, immigrant, newcomer"
+ },
+ {
+  "word": "enervate",
+  "star": true,
+  "mean": "To sap the strength or vitality of: The long walk in the hot sun enfeeble, enervated him.",
+  "syn": "weaken, drain strengthen",
+  "ant": "energize, invigorate"
+ },
+ {
+  "word": "engender",
+  "star": true,
+  "mean": "To give rise to; produce: The highhanded methods of the captain engendered a sense of insecurity in his men.",
+  "syn": "incite, induce, produce, propagate, provoke, rouse, stimulate",
+  "ant": "destroy, finish, halt, stop"
+ },
+ {
+  "word": "enigma",
+  "star": true,
+  "mean": "A baffling or ambiguous saying; also, anything that puzzles or baffles: The Delphic oracle spoke in enigmas; Teenagers are ambiguous enigmas to their parents.",
+  "syn": "bewilderment, puzzle, unambiguity",
+  "ant": "explicitness, lucidity"
+ },
+ {
+  "word": "ennui",
+  "star": false,
+  "mean": "Weary listlessness or discontent; boredom: Retired people without outside interests may suffer ennui.",
+  "syn": "weariness, indifference, lethargy",
+  "ant": "enthusiasm, activity, interest"
+ },
+ {
+  "word": "ephemeral",
+  "star": true,
+  "mean": "Lasting but a short time; transitory: Ephemeral summer flowers wilt a few hours after blooming.",
+  "syn": "fleeting, evanescent, short-lived",
+  "ant": "permanent, enduring, imperishable"
+ },
+ {
+  "word": "epicure",
+  "star": false,
+  "mean": "A person given to luxurious living and discriminating gratification of the senses; especially, a fastidious devotee of good food and drink: The French chef prepared a meal good enough for an epicure.",
+  "syn": "gourmet, sybarite, gastronome",
+  "ant": ""
+ },
+ {
+  "word": "equivocal",
+  "star": true,
+  "mean": "Open to two or more interpretations and often intended to mislead",
+  "syn": "ambiguous, ambivalent, dubious, evasive",
+  "ant": "certain, clear, definite, obvious"
+ },
+ {
+  "word": "errant",
+  "star": false,
+  "mean": "1] Roving or wandering, especially in search of adventure: a knight errant. 2] Straying from the proper course of conduct: an errant son who tried hard to reform.",
+  "syn": "1] roaming, traveling. 2] wayward, erring",
+  "ant": "natural, standard, typical"
+ },
+ {
+  "word": "ersatz",
+  "star": false,
+  "mean": "Substitute, and usually inferior: Bitter ersatz coffee was all we had during World War II.",
+  "syn": "imitation, pretended, bogus, counterfeit",
+  "ant": "real, genuine"
+ },
+ {
+  "word": "erudite",
+  "star": true,
+  "mean": "Very learned; scholarly: an erudite professor.",
+  "syn": "cultured",
+  "ant": "illiterate, unlettered"
+ },
+ {
+  "word": "eschew",
+  "star": false,
+  "mean": "To shun, as something unworthy or injurious: The minister told him to eschew going to bars.",
+  "syn": "avoid",
+  "ant": "embrace, seek out"
+ },
+ {
+  "word": "esoteric",
+  "star": true,
+  "mean": "Understood by only a few specially instructed or initiated persons, or lying beyond ordinary comprehension: an escoteric treatise on nuclear propulsion.",
+  "syn": "abstruse, arcane, recondite",
+  "ant": "exoteric, simple, comprehensible"
+ },
+ {
+  "word": "espousal",
+  "star": true,
+  "mean": "1] Adoption or support, as of a cause: their enthusiastic espousal of civil rights. 2] An engagement: the espousal of his sister to his friend.",
+  "syn": "1] championing, advocacy, defense. 2] betrothal",
+  "ant": "1] disapproval, non-involvement 2] disengagement"
+ },
+ {
+  "word": "eulogy",
+  "star": true,
+  "mean": "A spoken or written piece of high praise, especially when formal and delivered publicly: a eulogy of the former President, delivered in the Senate.",
+  "syn": "encomium, panegyric, laudation vilification",
+  "ant": "condemnation, damning, defamation"
+ },
+ {
+  "word": "euphonious",
+  "star": false,
+  "mean": "Agreeable, pleasant, or sweet in sound: the euphonious speech of a Southern belle. Etym: Euphonious goes back to Greek roots: 'eu'-(good) + 'phone' (sound)",
+  "syn": "melodious, mellifluous, dulcet",
+  "ant": "cacophonous, discordant, harsh"
+ },
+ {
+  "word": "evince",
+  "star": false,
+  "mean": "To show openly or clearly: Her flair for color and form first evinced itself in grade-school drawings.",
+  "syn": "display, manifest, reveal camouflage",
+  "ant": "conceal, hide"
+ },
+ {
+  "word": "exasperate",
+  "star": false,
+  "mean": "To annoy or irrtitate to the point of losing patience: Her constant whining and complaining finally exasperated everyone.",
+  "syn": "aggravate, infuriate, provoke, outrage",
+  "ant": "please, soothe, mollify"
+ },
+ {
+  "word": "excoriate",
+  "star": false,
+  "mean": "1] To denounce harshly. 2] scrape",
+  "syn": "1] chastise, condemn, denounce 2] scratch, peel",
+  "ant": "2] compliment, congratulate, laud, praise"
+ },
+ {
+  "word": "excruciating",
+  "star": false,
+  "mean": "Causing or inflicting intense pain: an excruciating toothache.",
+  "syn": "agonizing, tormenting",
+  "ant": "painless"
+ },
+ {
+  "word": "exonerate",
+  "star": false,
+  "mean": "To free from blame or accusation: The accused was exonerated absolve, from any connection with the crime.",
+  "syn": "acquit, vindicate condemn, find guilty, incriminate",
+  "ant": "convict"
+ },
+ {
+  "word": "exotic",
+  "star": false,
+  "mean": "1] Belonging by nature or origin to another part of the world; not native: an exotic plant. 2] Strangely different and fascinating: an exotic custom; an exotic woman.",
+  "syn": "1] foreign, extraneous, extrinsic 2] extraordinary, unusual, enticing",
+  "ant": "1] native, indigenous. 2] commonplace, ordinary, plain"
+ },
+ {
+  "word": "expedite",
+  "star": false,
+  "mean": "To speed up the process or progress of; facilitate: to expedite an application for a government job.",
+  "syn": "quicken, hurry, further, advance",
+  "ant": "hold up, procrastinate delay"
+ },
+ {
+  "word": "expunge",
+  "star": false,
+  "mean": "To strike out something written; delete; erase: to expunge a word from a sentence.",
+  "syn": "eradicate, exclude, discard",
+  "ant": "restore, introduce"
+ },
+ {
+  "word": "extricate",
+  "star": false,
+  "mean": "To free from something that entangles, hinders, or causes disentangle, difficulties: The lion extricated itself from the net.",
+  "syn": "liberate, loose",
+  "ant": "entangle, enmesh, entrap"
+ },
+ {
+  "word": "exude",
+  "star": false,
+  "mean": "To discharge something as through pores, gashes, etc.: sweat excrete, exuding from his face; young man who exuded confidence.",
+  "syn": "emit, give off, radiate",
+  "ant": "conceal, hide"
+ },
+ {
+  "word": "exult",
+  "star": false,
+  "mean": "To rejoice greatly; be jubilant: They exulted in the afterglow of victory in the crucial match.",
+  "syn": "their delighted, elated, overjoyed",
+  "ant": "bemoan, lament, mourn"
+ },
+ {
+  "word": "facile",
+  "star": false,
+  "mean": "1] Not hard to do or achieve, easy: lazy people seek facile tasks. 2] Moving, acting or working easily or rapidly: he writes in a facile style. He has a facile explanation for everything. 3] Of easy manners or temper; her facile nature adapted itself to any group of people without effort.",
+  "syn": "1] ready, expert, dextrous. 2] genteel, agreeable, yielding",
+  "ant": "1] laborious, complicated 2] inept"
+ },
+ {
+  "word": "factitious",
+  "star": false,
+  "mean": "Not natural or genuine or spontaneous; forced or artificial. The bogus, word differs in meaning from 'factious'.",
+  "syn": "counterfeit, ersatz, natural, fabricated, faked",
+  "ant": "authentic, genuine, real"
+ },
+ {
+  "word": "fallible",
+  "star": false,
+  "mean": "Liable to err, to be misled, or to be wrong: Humans are fallible.",
+  "syn": "imperfect, errable, faulty unerring",
+  "ant": "infallible, perfect"
+ },
+ {
+  "word": "fastidious",
+  "star": false,
+  "mean": "Hard to please in matters of taste: a fastidious diner.",
+  "syn": "refined, particular",
+  "ant": "uncritical, easygoing"
+ },
+ {
+  "word": "fatuous",
+  "star": true,
+  "mean": "Foolish or idiotic in a self-satisfied way: the fatuous grins of the audience ina burlesque house.",
+  "syn": "silly, inane, vacant, stupid smart, wise",
+  "ant": "brilliant, intelligent"
+ },
+ {
+  "word": "faux pas",
+  "star": false,
+  "mean": "A French phrase that literally means a false step; a mistake or error, especially a breach of etiquette: He committed a faux pas at the dinner party by drinking from his finger bowl.",
+  "syn": "misconduct, bungle",
+  "ant": ""
+ },
+ {
+  "word": "fawn",
+  "star": true,
+  "mean": "To act in an excessively friendly manner in order to win favour: courtiers who had once flattered and fawned on him ...",
+  "syn": "dance attendance, know despise, tow, submit",
+  "ant": "domineer, ignore, insult"
+ },
+ {
+  "word": "fervent",
+  "star": true,
+  "mean": "Very earnest and intense: a fervent prayer, a candidate's fervent supporters. Etym: 'Fervent', 'fervid', and 'fervor' come from the Latin word 'fevere', to 'boil', and imply the heat of strong feelings that are deeply stirred.",
+  "syn": "ardent, fervid, impassioned, passionate dispirited, indifferent, unenthusiastic, unexcited",
+  "ant": "apathetic, dispassionate"
+ },
+ {
+  "word": "fetid",
+  "star": false,
+  "mean": "having a foul odor, as of rot or decay: the fetid stagnant water.",
+  "syn": "stinking, rank, putrid, malodorous",
+  "ant": "fragrant, sweet, aromatic"
+ },
+ {
+  "word": "fetter",
+  "star": false,
+  "mean": "1] A chain or other bond put about the ankles to restrain movement: a prisoner in fetters. 2] Anything checking freedom of movement or expression: the fetters of slavery.",
+  "syn": "1] shackle. 2] restraint. shackle, chain, bind, confine, hobble",
+  "ant": "free, liberate, unchain"
+ },
+ {
+  "word": "fiasco",
+  "star": false,
+  "mean": "A complete or humiliating failure: The new Broadway play was a flop, fisaco.",
+  "syn": "bust, disaster",
+  "ant": "success, winner, hit"
+ },
+ {
+  "word": "fidelity",
+  "star": false,
+  "mean": "1] Faithfulness; loyalty: a husband's fidelity. 2] Truthfulness; accuracy: the fidelity of sound reproduction on a recording.",
+  "syn": "1] trustworthiness, constancy, devotion. 2] exactness, precision, reliability",
+  "ant": "1] disloyalty, infidelity. 2] inaccuracy, distortion"
+ },
+ {
+  "word": "finesse",
+  "star": false,
+  "mean": "1] Highly refined skill or technique: The pianist negotiated the tricky passage with finesse. 2] Artful strategy or tact: a skilled mediator who handled the negotiations with finesse.",
+  "syn": "1] adroitness, deftness, flair 2] craft, cunning, diplomacy tactlessness",
+  "ant": "1] clumsiness, incompetence, ineptitude 2] maladroitness"
+ },
+ {
+  "word": "finite",
+  "star": false,
+  "mean": "Having bounds or limits; not infinite: the finite human mind.",
+  "syn": "measurable, terminable, restricted unbounded",
+  "ant": "measureless, unlimited"
+ },
+ {
+  "word": "flaccid",
+  "star": false,
+  "mean": "Lacking firmness or elasticity; limp or flabby: flaccid muscles; His leadership of the party is ineffective and flaccid.",
+  "syn": "weak, lax, drooping, incompetent",
+  "ant": "firm, effective, strong"
+ },
+ {
+  "word": "flagrant",
+  "star": false,
+  "mean": "Openly disgraceful; shockingly bad: a flagrant breaking of the law.",
+  "syn": "glaring, gross, notorious, heinous, rank",
+  "ant": "mild, slight, venial"
+ },
+ {
+  "word": "flamboyant",
+  "star": false,
+  "mean": "1] Extravagantly ornate; showy: Flamboyant hair styles prevailed 1] during the reign of Louis XIV. 2] Brilliant in color; resplendent: a garden of flamboyant flowers.",
+  "syn": "overelaborate, ostentatious, florid, rococo. 2] showy, gorgeous, flaming",
+  "ant": "1] plain, simple, bare. 2] dull, dreary"
+ },
+ {
+  "word": "florid",
+  "star": true,
+  "mean": "1] having a ruddy color; flushed: a large, stout man with a florid face. 2] Ornate, especially to an excessive degree: prose written in a wordy and florid style.",
+  "syn": "1] high-colored, rubicund, red 2] flowery, embellished, flamboyant, fancy, elaborate",
+  "ant": "1] pale, ashen, pallid, anaemic, blood-less. 2] plain, unadorned, simple, classic"
+ },
+ {
+  "word": "forfeit",
+  "star": false,
+  "mean": "Something taken away or given up as a penalty, or the giving up or loss of something as a penalty: the forfeit of his good name.",
+  "syn": "forfeiture, loss.",
+  "ant": ""
+ },
+ {
+  "word": "fortuitous",
+  "star": false,
+  "mean": "Occuring by chance rather than by design; accidental: an chance, unexpected, fortuitous encounter.",
+  "syn": "adventitious planned, premeditated",
+  "ant": "designed, intended"
+ },
+ {
+  "word": "foster",
+  "star": true,
+  "mean": "1] To bring up a child: She lovingly fosters both children. 2] To promote the development or growth of, or to keep alive: 2] Tutoring fostered his genius. The interview fostered his hopes of getting the job.",
+  "syn": "1] rear, raise, nurture. advance, promote, sustain",
+  "ant": "discourage, destroy, ruin, kill"
+ },
+ {
+  "word": "fractious",
+  "star": false,
+  "mean": "1] Apt to be unruly or rebellious: a fractious, spoiled child. 2] Easily annoyed or angered; cranky: a fractious old man.",
+  "syn": "1] wayward, disorderly 2] irritable, peevish, querulous, bad-tempered",
+  "ant": "1] obedient, docile 2] good-natured, amiable"
+ },
+ {
+  "word": "frailty",
+  "star": false,
+  "mean": "1] The state or quality of being delicate and weak: the frailty of a porcelian vase; the frailty of an emaciated, tubercular old man. 2] A fault or moral weakness: Drinking too much is his great frailty.",
+  "syn": "1] fragile, dainty 2] fallibility, fault, feebleness, flaw",
+  "ant": "1] strength, toughness, sturdiness, resilience 2] vigor"
+ },
+ {
+  "word": "fritter",
+  "star": false,
+  "mean": "To waste or squander little by little: to fritter away an inheritance.",
+  "syn": "lavish, trifle misspend, squander",
+  "ant": "accumulate, gather, save, hoard"
+ },
+ {
+  "word": "frugality",
+  "star": true,
+  "mean": "The quality of being economical; carefulness in using and spending.",
+  "syn": "thrift, economy wastefulness",
+  "ant": "extravagance"
+ },
+ {
+  "word": "furtive",
+  "star": false,
+  "mean": "1] Done in secret: She stole a furtive glance. 2] Sly: There was a furtive look about him that made me immediately suspicious.",
+  "syn": "1] stealthy, surreptitious, concealed. 2] evasive, shifty",
+  "ant": "1] open, apparent. 2] honest, forthright"
+ },
+ {
+  "word": "garrulous",
+  "star": true,
+  "mean": "1] Talking a great deal, especially about unimportant or boring things: a lonely, garrulous old man. 2] Rambling and wordy: a garrulous account of his vacation.",
+  "syn": "1] talkative, loquacious, chatty. 2] verbose, long-winded succint",
+  "ant": "1] laconic, unresponsive quiet. 2] terse, concise"
+ },
+ {
+  "word": "gauche",
+  "star": false,
+  "mean": "Awkward, clumsy or inept, especially in social behaviour: She frequently embarrassed by the gauche actions of her roommate. Etym: Gauche has been borrowed from the French word for 'left- handed'.",
+  "syn": "was maladroit, boorish",
+  "ant": "adroit"
+ },
+ {
+  "word": "generic",
+  "star": false,
+  "mean": "Having a wide, general application; not specific: mental illnesses grouped under the generic heading of 'psychoses'.",
+  "syn": "collective, comprehensive",
+  "ant": "particular, definite, explicit"
+ },
+ {
+  "word": "genial",
+  "star": false,
+  "mean": "1] Smiling and pleasant; cheerful and friendly; kindly: she was to see us again and gave us a genial welcome. 2] Pleasantly warming, comforting: a genial climate.",
+  "syn": "glad amicable, cordial incompatible, unfriendly",
+  "ant": "hostile, ill-suited"
+ },
+ {
+  "word": "genteel",
+  "star": false,
+  "mean": "1] Belonging to or suited to polite society. 2] Polite well-bred fashionable; elegant. The genteelest dinner ever seen. 3] trying to be aristrocratic; artificially polite or courteous: mannerisms were painfully genteel",
+  "syn": "refined I've unrefined Her",
+  "ant": "barbaric, illmannered, impolite, rude, unkind"
+ },
+ {
+  "word": "germane",
+  "star": false,
+  "mean": "Related to what is being discussed or considered; relevant: His comments are not germane to this argument.",
+  "syn": "pertinent, appropriate, relative, fitting, suitable, proper",
+  "ant": "irelevant, alien, unsuitable, unrealted"
+ },
+ {
+  "word": "glean",
+  "star": false,
+  "mean": "1] To gather the leavings from a field after the crop has been to glean wheat. 2] To collect facts, etc. by patient effort: He combined the files gleaned some useful information.",
+  "syn": "reaped: 1] harvest, pick, reap. 2] collect, gather, and accumulate",
+  "ant": "disperse, dissemble, scatter"
+ },
+ {
+  "word": "glut",
+  "star": false,
+  "mean": "1] To stuff full of food: She glutted herself with pie. 2] To supply with an excess of anything: to glut the market with stock.",
+  "syn": "1] gorge, satiate. 2] flood, deluge, swamp. oversupply, plethora, superabundance",
+  "ant": "starve, shortage, scarcity"
+ },
+ {
+  "word": "gratuitous",
+  "star": false,
+  "mean": "1] Given or accepted without requirement of payment or return; gratis; free: a gratuitous ticket to a Broadway show. 2] Lacking cause or justification: a gratuitous snub.",
+  "syn": "1] charge-less, complimentary 2] uncalled-for, unwarranted, needless",
+  "ant": "based, founded, substantial, well-founded"
+ },
+ {
+  "word": "gregarious",
+  "star": true,
+  "mean": "1] Always associating with others. As in flocks, herds, or groups. 2] Enjoying or seeking the company of others: gregarious teenagers always with their friends.",
+  "syn": "sociable, friendly, chummy",
+  "ant": "antagonistic, cold, nasty, unfriendly"
+ },
+ {
+  "word": "guile",
+  "star": true,
+  "mean": "Treacherous, cunning, or crafty: a person who seemed honest but was really full of guile.",
+  "syn": "deceit, slyness, trickery naivete",
+  "ant": "honesty, guilelessness"
+ },
+ {
+  "word": "gullible",
+  "star": true,
+  "mean": "Easily cheated or fooled: a gullible newcomer to the city.",
+  "syn": "unsophisticated, inexperienced sophisticated",
+  "ant": "disbelieving, distrustful"
+ },
+ {
+  "word": "hackneyed",
+  "star": false,
+  "mean": "Made commonplace and dull by too frequent use: a hackneyed story of boy meets girl. 'Haste makes waste' is a hackneyed expression.",
+  "syn": "trite, stereotyped, common",
+  "ant": "original, fresh, vivid"
+ },
+ {
+  "word": "haggard",
+  "star": false,
+  "mean": "Having a worn or gaunt look, as from fatigue, worry, illness, hunger, etc.: haggard from anxiety and loss of sleep.",
+  "syn": "tried, weary, exhausted",
+  "ant": "fresh, rested"
+ },
+ {
+  "word": "hallowed",
+  "star": false,
+  "mean": "1] Made holy; consecrated: to be buried in hallowed ground. 2] Honored and regarded as holy: hallowed saints.",
+  "syn": "1] sacred, sanctified, blessed. 2] venerated, revered, worshipped, holy",
+  "ant": "1] damned, disapproved, unholy 2] despised, detested, disdainded"
+ },
+ {
+  "word": "hapless",
+  "star": false,
+  "mean": "Having no luck; unfortunate: a hapless child deserted by his",
+  "syn": "parents. unlucky, miserable, wretched",
+  "ant": "lucky, favored, fortunate"
+ },
+ {
+  "word": "harangue",
+  "star": true,
+  "mean": "Long, loud talk or speech. The word comes via Old French sermon, 'harangue', Latin 'haranga'. We had to listen to a long harangue about our own shortcomings.",
+  "syn": "lecture, allocution, disquisition",
+  "ant": ""
+ },
+ {
+  "word": "hedonism",
+  "star": false,
+  "mean": "1] The philosophical doctrine that pleasure is the only good and proper goal of moral endeavor. 2] The self-indulgent pursuit of pleasure: the hedonism of the rich.",
+  "syn": "epicureanis, debauchery, sensualism idle",
+  "ant": "temperance, abstemiousness, self-restraint"
+ },
+ {
+  "word": "heresy",
+  "star": true,
+  "mean": "1] A belief or opinion contrary to the accepted doctrine of a political organization, professional group, etc.: The liberal's were heresy to the conservative wing of his party. 2] The holding of such a belief or opinion: to be guilty of",
+  "syn": "church, dissent, nonconformity, ideas schism, apostasy, disbelief heresy.",
+  "ant": "belief, godliness, piety, compliance, concurrence"
+ },
+ {
+  "word": "hoi polloi",
+  "star": false,
+  "mean": "An expression taken from the Greek, meaning the common people. It is usually used in a contemptuous way and it is preceded by redundant the: a politician, who in private, always referrred voters as 'the hoi polloi'.",
+  "syn": "masses, herd, crowd, a riffraff to",
+  "ant": "elite, society"
+ },
+ {
+  "word": "homogeneous",
+  "star": true,
+  "mean": "All of the same or similar kind or nature",
+  "syn": "invariable, even, uniform inconsistent, inconstant, irregular",
+  "ant": "changing, erratic"
+ },
+ {
+  "word": "humane",
+  "star": false,
+  "mean": "Having or characterised by kindness, sympathy, tenderness, etc.: a humane social worker who cared about each indivdiual client.",
+  "syn": "compassioante, benevolent, good",
+  "ant": "exciting, interesting, challenging"
+ },
+ {
+  "word": "humdrum",
+  "star": false,
+  "mean": "Tedious and dull: a humdrum existence that nearly drove him mad.",
+  "syn": "uninteresting, boring, monotonous",
+  "ant": ""
+ },
+ {
+  "word": "iconoclast",
+  "star": true,
+  "mean": "Characterised by overt contempt for conventional or cherished institutions, etc.: an iconoclastic writer who ridicules patriotism.",
+  "syn": "ideas, maverick, non-conformist, peacenik, protestor, radical",
+  "ant": ""
+ },
+ {
+  "word": "idiosyncrasy",
+  "star": false,
+  "mean": "A habit, mannerism, reaction, etc. that is peculiar to an individual; especially, an odd, atypical, or eccentric trait: an idiosyncrasy as using a sundial instead of a clock.",
+  "syn": "quirk, peculiarity, such eccentricity, abnormality",
+  "ant": "conventionality, normalcy, usualness"
+ },
+ {
+  "word": "ignoramus",
+  "star": false,
+  "mean": "An ignorant person: He's such an ignoramus he doesn't even know that China is in Asia.",
+  "syn": "dolt, dunce, dope scholar",
+  "ant": "genius, prodigy"
+ },
+ {
+  "word": "imbue",
+  "star": false,
+  "mean": "1] To pervade or permeate, as with ideals, emotions, etc.: to be imbued with the spirit of democracy. 2] To saturate, as with color or moisture: to soak cloth in a dye it is imbued with color.",
+  "syn": "1] impregnate, inculcate, inoculate. until 2] lacquer, paint",
+  "ant": "drain, discolor immerse"
+ },
+ {
+  "word": "immanent",
+  "star": false,
+  "mean": "Remaining within; inherent. In theology: the noun immanence; the prevading presence of God in His creation, as distinguished from transcendent: (N.B.) Do not confuse this word with 'imminent'.",
+  "syn": "implicit, inborn, inbred, inbuilt, indigenous",
+  "ant": ""
+ },
+ {
+  "word": "imminent",
+  "star": false,
+  "mean": "About to happen: said especially of danger or catastrophe: safety preparations against the imminent hurricane.",
+  "syn": "threatening, impending, coming, approaching",
+  "ant": "remote, distant, far-off"
+ },
+ {
+  "word": "impassioned",
+  "star": false,
+  "mean": "Having or showing strong feeling; passionate, fiery, ardent: The General made an impassioned speech to his soldiers.",
+  "syn": "fervent, fervid, incensed, intense, passionate unexcited",
+  "ant": "dispassionate, dull, unenthusiastic"
+ },
+ {
+  "word": "impassive",
+  "star": true,
+  "mean": "Not feeling or showing emotion: De Gaulle remained impassive in the midst of nationwide strikes.",
+  "syn": "unmoved, calm, dispassionate, unconcerned, insensitive overwrought",
+  "ant": "emotional, demonstrative, excitable, sensitive"
+ },
+ {
+  "word": "impeccable",
+  "star": false,
+  "mean": "Free from error, fault, or flaw: an impeccable dresser.",
+  "syn": "perfect, flawless, irreproachable, faultless",
+  "ant": "imperfect, defective, marred"
+ },
+ {
+  "word": "impecunious",
+  "star": false,
+  "mean": "Poor: He didn't want an impecunious man for a son-in-law.",
+  "syn": "destitute, dirt poor, impoverished, penniless, penurious",
+  "ant": "prosperous, rich, wealthy"
+ },
+ {
+  "word": "imperious",
+  "star": false,
+  "mean": "1] Characterised by arrogance and command: a petty official who 1] tried to compensate for his lack of talent by an imperious manner. 2] Urgent, imperative: an imperious need.",
+  "syn": "dictatorial, overbearing, haughty, despotic. 2] necessary, critical insignificant",
+  "ant": "1] submissive, yielding, humble. 2] unnecessary"
+ },
+ {
+  "word": "impervious",
+  "star": true,
+  "mean": "1] Incapable of being passed through, as by moisture or light a coat impervious to rain. 2] Not open or receptive: a mind impervious to reason.",
+  "syn": "rays: 1] impenetrable, impermeable, impassable 2] unreceptive, unresponsive, unmovable responsive",
+  "ant": "1] pervious, permeable, porous, penetrable 2] receptive"
+ },
+ {
+  "word": "impetuous",
+  "star": false,
+  "mean": "1] Tending to act on sudden impulse and without forethought: an impetuous young man. 2] Resulting from sudden impulse: an impetuous decision. 3] Moving with violent force: an impetuous wind.",
+  "syn": "1] impulsive, reckless, rash, careless. 2] sudden, precipitate, 3] furious, rushing, intense",
+  "ant": "cautious, wary, timid, deliberate spontaneous, headlong. wild"
+ },
+ {
+  "word": "implacable",
+  "star": true,
+  "mean": "That which cannot be appeased or pacified: an implacable enemy.",
+  "syn": "unrelenting, unforgiving, unappeaseable, relentess forgiving",
+  "ant": "placable, lenient, clement, yielding"
+ },
+ {
+  "word": "implicit",
+  "star": true,
+  "mean": "1] Unreserved, absolute: implicit confidence. 2] Implied or understood, but not specifically expressed: implicit agreement.",
+  "syn": "1] complete, unquestioned 2] tacit, inferred written, formal",
+  "ant": "1] limited, partial, moderate. 2] expressed, spoken"
+ },
+ {
+  "word": "impromptu",
+  "star": false,
+  "mean": "Not planned ahead of time: unexpectedly beseiged by reporters, he made an impromptu speech.",
+  "syn": "extemporaneous, spontaneous, off-the-cuff. extemporaneously, extempore",
+  "ant": "planned, scheduled, prepared, rehearsed"
+ },
+ {
+  "word": "inane",
+  "star": false,
+  "mean": "Stupid, silly, or pointless: an inane remark.",
+  "syn": "senseless, foolish",
+  "ant": "sensible, meaningful"
+ },
+ {
+  "word": "inchoate",
+  "star": true,
+  "mean": "Not yet clearly or completely formed or organized; disordered: Each one of us has the prerogative of completing his inchoate and rudimentary nature.",
+  "syn": "nascent, preliminary, rudimentary, shapeless, unfinished",
+  "ant": "outlined, shaped, defined, polished, refined"
+ },
+ {
+  "word": "inclement",
+  "star": false,
+  "mean": "1] Bad, rough or stormy (said of the weather): The outing was 1] cancelled because of inclement weather. 2] Without mercy: a stiff sentence imposed by an inclement judge.",
+  "syn": "severe, rigorous 2] harsh, merciless",
+  "ant": "1] mild, fair 2] merciful, lenient"
+ },
+ {
+  "word": "incongruous",
+  "star": true,
+  "mean": "1] Not suitable, proper, or appropriate: He appeared at the formal dinner in an absurdly incongruous cowboy outfit. 2] Composed of elements or parts not properly belonging together: the incongruous combination of a formal gown and tennis shoes.",
+  "syn": "1] inappropriate, 2] inharmonious, incompatible, contradictory",
+  "ant": "improper 1] apt, reasonable 2] harmonious, consistent"
+ },
+ {
+  "word": "incredulous",
+  "star": false,
+  "mean": "Sceptical; not ready to believe: He stared at me incredulously when I broke the news.",
+  "syn": "dubious, hesitant, mistrustful, questioning",
+  "ant": "believing, trusting, unsuspicious"
+ },
+ {
+  "word": "inculpate",
+  "star": false,
+  "mean": "Blame: He confessed to a plot to murder the broker.... and allege, inculpated the servant in the crime.",
+  "syn": "indict, impeach, implicate",
+  "ant": "absolve, exculpate, exonerate"
+ },
+ {
+  "word": "indigenous",
+  "star": false,
+  "mean": "Originating or occuring naturally in the place or country where found: Koala bears are indigenous to Australia.",
+  "syn": "native, aboriginal immigrant",
+  "ant": "alien, foreign"
+ },
+ {
+  "word": "indigent",
+  "star": true,
+  "mean": "Having little or no money; poor: indigent families forced to go on",
+  "syn": "relief. needy, penniless, prosperous",
+  "ant": "destitute rich, wealthy"
+ },
+ {
+  "word": "indolent",
+  "star": true,
+  "mean": "Averse to exertion or work: lazy: an indolent boy who lounged on the porch all day.",
+  "syn": "idle, inactive,sluggish",
+  "ant": "active, busy, energetic"
+ },
+ {
+  "word": "inept",
+  "star": false,
+  "mean": "1] Not suitable or appropriate; out of place: an inept and highly tactless remark. 2] Clumsy incompetent: an inept cook.",
+  "syn": "1] ill-timed, inopportune 2] inefficient competent",
+  "ant": "1] proper, appropriate 2] capable, efficient"
+ },
+ {
+  "word": "innocuous",
+  "star": true,
+  "mean": "1] Having no harmful qualities or effects: an innocuous garter snake. 2] Not likely to offend or arouse strong feelings: an innocuous speech.",
+  "syn": "1] harmless, safe 2] inoffensive, bland offensive",
+  "ant": "1] harmful, dangerous 2] inflammatory"
+ },
+ {
+  "word": "insinuate",
+  "star": true,
+  "mean": "1] To suggest slyly or indirectly: insinuating that her behavior was in bad taste. 2] To introduce or work gradually in a subtle or indirect way: insinuating himself into his employer's favor.",
+  "syn": "1] hint, imply, infer 2] instill, implant 2] hasten, hurry",
+  "ant": "1] supress, withhold, conceal"
+ },
+ {
+  "word": "insipid",
+  "star": true,
+  "mean": "1] Lacking spirit, vivacity, and interest: an insipid recital. 2] Lacking flavor or savor: an insipid meal.",
+  "syn": "1] dull, spiritless, uninteresting. 2] tasteless, bland, flat",
+  "ant": "interesting, lively, spirited."
+ },
+ {
+  "word": "intractable",
+  "star": true,
+  "mean": "Stubborn and uncooperative; difficult to control: an intractable child who responds to every request by howling \"No\"!.",
+  "syn": "unmalleable, disobedient, tractable, strongwilled, unruly",
+  "ant": "docile, submissive"
+ },
+ {
+  "word": "intransigent",
+  "star": true,
+  "mean": "Refusing to compromise: The intransigent candidate refused to deviate from his policy even though no one else agreed with him.",
+  "syn": "uncompromising, unbending, adamant. irreconcilable, die-hard.",
+  "ant": "reasonable, cooperative, flexible"
+ },
+ {
+  "word": "intrepid",
+  "star": false,
+  "mean": "Unusually brave; fearless: an intrepid mountain climber attempting a peak that no one else had dared to climb.",
+  "syn": "dauntless, heroic yellow",
+  "ant": "cowardly, craven"
+ },
+ {
+  "word": "inveigle",
+  "star": false,
+  "mean": "To coax or entice by guile or flattery: If we try hard we might cajole, inveigle mother into baking us a cake.",
+  "syn": "beguile discourage, dissuade",
+  "ant": "deter, repel"
+ },
+ {
+  "word": "irascible",
+  "star": true,
+  "mean": "Easily provoked to anger: The nurse complained about her irascible and uncooperative patients.",
+  "syn": "irritable, quick-tempered tranquil, relaxed",
+  "ant": "calm, content"
+ },
+ {
+  "word": "jaded",
+  "star": false,
+  "mean": "Dulled or wearied, as from having too much, eating too much, satiated, drinking too much, etc.",
+  "syn": "bored, surfeited",
+  "ant": "excited, keen, titillated"
+ },
+ {
+  "word": "jubilation",
+  "star": false,
+  "mean": "Rejoicing; exultation: The jubilation of a candidate's supporters after he was elected.",
+  "syn": "delight, elation depression",
+  "ant": "unhappiness"
+ },
+ {
+  "word": "juggernaut",
+  "star": false,
+  "mean": "1] Anything that exacts blind devotion or terrible sacrifice. 2] Any terrible irresistable force. (The word has been derived from the car or rath of the Hindu God Vishnu whose idol, it was formely believed, so excited his worshippers when it was hauled along during religious rites that they threw themselves under its wheels and were crushed.)",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "kaleidoscopic",
+  "star": false,
+  "mean": "Constantly and swiftly changing like the patterns in a kaleidoscope: her kaleidoscopic moods.",
+  "syn": "shifting, fluid",
+  "ant": "steady, constant"
+ },
+ {
+  "word": "labyrinthine",
+  "star": false,
+  "mean": "Pertaining to a maze, or as intricate and perplexing as a maze: a labyrinthine geometry problem.",
+  "syn": "baffling, complicated",
+  "ant": "simple, uncomplicated"
+ },
+ {
+  "word": "lackadaisical",
+  "star": false,
+  "mean": "Languid; listless: Everyone moves in a lackadaisical manner in very hot weather. Also, disinterested; perfunctory (indifference): His performance in school has been lackadaisical.",
+  "syn": "enervated, sluggish, half-hearted",
+  "ant": "energetic, peppy, animated"
+ },
+ {
+  "word": "laconic",
+  "star": true,
+  "mean": "Brief and concise: a laconic summary (of a style of writing); a terse, laconic man (of a person).",
+  "syn": "pithy, compact redundant",
+  "ant": "wordy, verbose"
+ },
+ {
+  "word": "laissez faire",
+  "star": false,
+  "mean": "Free enterprise; deregulation. Let (people) do (as they please); the policy or practice of letting people act without interference or direction; non-interference; specifically, the policy of letting the owners of industry and business fix the rules of business without government regulation or control on the factors of production working of the market.",
+  "syn": "enterprise, individualism",
+  "ant": ""
+ },
+ {
+  "word": "languid",
+  "star": false,
+  "mean": "Lacking energy or spirit: She extended her hand in a languid weak, gesture of welcome. Leisurely, unhurried.",
+  "syn": "listless",
+  "ant": "energetic"
+ },
+ {
+  "word": "lascivious",
+  "star": false,
+  "mean": "Having or arousing sexual desires: The play was denounced as lustful, being lewd and lascivious.",
+  "syn": "pornographic, indecent",
+  "ant": "chaste, innocent"
+ },
+ {
+  "word": "lassitude",
+  "star": true,
+  "mean": "A state of weariness or fatigue: A deep lassitude overcame her, and she slept.",
+  "syn": "languor. disinclination to exert oneself. stimulation",
+  "ant": "enthrallment, excitement"
+ },
+ {
+  "word": "latent",
+  "star": true,
+  "mean": "Existent but not developed or manifest: the latent force of an atom bomb.",
+  "syn": "dormant, potential, abeyant, hidden",
+  "ant": "active, alert"
+ },
+ {
+  "word": "laudable",
+  "star": true,
+  "mean": "Deserving praise: working for underprivileged children is a commendable, laudable occupation.",
+  "syn": "admirable, contemptible, praiseworthy discreditable, disgraceful",
+  "ant": "detestable, despicable"
+ },
+ {
+  "word": "leit motif",
+  "star": false,
+  "mean": "A recurrent theme. In music: A theme that represents a certain - person, event, emotion, or idea throughout an opera, musical, etc.: the leitmotif of a character in a Wagnerian opera.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "lewd",
+  "star": false,
+  "mean": "1] Characterised by lust or debauchery: a lewd, evil-minded man. 2] Obscene: a lewd joke.",
+  "syn": "lustful, lecherous, lascivious, decent, bawdy decent",
+  "ant": "pure, strait-laced, refined"
+ },
+ {
+  "word": "limbo",
+  "star": false,
+  "mean": "An intermediate state/condition of awaiting a decision. A condition of being forgotten and unwanted: He shouldn't have protested the Board's decison, since it didn't affect him any way personally; predictably, he will be dropped from the team to tour Australia and, thereafter, he will be in limbo.",
+  "syn": "uncertainty, indefiniteness",
+  "ant": "explicitness, lucidity, certainty"
+ },
+ {
+  "word": "limpid",
+  "star": false,
+  "mean": "1] Not cloudy: a limpid pool of water. 2] Clear and simple, as in style: a writer of limpid verse.",
+  "syn": "1] transparent 2] lucid, logical",
+  "ant": "1] foggy 2] vague"
+ },
+ {
+  "word": "loath",
+  "star": false,
+  "mean": "Very reluctant; unwilling: Many people are loath to get up early in the morning.",
+  "syn": "averse, disinclined",
+  "ant": "willing, eager"
+ },
+ {
+  "word": "loathe",
+  "star": false,
+  "mean": "To feel great hatred or disgust for: I loathe slimy snakes!",
+  "syn": "detest, abhor, abominate",
+  "ant": "like, love, admire"
+ },
+ {
+  "word": "loquacious",
+  "star": true,
+  "mean": "Very talkative: a loquacious woman who chatters almost constantly.",
+  "syn": "garrulous, gabby",
+  "ant": "silent, taciturn"
+ },
+ {
+  "word": "lurid",
+  "star": false,
+  "mean": "1] Vivid or glowing in color. 2] Of an unnatural glare. 3] Sensational: a magazine with lurid reports of sex and murder. 4] Showy, gaudy",
+  "syn": "1] bleached 3] sensational, erotic",
+  "ant": "sensuous"
+ },
+ {
+  "word": "lugubrious",
+  "star": false,
+  "mean": "Very sad or mournful, especially in a ludicrous manner: the melancholy, lugubrious expression of a clown who has just taken a pratfall.",
+  "syn": "somber, sorrowful, doleful",
+  "ant": "elated, euphoric, exhilarated"
+ },
+ {
+  "word": "luminous",
+  "star": true,
+  "mean": "1] Full of light or giving off light; glowing or shining: her luminous stars. 2] Phosphorescent, visible in the darkness. 3] Throwing light on a subject (a writer's work).",
+  "syn": "luminescent, effulgent, illuminated",
+  "ant": "murky, dusky, gloomy, tenebrous"
+ },
+ {
+  "word": "luxurious",
+  "star": false,
+  "mean": "Characterised by or conducive to opulence or extreme comfort: a luxurious house complete with two Olympic-size swimming pools.",
+  "syn": "sumptuous, plush, palatial",
+  "ant": "poor, shabby, seedy"
+ },
+ {
+  "word": "macabre",
+  "star": false,
+  "mean": "Suggesting death and decay; grim, gruesome: a macabre movie gruesome, about vampires and ghouls.",
+  "syn": "bloodcurdling, elightful, horrible",
+  "ant": "pleasant, reassuring"
+ },
+ {
+  "word": "magnanimity",
+  "star": true,
+  "mean": "The quality of generosity, as in forgiving insults or injuries: the magnanimity of a man who goes out of his way to do a favor for a former enemy.",
+  "syn": "nobility, altruism",
+  "ant": "pettiness, meanness"
+ },
+ {
+  "word": "magnate",
+  "star": false,
+  "mean": "A famous or influential or wealthy person, especially within some industry: Hearst was a newspaper magnate.",
+  "syn": "tycoon, mogul unrecognized, unrenowned",
+  "ant": "unknown, anonymous"
+ },
+ {
+  "word": "magnum opus",
+  "star": false,
+  "mean": "1] A great work, especially of art or literature. 2] The most important work of an artist, writer.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "maladroit",
+  "star": false,
+  "mean": "Unskillful, awkward, clumsy: maladroit public relations.",
+  "syn": "blundering, bungling dexterous, graceful, skillful",
+  "ant": "adroit, coordinated"
+ },
+ {
+  "word": "malediction",
+  "star": false,
+  "mean": "The pronouncing of a curse against someone: his maledictions against his enemies.",
+  "syn": "execration, imprecation",
+  "ant": "benediction, blessing"
+ },
+ {
+  "word": "malevolent",
+  "star": true,
+  "mean": "Wishing evil toward others: He is so malevolent that he hopes his enemies will die.",
+  "syn": "malign, malignant, malicious, hostile",
+  "ant": "benign, friendly"
+ },
+ {
+  "word": "malleable",
+  "star": true,
+  "mean": "1] Capable of being hammered or rolled out without breaking, as a metal: Soft gold is very malleable. 2] Easy to shape and mould: a docile, malleable child.",
+  "syn": "1] ductile, pliable, flexible. 2] tractable",
+  "ant": "1] brittle, rigid, hard 2] intractable, independent"
+ },
+ {
+  "word": "marauder",
+  "star": false,
+  "mean": "A person who roves and raids in search of plunder: The marauders stripped twenty farmhouses.",
+  "syn": "raider, plunderer, pillager",
+  "ant": ""
+ },
+ {
+  "word": "marginalize",
+  "star": false,
+  "mean": "1] Exclude or ignore, especially by relegating to the outer edge of a group: It is Woodward's Machiavellian moves that led to Robert Bates and Bannerman being marginalised in the Republican party. 2] Leave on the fringes of society: Towering economic and social problems which effectively leave half the population marginalized. 3] Make, treat as insignificant.",
+  "syn": "insignificant, minimal, negligible",
+  "ant": ""
+ },
+ {
+  "word": "maudlin",
+  "star": false,
+  "mean": "Excessively and tearfully emotional or sentimental: a maudlin drunk. Etym: The word maudlin derives from 'Madeleine', the Old french spelling of '(Mary) Magdalen', who is often depicted with eyes swollen from weeping.",
+  "syn": "self-pitying, weepy, mushy",
+  "ant": "cheerful, animated"
+ },
+ {
+  "word": "maverick",
+  "star": true,
+  "mean": "One who is unorthodox in his ideas, attitudes, etc.: the nonconformist unconventional, odd-sounding opinions of a maverick. Etym: This word derives from the name of Samuel A. Maverick, a nineteenth century Texas lawyer who did not brand his cattle.",
+  "syn": "conformist, conventionalist, traditionalist",
+  "ant": ""
+ },
+ {
+  "word": "mellifluous",
+  "star": false,
+  "mean": "Sweetly or smoothly flowing: the soft unbroken rhythm of a dulect, mellifluous chant.",
+  "syn": "melodious",
+  "ant": "harsh, discordant"
+ },
+ {
+  "word": "mellow",
+  "star": false,
+  "mean": "1] Ripe, soft, and with good flavour; sweet and juicy: a mellow apple. 2] Fully matured: a mellow wine. 3] Soft and rich; full and pure without harshness: a violin with a mellow tone; a mellow light in a picture, velvet with a mellow colour. 4] Figuratively softened and made wise by age or experience: The baronet was ... as merry and mellow an old bachelor as ever followed by a hound.",
+  "syn": "1] grow, mellow 2] cultured, matured, seasoned 4] amicable",
+  "ant": "1] raw 2] unseasoned 4] antisocial"
+ },
+ {
+  "word": "mendacious",
+  "star": true,
+  "mean": "Lying; deceitful, or false: Don't believe anything he says, for he is a mendacious man.",
+  "syn": "deceitful, deceptive, duplicitous",
+  "ant": "honest, trustworthy"
+ },
+ {
+  "word": "mendicant",
+  "star": false,
+  "mean": "A beggar: a mendicant beseeching passersby for money.",
+  "syn": "panhandler benefactor, philanthropic",
+  "ant": "philanthropist"
+ },
+ {
+  "word": "mercurial",
+  "star": false,
+  "mean": "Lively, quick-witted, and characterised by rapid unpredictable volatile, changes of mood or activity: the prima donna's mercurial sprightly temperament. Etym: Mercurial derives from Mercury, the Roman messenger of the Gods who was depicted as fleet-footed, quick- witted, eloquent, and thievish.",
+  "syn": "changeable, clumsy, oafish",
+  "ant": "constant, predictable"
+ },
+ {
+  "word": "meticulous",
+  "star": true,
+  "mean": "Very or excessively careful about details, including tiny and painstaking, unimportant details: She has maintained meticulous records of her business.",
+  "syn": "finicky, careful, precise",
+  "ant": "careless, sloppy"
+ },
+ {
+  "word": "misanthrope",
+  "star": true,
+  "mean": "A person who hates his fellow men. Avoids human society, loner, recluse, unsociable",
+  "syn": "cynic, misogynist, recluse, skeptic",
+  "ant": "believer, optimist"
+ },
+ {
+  "word": "misconstrue",
+  "star": false,
+  "mean": "To interpret wrongly: He misconstrued my intentions and thought I wanted to rob him instead of help him.",
+  "syn": "misunderstand, misinterpret",
+  "ant": "interpret, right, straighten out, untwist"
+ },
+ {
+  "word": "mitigate",
+  "star": true,
+  "mean": "To make or become less severe or rigorous: Morphine mitigates pain. The governor mitigated the prison sentence.",
+  "syn": "alleviate, soften, lessen, moderate",
+  "ant": "heighten, intensify, magnify, provoke"
+ },
+ {
+  "word": "mollify",
+  "star": true,
+  "mean": "1] To soothe the temper of; pacify, appease. 2] To make less intense, severe, or violent: He tried to mollify father's anger by apologising.",
+  "syn": "placate, pacify his provoke",
+  "ant": "add fuel to the fire, twist the knife"
+ },
+ {
+  "word": "mordant",
+  "star": false,
+  "mean": "Harshly ironic or sinister",
+  "syn": "offensive, sarcastic, flattering",
+  "ant": "sharp nice, complimentary"
+ },
+ {
+  "word": "mordacious",
+  "star": false,
+  "mean": "Capable of wounding",
+  "syn": "brutal, scornful, severe",
+  "ant": "humane, caring, gentle"
+ },
+ {
+  "word": "moribund",
+  "star": false,
+  "mean": "Lacking vitality, expiring. At the point of death; dying.",
+  "syn": "declining, disintegrating, doomed, expiring, fading reviving, thriving",
+  "ant": "flourishing, rejuvenating"
+ },
+ {
+  "word": "mortify",
+  "star": false,
+  "mean": "1] To humiliate; shame: Her child's unruly behaviour mortified her. 2] To discipline the body by fasting, etc.: The monk mortified himself by daily flagellation.",
+  "syn": "embarrass, humiliate, disgrace encourage, inspirit, praise",
+  "ant": "delight, enlighten, compliment"
+ },
+ {
+  "word": "munificent",
+  "star": false,
+  "mean": "Extraordinarily generous (said of both gift and giver): The private school received a munificent bequest of $1 million.",
+  "syn": "generous, beneficent, benevolent",
+  "ant": "miser, malevolent"
+ },
+ {
+  "word": "nadir",
+  "star": false,
+  "mean": "The lowest possible point: After ten parole rejections, the prisoner's faith had reached its nadir.",
+  "syn": "base, bedrock pinnacle",
+  "ant": "zenith, summit"
+ },
+ {
+  "word": "naive",
+  "star": false,
+  "mean": "1] Having an unaffected or simple nature; artless: a naive young country girl. 2] Lacking deliberate or careful analysis: Those ideas are naive.",
+  "syn": "childlike, ingenuous, unsophisticated",
+  "ant": "artful, sophisticated"
+ },
+ {
+  "word": "nebulous",
+  "star": false,
+  "mean": "1] Of, pertaining to, or like a nebula. 2] Cloudy, misty: a nebulous day. 3] Vague of confused; unclear: He seemed to have a nebulous idea of his rights.",
+  "syn": "ambiguous, obscure",
+  "ant": "defined, distinct"
+ },
+ {
+  "word": "nefarious",
+  "star": false,
+  "mean": "Extremely wicked; vile: a nefarious plot to overthrow the President.",
+  "syn": "villainous, infamous",
+  "ant": "evil admirable, elegant"
+ },
+ {
+  "word": "nimble",
+  "star": false,
+  "mean": "1] Showing mental quickness. 2] Moving or acting quickly or lightly.",
+  "syn": "agile",
+  "ant": "sluggish, tardy"
+ },
+ {
+  "word": "noisome",
+  "star": false,
+  "mean": "Has nothing to do with noise. It is a shortened form of 'annoysome'. It is used to describe an offensive odor.",
+  "syn": "smelly, stinking, fetid, disgusting, offensive",
+  "ant": "aromatic, fragrant"
+ },
+ {
+  "word": "noxious",
+  "star": false,
+  "mean": "Causing harm to health or morals: noxious factory fumes.",
+  "syn": "harmful, injurious",
+  "ant": "beneficial, healthy"
+ },
+ {
+  "word": "obdurate",
+  "star": true,
+  "mean": "Hardened against the influence or arguments of others: He was inflexible, obdurate in his determination to punish his son.",
+  "syn": "hardhearted",
+  "ant": "soft, compassionate"
+ },
+ {
+  "word": "obfuscate",
+  "star": false,
+  "mean": "To darken (often deliberately) where there is already some light and, thus, confuse and bewilder.",
+  "syn": "mystify",
+  "ant": "expose, uncover"
+ },
+ {
+  "word": "objurgate",
+  "star": false,
+  "mean": "To scold or rebuke sharply.",
+  "syn": "criticize",
+  "ant": "praise"
+ },
+ {
+  "word": "obliterate",
+  "star": false,
+  "mean": "To destroy utterly, leaving no trace; completely exterminate or wipe erase: The nuclear bomb obliterated an entire city.",
+  "syn": "out, eradicate, raze",
+  "ant": "create, preserve, build"
+ },
+ {
+  "word": "obsequious",
+  "star": true,
+  "mean": "Submissive and flattering in a cringing way: an, obsequious inhumation courtier flattering the king.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "obsolete",
+  "star": false,
+  "mean": "Outdated or no longer used.",
+  "syn": "bygone",
+  "ant": "existing"
+ },
+ {
+  "word": "obstreperous",
+  "star": false,
+  "mean": "Noisy or boisterous, especially in defiance of instructions or unruly, requests: The teacher could not force the obstreperous children to sit quietly.",
+  "syn": "unmanageable, wild, vociferous",
+  "ant": "quiet, obedient, docile"
+ },
+ {
+  "word": "obtrude",
+  "star": false,
+  "mean": "1] To put forward unasked and unwanted; force: Don't obtrude project, your opinion on others. 2] To push out; thrust forward: a turtle obtrudes its head from its",
+  "syn": "protrude, stick out shell.",
+  "ant": "withdraw, withhold"
+ },
+ {
+  "word": "obtuse",
+  "star": false,
+  "mean": "1] Dull-witted or insensitive; very slow or unable to perceive or 1] understand: He is too obtuse to understand a complex-problem. 2] Blunt or rounded, as opposed to sharp or angular: an obtuse object with no pointed corners.",
+  "syn": "dull, stupid. 2] dull",
+  "ant": "1] bright, sharp. 2] sharp, pointed"
+ },
+ {
+  "word": "obviate",
+  "star": true,
+  "mean": "To prevent or remove a difficulty, drawback, etc.: Tinted light bulbs obviate the problem of glare.",
+  "syn": "eliminate, avoid",
+  "ant": "create, aggravate"
+ },
+ {
+  "word": "occlude",
+  "star": true,
+  "mean": "To cause to become closed.",
+  "syn": "plug",
+  "ant": "free"
+ },
+ {
+  "word": "officious",
+  "star": true,
+  "mean": "Meddlesome; interfering in what is not one's concern: an officious busybody offering unneeded and unwelcome advice.",
+  "syn": "interfering, obstrusive",
+  "ant": ""
+ },
+ {
+  "word": "ominous",
+  "star": false,
+  "mean": "Threatening: an ominous silence.",
+  "syn": "menacing, sinister auspicious",
+  "ant": "encouraging"
+ },
+ {
+  "word": "opportune",
+  "star": false,
+  "mean": "1] Especially right or fit: A patio is an opportune place for a 1] barbecue. 2] Occuring at the right moment: The opportune time to request a raise is when the boss is in a good mood.",
+  "syn": "appropriate, suitable. 2] timely 2] untimely",
+  "ant": "1] inappropriate, unsuitable."
+ },
+ {
+  "word": "opprobrium",
+  "star": true,
+  "mean": "The reproach brought about by shameful conduct; ignominy: Her infamy, wild behavior has brought great opprobrium on her family.",
+  "syn": "disgrace",
+  "ant": ""
+ },
+ {
+  "word": "orotund",
+  "star": false,
+  "mean": "1] With a well-rounded, resonant voice: Baritones should be magniloquent orotund. 2] Pompous; inflated: The senator made an orotund speech. Etym: Orotund comes from the Latin phrase 'arc rotundo', meaning 'with a round mouth'.",
+  "syn": "restrained",
+  "ant": ""
+ },
+ {
+  "word": "oscillate",
+  "star": true,
+  "mean": "1] Swing or move regularly back and forth. 2] To be indecisive in purpose or opinion: Human nature oscillates between good and evil.",
+  "syn": "vacillate",
+  "ant": "steady, steadfast"
+ },
+ {
+  "word": "ostensible",
+  "star": true,
+  "mean": "Offered as real or genuine: the ostensible reason for the trip was to attend a convention; but, actually, he wanted a vacation.",
+  "syn": "apparent, professed",
+  "ant": "hidden"
+ },
+ {
+  "word": "ostentatious",
+  "star": false,
+  "mean": "Intended to attract attention: His gold-plated Rolls-Royce seemed unduly ostentatious.",
+  "syn": "showy, conspicuous",
+  "ant": "subdued, modest"
+ },
+ {
+  "word": "override",
+  "star": false,
+  "mean": "1] To overrule: The chairman's veto was overridden by the annul committee. 2] To prevail over: set aside: The new rule overrides all previous 3] To ride over; trample on: overriding another's happiness in pursuit of your own. 4] To intervene and cancel the operation of: The timely piece of legislation did much to override the pernicious practice.",
+  "syn": "approve ones.",
+  "ant": ""
+ },
+ {
+  "word": "paean",
+  "star": false,
+  "mean": "A hymn of praise; used figuratively for any lavish praise: a paean for the superb performance.",
+  "syn": "psalm, anthem",
+  "ant": "condemnation"
+ },
+ {
+  "word": "palpable",
+  "star": false,
+  "mean": "1] Readily perceived: There is a palpable difference between obvious, chocolate and vanilla. 2] Capable of being touched or felt.",
+  "syn": "evident",
+  "ant": "concealed, hidden"
+ },
+ {
+  "word": "pandemonium",
+  "star": false,
+  "mean": "Wild disorder and uproar: The party ended in absolute pandemonium.",
+  "syn": "chaos, riot, bedlam",
+  "ant": "order, orderliness"
+ },
+ {
+  "word": "paradigm",
+  "star": false,
+  "mean": "1] A pattern, example or model. 2] An overall concept a ccepted by most people in an intellectual community, as a science, because of its effectiveness in explaining a complex process, idea, or set of data: ... Particular models or paradigms of society and how it works. This episode may serve as a paradigm of the industry's problems.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "parity",
+  "star": false,
+  "mean": "The state or condition of being the same in power, value, rank, etc.: We must achieve parity of incomes between two jobs.",
+  "syn": "evenness",
+  "ant": "inequality"
+ },
+ {
+  "word": "parochial",
+  "star": false,
+  "mean": "Provincial; narrow-minded: His parochial prejudices included the belief that women should not drink, or wear make-up.",
+  "syn": "narrow, limited, insular",
+  "ant": "broad, cosmopolitan"
+ },
+ {
+  "word": "parsimonious",
+  "star": false,
+  "mean": "Stingy with money: a parsimonious old miser.",
+  "syn": "penurious, tight-fisted philanthropic",
+  "ant": "generous"
+ },
+ {
+  "word": "partisan",
+  "star": true,
+  "mean": "A fervent, sometimes militant supporter of a party.",
+  "syn": "supporter",
+  "ant": "opponent"
+ },
+ {
+  "word": "paucity",
+  "star": true,
+  "mean": "Smallness of number or of quantity: There was a paucity of seats in the small theater.",
+  "syn": "dearth, scarcity",
+  "ant": "abundance"
+ },
+ {
+  "word": "pedantic",
+  "star": true,
+  "mean": "Characterized by a narrow, often ostentatious concern for book learning and formal rules.",
+  "syn": "precise",
+  "ant": ""
+ },
+ {
+  "word": "pedestrian",
+  "star": false,
+  "mean": "1] Going or done on foot, walking. 2] Of or for pedestrians (a pedestrian crossing). 3] Lacking quality or imagination; prosaic; ordinary and dull: A lacklustre, pedestrian performance.",
+  "syn": "monotonous",
+  "ant": "electrifying"
+ },
+ {
+  "word": "peevish",
+  "star": false,
+  "mean": "1] Cross, fretful, complaining: a peevish child is unhappy. 2] Showing annoyance, irritation.",
+  "syn": "petulant, pettish, irritable cheerful",
+  "ant": "uncomplaining"
+ },
+ {
+  "word": "penitent",
+  "star": false,
+  "mean": "Affected by a sense of guilt and resolved to do better: He was sorry, penitent about his fit of bad temper.",
+  "syn": "regretful, contrite",
+  "ant": "impenitent"
+ },
+ {
+  "word": "penury",
+  "star": true,
+  "mean": "Extreme poverty and want: The family was in a state of wretched penury.",
+  "syn": "indigence, destitution",
+  "ant": "wealth, riches"
+ },
+ {
+  "word": "perfidious",
+  "star": true,
+  "mean": "Guilty of breach of faith; treacherous: a perfidious attack on an ally.",
+  "syn": "faithless, disloyal",
+  "ant": "loyal, trustworthy"
+ },
+ {
+  "word": "perennial",
+  "star": true,
+  "mean": "Lasting for a very long time; enduring: the perennial beauty of hills.",
+  "syn": "the abiding, continual, permanent, perpetual, everlasting, eternal",
+  "ant": "short-lived, transient, ephemeral, off-and-on, casual"
+ },
+ {
+  "word": "pernicious",
+  "star": false,
+  "mean": "Having the power to destroy or injure; a very injurious: the deadly, pernicious business of selling heroin.",
+  "syn": "baneful, harmful",
+  "ant": "beneficial"
+ },
+ {
+  "word": "perspicacious",
+  "star": false,
+  "mean": "Keenly discerning or understanding: a perspicacious instructor.",
+  "syn": "astute, shrewd, sagacious shortsighted",
+  "ant": "undiscerning"
+ },
+ {
+  "word": "perspicuous",
+  "star": false,
+  "mean": "Clear in statement or expression; easily understood; lucid. Note that this word differs in meaning from 'perspicacious'.",
+  "syn": "limpid",
+  "ant": "unsystematic"
+ },
+ {
+  "word": "perturb",
+  "star": false,
+  "mean": "To disquiet or disturb greatly: He was perturbed because she kept him waiting.",
+  "syn": "agitate, excite, distress",
+  "ant": "calm, soothe"
+ },
+ {
+  "word": "pinnacle",
+  "star": false,
+  "mean": "The highest point or place: When he was elected President he knew he had reached the pinnacle of his political career.",
+  "syn": "peak, apex, summit",
+  "ant": "nadir"
+ },
+ {
+  "word": "pithy",
+  "star": false,
+  "mean": "Terse, meaty, and forceful: a pithy one-page summary of the pointed, complex issue.",
+  "syn": "succinct",
+  "ant": "word, rambling"
+ },
+ {
+  "word": "placate",
+  "star": true,
+  "mean": "To calm or appease the anger of: The shopkeeper placated the irate customer by promising to replace the imperfect merchandise.",
+  "syn": "pacify, soothe, mollify",
+  "ant": "aggravate, antagonize"
+ },
+ {
+  "word": "platitude",
+  "star": true,
+  "mean": "A flat, dull, or commonplace statement, a truism, such as \"Hard work is the key to success\".",
+  "syn": "shallowness",
+  "ant": "profoundness"
+ },
+ {
+  "word": "portend",
+  "star": false,
+  "mean": "To warn as an omen; forebode: Dark clouds portend rain.",
+  "syn": "augur, presage",
+  "ant": ""
+ },
+ {
+  "word": "potentate",
+  "star": false,
+  "mean": "A possessor of power or authority: Hollywood potentates blackballed the actor.",
+  "syn": "sovereign, monarch, mogul",
+  "ant": ""
+ },
+ {
+  "word": "pragmatic",
+  "star": true,
+  "mean": "Practical; matter-of-fact: the pragmatic solution to a problem.",
+  "syn": "rational",
+  "ant": "impractical"
+ },
+ {
+  "word": "precarious",
+  "star": true,
+  "mean": "Subject to continued risk or danger: his precarious position on window sill.",
+  "syn": "the risky, hazardous, uncertain",
+  "ant": "safe, protected"
+ },
+ {
+  "word": "precipitate",
+  "star": true,
+  "mean": "To hasten the occurence of something: The verbal exchange quicken precipitated a fistfight.",
+  "syn": "decelerate",
+  "ant": ""
+ },
+ {
+  "word": "preclude",
+  "star": false,
+  "mean": "To render impossible by necessary consequence or implication: Our European trip precludes a visit to Canada this year.",
+  "syn": "prevent, obviate",
+  "ant": "allow"
+ },
+ {
+  "word": "precocious",
+  "star": false,
+  "mean": "Unusually developed or advanced, especially for one's stage: The precocious four-year-old could multiply and divide acurately.",
+  "syn": "advanced",
+  "ant": "backward"
+ },
+ {
+  "word": "precursor",
+  "star": true,
+  "mean": "A person who or a thing that precedes and suggests the course of future events: Isaac Newton was the precursor of the modern physicist.",
+  "syn": "forerunner, predecessor",
+  "ant": ""
+ },
+ {
+  "word": "presage",
+  "star": false,
+  "mean": "A sign or warning of a future event; omen; portent augury. She could not sleep at night and was haunted by a presage of disaster.",
+  "syn": "premonish",
+  "ant": ""
+ },
+ {
+  "word": "prevaricate",
+  "star": true,
+  "mean": "To tell a lie: Telling the truth is better than prevaricating.",
+  "syn": "misrepresent, postpone",
+  "ant": "correct"
+ },
+ {
+  "word": "procrastinate",
+  "star": false,
+  "mean": "To put off taking action until a future time: He procrastinated so long that he missed the opportunity.",
+  "syn": "defer, delay, postpone",
+  "ant": "expedite, hasten, hurry"
+ },
+ {
+  "word": "probity",
+  "star": true,
+  "mean": "Complete and confirmed integrity.",
+  "syn": "honesty",
+  "ant": "deception"
+ },
+ {
+  "word": "profundity",
+  "star": true,
+  "mean": "Great depth.",
+  "syn": "completeness",
+  "ant": "shallowness"
+ },
+ {
+  "word": "prolix",
+  "star": false,
+  "mean": "Using too many words; too long; tedious.",
+  "syn": "wordy, verbose",
+  "ant": "pithy, laconic"
+ },
+ {
+  "word": "propensity",
+  "star": true,
+  "mean": "An innate inclination; a tendency.",
+  "syn": "proneness",
+  "ant": "inaptitude"
+ },
+ {
+  "word": "propitiate",
+  "star": true,
+  "mean": "To conciliate; appease.",
+  "syn": "tranquilize",
+  "ant": "upset"
+ },
+ {
+  "word": "prosaic",
+  "star": false,
+  "mean": "1] Failing to arouse animation or interest; unimaginative; dull: She was bored with her prosaic existence. 2] Pertaining to or like prose.",
+  "syn": "commonplace, tedious lively",
+  "ant": "animated, interesting"
+ },
+ {
+  "word": "proscribe",
+  "star": true,
+  "mean": "To prohibit: The Bill of Rights proscribes illegal search and entry.",
+  "syn": "boycott authorise, legalise",
+  "ant": "prescribe, sanction"
+ },
+ {
+  "word": "proselytize",
+  "star": false,
+  "mean": "To make a convert of: The missionaries proselytized the heathen.",
+  "syn": "convert, recruit",
+  "ant": "remain"
+ },
+ {
+  "word": "protract",
+  "star": false,
+  "mean": "To draw out or lengthen in time; prolong: to protract a visit.",
+  "syn": "extend, continue",
+  "ant": "shorten, curtail"
+ },
+ {
+  "word": "proviso",
+  "star": false,
+  "mean": "A stipulation, as in a contract or statute, limiting or modifying it, rendering it conditional: Her contract contained a proviso limiting the number of personal appearances she would have to make.",
+  "syn": "or condition",
+  "ant": ""
+ },
+ {
+  "word": "prudent",
+  "star": true,
+  "mean": "Wise in handling practical matters.",
+  "syn": "watchful",
+  "ant": "negligent"
+ },
+ {
+  "word": "puerile",
+  "star": false,
+  "mean": "Characterised of childhood; juvenile: the bad habit of making childish, puerile jokes.",
+  "syn": "silly, immature",
+  "ant": "adult, mature"
+ },
+ {
+  "word": "pugnacious",
+  "star": false,
+  "mean": "Disposed to fight; quarrelsome: a pugnacious boxer.",
+  "syn": "belicose, combative",
+  "ant": "calm, mild"
+ },
+ {
+  "word": "puissant",
+  "star": false,
+  "mean": "Having great power or strength: I see in my mind a noble and strengthy puissant nation, rousing herself like a strong man after sleep (Milton).",
+  "syn": "weak",
+  "ant": ""
+ },
+ {
+  "word": "punctilious",
+  "star": false,
+  "mean": "Attentive to points of etiquette, etc.: She was punctilious in setting the table for the formal dinner.",
+  "syn": "meticulous, scrupulous",
+  "ant": "careless, offhand"
+ },
+ {
+  "word": "pusillanimous",
+  "star": false,
+  "mean": "Characterised by lack of courage: too pusillanimous to complain.",
+  "syn": "timid, cowardly, weak",
+  "ant": "bold"
+ },
+ {
+  "word": "qualm",
+  "star": false,
+  "mean": "A painful feeling of uneasiness arising from a consciousness that one is or may be acting wrongly: He had no qualms about having cheated on the test.",
+  "syn": "scruple, compunction, misgiving",
+  "ant": "indifference"
+ },
+ {
+  "word": "quandary",
+  "star": false,
+  "mean": "A state of uncertainty; perplexing situation or position; dilemma: Having captured our men, we were in a quandary to keep them.",
+  "syn": "predicament, difficulty, puzzle",
+  "ant": "serenity"
+ },
+ {
+  "word": "quiescence",
+  "star": true,
+  "mean": "Being quiet, still, or at rest; inactive.",
+  "syn": "dormancy",
+  "ant": "continuance"
+ },
+ {
+  "word": "quintessence",
+  "star": false,
+  "mean": "1] The purest form of some quality; pure essence. 2] The perfect example of something: Her costume was the quintessence of good taste and style.",
+  "syn": "pith",
+  "ant": ""
+ },
+ {
+  "word": "quizzical",
+  "star": false,
+  "mean": "Puzzled: a quizzical glance.",
+  "syn": "skeptical, curious",
+  "ant": "believing, trusting"
+ },
+ {
+  "word": "racy",
+  "star": false,
+  "mean": "1] Vigorous, lively: a racy, unpretentious style of writing. 2] Having an agreeably peculiar taste or flavour: a racy apple.",
+  "syn": "1] spirited 2] piquant",
+  "ant": "spiritless spicy"
+ },
+ {
+  "word": "raison d' etre",
+  "star": false,
+  "mean": "Reason for being; justification for existence: Selling, after all, is their raison d'etre.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "rambunctious",
+  "star": false,
+  "mean": "1] Wild, disorderly, boisterous, unruly etc.: The weekend bash was marked by drinking bouts and rambunctious revelry. 2] Difficult to control and handle",
+  "syn": "termagant, unruly",
+  "ant": "laid-back"
+ },
+ {
+  "word": "rancor",
+  "star": false,
+  "mean": "Bitter and vindictive hatred; spitefulness: He continued to bear rancor long after the quarrel.",
+  "syn": "malice, spite",
+  "ant": "friendliness"
+ },
+ {
+  "word": "rapacious",
+  "star": false,
+  "mean": "Greedy; grasping; extortionate: rapacious loan sharks.",
+  "syn": "predatory",
+  "ant": "gentle"
+ },
+ {
+  "word": "rarefy",
+  "star": true,
+  "mean": "1] To make or become thin or less (the rarefied mountain air). 2] To make or become more refined, subtle.",
+  "syn": "extract",
+  "ant": "dirty"
+ },
+ {
+  "word": "raucous",
+  "star": false,
+  "mean": "1] Harsh-sounding; hoarse: a raucous laugh. 2] Boisterous; disorderly: a raucous party.",
+  "syn": "strident, rough",
+  "ant": "soft, mild"
+ },
+ {
+  "word": "ravenous",
+  "star": false,
+  "mean": "Violently hungry; voracious: the difficulty of feeding ten ravenous children. Etym: The central modern meaning of ravenous, 'very hungry', developed form the notion of predatory animals that 'seize' and eat their prey.",
+  "syn": "ravening, famished",
+  "ant": "full"
+ },
+ {
+  "word": "raw",
+  "star": false,
+  "mean": "1] Not processed, edited, or interpreted: raw data. 2] Inexperienced; not yet developed or trained: raw recruit. 3] With the skin rubbed off or torn off; sore or inflamed: a raw cut. 4] Brutal or coarse in frankness: a raw language. 5] Harsh or unfair: a raw deal. 6] In the raw: in the natural state; without cultivation or",
+  "syn": "unprocessed refinement.",
+  "ant": ""
+ },
+ {
+  "word": "raze",
+  "star": false,
+  "mean": "To level to the ground; demolish: The Romans razed Carthage. destroy, Spelling tip: When you raise something you are beginning it; when you raze it you come to the end, like 'z'. Note: 'razed to the ground' is a redundancy which is better Simply say: razed.",
+  "syn": "flatten avoided.",
+  "ant": "construct"
+ },
+ {
+  "word": "recalcitrant",
+  "star": true,
+  "mean": "Refusing to comply; obstinate or rebellious: a recalcitrant student body.",
+  "syn": "defiant, stubborn tractable, submissive",
+  "ant": "cooperative, obedient"
+ },
+ {
+  "word": "recapitulate",
+  "star": false,
+  "mean": "To review briefly; sum up: The judge recapitulated the evidence for the jury.",
+  "syn": "summarize, restate, outline",
+  "ant": "scatter"
+ },
+ {
+  "word": "recluse",
+  "star": true,
+  "mean": "Someone who avoids all other people by shutting himself off from the world: He was a recluse for twelve years.",
+  "syn": "hermit, solitary",
+  "ant": ""
+ },
+ {
+  "word": "recondite",
+  "star": true,
+  "mean": "Difficult to understand: the recondite writings of theoretical obscure, physicists.",
+  "syn": "abstruse, arcane",
+  "ant": "understandble, comprehensible"
+ },
+ {
+  "word": "recrimination",
+  "star": false,
+  "mean": "An accusation made in answer to an accusation: The angry salesmen exchanged recriminations.",
+  "syn": "countercharge",
+  "ant": ""
+ },
+ {
+  "word": "rectitude",
+  "star": false,
+  "mean": "Honesty; integrity; morality: A man of rectitude does not renege on a promise.",
+  "syn": "principle, honour",
+  "ant": "dishonesty"
+ },
+ {
+  "word": "redoubtable",
+  "star": false,
+  "mean": "Inspiring fear or dread; formidable: a redoubtable enemy. Etym: From the old French 'redoubtable' which originated from 'redouter', to dread or fear.",
+  "syn": "fearsome, intimidating",
+  "ant": "delightful, reassuring"
+ },
+ {
+  "word": "remonstrate",
+  "star": false,
+  "mean": "To plead earnestly with, as in protest or reproof: He remonstrated with the noisy children.",
+  "syn": "expostulate, object, protest",
+  "ant": "keep silent"
+ },
+ {
+  "word": "renege",
+  "star": false,
+  "mean": "1] In card games to fail to follow suit when required to; revoke. 2] To fail to keep a promise: He reneged on his offer to entertain the children.",
+  "syn": "default, pull out",
+  "ant": "undertake"
+ },
+ {
+  "word": "reprobate",
+  "star": true,
+  "mean": "A wicked or corrupt person; scoundrel.",
+  "syn": "profligate, scamp",
+  "ant": "good, honest"
+ },
+ {
+  "word": "repudiate",
+  "star": true,
+  "mean": "To refuse to accept as true or binding, disown: He repudiated our agreement.",
+  "syn": "disclaim",
+  "ant": "hold, retain"
+ },
+ {
+  "word": "rescind",
+  "star": false,
+  "mean": "To make void; repeal: to rescind an order.",
+  "syn": "cancel, abrogate, revoke",
+  "ant": "permit"
+ },
+ {
+  "word": "resilient",
+  "star": false,
+  "mean": "1] Springing back to a former shape or position: A rubber ball is resilient. 2] Able to recover from trouble, sorrow, etc.: a man of resilient character.",
+  "syn": "changeable",
+  "ant": "inflexible"
+ },
+ {
+  "word": "reticent",
+  "star": true,
+  "mean": "Saying little; inclined to hesitate; uncommunicative.",
+  "syn": "tight-lipped, restrained",
+  "ant": "unreserved"
+ },
+ {
+  "word": "revere",
+  "star": true,
+  "mean": "To regard with deep respect, love and awe, venerate: They literally revered the Maths professor who was a legendary figure, able to respect, attract students from other disciplines to attend his lectures as guests.",
+  "syn": "reverence, worship, esteem.",
+  "ant": "disrespect, disparage, denigrate"
+ },
+ {
+  "word": "robust",
+  "star": false,
+  "mean": "1] Strong, healthy, sturdy: a robust person; a robust mind. 2] Suited to or requiring bodily strength: robust exercises. Crowds in this country prefer a more robust game. 3] Vigorous, wholesome: Experts express robust optimism for the performance of the economy in the coming year.",
+  "syn": "hardy, stalwart, stout, sound",
+  "ant": "delicate, feeble"
+ },
+ {
+  "word": "rudiment",
+  "star": false,
+  "mean": "A first principle, step, stage, or condition: the rudiments of French.",
+  "syn": "basic, fundamental, starter, beginning",
+  "ant": "final"
+ },
+ {
+  "word": "sagacity",
+  "star": false,
+  "mean": "Discernment and wisdom: the sagacity of the wise old statesmen.",
+  "syn": "judgment,sense, perceptiveness",
+  "ant": "foolishness"
+ },
+ {
+  "word": "salacious",
+  "star": false,
+  "mean": "Lewd; lustful; obscene: a salacious man; a salacious joke.",
+  "syn": "obscene, dirty",
+  "ant": "clean, godly"
+ },
+ {
+  "word": "salubrious",
+  "star": true,
+  "mean": "1] Promoting health; healthful. 2] Favorable to health of mind or body.",
+  "syn": "beneficial, healthy, hygienic",
+  "ant": "disadvantageous, harmful, unhelpful"
+ },
+ {
+  "word": "salutary",
+  "star": false,
+  "mean": "Tending to promote physical well-being; beneficial to health.",
+  "syn": "nourishing, nutrient",
+  "ant": "harmful, injurious"
+ },
+ {
+  "word": "sanction",
+  "star": true,
+  "mean": "Approval that makes a course of action valid.",
+  "syn": "authorize",
+  "ant": "disallow"
+ },
+ {
+  "word": "sanguine",
+  "star": false,
+  "mean": "1] Cheerful, confident and optimistic: A sanguine man sees the 1] buoyant, world through rose-colored glasses. 2] Having a healthy, rosy color; ruddy. 3] Having the color of blood.",
+  "syn": "hopeful",
+  "ant": "1] uncertain, unsure"
+ },
+ {
+  "word": "sap",
+  "star": false,
+  "mean": "1] A watery solution of sugars, salts, and minerals that circulates through the vascular system of a plant. 2] A person who lacks good judgment. 3] deplete.",
+  "syn": "2] nitwit, idiot 3] exhaust, drain, deplete",
+  "ant": "2] genius 3] fortify, intensify"
+ },
+ {
+  "word": "sardonic",
+  "star": false,
+  "mean": "Scornful or derisive; sneering: a sardonic expression.",
+  "syn": "caustic, mocking, cynical, jaundiced",
+  "ant": "pleasant"
+ },
+ {
+  "word": "sartorial",
+  "star": false,
+  "mean": "Pertaining to men's clothes: the sartorial splendor of the Edwardian dandy.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "satiate",
+  "star": true,
+  "mean": "1] Fill to satisfaction; sate. 2] Overeat or eat immodestly; make a pig of oneself. Supplied (especially fed) to satisfaction.",
+  "syn": "content, glut, sate",
+  "ant": "deplete, empty, let out"
+ },
+ {
+  "word": "saturate",
+  "star": true,
+  "mean": "Infuse or fill completely.",
+  "syn": "overload, overstock",
+  "ant": ""
+ },
+ {
+  "word": "saturnine",
+  "star": false,
+  "mean": "Sluggish, morose, or taciturn. The saturnine young man returned to France as the dashing hero of a cause.",
+  "syn": "sullen",
+  "ant": "pleasant"
+ },
+ {
+  "word": "savant",
+  "star": false,
+  "mean": "A learned person, saint, sage, eminent scholar: Saint Simon divided mankind into three classes: the savants, the propertied, and the unpropertied (Edmund Wilson).",
+  "syn": "intellectual",
+  "ant": "ignorant"
+ },
+ {
+  "word": "savor",
+  "star": true,
+  "mean": "Derive or receive pleasure from; get enjoyment from; take relish, pleasure in.",
+  "syn": "flavor, experience, bask",
+  "ant": "abhorrence, aversion, repulsion"
+ },
+ {
+  "word": "scintillate",
+  "star": false,
+  "mean": "e To sparkle; glitter; twinkle: stars that scintillate in the sky. terms of etymology, 'scintillate' and 'tinsel' are the same. 'Tinsel' something that 'sparkles'.",
+  "syn": "Etym: In radiate is",
+  "ant": "extinguish"
+ },
+ {
+  "word": "scruple",
+  "star": false,
+  "mean": "A feeling of hesitancy, doubt, or uneasiness arising from difficulty in deciding what is right, proper, or ethical; uneasiness affecting conscience: He has scruples about playing cards for money.",
+  "syn": "qualm, scrupulous",
+  "ant": "be certain, certainty"
+ },
+ {
+  "word": "scrupulous",
+  "star": false,
+  "mean": "Conscientious, exact, or careful: a scrupulous person; a scrupulous account of all the expenses.",
+  "syn": "meticulous, punctilious, fastidious",
+  "ant": "inaccurate"
+ },
+ {
+  "word": "scurrilous",
+  "star": false,
+  "mean": "Grossly and offensively abusive: scurrilous language; scurrilous writing.",
+  "syn": "opprobrious",
+  "ant": "respectful"
+ },
+ {
+  "word": "scurry",
+  "star": false,
+  "mean": "To move about or proceed hurriedly",
+  "syn": "bustle, dart, dash, rush, scamper",
+  "ant": "dawdle, delay, linger, plod, slog, trudge"
+ },
+ {
+  "word": "seamy",
+  "star": false,
+  "mean": "Morally degraded.",
+  "syn": "sordid, squalid",
+  "ant": "reputable"
+ },
+ {
+  "word": "sear",
+  "star": false,
+  "mean": "1] Make very hot and dry. 2] Become superficially burned. 3] Cause to wither or parch from exposure to heat. (used especially of vegetation) having lost all moisture.",
+  "syn": "burn, cauterize, scorch refrigerate",
+  "ant": "chill, freeze"
+ },
+ {
+  "word": "secrete",
+  "star": true,
+  "mean": "1] Generate and separate from cells or bodily fluids. 2] Place out of sight; keep secret.",
+  "syn": "2] disguise, secure, conceal",
+  "ant": "stash, 2] expose, reveal, uncover"
+ },
+ {
+  "word": "sedate",
+  "star": false,
+  "mean": "Calm, quiet, or composed, esp. serious and unemotional.",
+  "syn": "serious, staid, decorous upset, fazed",
+  "ant": "ruffled, perturbed"
+ },
+ {
+  "word": "sedulous",
+  "star": false,
+  "mean": "Marked by care and persistent effort.",
+  "syn": "diligent, attentive, industrious, laborious, persevering",
+  "ant": "laid-back, lax, lazy, neglectful, negligent"
+ },
+ {
+  "word": "sentient",
+  "star": false,
+  "mean": "1] Endowed with feeling and unstructured consciousness. 2] Consciously perceiving.",
+  "syn": "perceptive, sensible, savy unaware",
+  "ant": "ignorant, insensitive"
+ },
+ {
+  "word": "sermon",
+  "star": false,
+  "mean": "1] An address of a religious nature (usually delivered during a preaching, church service). 2] A moralistic rebuke.",
+  "syn": "discourse, doctrine",
+  "ant": ""
+ },
+ {
+  "word": "servile",
+  "star": false,
+  "mean": "1] Pertaining to or involving slaves. 2] Submissive or fawning in attitude or behavior.",
+  "syn": "grovelling, abject exalted",
+  "ant": "dignified, esteemed"
+ },
+ {
+  "word": "shard",
+  "star": true,
+  "mean": "A broken piece of a brittle artifact",
+  "syn": "specimen, splinter, speck",
+  "ant": "total, whole"
+ },
+ {
+  "word": "shelve",
+  "star": false,
+  "mean": "To lay aside, as if on a shelf; to defer: to shelve a project; to shelve a discussion.",
+  "syn": "prorogue, put off",
+  "ant": "keep on"
+ },
+ {
+  "word": "shirk",
+  "star": false,
+  "mean": "Avoid (one's assigned duties).",
+  "syn": "elude, eschew, evade abide",
+  "ant": "comply, conform"
+ },
+ {
+  "word": "simper",
+  "star": false,
+  "mean": "Smile affectedly or derisively.",
+  "syn": "smirk, sneer, leer",
+  "ant": ""
+ },
+ {
+  "word": "skeptic",
+  "star": true,
+  "mean": "Someone who habitually doubts accepted beliefs.",
+  "syn": "agnostic, atheist, disbeliever, cynic",
+  "ant": "believer, faithful"
+ },
+ {
+  "word": "skinflint",
+  "star": false,
+  "mean": "A selfish person who is unwilling to give or spend.",
+  "syn": "stingy, miserly, parsimonious",
+  "ant": "generous, liberal, extravagant"
+ },
+ {
+  "word": "skirmish",
+  "star": false,
+  "mean": "A minor short-term fight. Engage in a skirmish.",
+  "syn": "clash, encounter, combat, conflict",
+  "ant": "agreement, tranquility, calm, quiet, peace"
+ },
+ {
+  "word": "slack",
+  "star": false,
+  "mean": "A noticeable decline in performance.",
+  "syn": "laggard, lax, lethargic, neglectful, slothful, sluggish, tardy hard-working",
+  "ant": "firm, tight, responsible, diligent, dependable"
+ },
+ {
+  "word": "slake",
+  "star": false,
+  "mean": "1] Satisfy (thirst). 2] Make less active or intense. 3] Cause to heat and crumble by treatment with water, as of lime.",
+  "syn": "quench, sponge",
+  "ant": ""
+ },
+ {
+  "word": "slew",
+  "star": false,
+  "mean": "1] A large number or amount or extent. 2] Kill intentionally and with premeditation; slay, slain",
+  "syn": "1] magnitude, measure, swerve",
+  "ant": "countable, finite, limited, numbered"
+ },
+ {
+  "word": "slippage",
+  "star": false,
+  "mean": "1] Failing to hold or slipping out of place. 2] Decline from a standard level of performance or achievement.",
+  "syn": "1] slumping, subjacent, underneath",
+  "ant": "1] above, higher, up"
+ },
+ {
+  "word": "sodden",
+  "star": false,
+  "mean": "Wet through and through; thoroughly wet.",
+  "syn": "drenched, soaking, dripping",
+  "ant": "arid, dried, parched"
+ },
+ {
+  "word": "sombre",
+  "star": false,
+  "mean": "1] dark, gloomy; having deep shadows: A cloudy winter day is 1] murky sombre. 2] melancholy, dismal: a somber expression.",
+  "syn": "bright, cheerful 2] depressing",
+  "ant": ""
+ },
+ {
+  "word": "solicitous",
+  "star": false,
+  "mean": "1] Full of anxiety and concern. 2] Showing hovering attentiveness.",
+  "syn": "anxious, concerned, apprehensive",
+  "ant": "inconsiderate, negligent, rude"
+ },
+ {
+  "word": "soporific",
+  "star": true,
+  "mean": "1] Sleep inducing. 2] Inducing mental lethargy.",
+  "syn": "anesthetic, narcotic, sedative, slumberous",
+  "ant": "analeptic, stimulant, energetic, vivacious"
+ },
+ {
+  "word": "spasmodic",
+  "star": false,
+  "mean": "1] Resembling a spasm: a spasmodic cough. 2] Figurative: Sudden, violent, but brief; 3] Occuring very irregularly, intermittently: a spasmodic interest in reading.",
+  "syn": "3] fitful steady, uninterrupted",
+  "ant": "3] regular, constant"
+ },
+ {
+  "word": "specious",
+  "star": true,
+  "mean": "Apparently good, right, or true; but actually not: specious reasoning.",
+  "syn": "spurious",
+  "ant": "straightforward"
+ },
+ {
+  "word": "sporadic",
+  "star": true,
+  "mean": "Appearing now and then, or at intervals in time; occasional; intermittent scattered: sporadic outbreaks of violence.",
+  "syn": "continuous",
+  "ant": ""
+ },
+ {
+  "word": "squander",
+  "star": false,
+  "mean": "1] Spend thoughtlessly; throw away. 2] Spend extravagantly or wastefully on.",
+  "syn": "dissipate, expend, misspend",
+  "ant": "thrifty, economize"
+ },
+ {
+  "word": "squelch",
+  "star": false,
+  "mean": "Suppress or crush completely.",
+  "syn": "suppress, repress",
+  "ant": "endorse, permit"
+ },
+ {
+  "word": "statute",
+  "star": false,
+  "mean": "An act passed by a legislative body. Enacted by a legislative body.",
+  "syn": "ordinance, regulation, edict",
+  "ant": ""
+ },
+ {
+  "word": "stealth",
+  "star": false,
+  "mean": "Avoiding detection by moving carefully.",
+  "syn": "concealment , confidential, covertness",
+  "ant": "overt, public"
+ },
+ {
+  "word": "steep",
+  "star": false,
+  "mean": "Greatly exceeding bounds of reason or moderation",
+  "syn": "1] extortionate 2] exorbitant",
+  "ant": "ecnomical, reasonable"
+ },
+ {
+  "word": "stentorian",
+  "star": false,
+  "mean": "Extremely loud: the drill sergeant's stentorian voice.",
+  "syn": "deafening, thunderous",
+  "ant": "soft, low, weak"
+ },
+ {
+  "word": "stickler",
+  "star": false,
+  "mean": "1] Someone who insists on something 2] Something puzzling or difficult",
+  "syn": "1] disciplinarian, martinet",
+  "ant": ""
+ },
+ {
+  "word": "stigma",
+  "star": true,
+  "mean": "1] A symbol of disgrace or infamy. 3] A skin lesion that is a diagnostic sign of some disease.",
+  "syn": "1] blemish, disgrace, smudge",
+  "ant": "1] esteem, honor, regard"
+ },
+ {
+  "word": "stint",
+  "star": true,
+  "mean": "1] An, unbroken period of time during which you do something. 2] Supply sparingly, with a meager allowance.",
+  "syn": "1] scrimp, scrape",
+  "ant": "2] spend, squander"
+ },
+ {
+  "word": "stipulate",
+  "star": true,
+  "mean": "1] Specify as a condition or requirement in a contract or agreement 1] 2] Give a guarantee or promise of",
+  "syn": "specify, transact 2] vouch",
+  "ant": "1] disagree 2] renege"
+ },
+ {
+  "word": "stolid",
+  "star": true,
+  "mean": "Having or revealing little emotion or sensibility; not easily aroused or excited.",
+  "syn": "passive, phlegmatic, stoic, callous",
+  "ant": "concerned, interested, passionate"
+ },
+ {
+  "word": "stratagem",
+  "star": false,
+  "mean": "A trick or ruse to win a battle, outwit an opponent, or obtain wile, something by misleading or deceiving; a crafty maneuver: a stratagem to lure the enemy troops into an ambush.",
+  "syn": "subterfuge",
+  "ant": "forthrightness"
+ },
+ {
+  "word": "strut",
+  "star": true,
+  "mean": "To walk with a lofty proud gait, often in an attempt to impress flaunt, others.",
+  "syn": "flounce, stride, swagger, swank",
+  "ant": "conceal, modest, downplay"
+ },
+ {
+  "word": "stultify",
+  "star": false,
+  "mean": "To make worthless or ineffectual; frustrate; invalidate: The system tends to stultify our efforts to effect changes.",
+  "syn": "nullify, blunt, dull, paralyse",
+  "ant": "vitalise, stir, enliven"
+ },
+ {
+  "word": "stupefy",
+  "star": false,
+  "mean": "To dull the senses or faculties of; stun: to be stupefied by a blow.",
+  "syn": "daze, bewilder, flabbergast",
+  "ant": "sensitise, alert"
+ },
+ {
+  "word": "stygian",
+  "star": false,
+  "mean": "Dark and dismal.",
+  "syn": "gloomy, infernal",
+  "ant": "bright, sunny"
+ },
+ {
+  "word": "stymie",
+  "star": false,
+  "mean": "Hinder or prevent the progress or accomplishment of-stymie.",
+  "syn": "impede, thwart",
+  "ant": "assist, unblock"
+ },
+ {
+  "word": "sublimate",
+  "star": false,
+  "mean": "1] To purify; refine: In most of Hardy's novels set in Essex, there no attempt to sublimate nature but to depict it in the raw. 2] To change (an undesirable impulse or trait) into a more or acceptable activity: He tried to sublimate the problem by in detail, about it.",
+  "syn": "is distill desirable writing",
+  "ant": "dirty, pollute"
+ },
+ {
+  "word": "subpoena",
+  "star": true,
+  "mean": "A writ issued by court authority to compel the attendance of a decree, witness at a judicial proceeding.",
+  "syn": "edict",
+  "ant": ""
+ },
+ {
+  "word": "subservient",
+  "star": false,
+  "mean": "1] Subordinate in capacity or function 2] Submissive",
+  "syn": "1] ancillary, subjugated 2] servile",
+  "ant": "1] main, primary"
+ },
+ {
+  "word": "subside",
+  "star": true,
+  "mean": "1] Wear off or die down 2] Sink down or precipitate",
+  "syn": "1] abate, dwindle, settle, wane 2] ebb, recede",
+  "ant": "1] amplify, magnify 2] surge"
+ },
+ {
+  "word": "substantial",
+  "star": false,
+  "mean": "1] Fairly large 2] Of good quality and condition; solidly built; real 3] Providing abundant nourishment",
+  "syn": "1] ample, tidy 2] concrete",
+  "ant": "1] meager 2] fictitious"
+ },
+ {
+  "word": "substantiate",
+  "star": true,
+  "mean": "1] Establish or strengthen, as with new evidence or facts 2] Make real or concrete; give reality or substance to",
+  "syn": "1] corroborate, ratify 2] embody, realize",
+  "ant": "1] belie, deny, rebut"
+ },
+ {
+  "word": "succinct",
+  "star": true,
+  "mean": "Avoiding unnecessary words; briefly expressed: He gave his views terse, in a few succinct sentences. Spelling tip: Succinct has three c's.",
+  "syn": "concise, laconic long-winded",
+  "ant": "prolix, verbose"
+ },
+ {
+  "word": "summarily",
+  "star": false,
+  "mean": "Without delay.",
+  "syn": "expeditiously, eremptorily",
+  "ant": "belatedly, tardily"
+ },
+ {
+  "word": "sumptuous",
+  "star": false,
+  "mean": "Involving lavish expenditure; luxurious; magnificient: Our host rich, provided a sumptuous feast.",
+  "syn": "costly",
+  "ant": "frugal, simple, plain"
+ },
+ {
+  "word": "supercilious",
+  "star": false,
+  "mean": "Exhibiting contempt; arrogant: His supercilious behavior offended his host. Etym: Supercilious comes from the Latin word meaning 'eyebrow' suggesting the raising of eyebrows by the supercilious.",
+  "syn": "proud, scornful",
+  "ant": "friendly, sociable"
+ },
+ {
+  "word": "superficial",
+  "star": false,
+  "mean": "1] Relating to a surface 2] Of little substance or significance; not penetrating emotionally or intellectually",
+  "syn": "1] cosmetic 2] cursory, trivial",
+  "ant": "1] intrinsic 2] comprehensive"
+ },
+ {
+  "word": "superfluous",
+  "star": false,
+  "mean": "1] Serving no useful purpose; having no excuse for being 2] More than is needed or desired",
+  "syn": "1] gratuitous, redundant 2] surplus",
+  "ant": "1] essential, imperative 2] deficient"
+ },
+ {
+  "word": "supine",
+  "star": false,
+  "mean": "1] Lying face upward 2] Offering no resistance",
+  "syn": "1] prostrate 2] languid, passive, torpid",
+  "ant": "1] erect, vertical"
+ },
+ {
+  "word": "supplant",
+  "star": false,
+  "mean": "Take the place or move into the position of",
+  "syn": "displace, supersede, usurp",
+  "ant": "include"
+ },
+ {
+  "word": "supplement",
+  "star": false,
+  "mean": "Textual matter that is added onto a publication; usually at the end Add as a supplement to what seems insufficient",
+  "syn": "postscript, append, buttress",
+  "ant": "deduct, subtract"
+ },
+ {
+  "word": "supplicate",
+  "star": false,
+  "mean": "To ask for humbly or by earnest prayer or entreaty: to supplicate mercy.",
+  "syn": "entreat, beseech, implore",
+  "ant": "demand"
+ },
+ {
+  "word": "supposition",
+  "star": true,
+  "mean": "1] An opinion based on incomplete evidence 2] A hypothesis that is taken for granted",
+  "syn": "1] conjecture, inference 2] postulate",
+  "ant": ""
+ },
+ {
+  "word": "surfeit",
+  "star": false,
+  "mean": "The state of being more than full.",
+  "syn": "cram, gorge, satiate",
+  "ant": "dearth, lack"
+ },
+ {
+  "word": "surreptitious",
+  "star": false,
+  "mean": "Done or acting secretly; underhand; clandestine: a surreptitious meeting.",
+  "syn": "secret, furtive plain",
+  "ant": "open, straightforward"
+ },
+ {
+  "word": "surrogate",
+  "star": false,
+  "mean": "Someone who takes the place of another person",
+  "syn": "deputy, substitute, foster",
+  "ant": "original, principal"
+ },
+ {
+  "word": "susceptible",
+  "star": false,
+  "mean": "Easily impressed emotionally or yielding to",
+  "syn": "sensitive, swayed, vulnerable",
+  "ant": "intractable, unwilling"
+ },
+ {
+  "word": "suspend",
+  "star": false,
+  "mean": "1] Hang freely 2] Bar temporarily; from school, etc. 3] Make inoperative or stop",
+  "syn": "1] dangle, swing 3] adjourn, protract",
+  "ant": "3] convene, resume"
+ },
+ {
+  "word": "swerve",
+  "star": false,
+  "mean": "An erratic deflection from an intended course. Turn sharply; change direction abruptly",
+  "syn": "careen, deviate, veer",
+  "ant": "abide, confirm"
+ },
+ {
+  "word": "synchronous",
+  "star": false,
+  "mean": "Occurring or existing at the same time or rate",
+  "syn": "coincident, concurrent, parallel",
+  "ant": "unrelated"
+ },
+ {
+  "word": "syncopated",
+  "star": false,
+  "mean": "Cut short; abbreviated",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "synoptic",
+  "star": false,
+  "mean": "1] Presenting a summary or general view of a whole 2] Taking the same point of view.",
+  "syn": "1] abridged, condensed, succinct",
+  "ant": "1] enlarged, expanded, verbose"
+ },
+ {
+  "word": "tacit",
+  "star": true,
+  "mean": "Implied by or inferred from actions or statements",
+  "syn": "implicit, implied",
+  "ant": "explicit, known"
+ },
+ {
+  "word": "taciturn",
+  "star": false,
+  "mean": "Habitually silent or reserved; disinclined to conversation.",
+  "syn": "uncommunicative talkative",
+  "ant": "communicative"
+ },
+ {
+  "word": "taint",
+  "star": false,
+  "mean": "1] Place under suspicion or cast doubt upon 2] Contaminate with a disease or morally corrupt",
+  "syn": "1] shame, vitiate 2] adulterate, pollute",
+  "ant": "1] glorify 2] cleanse, purify"
+ },
+ {
+  "word": "tangential",
+  "star": true,
+  "mean": "1] Of superficial relevance 2] Of or relating to or acting along or in the direction of a",
+  "syn": "1] digressive, perimetric tangent",
+  "ant": "1] primary, relevant"
+ },
+ {
+  "word": "tangible",
+  "star": false,
+  "mean": "1] Perceptible by the senses especially the sense of touch 2] Having substance or material existence",
+  "syn": "1] palpable, tactile 2] concrete",
+  "ant": "1] imperceptible 2] mental, unreal"
+ },
+ {
+  "word": "tardy",
+  "star": false,
+  "mean": "1] Behind time; late; delayed or dilatory. 2] Slow in motion or action; sluggish: The old bus was tardier ever.",
+  "syn": "held up than",
+  "ant": "timely"
+ },
+ {
+  "word": "taut",
+  "star": false,
+  "mean": "1] Pulled or drawn tight 2] Subject to great tension 3] Marked by the efficient, sparing, or concise use of something: The taut plot of the novel.",
+  "syn": "1] rigid 2] anxious",
+  "ant": "1] slack 2] assured"
+ },
+ {
+  "word": "tedium",
+  "star": false,
+  "mean": "Boredom: There was little to relieve the tedium of his lonely days.",
+  "syn": "ennui, tediousness",
+  "ant": "excitement"
+ },
+ {
+  "word": "teetotal",
+  "star": false,
+  "mean": "Practicing complete abstinence from alcoholic beverages",
+  "syn": "abstemious",
+  "ant": "wanton"
+ },
+ {
+  "word": "temerity",
+  "star": false,
+  "mean": "Foolish or rash boldness, foolhardiness, recklessness: He had the temerity to propose to her when he knew that she was several cheek, situations above him in social standing.",
+  "syn": "audacity, effrontery, nerve gall, chutzpah diffidence",
+  "ant": "timidity, fear, apprehension"
+ },
+ {
+  "word": "tendentious",
+  "star": false,
+  "mean": "Marked by a strong tendency, especially a controversial one",
+  "syn": "partisan, warped",
+  "ant": "genuine, objective"
+ },
+ {
+  "word": "tender",
+  "star": false,
+  "mean": "1] offer or present for acceptance 2] nake soft 3] showing kindness, and affection 4] sensetive to pain 5] young and vulnerable",
+  "syn": "5] callow",
+  "ant": "5] mature"
+ },
+ {
+  "word": "tentative",
+  "star": false,
+  "mean": "1] Unsettled in mind or opinion 2] Not fully worked out",
+  "syn": "1] cautious 2] contingent, provisional",
+  "ant": "1] certain, confident"
+ },
+ {
+  "word": "tenuous",
+  "star": true,
+  "mean": "Flimsy or delicate: The old man retained a tenuous hold on life.",
+  "syn": "gossamer, ethereal",
+  "ant": "strong"
+ },
+ {
+  "word": "tepid",
+  "star": false,
+  "mean": "Moderately warm.",
+  "syn": "lukewarm",
+  "ant": "hot"
+ },
+ {
+  "word": "terse",
+  "star": false,
+  "mean": "Short and to the point; concise: a terse comment.",
+  "syn": "pithy, succinct",
+  "ant": "diffuse, wordy"
+ },
+ {
+  "word": "thrift",
+  "star": false,
+  "mean": "1] Extreme care in spending money 2] Vigorous growth of living things, such as plants",
+  "syn": "austerity, frugality, parsimony",
+  "ant": "charity, philanthropy"
+ },
+ {
+  "word": "thwart",
+  "star": false,
+  "mean": "Hinder or prevent (the efforts, plans, or desires) of",
+  "syn": "frustrate, hinder, oppose unblock",
+  "ant": "assist, encourage"
+ },
+ {
+  "word": "timorous",
+  "star": false,
+  "mean": "Full of, or subject to, fear; timid: The new occupants were too timorous to complain to the landlord about the high rent.",
+  "syn": "fainthearted",
+  "ant": "bold, brave"
+ },
+ {
+  "word": "tirade",
+  "star": true,
+  "mean": "A speech of violent denunciation",
+  "syn": "diatribe, philippic",
+  "ant": "adulation, compliment"
+ },
+ {
+  "word": "toady",
+  "star": false,
+  "mean": "A person who tries to please someone in order to gain a personal advantage.",
+  "syn": "sycophant, truckle",
+  "ant": "domineer, intimidate"
+ },
+ {
+  "word": "torpor",
+  "star": true,
+  "mean": "1] A state of motor and mental inactivity 2] Inactivity resulting from lack of vigor or energy 3] The dormant, inactive state of a hibernating or estivating torporific.",
+  "syn": "1] oblivion 2] lassitude, animal",
+  "ant": "1] cognizance lethargy"
+ },
+ {
+  "word": "torrid",
+  "star": false,
+  "mean": "1] Characterized by intense emotion 2] Rapid: Torrid downpour. 3] Burning hot",
+  "syn": "1] ardent, fervent 3] sultry",
+  "ant": "1] frigid 3] chilly"
+ },
+ {
+  "word": "tortuous",
+  "star": true,
+  "mean": "1] Highly involved or intricate 2] Marked by repeated turns and bends: The road to Srinagar is tortuous.",
+  "syn": "1] complex, labyrinthine 2] circuitous, serpentine",
+  "ant": "1] apparent, obvious 2] straight"
+ },
+ {
+  "word": "tout",
+  "star": false,
+  "mean": "1] Advertize in strongly positive terms 2] Show off",
+  "syn": "1] herald, publicize 2] brag, trumpet",
+  "ant": "1] criticize 2] conceal, hide"
+ },
+ {
+  "word": "toy",
+  "star": false,
+  "mean": "1] Behave carelessly or indifferently 2] Manipulate",
+  "syn": "1] dally, trifle",
+  "ant": ""
+ },
+ {
+  "word": "tractable",
+  "star": true,
+  "mean": "1] Easily led or controlled; manageable: a tractable pony; a and tractable child. 2] Readily worked or handled; malleable: Gold is more than iron.",
+  "syn": "mild docile, complaint, amenable tractable",
+  "ant": "obstinate, fractious, rebellious"
+ },
+ {
+  "word": "tranquil",
+  "star": false,
+  "mean": "Free from disturbance or emotional agitation.",
+  "syn": "serene, unruffled",
+  "ant": "frenzied, turbulent"
+ },
+ {
+  "word": "transgresion",
+  "star": true,
+  "mean": "* 1] The violation of a law or a duty or moral principle 2] Overstepping a limit or boundary.",
+  "syn": "1] delinquency 2] encroachment, violation",
+  "ant": "1] adherence, conformity"
+ },
+ {
+  "word": "transitional",
+  "star": false,
+  "mean": "Passage from one form, state, style, or place to another.",
+  "syn": "mutable, vacillating, get across",
+  "ant": "constant, regular"
+ },
+ {
+  "word": "treacherous",
+  "star": false,
+  "mean": "1] Dangerously unstable and unpredictable: They crossed the 1] treacherous strait with great trepidation. 2] Tending to betray",
+  "syn": "hazardous, precarious 2] perfidious",
+  "ant": "1] secure 2] ethical"
+ },
+ {
+  "word": "tremulous",
+  "star": false,
+  "mean": "1] Trembling; quivering: The tremulous flutter of young leaves. child's voice was tremulous with sobs. 2] Timid; feeling or showing fear: He was shy and tremulous in presence of strangers.",
+  "syn": "The shaking, vibrating unafraid the",
+  "ant": "2] courageous"
+ },
+ {
+  "word": "trepidation",
+  "star": false,
+  "mean": "A feeling of alarm or dread.",
+  "syn": "alarm, panic, trepidity nonchalance",
+  "ant": "assurance"
+ },
+ {
+  "word": "truce",
+  "star": false,
+  "mean": "A state of peace agreed to between opponents so they can discuss peace terms.",
+  "syn": "armistice, stay",
+  "ant": "war"
+ },
+ {
+  "word": "truculent",
+  "star": true,
+  "mean": "Aggressively hostile; belligerent: a truculent mood.",
+  "syn": "angry, fierce, ruthless gentle",
+  "ant": "mild, inoffensive"
+ },
+ {
+  "word": "tumult",
+  "star": false,
+  "mean": "1] Noise or uproar; commotion: The sailor's voices could be heard above the tumult of the storm. 2] Violent disturbance or disorder: The shout of 'fire' caused a tumult in the theatre. 3] riot; insurrection: There is much blood-shedding in Spain and violent wars and tumults (George Borrow). 4] Figurative: a great disturbance of mind or feeling; confusion excitement: The quarrel left her in a tumult.",
+  "syn": "3] brawl or",
+  "ant": "calm, peace, quiet"
+ },
+ {
+  "word": "turbid",
+  "star": false,
+  "mean": "1] Heavy, dark, or dense, as fog 2] clouded as with sediment 3] In a state of turmoil",
+  "syn": "1] obscure, tenebrous 2] blurred, muddy 3] addled",
+  "ant": "3] calm, organized"
+ },
+ {
+  "word": "turbulence",
+  "star": false,
+  "mean": "1] Instability in the atmosphere 2] A state of violent disturbance and disorder",
+  "syn": "1] inclemency 2] mutiny, violence",
+  "ant": "2] order, serenity"
+ },
+ {
+  "word": "turgid",
+  "star": false,
+  "mean": "1] Unnaturally puffed out; swollen. 2] Bombastic, as language, style, etc.: a turgid speech.",
+  "syn": "1] bloated, distented 2] pompous",
+  "ant": "1] shrunken 2] humble"
+ },
+ {
+  "word": "turpitude",
+  "star": true,
+  "mean": "Wickedness; vileness; depravity, or action showing this: the moral turpitude of Nero's times.",
+  "syn": "depravity",
+  "ant": "morality, virtue"
+ },
+ {
+  "word": "tyro",
+  "star": false,
+  "mean": "Someone new to a field or activity",
+  "syn": "amateur, fledgling, novice, neophyte",
+  "ant": "expert, veteran"
+ },
+ {
+  "word": "ubiquitous",
+  "star": false,
+  "mean": "Existing, or seeming to exist, everywhere at once; omnipresent: The television cameras, ubiquitous and demanding, overshadowed the entire convention.",
+  "syn": "pervasive, universal",
+  "ant": "exclusive"
+ },
+ {
+  "word": "ulterior",
+  "star": false,
+  "mean": "Beyond what is seen or expressed; intentionally concealed or kept in the background; hidden: an ulterior motive, an ulterior",
+  "syn": "buried purpose.",
+  "ant": "exposed, revealed"
+ },
+ {
+  "word": "unalloyed",
+  "star": false,
+  "mean": "1] Not in mixture with other metals; pure 2] Complete",
+  "syn": "genuine, sterling",
+  "ant": ""
+ },
+ {
+  "word": "unconventional",
+  "star": false,
+  "mean": "al Not conforming to accepted rules or standards, whether legal, moral or social.",
+  "syn": "eccentric, offbeat, unorthodox",
+  "ant": "normal, standard"
+ },
+ {
+  "word": "uncouth",
+  "star": false,
+  "mean": "1] Awkward, clumsy; crude, not refined: an uncouth person; discourteous uncouth manners. 2] Unusual and unpleasant: the eerie and uncouth noises of the jungle.",
+  "syn": "graceful",
+  "ant": ""
+ },
+ {
+  "word": "undergird",
+  "star": false,
+  "mean": "1] Lend moral support to 2] Make secure underneath",
+  "syn": "2] bolster, brace, fortify",
+  "ant": ""
+ },
+ {
+  "word": "undermine",
+  "star": false,
+  "mean": "1] To weaken, injure, or impair 2] To hollow out; dig a tunnel or mine",
+  "syn": "1] sabotage, subvert 2] fill",
+  "ant": "1] fortify"
+ },
+ {
+  "word": "underrate",
+  "star": false,
+  "mean": "Make too low an estimate of",
+  "syn": "deprecate, undervalue",
+  "ant": "aggrandize"
+ },
+ {
+  "word": "underscore",
+  "star": false,
+  "mean": "1] Give extra weight to; emphasize 2] To underline",
+  "syn": "1] stress",
+  "ant": "1] minimize"
+ },
+ {
+  "word": "unexceptionable",
+  "star": false,
+  "mean": "ble Not warranting even the slightest criticism; without flaw or fault: As a method to redress the mill worker's long-standing grievance, the government's bonus formula is unexceptionable.",
+  "syn": "immaculate",
+  "ant": "negligent"
+ },
+ {
+  "word": "unearth",
+  "star": false,
+  "mean": "1] Bring to light 2] Lay bare through digging",
+  "syn": "2] excavate, exhume 2] cover",
+  "ant": "1] avoid"
+ },
+ {
+  "word": "unexceptional",
+  "star": false,
+  "mean": "l Not special in any way: The appetizer was excellent but the rest the meal was unexceptional. N.B.: Do not confuse this word with the word 'unexceptionable' above.",
+  "syn": "of commonplace",
+  "ant": "extraordinary"
+ },
+ {
+  "word": "unfettered",
+  "star": true,
+  "mean": "To set free or keep free from restrictions or bonds.",
+  "syn": "unchained",
+  "ant": "constrained"
+ },
+ {
+  "word": "unflappable",
+  "star": false,
+  "mean": "Not easily excited, confused or alarmed; imperturbable: His placid unflappable poise was buttressed by arctic sarcasm.",
+  "syn": "upset",
+  "ant": ""
+ },
+ {
+  "word": "unmitigated",
+  "star": false,
+  "mean": "Not lessened or eased: an unmitigated suffering; an unmitigated show.",
+  "syn": "long-standing",
+  "ant": "short-term"
+ },
+ {
+  "word": "unscathed",
+  "star": false,
+  "mean": "Unharmed: Joe emerged unscathed from the fire.",
+  "syn": "sound, whole",
+  "ant": "injured, scarred"
+ },
+ {
+  "word": "unscrupulous",
+  "star": false,
+  "mean": "Oblivious to or contemptuous of what is right or honorable",
+  "syn": "fraudulent, corrupt",
+  "ant": "trustworthy"
+ },
+ {
+  "word": "untenable",
+  "star": false,
+  "mean": "1] Incapable of being defended or justified (related to theories, ideas) 2] Being such that occupation or habitation is impossible",
+  "syn": "1] flimsy, uncorroborated",
+  "ant": "1] substantial"
+ },
+ {
+  "word": "untoward",
+  "star": false,
+  "mean": "1] Not in keeping with accepted standards of what is right or in polite society 2] Contrary to one's interests or welfare 3] Hard to guide or control; unruly",
+  "syn": "proper 1] indecorous 2] adverse 3] awkward",
+  "ant": "1] suitable 3] adroit"
+ },
+ {
+  "word": "upbraid",
+  "star": false,
+  "mean": "Utter a reproach to",
+  "syn": "berate, castigate, vituperate",
+  "ant": "adulate, extol, praise"
+ },
+ {
+  "word": "urbane",
+  "star": false,
+  "mean": "Characterized by or having refinement or elegance; courteous; polite, sauve: the urbane manners of a diplomat. Etym: Urbane and urban both came from the same Latin word, 'urbanus', meaning of the city.",
+  "syn": "smooth",
+  "ant": "rough, rustic, rude"
+ },
+ {
+  "word": "usurp",
+  "star": false,
+  "mean": "To seize and hold wrongfully; take possession of by force: The snatch military junta usurped the king's power and made him a mere figure-head.",
+  "syn": "hand over",
+  "ant": ""
+ },
+ {
+  "word": "usury",
+  "star": false,
+  "mean": "1] An exorbitant or unlawful rate of interest 2] The act of lending money at an exorbitant rate of interest",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "vacillate",
+  "star": true,
+  "mean": "Be undecided about something, as in trying to make a decision; waffle to waver: She vacillated between wanting to be a blonde and a redhead.",
+  "syn": "be certain",
+  "ant": ""
+ },
+ {
+  "word": "vacuous",
+  "star": false,
+  "mean": "Life showing no thought or intelligence; stupid, foolish: the blank, vacuous life.",
+  "syn": "inane",
+  "ant": "expressive, lively"
+ },
+ {
+  "word": "vapid",
+  "star": false,
+  "mean": "Without liveliness or flavor; insipid; flat and dull: her vapid chatter.",
+  "syn": "bland",
+  "ant": "animated, coloful"
+ },
+ {
+  "word": "variegated",
+  "star": false,
+  "mean": "Having variety in form, character, etc. The variegated architecture of this Mediterranean island, once the meeting point of the civilisations of the West and the East.",
+  "syn": "mottled, dappled identical",
+  "ant": "homogeneous"
+ },
+ {
+  "word": "vegetate",
+  "star": false,
+  "mean": "1] To grow or develop as plants do: one really lives nowhere; one 2] does but vegetate. 2] To live with every little action; thought or feeling; exist intellectual or material achievement.",
+  "syn": "loaf, stagnate without",
+  "ant": "2] active"
+ },
+ {
+  "word": "vehement",
+  "star": false,
+  "mean": "1] Passionate or ardent; intense; fervent: his vehement protestations of innocence. 2] Full of energy; lively; vigorous: vehement gestures; vehement applause.",
+  "syn": "1] fiery, feverish 2] strenuous",
+  "ant": "1] calm, halfhearted 2] listless"
+ },
+ {
+  "word": "venal",
+  "star": false,
+  "mean": "Capable of being corrupted",
+  "syn": "perfidious, rapacious",
+  "ant": "ethical, srupulous"
+ },
+ {
+  "word": "veneer",
+  "star": false,
+  "mean": "To conceal, as something common, with a deceptively attractive furbish, outward show",
+  "syn": "gloss",
+  "ant": ""
+ },
+ {
+  "word": "venerate",
+  "star": true,
+  "mean": "Regard with feelings of respect and reverence",
+  "syn": "revere",
+  "ant": "dishonor"
+ },
+ {
+  "word": "veracious",
+  "star": true,
+  "mean": "1] Speaking the truth 2] Accurate",
+  "syn": "1] candid, authentic 2] vague",
+  "ant": "1] evasive"
+ },
+ {
+  "word": "verbiage",
+  "star": false,
+  "mean": "Excess of word; wordiness: A simple idea buried under much verbosity, verbiage.",
+  "syn": "prolixity",
+  "ant": "conciseness, terseness"
+ },
+ {
+  "word": "verbose",
+  "star": true,
+  "mean": "Using or containing a wearisome and unnecessary number of redundant, words; words; wordy: a verbose, boring after-dinner, speech.",
+  "syn": "prolix, flatulent",
+  "ant": "terse, pithy, condensed"
+ },
+ {
+  "word": "verdant",
+  "star": false,
+  "mean": "1] Green with vegetation 2] Lacking experience or sophistication; naive",
+  "syn": "1] sylvan 2] raw, rookie",
+  "ant": "2] veteran"
+ },
+ {
+  "word": "verisimilar",
+  "star": false,
+  "mean": "Appearing to be true or real.",
+  "syn": "credible, plausible, possible",
+  "ant": ""
+ },
+ {
+  "word": "veritable",
+  "star": false,
+  "mean": "Not counterfeit or copied; genuine: He discovered a veritable authentic, treasure trove in the depths of the Congo.",
+  "syn": "bonafide",
+  "ant": "bogus, phony"
+ },
+ {
+  "word": "vertigo",
+  "star": false,
+  "mean": "1] A reeling sensation; feeling about to fall 2] A confused, disoriented state of mind",
+  "syn": "giddiness",
+  "ant": ""
+ },
+ {
+  "word": "viable",
+  "star": true,
+  "mean": "1] Capable of being done with means at hand and circumstances 1] as they are 2] Capable of life or normal growth.",
+  "syn": "feasible, workable",
+  "ant": "2] dead"
+ },
+ {
+  "word": "vicious",
+  "star": false,
+  "mean": "Brutal, strongly spiteful; savage and dangerous: A dictator's vicious love of power; the criminal leads a vicious life. I won't listen to such vicious gossip.",
+  "syn": "nefarious",
+  "ant": "good, virtuous"
+ },
+ {
+  "word": "vigilant",
+  "star": false,
+  "mean": "Carefully observant; on the lookout for possible danger",
+  "syn": "alert, heedful, wary",
+  "ant": "lethargic, sluggish"
+ },
+ {
+  "word": "vindictive",
+  "star": true,
+  "mean": "Disposed to seek revenge or intended for revenge.",
+  "syn": "vengeful",
+  "ant": "harmless"
+ },
+ {
+  "word": "violate",
+  "star": false,
+  "mean": "1] Act in disregard of laws and rules 2] To harm or destroy 3] spoil the sacred character of a place or language",
+  "syn": "1] breach, infract 2] plunder 3] profane",
+  "ant": "2] nurture, protect"
+ },
+ {
+  "word": "virulent",
+  "star": false,
+  "mean": "1] Exceedingly harmful, poisonous, or infectious: The family was plagued by a virulent disease. 2] Full of bitterness and hate: a virulent speech attacking slum lords.",
+  "syn": "pernicious 2] agreeable, content",
+  "ant": "1] benign"
+ },
+ {
+  "word": "vitiate",
+  "star": false,
+  "mean": "1] To make imperfect, faulty or impure; spoil, corrupt: Pollution from smoke and dust vitiates the air. The abridgement vitiated the original text. 2] To weaken, morally debase, pervert; Black money has totally vitiated the economy of the country. Corruption in top places has vitiated the political atmosphere.",
+  "syn": "debauch",
+  "ant": "embellish"
+ },
+ {
+  "word": "vituperation",
+  "star": true,
+  "mean": "Abusive language; censure: a torrent of vituperation.",
+  "syn": "invective, abuse",
+  "ant": "appreciation, praise"
+ },
+ {
+  "word": "vivid",
+  "star": false,
+  "mean": "Having the clarity and freshness of immediate experience",
+  "syn": "distinct",
+  "ant": "blur"
+ },
+ {
+  "word": "volatile",
+  "star": true,
+  "mean": "1] Liable to lead to sudden change or violence 2] Marked by an erratic change in affections or attachments",
+  "syn": "2] capricious, fickle, whimsical",
+  "ant": "2] constant, steadfast"
+ },
+ {
+  "word": "voluptuary",
+  "star": false,
+  "mean": "A person who gives himself up to sensual pleasures and luxury.",
+  "syn": "epicure",
+  "ant": "gentleman"
+ },
+ {
+  "word": "voracious",
+  "star": false,
+  "mean": "1] Excessively greedy and grasping 2] Having or marked by an insatiable appetite for an activity or 2] pursuit: She was a voracious reader of mystery novels.",
+  "syn": "1] ravenous ardent, avid",
+  "ant": "2] blase, bored"
+ },
+ {
+  "word": "vulnerable",
+  "star": false,
+  "mean": "1] Capable of being wounded or hurt 2] Susceptible to criticism or persuasion or temptation 3] Susceptible to physical or emotional injury",
+  "syn": "1] assailable, endangered secure",
+  "ant": "1] fortified, safe"
+ },
+ {
+  "word": "waffle",
+  "star": false,
+  "mean": "Pause or hold back in uncertainty or unwillingness.",
+  "syn": "confront, falter, waver",
+  "ant": "cavil, face"
+ },
+ {
+  "word": "waft",
+  "star": false,
+  "mean": "1] Be driven or carried along, as by the air 2] Blow gently",
+  "syn": "1] transmit 2] whiff",
+  "ant": ""
+ },
+ {
+  "word": "wag",
+  "star": false,
+  "mean": "A witty, amusing person who makes jokes.",
+  "syn": "oscillate, wiggle",
+  "ant": ""
+ },
+ {
+  "word": "waive",
+  "star": false,
+  "mean": "1] To give up a claim to: to waive an option on a piece of land. 2] To put off; postpone; delay",
+  "syn": "totter, shuffle",
+  "ant": "withhold"
+ },
+ {
+  "word": "wane",
+  "star": false,
+  "mean": "1] To lose size; become smaller: The moon wanes after it has diminish become full. 2] To lose power, influence or importance: many great empires have waned. 3] To lose strength or intensity: Their early enthusiasm was",
+  "syn": "enlarge waning.",
+  "ant": ""
+ },
+ {
+  "word": "wanton",
+  "star": false,
+  "mean": "1] Undisciplined; unmanageable (a wanton child). 2] Sexually loose or unrestrained (a wanton woman). 3] Frisky, playful frolicsome. 4] Senseless, unprovoked unjustifiable or deliberately malicious (a wanton cruelty or a wanton insult)",
+  "syn": "immoral, lustful",
+  "ant": "reserved"
+ },
+ {
+  "word": "warrant",
+  "star": false,
+  "mean": "To guarantee or attest to the character, quality, accuracy, or condition of.",
+  "syn": "sanction, approve, endorse",
+  "ant": "controvert, prohibit"
+ },
+ {
+  "word": "wary",
+  "star": true,
+  "mean": "1] On one's guard against danger or deception: a wary fox. 2] Careful, cautious: He gave wary answers to all of the stranger's questions.",
+  "syn": "alert, vigilant, watchful, guarded",
+  "ant": "asleep, inattentive"
+ },
+ {
+  "word": "waver",
+  "star": false,
+  "mean": "1] Pause or hold back in uncertainty 2] Move hesitatingly 3] Move to and fro",
+  "syn": "1] waffle 2] falter 3] flicker",
+  "ant": "1] persist"
+ },
+ {
+  "word": "wheedle",
+  "star": true,
+  "mean": "To persuade by flattery smooth words, or caresses; coax: The inveigle, children wheeled their mother into letting them go to the picnic.",
+  "syn": "influence",
+  "ant": "bully"
+ },
+ {
+  "word": "whimsical",
+  "star": true,
+  "mean": "Determined by chance, impulse or whim-whimsy.",
+  "syn": "arbitrary, capricious",
+  "ant": "assured, rational"
+ },
+ {
+  "word": "wile",
+  "star": false,
+  "mean": "A sly trick; deceitful artifice, stratagem.",
+  "syn": "deceptive",
+  "ant": "naivety, yielding"
+ },
+ {
+  "word": "wilful",
+  "star": false,
+  "mean": "1] Done by design or with a purpose 2] Habitually disposed to disobedience and opposition",
+  "syn": "1] deliberate 2] froward headstrong",
+  "ant": "flourish, bloom"
+ },
+ {
+  "word": "wither",
+  "star": false,
+  "mean": "Lose freshness, vigor, or vitality",
+  "syn": "atrophy, languish, shrivel",
+  "ant": ""
+ },
+ {
+  "word": "winsome",
+  "star": false,
+  "mean": "Attractive in a sweet, engaging way; charming: a winsome girl, a winsome smile.",
+  "syn": "pretty",
+  "ant": "repulsive, ugly"
+ },
+ {
+  "word": "woeful",
+  "star": false,
+  "mean": "Accompanied by or causing misery; direful; regrettable: They lived in such woeful poverty.",
+  "syn": "miserable",
+  "ant": "confortable"
+ },
+ {
+  "word": "xenophobe",
+  "star": false,
+  "mean": "A person who hates or distrusts strangers or foreigners.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "yahoo",
+  "star": false,
+  "mean": "a person who is variously thought of as coarse, uneducated, rustic, oaf, bumpkin unrefined, anti-intellectual, etc.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "yield",
+  "star": false,
+  "mean": "1] Produce, give forth, or give in return: The soil yields good crops; generate His investment yields a five percent return. 2] Give up, as to a superior power; surrender: to yield a fortress. 3] The amount yielded; product; result: an annual yield of 300 tons.",
+  "syn": "impede",
+  "ant": ""
+ },
+ {
+  "word": "yokel",
+  "star": false,
+  "mean": "A person living in a rural area; country bumpkin.",
+  "syn": "rustic gentleman",
+  "ant": ""
+ },
+ {
+  "word": "zealot",
+  "star": true,
+  "mean": "An immoderate partisan; a fanatic.",
+  "syn": "enthusiast disparager",
+  "ant": ""
+ },
+ {
+  "word": "zealous",
+  "star": false,
+  "mean": "Filled with or incited by great interest and devotion: zealous earnest, fervent, workers.",
+  "syn": "slack, hardworking",
+  "ant": "unenthusiastic"
+ },
+ {
+  "word": "zeitgeist",
+  "star": false,
+  "mean": "(German: Pronounced Tsit'gist): the spirit of the age; the trend of - thought and feeling in a period.",
+  "syn": "",
+  "ant": ""
+ },
+ {
+  "word": "zenith",
+  "star": false,
+  "mean": "1] The point of heavens that is directly overhead, and opposite to summit the nadir. 2] The highest point or culminating point of power fortunes, prosperity, etc.: Venice was at her zenith as a sea power in the 15th century.",
+  "syn": "lowest",
+  "ant": ""
+ },
+ {
+  "word": "zephyr",
+  "star": false,
+  "mean": "1] The west wind. 2] Any soft, gentle and lightweight worsted or woollen yarn.",
+  "syn": "breeze",
+  "ant": ""
+ }
+]

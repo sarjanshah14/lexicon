@@ -1,0 +1,207 @@
+#!/usr/bin/env python3
+"""Wrap pandoc's HTML body in a clean, white, reading-friendly page with a sticky sidebar."""
+import re, subprocess, html
+
+MD = "GRE-Lexicon-Master-Handbook.md"
+OUT = "GRE-Lexicon-Master-Handbook.html"
+
+body = subprocess.run(
+    ["pandoc", MD, "-f", "gfm", "-t", "html", "--syntax-highlighting=none"],
+    capture_output=True, text=True, check=True).stdout
+
+# Build sidebar from H2 headings (skip the in-page Table of Contents heading itself)
+nav_items = []
+for m in re.finditer(r'<h2 id="([^"]+)">(.*?)</h2>', body, re.S):
+    hid, text = m.group(1), re.sub(r'<[^>]+>', '', m.group(2)).strip()
+    if hid == "table-of-contents":
+        continue
+    nav_items.append((hid, text))
+
+nav_html = "\n".join(
+    f'      <li><a href="#{hid}">{html.escape(t)}</a></li>' for hid, t in nav_items
+)
+
+CSS = """
+:root{
+  --ink:#161616; --muted:#5a5a5a; --line:#d6d6d2; --bg:#e7e7e3;
+  --accent:#111111; --accent-soft:#e9e9e6; --code-bg:#efefec;
+  --zebra:#f6f6f3; --thead:#ececea; --panel:#ffffff;
+  --sidebar:#1a1a1a; --sidebar-ink:#cfcfca; --sidebar-hover:#2b2b2b;
+  --content-width:880px; --sidebar-width:300px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:17px; line-height:1.72; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent); text-decoration:underline; text-underline-offset:2px;}
+a:hover{opacity:.7;}
+
+/* layout */
+.layout{display:flex; align-items:flex-start;}
+.sidebar{
+  width:var(--sidebar-width); flex:0 0 var(--sidebar-width);
+  position:sticky; top:0; height:100vh; overflow-y:auto;
+  background:var(--sidebar); border-right:1px solid #000;
+  padding:24px 18px 60px;
+}
+.sidebar h1{font-size:17px; margin:4px 8px 16px; line-height:1.4; color:#fff;}
+.sidebar .sub{font-size:12.5px; color:#8a8a85; margin:0 8px 18px; font-weight:400;}
+.sidebar ol{list-style:none; margin:0; padding:0; counter-reset:nav;}
+.sidebar li{margin:0;}
+.sidebar li a{
+  display:block; padding:7px 10px; border-radius:6px; text-decoration:none;
+  color:var(--sidebar-ink); font-size:14px; line-height:1.35;
+}
+.sidebar li a:hover{background:var(--sidebar-hover); color:#fff; opacity:1;}
+.sidebar li a.active{background:#fff; color:#111; font-weight:600;}
+
+.content{flex:1 1 auto; min-width:0; display:flex; justify-content:center; padding:0 32px;}
+.content-inner{
+  width:100%; max-width:var(--content-width); margin:34px 0 80px;
+  background:var(--panel); border:1px solid var(--line); border-radius:10px;
+  padding:48px 56px 90px; box-shadow:0 1px 3px rgba(0,0,0,.06);
+}
+
+/* typography */
+h1,h2,h3,h4{line-height:1.3; font-weight:700; scroll-margin-top:24px;}
+.content-inner > h1:first-child{font-size:2.1rem; margin:0 0 .2em;}
+h2{font-size:1.6rem; margin:2.4em 0 .8em; padding-bottom:.3em; border-bottom:2px solid var(--line);}
+h3{font-size:1.22rem; margin:1.8em 0 .6em; color:#111;}
+h4{font-size:1.04rem; margin:1.4em 0 .5em; color:var(--muted);}
+p{margin:.7em 0;}
+ul,ol{padding-left:1.5em;}
+li{margin:.25em 0;}
+hr{border:0; border-top:1px solid var(--line); margin:2.4em 0;}
+
+strong{color:#111; font-weight:700;}
+
+/* blockquote = study tip callout */
+blockquote{
+  margin:1.2em 0; padding:.8em 1.1em; background:var(--accent-soft);
+  border-left:4px solid var(--accent); border-radius:0 8px 8px 0; color:#2a2a2a;
+}
+blockquote p{margin:.4em 0;}
+
+/* code */
+code{
+  background:var(--code-bg); padding:.12em .4em; border-radius:5px;
+  font-family:"SF Mono",SFMono-Regular,Consolas,"Liberation Mono",Menlo,monospace;
+  font-size:.86em; color:#222; border:1px solid var(--line);
+}
+
+/* tables */
+table{
+  border-collapse:collapse; width:100%; margin:1.2em 0; font-size:15px;
+  display:block; overflow-x:auto;
+}
+thead th{
+  background:var(--thead); text-align:left; font-weight:700;
+  position:sticky; top:0;
+}
+th,td{border:1px solid var(--line); padding:8px 11px; vertical-align:top;}
+tbody tr:nth-child(even){background:var(--zebra);}
+tbody tr:hover{background:#e9e9e6;}
+
+/* in-page ToC list (right after first h2) gets a card look via class added by JS */
+.toc-card{background:#f6f6f3; border:1px solid var(--line); border-radius:10px; padding:8px 22px;}
+
+/* top bar (mobile) */
+.topbar{display:none;}
+
+/* back to top */
+#toTop{
+  position:fixed; right:22px; bottom:22px; width:42px; height:42px; border-radius:50%;
+  background:var(--accent); color:#fff; border:none; font-size:20px; cursor:pointer;
+  box-shadow:0 2px 10px rgba(0,0,0,.18); opacity:0; pointer-events:none; transition:opacity .2s;
+}
+#toTop.show{opacity:.9; pointer-events:auto;}
+#toTop:hover{opacity:1;}
+
+/* responsive */
+@media (max-width:900px){
+  .sidebar{
+    position:fixed; left:0; top:0; z-index:40; transform:translateX(-100%);
+    transition:transform .25s ease; box-shadow:2px 0 16px rgba(0,0,0,.12);
+  }
+  .sidebar.open{transform:translateX(0);}
+  .topbar{
+    display:flex; align-items:center; gap:12px; position:sticky; top:0; z-index:30;
+    background:#fff; border-bottom:1px solid var(--line); padding:10px 16px;
+  }
+  .topbar button{font-size:22px; background:none; border:none; cursor:pointer; color:var(--ink);}
+  .topbar span{font-weight:700; font-size:15px;}
+  .content{padding:0 18px;}
+  .content-inner{padding:24px 0 100px;}
+  body{font-size:16px;}
+  .backdrop{position:fixed; inset:0; background:rgba(0,0,0,.35); z-index:35; display:none;}
+  .backdrop.show{display:block;}
+}
+"""
+
+JS = """
+const sb=document.getElementById('sidebar');
+const bd=document.getElementById('backdrop');
+function toggle(){sb.classList.toggle('open');bd.classList.toggle('show');}
+document.getElementById('menuBtn')?.addEventListener('click',toggle);
+bd?.addEventListener('click',toggle);
+sb.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(window.innerWidth<=900)toggle();}));
+
+// active section highlight
+const links=[...sb.querySelectorAll('a')];
+const map={}; links.forEach(a=>map[a.getAttribute('href').slice(1)]=a);
+const heads=[...document.querySelectorAll('h2[id]')];
+const obs=new IntersectionObserver((es)=>{
+  es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));
+    const a=map[e.target.id]; if(a)a.classList.add('active');}});
+},{rootMargin:'-10% 0px -80% 0px'});
+heads.forEach(h=>obs.observe(h));
+
+// give the in-page Table of Contents list a card look
+const tocH=document.getElementById('table-of-contents');
+if(tocH){let n=tocH.nextElementSibling; if(n&&n.tagName==='OL')n.classList.add('toc-card');}
+
+// back to top
+const btn=document.getElementById('toTop');
+addEventListener('scroll',()=>{btn.classList.toggle('show',scrollY>600);});
+btn.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+"""
+
+page = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GRE Lexicon Master Handbook</title>
+<style>{CSS}</style>
+</head>
+<body>
+<div class="topbar">
+  <button id="menuBtn" aria-label="Menu">&#9776;</button>
+  <span>GRE Lexicon Master Handbook</span>
+</div>
+<div class="backdrop" id="backdrop"></div>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <h1>GRE Lexicon<br>Master Handbook</h1>
+    <div class="sub">Text Completion &middot; Sentence Equivalence &middot; RC vocab</div>
+    <nav><ol>
+{nav_html}
+    </ol></nav>
+  </aside>
+  <main class="content">
+    <article class="content-inner">
+{body}
+    </article>
+  </main>
+</div>
+<button id="toTop" aria-label="Back to top">&#8593;</button>
+<script>{JS}</script>
+</body>
+</html>
+"""
+
+open(OUT, "w", encoding="utf-8").write(page)
+print(f"Wrote {OUT} with {len(nav_items)} sidebar sections.")
