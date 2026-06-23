@@ -90,9 +90,21 @@ table{
 th,td{
   border-right:1px solid var(--line); border-bottom:1px solid var(--line);
   padding:8px 11px; vertical-align:top;
-  /* keep whole words intact — wrap only at spaces, never split a word into characters */
-  overflow-wrap:normal; word-break:normal; hyphens:none;
+  overflow-wrap:break-word;   /* wrap at spaces; break a long word only if it can't fit */
 }
+/* WIDE tables (6+ columns) are locked to the container width and wrap their text,
+   so they shrink to fit when the sidebar is open instead of overflowing the page. */
+table.wide{table-layout:fixed;}
+table.wide th, table.wide td{overflow-wrap:break-word; word-break:break-word;}
+/* glossary column proportions (8 cols: Word POS Meaning Root Tags Hook Syn Ant) */
+table.gloss th:nth-child(1), table.gloss td:nth-child(1){width:11%;}
+table.gloss th:nth-child(2), table.gloss td:nth-child(2){width:5%;}
+table.gloss th:nth-child(3), table.gloss td:nth-child(3){width:18%;}
+table.gloss th:nth-child(4), table.gloss td:nth-child(4){width:15%;}
+table.gloss th:nth-child(5), table.gloss td:nth-child(5){width:6%;}
+table.gloss th:nth-child(6), table.gloss td:nth-child(6){width:17%;}
+table.gloss th:nth-child(7), table.gloss td:nth-child(7){width:15%;}
+table.gloss th:nth-child(8), table.gloss td:nth-child(8){width:13%;}
 /* sticky header row: freezes a little BELOW the top of the viewport (--head-top) while its
    table is in view, then releases once the table has scrolled past. */
 thead th{
@@ -131,17 +143,6 @@ tbody tr:hover{background:#e9e9e6;}
 /* frozen glossary headers sit just below the sticky search bar */
 table.gloss thead th{top:calc(var(--head-top) + 56px);}
 
-/* a too-wide table is auto-wrapped in this scroll frame (JS) so columns are never
-   cut off; the header stays frozen at the top of the frame, and you scroll the table
-   sideways/vertically inside it. */
-.tscroll{
-  overflow:auto; max-height:82vh; margin:1.2em 0;
-  border:1px solid var(--line); border-radius:8px;
-  -webkit-overflow-scrolling:touch;
-}
-.tscroll table{margin:0; border-top:0; border-left:0;}
-.tscroll thead th{top:0;}              /* freeze to the frame top (no page offset) */
-.tscroll thead th::before{display:none;}/* no gap mask needed inside the frame */
 
 /* nav toggle button (always visible) */
 .nav-toggle{
@@ -14998,7 +14999,7 @@ const mobile=()=>window.innerWidth<=900;
 function closeMobile(){sb.classList.remove('open');bd.classList.remove('show');}
 function toggle(){
   if(mobile()){ sb.classList.toggle('open'); bd.classList.toggle('show'); }
-  else { body.classList.toggle('nav-collapsed'); setTimeout(()=>refitTables(), 320); }
+  else { body.classList.toggle('nav-collapsed'); }
 }
 document.getElementById('navToggle').addEventListener('click',toggle);
 bd.addEventListener('click',closeMobile);
@@ -15053,23 +15054,17 @@ if(gh && gInput){
   gInput.addEventListener('input', filter);
 }
 
-// ===== auto-fit wide tables: wrap any table that overflows its width in a scroll frame
-// (keeps the header frozen at the frame top); unwrap again if it fits after a resize =====
-function refitTables(){
-  document.querySelectorAll('table').forEach(t=>{
-    const pane = t.parentElement && t.parentElement.classList.contains('tscroll')
-                 ? t.parentElement : null;
-    const overflowing = t.scrollWidth > t.clientWidth + 1;
-    if(overflowing && !pane){
-      const w=document.createElement('div'); w.className='tscroll';
-      t.parentNode.insertBefore(w, t); w.appendChild(t);
-    }else if(!overflowing && pane){
-      pane.parentNode.insertBefore(t, pane); pane.remove();
-    }
-  });
-}
-let _rt; addEventListener('resize',()=>{clearTimeout(_rt); _rt=setTimeout(refitTables,150);});
-refitTables();
+// ===== mark wide tables (6+ columns) so they use a fixed, container-locked layout
+// that wraps text and never overflows the page =====
+document.querySelectorAll('table').forEach(t=>{
+  const h=t.tHead||t.querySelector('thead');
+  if(h && h.rows[0] && h.rows[0].cells.length>=6){
+    t.classList.add('wide');
+    // a leading "#" column should stay narrow
+    const f=h.rows[0].cells[0];
+    if(f && f.textContent.trim()==='#') f.style.width='2.5em';
+  }
+});
 
 // back to top
 const btn=document.getElementById('toTop');
