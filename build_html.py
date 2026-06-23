@@ -42,7 +42,7 @@ CSS = """
   --zebra:#f6f6f3; --thead:#ececea; --panel:#ffffff;
   --sidebar:#1a1a1a; --sidebar-ink:#cfcfca; --sidebar-hover:#2b2b2b;
   --content-width:880px; --sidebar-width:300px;
-  --head-top:18px;        /* gap kept above a frozen header row */
+  --head-top:12px;        /* small gap kept above a frozen header row */
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -125,12 +125,17 @@ th,td{
   overflow-wrap:normal; word-break:normal; hyphens:none;
 }
 /* sticky header row: freezes a little BELOW the top of the viewport (--head-top) while its
-   table is in view, then releases once the table has scrolled past. The downward box-shadow
-   in panel colour masks any rows passing through the gap above the frozen header. */
+   table is in view, then releases once the table has scrolled past. */
 thead th{
   background:var(--thead); text-align:left; font-weight:700;
   position:-webkit-sticky; position:sticky; top:var(--head-top); z-index:5;
-  box-shadow:inset 0 1px 0 var(--line), 0 calc(-1 * var(--head-top) - 2px) 0 var(--panel);
+  box-shadow:inset 0 1px 0 var(--line);
+}
+/* mask the small gap above a frozen header so rows don't peek through.
+   The block sits directly above each header cell and travels with it. */
+thead th::before{
+  content:""; position:absolute; left:-1px; right:-1px; bottom:100%;
+  height:calc(var(--head-top) + 2px); background:var(--panel);
 }
 tbody tr:nth-child(even){background:var(--zebra);}
 tbody tr:hover{background:#e9e9e6;}
@@ -143,7 +148,10 @@ tbody tr:hover{background:#e9e9e6;}
   position:-webkit-sticky; position:sticky; top:var(--head-top); z-index:7;
   background:var(--panel); padding:10px 0; border-bottom:1px solid var(--line);
   display:flex; gap:12px; align-items:center; margin-bottom:6px;
-  box-shadow:0 calc(-1 * var(--head-top) - 2px) 0 var(--panel);
+}
+.gloss-search::before{
+  content:""; position:absolute; left:0; right:0; bottom:100%;
+  height:calc(var(--head-top) + 2px); background:var(--panel);
 }
 .gloss-search input{
   flex:1; padding:9px 13px; font-size:16px; border:1px solid #b5b5b5;
@@ -152,7 +160,7 @@ tbody tr:hover{background:#e9e9e6;}
 .gloss-search input:focus{outline:2px solid #555; border-color:#555;}
 .gloss-search .cnt{font-size:12.5px; color:var(--muted); white-space:nowrap;}
 /* frozen glossary headers sit just below the sticky search bar */
-table.gloss thead th{top:calc(var(--head-top) + 52px);}
+table.gloss thead th{top:calc(var(--head-top) + 56px);}
 
 /* nav toggle button (always visible) */
 .nav-toggle{
@@ -185,7 +193,8 @@ body.nav-collapsed .content-inner{max-width:none; width:90%;}
 
 /* tablet / phone */
 @media (max-width:900px){
-  :root{--head-top:54px;}   /* clear the floating menu button on small screens */
+  /* move the menu button to the BOTTOM-left so it never overlaps a frozen header */
+  .nav-toggle{top:auto; bottom:18px; left:16px;}
   .sidebar{
     position:fixed; left:0; top:0; z-index:50; width:84vw; max-width:320px;
     transform:translateX(-100%); transition:transform .25s ease;
@@ -195,7 +204,7 @@ body.nav-collapsed .content-inner{max-width:none; width:90%;}
   .sidebar-inner{width:100%;}
   .content{padding:0 12px;}
   .content-inner{
-    margin:16px 0 70px; padding:58px 18px 70px; border-radius:8px;
+    margin:16px 0 70px; padding:26px 16px 70px; border-radius:8px;
   }
   body{font-size:16px;}
   .content-inner > h1:first-child{font-size:1.7rem;}
@@ -214,51 +223,12 @@ body.nav-collapsed .content-inner{max-width:none; width:90%;}
 @media (max-width:480px){
   body{font-size:15px;}
   .content{padding:0 6px;}
-  .content-inner{padding:54px 12px 60px;}
+  .content-inner{padding:24px 12px 60px;}
   table{font-size:12.5px;}
   th,td{padding:5px 6px;}
   code{font-size:.8em;}
 }
 
-/* ===== Card view (toggleable per section) =====
-   A row becomes a self-contained card; column names become inline labels.
-   On wide screens cards flow as a grid; on phones they stack one per row. */
-table.cards{display:block; border:0; margin:1.2em 0;}
-table.cards thead{display:none;}
-table.cards tbody{
-  display:grid; gap:14px;
-  grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
-}
-table.cards tbody tr{
-  display:flex; flex-direction:column; background:var(--panel) !important;
-  border:1px solid var(--line); border-radius:10px; padding:10px 14px;
-  box-shadow:0 1px 2px rgba(0,0,0,.05);
-}
-table.cards tbody td{
-  border:0; padding:4px 0; display:flex; gap:8px; align-items:baseline;
-}
-table.cards tbody td::before{
-  content:attr(data-label); font-weight:700; color:var(--muted);
-  flex:0 0 92px; font-size:.85em; text-transform:uppercase; letter-spacing:.02em;
-}
-table.cards tbody td:empty{display:none;}
-
-/* per-section view toggle, appears on the right edge while a wide table is in view */
-#viewToggle{
-  position:fixed; right:14px; top:50%; transform:translateY(-50%);
-  z-index:55; display:none; flex-direction:column; gap:6px;
-  background:#1a1a1a; color:#fff; padding:8px; border-radius:12px;
-  box-shadow:0 3px 14px rgba(0,0,0,.3); font-size:12px;
-}
-#viewToggle.show{display:flex;}
-#viewToggle .lbl{font-size:10px; text-align:center; color:#9a9a95; letter-spacing:.04em;}
-#viewToggle button{
-  border:0; border-radius:7px; padding:7px 12px; cursor:pointer;
-  background:#333; color:#ddd; font-size:12px; font-weight:600;
-}
-#viewToggle button.on{background:#fff; color:#111;}
-#viewToggle button:hover{background:#4a4a4a; color:#fff;}
-#viewToggle button.on:hover{background:#fff; color:#111;}
 """
 
 JS = """
@@ -321,63 +291,6 @@ if(gh && gInput){
   gInput.addEventListener('input', filter);
 }
 
-// ===== per-section Table/Cards view toggle (only for tables with 4+ columns) =====
-(function(){
-  const all=[...document.querySelectorAll('table')];
-  const wide=all.filter(t=>{
-    const h=t.tHead||t.querySelector('thead');
-    return h && h.rows[0] && h.rows[0].cells.length>=4;
-  });
-  if(!wide.length) return;
-  // tag each wide table with its section (nearest preceding h2) + add data-labels
-  const sectionOf=t=>{
-    let n=t;
-    while(n){ if(n.tagName==='H2') return n.id||'_'; n=n.previousElementSibling
-      || (n.parentElement && n.parentElement!==document.body ? n.parentElement : null); }
-    return '_';
-  };
-  const groups={};   // sectionId -> [tables]
-  wide.forEach(t=>{
-    t.classList.add('switchable');
-    const heads=[...(t.tHead?t.tHead.rows[0].cells:[])].map(c=>c.textContent.trim());
-    [...t.tBodies].forEach(tb=>[...tb.rows].forEach(r=>{
-      [...r.cells].forEach((c,i)=>{ if(heads[i]) c.setAttribute('data-label', heads[i]); });
-    }));
-    const sec=sectionOf(t);
-    t.dataset.section=sec;
-    (groups[sec]=groups[sec]||[]).push(t);
-  });
-  const mode={};     // sectionId -> 'table' | 'cards'  (default table)
-  Object.keys(groups).forEach(s=>mode[s]='table');
-
-  const tgl=document.getElementById('viewToggle');
-  const bT=document.getElementById('vtTable'), bC=document.getElementById('vtCards');
-  let active=null;
-  const reflect=()=>{
-    if(!active){tgl.classList.remove('show'); return;}
-    tgl.classList.add('show');
-    const m=mode[active];
-    bT.classList.toggle('on', m==='table');
-    bC.classList.toggle('on', m==='cards');
-  };
-  const apply=(sec)=>{
-    groups[sec].forEach(t=>t.classList.toggle('cards', mode[sec]==='cards'));
-  };
-  bT.addEventListener('click',()=>{ if(active){mode[active]='table'; apply(active); reflect();} });
-  bC.addEventListener('click',()=>{ if(active){mode[active]='cards'; apply(active); reflect();} });
-
-  // track which wide table is currently most in view -> its section is active
-  const vis=new Map();
-  const io=new IntersectionObserver((es)=>{
-    es.forEach(e=>vis.set(e.target, e.isIntersecting?e.intersectionRatio:0));
-    let best=null,br=0;
-    vis.forEach((r,t)=>{ if(r>br){br=r; best=t;} });
-    const sec = best && br>0 ? best.dataset.section : null;
-    if(sec!==active){ active=sec; reflect(); }
-  },{threshold:[0,0.01,0.15,0.4,0.75]});
-  wide.forEach(t=>io.observe(t));
-})();
-
 // back to top
 const btn=document.getElementById('toTop');
 addEventListener('scroll',()=>{btn.classList.toggle('show',scrollY>600);});
@@ -410,11 +323,6 @@ page = f"""<!DOCTYPE html>
 {body}
     </article>
   </main>
-</div>
-<div id="viewToggle" role="group" aria-label="Table view switch">
-  <span class="lbl">VIEW</span>
-  <button id="vtTable" type="button">Table</button>
-  <button id="vtCards" type="button">Cards</button>
 </div>
 <button id="toTop" aria-label="Back to top">&#8593;</button>
 <script>{JS}</script>
