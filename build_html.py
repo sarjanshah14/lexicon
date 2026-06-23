@@ -3,7 +3,8 @@
 import re, subprocess, html
 
 MD = "GRE-Lexicon-Master-Handbook.md"
-OUT = "GRE-Lexicon-Master-Handbook.html"
+# index.html = Vercel entry point (served at the site root); the second is a friendly local copy
+OUTS = ["index.html", "GRE-Lexicon-Master-Handbook.html"]
 
 body = subprocess.run(
     ["pandoc", MD, "-f", "gfm", "-t", "html", "--syntax-highlighting=none"],
@@ -19,6 +20,19 @@ for m in re.finditer(r'<h2 id="([^"]+)">(.*?)</h2>', body, re.S):
 
 nav_html = "\n".join(
     f'      <li><a href="#{hid}">{html.escape(t)}</a></li>' for hid, t in nav_items
+)
+
+# inject a live-search bar right after the §11 glossary heading
+SEARCH_BAR = (
+    '\n<div class="gloss-search">'
+    '<input id="glossSearch" type="search" autocomplete="off" '
+    'placeholder="Search the glossary — type a word or part of a meaning…">'
+    '<span class="cnt" id="glossCount"></span></div>\n'
+)
+body = re.sub(
+    r'(<h2 id="11-master-az-glossary-every-word">.*?</h2>)',
+    r'\1' + SEARCH_BAR.replace('\\', '\\\\'),
+    body, count=1, flags=re.S,
 )
 
 CSS = """
@@ -114,6 +128,21 @@ tbody tr:hover{background:#e9e9e6;}
 
 /* in-page ToC list (right after first h2) gets a card look via class added by JS */
 .toc-card{background:#f6f6f3; border:1px solid var(--line); border-radius:10px; padding:8px 22px;}
+
+/* glossary live-search bar (sticky at top of §11) */
+.gloss-search{
+  position:-webkit-sticky; position:sticky; top:0; z-index:7;
+  background:var(--panel); padding:10px 0; border-bottom:1px solid var(--line);
+  display:flex; gap:12px; align-items:center; margin-bottom:6px;
+}
+.gloss-search input{
+  flex:1; padding:9px 13px; font-size:16px; border:1px solid #b5b5b5;
+  border-radius:8px; background:#fff; color:var(--ink);
+}
+.gloss-search input:focus{outline:2px solid #555; border-color:#555;}
+.gloss-search .cnt{font-size:12.5px; color:var(--muted); white-space:nowrap;}
+/* frozen glossary headers sit just below the sticky search bar */
+table.gloss thead th{top:60px;}
 
 /* nav toggle button (always visible) */
 .nav-toggle{
@@ -211,6 +240,36 @@ heads.forEach(h=>obs.observe(h));
 const tocH=document.getElementById('table-of-contents');
 if(tocH){let n=tocH.nextElementSibling; if(n&&n.tagName==='OL')n.classList.add('toc-card');}
 
+// glossary live search
+const gh=document.getElementById('11-master-az-glossary-every-word');
+const gInput=document.getElementById('glossSearch');
+const gCount=document.getElementById('glossCount');
+if(gh && gInput){
+  let els=[]; let n=gh.nextElementSibling;
+  while(n){els.push(n); n=n.nextElementSibling;}
+  const tables=els.filter(e=>e.tagName==='TABLE');
+  tables.forEach(t=>t.classList.add('gloss'));
+  const filter=()=>{
+    const q=gInput.value.trim().toLowerCase();
+    let shown=0;
+    tables.forEach(t=>{
+      let vis=0;
+      const tb=t.tBodies[0];
+      if(tb){[...tb.rows].forEach(r=>{
+        const hit = q==='' || r.textContent.toLowerCase().includes(q);
+        r.style.display = hit ? '' : 'none';
+        if(hit) vis++;
+      });}
+      t.style.display = vis ? '' : 'none';
+      const h=t.previousElementSibling;
+      if(h && h.tagName==='H3') h.style.display = vis ? '' : 'none';
+      shown+=vis;
+    });
+    gCount.textContent = q ? (shown + ' match' + (shown===1?'':'es')) : '';
+  };
+  gInput.addEventListener('input', filter);
+}
+
 // back to top
 const btn=document.getElementById('toTop');
 addEventListener('scroll',()=>{btn.classList.toggle('show',scrollY>600);});
@@ -248,5 +307,6 @@ page = f"""<!DOCTYPE html>
 </html>
 """
 
-open(OUT, "w", encoding="utf-8").write(page)
-print(f"Wrote {OUT} with {len(nav_items)} sidebar sections.")
+for out in OUTS:
+    open(out, "w", encoding="utf-8").write(page)
+print(f"Wrote {', '.join(OUTS)} with {len(nav_items)} sidebar sections.")
