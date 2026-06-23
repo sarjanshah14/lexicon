@@ -1,0 +1,2452 @@
+{
+"aberration": {
+"word": "aberration*",
+"pos": "n",
+"mean": "deviation from the normal",
+"root": "*ab-* (away) + *err* (wander)",
+"tags": "HF\u00b7TC",
+"hook": "something that **err**s **a**way from norm",
+"syn": "anomaly, deviation",
+"ant": "conformity, norm"
+},
+"abeyance": {
+"word": "abeyance*",
+"pos": "n",
+"mean": "temporary suspension",
+"root": "(possible root)",
+"tags": "HF\u00b7TC",
+"hook": "held in \"a-bay\", waiting",
+"syn": "suspension, dormancy",
+"ant": "continuation, revival"
+},
+"abscond": {
+"word": "abscond*",
+"pos": "v",
+"mean": "run away and hide (esp. to escape law)",
+"root": "*abs-* (away) + *cond* (hide)",
+"tags": "HF",
+"hook": "**abs**-cond = hide away",
+"syn": "decamp, flee",
+"ant": "remain, stay"
+},
+"abstemious": {
+"word": "abstemious*",
+"pos": "adj",
+"mean": "moderate, esp. in eating/drinking",
+"root": "*abs-* (away) + *tem* (drink)",
+"tags": "HF\u00b7TC",
+"hook": "abstains from \"stomach\" excess",
+"syn": "temperate",
+"ant": "self-indulgent"
+},
+"abstruse": {
+"word": "abstruse*",
+"pos": "adj",
+"mean": "hard to understand",
+"root": "*abs-* (away) + *trus* (push)",
+"tags": "HF\u00b7TC",
+"hook": "pushed away from grasp",
+"syn": "obscure, recondite",
+"ant": "simple, plain"
+},
+"accolade": {
+"word": "accolade*",
+"pos": "n",
+"mean": "award, honor, praise",
+"root": "*col* (neck)",
+"tags": "HF\u00b7SE",
+"hook": "a knighting tap on the neck",
+"syn": "tribute, laurels",
+"ant": "criticism, rebuke"
+},
+"acquiescent": {
+"word": "acquiescent*",
+"pos": "adj",
+"mean": "willing to go along",
+"root": "*quie* (quiet/rest)",
+"tags": "HF",
+"hook": "quietly agreeing",
+"syn": "agreeable, compliant",
+"ant": "opposed, adverse"
+},
+"adulation": {
+"word": "adulation*",
+"pos": "n",
+"mean": "excessive praise",
+"root": "(possible root)",
+"tags": "HF\u00b7SE",
+"hook": "over-the-top flattery",
+"syn": "applause, tribute",
+"ant": "criticism"
+},
+"adulterate": {
+"word": "adulterate*",
+"pos": "v",
+"mean": "make impure by adding inferior matter",
+"root": "*alter* (other)",
+"tags": "HF\u00b7TC",
+"hook": "add \"other\" stuff, debase",
+"syn": "debase, dilute, pollute",
+"ant": "purify, refine"
+},
+"aesthetic": {
+"word": "aesthetic*",
+"pos": "adj",
+"mean": "relating to beauty/taste",
+"root": "(Gk *aisthesis*, perception)",
+"tags": "HF\u00b7RC",
+"hook": "an **aes**thete loves beauty",
+"syn": "artistic, tasteful",
+"ant": "displeasing, ugly"
+},
+"affable": {
+"word": "affable*",
+"pos": "adj",
+"mean": "pleasant, easy to approach",
+"root": "*aff-* (to) + *fabl* (speak)",
+"tags": "HF",
+"hook": "easy to \"fable\"/talk with",
+"syn": "cordial, genial",
+"ant": "disagreeable"
+},
+"alacrity": {
+"word": "alacrity*",
+"pos": "n",
+"mean": "brisk, cheerful readiness",
+"root": "(possible root)",
+"tags": "HF\u00b7SE",
+"hook": "quick + glad to act",
+"syn": "promptness, eagerness",
+"ant": "reluctance, sluggishness"
+},
+"ambivalence": {
+"word": "ambivalence*",
+"pos": "n",
+"mean": "conflicting feelings at once",
+"root": "*ambi-* (both) + *val* (strength)",
+"tags": "HF\u00b7TC",
+"hook": "pulled \"both\" ways",
+"syn": "doubt, oscillation",
+"ant": "certainty"
+},
+"ameliorate": {
+"word": "ameliorate*",
+"pos": "v",
+"mean": "make better",
+"root": "*melior* (better)",
+"tags": "HF\u00b7TC",
+"hook": "make \"meliorate\"/better",
+"syn": "improve, upgrade",
+"ant": "worsen, aggravate"
+},
+"anomalous": {
+"word": "anomalous*",
+"pos": "adj",
+"mean": "deviating from the norm",
+"root": "*a-* (not) + *homal* (even)",
+"tags": "HF\u00b7TC",
+"hook": "not the same as the rest",
+"syn": "aberrant, atypical",
+"ant": "normal, typical"
+},
+"antipathy": {
+"word": "antipathy*",
+"pos": "n",
+"mean": "intense dislike",
+"root": "*anti-* (against) + *path* (feeling)",
+"tags": "HF\u00b7SE",
+"hook": "feeling against",
+"syn": "aversion, animus",
+"ant": "affection, liking"
+},
+"apathy": {
+"word": "apathy*",
+"pos": "n",
+"mean": "lack of interest/emotion",
+"root": "*a-* (without) + *path* (feeling)",
+"tags": "HF\u00b7TC",
+"hook": "without feeling",
+"syn": "indifference, unconcern",
+"ant": "concern, interest"
+},
+"aplomb": {
+"word": "aplomb*",
+"pos": "n",
+"mean": "self-confident poise",
+"root": "(Fr, \"plumb\"/upright)",
+"tags": "HF",
+"hook": "stays upright/plumb under pressure",
+"syn": "poise, composure",
+"ant": "confusion, discomposure"
+},
+"apocryphal": {
+"word": "apocryphal*",
+"pos": "adj",
+"mean": "of doubtful authenticity",
+"root": "(Gk *apokryphos*, hidden)",
+"tags": "HF\u00b7TC",
+"hook": "a \"hidden\"/dubious story",
+"syn": "spurious, dubious",
+"ant": "authentic, genuine"
+},
+"apprise": {
+"word": "apprise*",
+"pos": "v",
+"mean": "to inform/notify",
+"root": "(Fr *appris*, learned)",
+"tags": "HF\u00b7CP",
+"hook": "apprise = give info (\u2260 appraise)",
+"syn": "inform, advise",
+"ant": "\u2014"
+},
+"assuage": {
+"word": "assuage*",
+"pos": "v",
+"mean": "to ease, relieve",
+"root": "(possible root)",
+"tags": "HF\u00b7SE",
+"hook": "soothe a \"savage\" pain",
+"syn": "alleviate, mitigate",
+"ant": "aggravate, exacerbate"
+},
+"audacity": {
+"word": "audacity*",
+"pos": "n",
+"mean": "boldness; nerve",
+"root": "*aud* (bold)",
+"tags": "HF",
+"hook": "\"audacious\" daring",
+"syn": "bravery, nerve",
+"ant": "timidity"
+},
+"banal": {
+"word": "banal*",
+"pos": "adj",
+"mean": "trite, dull from overuse",
+"root": "(possible root)",
+"tags": "HF\u00b7TC",
+"hook": "a \"bland\" clich\u00e9",
+"syn": "stereotyped, vapid",
+"ant": "original, fresh"
+},
+"belie": {
+"word": "belie",
+"pos": "v",
+"mean": "contradict / misrepresent",
+"root": "*be-* (intensive) + *lie*",
+"tags": "TC\u00b7SE",
+"hook": "it tells a \"lie\" about the truth",
+"syn": "contradict, disguise",
+"ant": "reveal, confirm"
+},
+"bolster": {
+"word": "bolster*",
+"pos": "v",
+"mean": "to support, prop up",
+"root": "(a bolster = pillow)",
+"tags": "HF\u00b7SE",
+"hook": "prop up with a pillow",
+"syn": "reinforce, shore up",
+"ant": "undermine, weaken"
+},
+"bombastic": {
+"word": "bombastic",
+"pos": "adj",
+"mean": "pompous, inflated speech",
+"root": "(bombast = padding)",
+"tags": "TC\u00b7RC",
+"hook": "speech \"padded\" with hot air",
+"syn": "grandiloquent, turgid",
+"ant": "plain, restrained"
+},
+"burgeon": {
+"word": "burgeon*",
+"pos": "v",
+"mean": "grow/develop rapidly",
+"root": "(Fr *bourgeon*, bud)",
+"tags": "HF\u00b7SE",
+"hook": "a bud \"burgeons\" into bloom",
+"syn": "flourish, proliferate",
+"ant": "wither, shrink"
+},
+"cacophony": {
+"word": "cacophony*",
+"pos": "n",
+"mean": "harsh discordant sound",
+"root": "*caco-* (bad) + *phon* (sound)",
+"tags": "HF\u00b7SE",
+"hook": "bad sound",
+"syn": "dissonance, din",
+"ant": "harmony"
+},
+"capricious": {
+"word": "capricious*",
+"pos": "adj",
+"mean": "impulsive, unpredictable",
+"root": "(possible root)",
+"tags": "HF\u00b7SE",
+"hook": "whims jump like a goat (*capra*)",
+"syn": "fickle, whimsical, mercurial",
+"ant": "steadfast, constant"
+},
+"castigate": {
+"word": "castigate*",
+"pos": "v",
+"mean": "criticize severely",
+"root": "*cast* (pure) + *-igate*",
+"tags": "HF\u00b7SE",
+"hook": "\"purify\" by harsh scolding",
+"syn": "berate, rebuke, reprimand",
+"ant": "praise, laud"
+},
+"caustic": {
+"word": "caustic*",
+"pos": "adj",
+"mean": "biting, corrosive (lit/fig)",
+"root": "(Gk *kaustikos*, burning)",
+"tags": "HF\u00b7SE",
+"hook": "words that \"burn\"",
+"syn": "acerbic, scathing, mordant",
+"ant": "mild, soothing"
+},
+"charlatan": {
+"word": "charlatan*",
+"pos": "n",
+"mean": "a fraud, fake expert",
+"root": "(It *ciarlare*, to chatter)",
+"tags": "HF",
+"hook": "a \"chatter\"-ing fake doctor",
+"syn": "quack, impostor",
+"ant": "\u2014"
+},
+"cogent": {
+"word": "cogent*",
+"pos": "adj",
+"mean": "convincing, compelling",
+"root": "*co-* (together) + *ag* (drive)",
+"tags": "HF\u00b7SE",
+"hook": "\"drives\" the mind to agree",
+"syn": "forceful, persuasive",
+"ant": "weak, ineffective"
+},
+"complaisant": {
+"word": "complaisant*",
+"pos": "adj",
+"mean": "eager to please",
+"root": "(Fr *complaire*, to please)",
+"tags": "HF\u00b7CP",
+"hook": "wants to \"please\" (\u2260 complacent)",
+"syn": "agreeable, obliging",
+"ant": "surly, antagonistic"
+},
+"corroborate": {
+"word": "corroborate*",
+"pos": "v",
+"mean": "to confirm with evidence",
+"root": "*robor* (strength)",
+"tags": "HF\u00b7SE",
+"hook": "add strength to a claim",
+"syn": "verify, substantiate",
+"ant": "contradict, refute"
+},
+"culpable": {
+"word": "culpable*",
+"pos": "adj",
+"mean": "deserving blame",
+"root": "*culp* (fault)",
+"tags": "HF\u00b7TC",
+"hook": "full of \"fault\"",
+"syn": "blameworthy, guilty",
+"ant": "innocent, blameless"
+},
+"daunt": {
+"word": "daunt*",
+"pos": "v",
+"mean": "to discourage, intimidate",
+"root": "(Lat *domitare*, tame)",
+"tags": "HF\u00b7SE",
+"hook": "\"tame\" someone's courage",
+"syn": "intimidate, cow",
+"ant": "encourage, embolden"
+},
+"decimate": {
+"word": "decimate*",
+"pos": "v",
+"mean": "destroy a large portion of",
+"root": "*decim* (tenth)",
+"tags": "HF",
+"hook": "originally kill 1 in 10",
+"syn": "massacre, exterminate",
+"ant": "preserve, create"
+},
+"deride": {
+"word": "deride*",
+"pos": "",
+"mean": "see entry #39 for full treatment",
+"root": "",
+"tags": "",
+"hook": "",
+"syn": "",
+"ant": ""
+},
+"desultory": {
+"word": "desultory*",
+"pos": "adj",
+"mean": "aimless, disconnected",
+"root": "*de-* (down) + *salt* (leap)",
+"tags": "HF\u00b7TC",
+"hook": "leaping topic to topic",
+"syn": "haphazard, random",
+"ant": "focused, methodical"
+},
+"diatribe": {
+"word": "diatribe*",
+"pos": "n",
+"mean": "bitter, abusive speech",
+"root": "*dia-* (through) + *trib* (rub)",
+"tags": "HF\u00b7SE",
+"hook": "a \"rubbing\" verbal attack",
+"syn": "harangue, tirade",
+"ant": "praise, eulogy"
+},
+"diffidence": {
+"word": "diffidence*",
+"pos": "n",
+"mean": "shyness, lack of confidence",
+"root": "*dis-* (apart) + *fid* (trust)",
+"tags": "HF\u00b7TC",
+"hook": "doesn't \"trust\" self",
+"syn": "timidity, shyness",
+"ant": "self-assurance, boldness"
+},
+"diffuse": {
+"word": "diffuse*",
+"pos": "adj/v",
+"mean": "spread out / wordy",
+"root": "*dif-* (apart) + *fus* (pour)",
+"tags": "HF\u00b7TC",
+"hook": "poured out widely",
+"syn": "verbose, scattered",
+"ant": "concise; concentrated"
+},
+"discrete": {
+"word": "discrete*",
+"pos": "adj",
+"mean": "separate, distinct",
+"root": "*dis-* (apart) + *cret* (separate)",
+"tags": "HF\u00b7CP",
+"hook": "discrete = separate (\u2260 discreet)",
+"syn": "distinct, separate",
+"ant": "connected, joined"
+},
+"disinterested": {
+"word": "disinterested*",
+"pos": "adj",
+"mean": "impartial, unbiased",
+"root": "*dis-* (not) + *interest*",
+"tags": "HF\u00b7CP",
+"hook": "no stake \u2192 fair (\u2260 uninterested)",
+"syn": "impartial, unbiased",
+"ant": "biased, partial"
+},
+"dissemble": {
+"word": "dissemble*",
+"pos": "v",
+"mean": "conceal true feelings; feign",
+"root": "*dis-* (apart) + *sembl* (seem)",
+"tags": "HF\u00b7SE",
+"hook": "make things \"seem\" otherwise",
+"syn": "feign, disguise",
+"ant": "reveal, expose"
+},
+"disseminate": {
+"word": "disseminate*",
+"pos": "v",
+"mean": "spread widely",
+"root": "*dis-* (apart) + *semin* (seed)",
+"tags": "HF\u00b7SE",
+"hook": "scatter like \"seeds\"",
+"syn": "broadcast, propagate",
+"ant": "suppress, conceal"
+},
+"ebullient": {
+"word": "ebullient*",
+"pos": "",
+"mean": "see entry #48 for full treatment",
+"root": "",
+"tags": "",
+"hook": "",
+"syn": "",
+"ant": ""
+},
+"eclectic": {
+"word": "eclectic*",
+"pos": "adj",
+"mean": "drawing from many sources",
+"root": "*ec-* (out) + *lect* (choose)",
+"tags": "HF\u00b7TC",
+"hook": "\"chooses\" best of all",
+"syn": "broad, varied",
+"ant": "narrow, limited"
+},
+"efficacious": {
+"word": "efficacious*",
+"pos": "adj",
+"mean": "effective, produces result",
+"root": "*ex-* (out) + *fac* (do/make)",
+"tags": "HF\u00b7SE",
+"hook": "it \"makes\" the result",
+"syn": "effective, potent",
+"ant": "ineffective, futile"
+},
+"effrontery": {
+"word": "effrontery*",
+"pos": "n",
+"mean": "shameless boldness",
+"root": "*ef-* (out) + *front* (forehead)",
+"tags": "HF",
+"hook": "brazen \"in-your-face\" nerve",
+"syn": "audacity, gall",
+"ant": "courtesy, deference"
+},
+"elegiac": {
+"word": "elegiac*",
+"pos": "adj",
+"mean": "mournful, expressing sorrow",
+"root": "(Gk *elegos*, lament)",
+"tags": "HF\u00b7RC",
+"hook": "like an \"elegy\"",
+"syn": "melancholy, plaintive",
+"ant": "joyful, jubilant"
+},
+"elicit": {
+"word": "elicit*",
+"pos": "v",
+"mean": "draw out (a response)",
+"root": "*e-* (out) + *lic* (entice)",
+"tags": "HF\u00b7CP",
+"hook": "draw out (\u2260 illicit)",
+"syn": "extract, evoke",
+"ant": "suppress"
+},
+"emulation": {
+"word": "emulation*",
+"pos": "n",
+"mean": "striving to equal/surpass",
+"root": "*aemul* (rivaling)",
+"tags": "HF",
+"hook": "rival to match a model",
+"syn": "striving, imitation",
+"ant": "apathy, sloth"
+},
+"endemic": {
+"word": "endemic*",
+"pos": "adj",
+"mean": "native to a place/group",
+"root": "*en-* (in) + *dem* (people)",
+"tags": "HF\u00b7CP",
+"hook": "\"in the people\" of a region",
+"syn": "indigenous, native",
+"ant": "alien, foreign"
+},
+"enervate": {
+"word": "enervate*",
+"pos": "v",
+"mean": "to weaken, drain energy",
+"root": "*e-* (out) + *nerv* (sinew)",
+"tags": "HF\u00b7SE",
+"hook": "cut the \"nerve\"/strength",
+"syn": "enfeeble, debilitate",
+"ant": "invigorate, strengthen"
+},
+"engender": {
+"word": "engender*",
+"pos": "v",
+"mean": "to give rise to, produce",
+"root": "*en-* (make) + *gen* (birth)",
+"tags": "HF",
+"hook": "\"generate\" / give birth to",
+"syn": "produce, provoke",
+"ant": "destroy, suppress"
+},
+"enigma": {
+"word": "enigma*",
+"pos": "n",
+"mean": "a puzzle, riddle",
+"root": "(Gk *ainigma*)",
+"tags": "HF\u00b7TC",
+"hook": "a baffling mystery",
+"syn": "puzzle, riddle",
+"ant": "clarity"
+},
+"ephemeral": {
+"word": "ephemeral*",
+"pos": "",
+"mean": "see entry #59 for full treatment",
+"root": "",
+"tags": "",
+"hook": "",
+"syn": "",
+"ant": ""
+},
+"equivocal": {
+"word": "equivocal*",
+"pos": "adj",
+"mean": "ambiguous, open to two readings",
+"root": "*equi-* (equal) + *voc* (voice)",
+"tags": "HF\u00b7TC",
+"hook": "\"equal voices\"/two meanings",
+"syn": "ambiguous, vague",
+"ant": "clear, unequivocal"
+},
+"erudite": {
+"word": "erudite*",
+"pos": "adj",
+"mean": "very learned, scholarly",
+"root": "*e-* (out) + *rud* (rough/raw)",
+"tags": "HF\u00b7RC",
+"hook": "refined out of the \"raw\"",
+"syn": "scholarly, cultured",
+"ant": "ignorant, unlettered"
+},
+"esoteric": {
+"word": "esoteric*",
+"pos": "adj",
+"mean": "understood by few; obscure",
+"root": "(Gk *esotero*, inner)",
+"tags": "HF\u00b7TC",
+"hook": "\"inner-circle\" knowledge",
+"syn": "arcane, recondite",
+"ant": "simple, exoteric"
+},
+"espousal": {
+"word": "espousal*",
+"pos": "n",
+"mean": "support/adoption of a cause",
+"root": "*spons* (pledge)",
+"tags": "HF\u00b7SE",
+"hook": "to \"espouse\"/pledge to a cause",
+"syn": "advocacy, championing",
+"ant": "disapproval"
+},
+"eulogy": {
+"word": "eulogy*",
+"pos": "n",
+"mean": "speech of high praise",
+"root": "*eu-* (good) + *log* (speech)",
+"tags": "HF\u00b7SE",
+"hook": "\"good words\" for someone",
+"syn": "encomium, panegyric",
+"ant": "diatribe, condemnation"
+},
+"fatuous": {
+"word": "fatuous*",
+"pos": "adj",
+"mean": "smugly foolish",
+"root": "(possible root)",
+"tags": "HF\u00b7TC",
+"hook": "self-satisfied & dumb",
+"syn": "inane, vacant",
+"ant": "wise, intelligent"
+},
+"fawn": {
+"word": "fawn*",
+"pos": "v",
+"mean": "to flatter servilely",
+"root": "(a fawn cringes)",
+"tags": "HF\u00b7SE",
+"hook": "grovel for favor",
+"syn": "toady, kowtow",
+"ant": "domineer, ignore"
+},
+"fervent": {
+"word": "fervent*",
+"pos": "adj",
+"mean": "intensely passionate",
+"root": "*ferv* (boil)",
+"tags": "HF\u00b7RC",
+"hook": "\"boiling\" with feeling",
+"syn": "ardent, impassioned",
+"ant": "apathetic, indifferent"
+},
+"florid": {
+"word": "florid*",
+"pos": "adj",
+"mean": "flushed; or overly ornate",
+"root": "*flor* (flower)",
+"tags": "HF\u00b7RC",
+"hook": "\"flowery\" face or prose",
+"syn": "ruddy; flamboyant",
+"ant": "pale; plain"
+},
+"frugality": {
+"word": "frugality*",
+"pos": "n",
+"mean": "thrift, economy",
+"root": "*frug* (worth/fruit)",
+"tags": "HF\u00b7SE",
+"hook": "careful with money",
+"syn": "thrift, economy",
+"ant": "extravagance, waste"
+},
+"garrulous": {
+"word": "garrulous*",
+"pos": "",
+"mean": "see entry #70 for full treatment",
+"root": "",
+"tags": "",
+"hook": "",
+"syn": "",
+"ant": ""
+},
+"gregarious": {
+"word": "gregarious*",
+"pos": "adj",
+"mean": "sociable",
+"root": "*greg* (flock/herd)",
+"tags": "HF\u00b7SE",
+"hook": "likes the \"herd\"",
+"syn": "sociable, friendly",
+"ant": "unfriendly, antisocial"
+},
+"guile": {
+"word": "guile*",
+"pos": "n",
+"mean": "cunning, deceit",
+"root": "(Gmc)",
+"tags": "HF\u00b7SE",
+"hook": "sly trickery",
+"syn": "cunning, slyness",
+"ant": "honesty, naivete"
+},
+"gullible": {
+"word": "gullible*",
+"pos": "adj",
+"mean": "easily fooled",
+"root": "(root of *gull*, to dupe)",
+"tags": "HF",
+"hook": "a \"gull\" is easily caught",
+"syn": "credulous, naive",
+"ant": "skeptical, distrustful"
+},
+"harangue": {
+"word": "harangue*",
+"pos": "n/v",
+"mean": "long, loud tirade",
+"root": "(Old Fr)",
+"tags": "HF\u00b7SE",
+"hook": "a ranting lecture",
+"syn": "tirade, diatribe",
+"ant": "\u2014"
+},
+"heresy": {
+"word": "heresy*",
+"pos": "n",
+"mean": "belief against orthodoxy",
+"root": "(Gk *hairesis*, choosing)",
+"tags": "HF",
+"hook": "\"choosing\" against doctrine",
+"syn": "dissent, apostasy",
+"ant": "orthodoxy, piety"
+},
+"iconoclast": {
+"word": "iconoclast*",
+"pos": "",
+"mean": "see entry #76 for full treatment",
+"root": "",
+"tags": "",
+"hook": "",
+"syn": "",
+"ant": ""
+},
+"impassive": {
+"word": "impassive*",
+"pos": "adj",
+"mean": "showing no emotion",
+"root": "*im-* (not) + *pass* (feeling)",
+"tags": "HF\u00b7RC",
+"hook": "no \"passion\" shown",
+"syn": "unmoved, stolid",
+"ant": "emotional, demonstrative"
+},
+"impervious": {
+"word": "impervious*",
+"pos": "adj",
+"mean": "impenetrable; not receptive",
+"root": "*im-* (not) + *per-* (through) + *via* (way)",
+"tags": "HF\u00b7TC",
+"hook": "no \"way\" through",
+"syn": "impenetrable; unreceptive",
+"ant": "porous; receptive"
+},
+"implacable": {
+"word": "implacable*",
+"pos": "adj",
+"mean": "unappeasable",
+"root": "*im-* (not) + *plac* (please/calm)",
+"tags": "HF\u00b7SE",
+"hook": "can't be \"placated\"",
+"syn": "relentless, unforgiving",
+"ant": "lenient, forgiving"
+},
+"implicit": {
+"word": "implicit*",
+"pos": "adj",
+"mean": "implied; or unreserved",
+"root": "*im-* (in) + *plic* (fold)",
+"tags": "HF\u00b7TC",
+"hook": "\"folded in\", not stated",
+"syn": "tacit, inferred",
+"ant": "explicit, expressed"
+},
+"indigent": {
+"word": "indigent*",
+"pos": "adj",
+"mean": "very poor",
+"root": "*indig* (in need)",
+"tags": "HF\u00b7CP",
+"hook": "needy/poor (\u2260 indignant/indolent)",
+"syn": "destitute, penniless",
+"ant": "rich, prosperous"
+},
+"indolent": {
+"word": "indolent*",
+"pos": "adj",
+"mean": "lazy",
+"root": "*in-* (not) + *dol* (pain/effort)",
+"tags": "HF",
+"hook": "won't take the \"effort\"",
+"syn": "idle, slothful",
+"ant": "active, energetic"
+},
+"innocuous": {
+"word": "innocuous*",
+"pos": "adj",
+"mean": "harmless",
+"root": "*in-* (not) + *noc* (harm)",
+"tags": "HF\u00b7TC",
+"hook": "no \"harm\" (cf. noxious)",
+"syn": "harmless, bland",
+"ant": "harmful, dangerous"
+},
+"insinuate": {
+"word": "insinuate*",
+"pos": "v",
+"mean": "hint slyly; work in subtly",
+"root": "*sinu* (curve/bend)",
+"tags": "HF\u00b7SE",
+"hook": "\"bend\" an idea in indirectly",
+"syn": "imply, hint",
+"ant": "state openly"
+},
+"insipid": {
+"word": "insipid*",
+"pos": "adj",
+"mean": "bland, dull, flavorless",
+"root": "*in-* (not) + *sap* (taste)",
+"tags": "HF\u00b7SE",
+"hook": "\"no taste\"",
+"syn": "vapid, flat",
+"ant": "flavorful, lively"
+},
+"intractable": {
+"word": "intractable*",
+"pos": "adj",
+"mean": "stubborn, hard to control",
+"root": "*in-* (not) + *tract* (pull/handle)",
+"tags": "HF\u00b7SE",
+"hook": "can't be \"handled\"",
+"syn": "unruly, obstinate",
+"ant": "docile, tractable"
+},
+"intransigent": {
+"word": "intransigent*",
+"pos": "adj",
+"mean": "refusing to compromise",
+"root": "*in-* (not) + *trans-* (across) + *ig* (drive)",
+"tags": "HF\u00b7SE",
+"hook": "won't \"cross over\"/budge",
+"syn": "uncompromising, adamant",
+"ant": "flexible, cooperative"
+},
+"irascible": {
+"word": "irascible*",
+"pos": "adj",
+"mean": "easily angered",
+"root": "*ira* (anger)",
+"tags": "HF\u00b7SE",
+"hook": "full of \"ire\"",
+"syn": "irritable, choleric",
+"ant": "calm, tranquil"
+},
+"laconic": {
+"word": "laconic*",
+"pos": "adj",
+"mean": "using few words",
+"root": "(Gk *Lakon*, Spartan)",
+"tags": "HF\u00b7SE",
+"hook": "Spartan-brief",
+"syn": "terse, pithy",
+"ant": "verbose, garrulous"
+},
+"latent": {
+"word": "latent*",
+"pos": "adj",
+"mean": "present but not active",
+"root": "*lat* (hidden/lie)",
+"tags": "HF\u00b7TC",
+"hook": "\"lying\" hidden",
+"syn": "dormant, potential",
+"ant": "active, manifest"
+},
+"laudable": {
+"word": "laudable*",
+"pos": "adj",
+"mean": "praiseworthy",
+"root": "*laud* (praise)",
+"tags": "HF\u00b7SE",
+"hook": "worthy of \"applause\"",
+"syn": "commendable, admirable",
+"ant": "despicable, contemptible"
+},
+"loquacious": {
+"word": "loquacious*",
+"pos": "adj",
+"mean": "very talkative",
+"root": "*loqu* (speak)",
+"tags": "HF\u00b7SE",
+"hook": "\"elo-quacious\", talks a lot",
+"syn": "garrulous, gabby",
+"ant": "taciturn, silent"
+},
+"magnanimity": {
+"word": "magnanimity*",
+"pos": "n",
+"mean": "generous nobility of spirit",
+"root": "*magn* (great) + *anim* (soul)",
+"tags": "HF\u00b7SE",
+"hook": "a \"great soul\"",
+"syn": "nobility, altruism",
+"ant": "pettiness, meanness"
+},
+"malevolent": {
+"word": "malevolent*",
+"pos": "adj",
+"mean": "wishing evil",
+"root": "*mal* (bad) + *vol* (wish)",
+"tags": "HF\u00b7SE",
+"hook": "\"bad wishing\"",
+"syn": "malicious, hostile",
+"ant": "benign, friendly"
+},
+"malleable": {
+"word": "malleable*",
+"pos": "adj",
+"mean": "shapeable; easily influenced",
+"root": "*malle* (hammer)",
+"tags": "HF\u00b7TC",
+"hook": "can be \"hammered\" into shape",
+"syn": "pliable, tractable",
+"ant": "rigid, intractable"
+},
+"maverick": {
+"word": "maverick*",
+"pos": "n",
+"mean": "unorthodox independent",
+"root": "(S. Maverick, unbranded cattle)",
+"tags": "HF\u00b7RC",
+"hook": "the \"unbranded\" one",
+"syn": "nonconformist, iconoclast",
+"ant": "conformist"
+},
+"mendacious": {
+"word": "mendacious*",
+"pos": "adj",
+"mean": "lying, deceitful",
+"root": "*mend* (fault/lie)",
+"tags": "HF\u00b7SE\u00b7CP",
+"hook": "full of lies (cf. mendicant)",
+"syn": "deceitful, duplicitous",
+"ant": "honest, truthful"
+},
+"meticulous": {
+"word": "meticulous*",
+"pos": "adj",
+"mean": "extremely careful with detail",
+"root": "*metic* (fear)",
+"tags": "HF\u00b7SE",
+"hook": "\"fearfully\" precise",
+"syn": "painstaking, scrupulous",
+"ant": "careless, sloppy"
+},
+"mitigate": {
+"word": "mitigate*",
+"pos": "v",
+"mean": "make less severe",
+"root": "*miti* (soft) + *ag* (do)",
+"tags": "HF\u00b7SE\u00b7CP",
+"hook": "\"soften\" (\u2260 militate)",
+"syn": "alleviate, lessen",
+"ant": "aggravate, intensify"
+},
+"mollify": {
+"word": "mollify*",
+"pos": "v",
+"mean": "to soothe, appease",
+"root": "*moll* (soft)",
+"tags": "HF\u00b7SE",
+"hook": "make \"soft\"/calm",
+"syn": "placate, pacify",
+"ant": "provoke, aggravate"
+},
+"misanthrope": {
+"word": "misanthrope*",
+"pos": "n",
+"mean": "hater of humankind",
+"root": "mis- (hate) + anthrop (human)",
+"tags": "",
+"hook": "",
+"syn": "cynic, recluse",
+"ant": "optimist"
+},
+"mordant": {
+"word": "mordant",
+"pos": "adj",
+"mean": "bitingly sarcastic",
+"root": "mord (bite)",
+"tags": "",
+"hook": "",
+"syn": "caustic, sharp",
+"ant": "flattering"
+},
+"munificent": {
+"word": "munificent",
+"pos": "adj",
+"mean": "extremely generous",
+"root": "muni (gift) + fic (make)",
+"tags": "",
+"hook": "",
+"syn": "benevolent, lavish",
+"ant": "miserly"
+},
+"nadir": {
+"word": "nadir",
+"pos": "n",
+"mean": "lowest point",
+"root": "nadir (Arabic)",
+"tags": "",
+"hook": "",
+"syn": "bottom",
+"ant": "zenith, pinnacle"
+},
+"nebulous": {
+"word": "nebulous",
+"pos": "adj",
+"mean": "vague, hazy",
+"root": "nebula (cloud)",
+"tags": "",
+"hook": "",
+"syn": "ambiguous, obscure",
+"ant": "distinct"
+},
+"obdurate": {
+"word": "obdurate*",
+"pos": "adj",
+"mean": "stubborn, hardened",
+"root": "ob- (against/toward) + dur (hard)",
+"tags": "",
+"hook": "",
+"syn": "inflexible",
+"ant": "compassionate"
+},
+"obsequious": {
+"word": "obsequious*",
+"pos": "adj",
+"mean": "fawning, servile",
+"root": "ob- (against/toward) + sequ (follow)",
+"tags": "",
+"hook": "",
+"syn": "sycophantic",
+"ant": "domineering"
+},
+"obviate": {
+"word": "obviate*",
+"pos": "v",
+"mean": "prevent, make unnecessary",
+"root": "ob- (against/toward) + via (way)",
+"tags": "",
+"hook": "",
+"syn": "eliminate, preclude",
+"ant": "create"
+},
+"officious": {
+"word": "officious*",
+"pos": "adj",
+"mean": "meddlesome",
+"root": "offic (duty)",
+"tags": "",
+"hook": "",
+"syn": "interfering, obtrusive",
+"ant": "(CP: \u2260 official)"
+},
+"opprobrium": {
+"word": "opprobrium*",
+"pos": "n",
+"mean": "public disgrace",
+"root": "ob- (against/toward) + probr (reproach)",
+"tags": "",
+"hook": "",
+"syn": "infamy, disgrace",
+"ant": "honor"
+},
+"oscillate": {
+"word": "oscillate*",
+"pos": "v",
+"mean": "swing/waver",
+"root": "oscill (swing)",
+"tags": "",
+"hook": "",
+"syn": "vacillate",
+"ant": "stay steady"
+},
+"ostensible": {
+"word": "ostensible*",
+"pos": "adj",
+"mean": "apparent (but not real)",
+"root": "tend (stretch/show)",
+"tags": "",
+"hook": "",
+"syn": "professed",
+"ant": "hidden, actual"
+},
+"partisan": {
+"word": "partisan*",
+"pos": "n",
+"mean": "fervent supporter",
+"root": "part (side)",
+"tags": "",
+"hook": "",
+"syn": "supporter, devotee",
+"ant": "opponent"
+},
+"paucity": {
+"word": "paucity*",
+"pos": "n",
+"mean": "scarcity",
+"root": "pauc (few)",
+"tags": "",
+"hook": "",
+"syn": "dearth, scarcity",
+"ant": "abundance"
+},
+"pedantic": {
+"word": "pedantic*",
+"pos": "adj",
+"mean": "fussy about rules/learning",
+"root": "ped (teach)",
+"tags": "",
+"hook": "",
+"syn": "precise, bookish",
+"ant": "(RC tone)"
+},
+"perennial": {
+"word": "perennial*",
+"pos": "adj",
+"mean": "long-lasting, enduring",
+"root": "per- (through) + enn (year)",
+"tags": "",
+"hook": "",
+"syn": "perpetual, lasting",
+"ant": "ephemeral"
+},
+"perfidious": {
+"word": "perfidious*",
+"pos": "adj",
+"mean": "treacherous, disloyal",
+"root": "per- (through) + fid (faith)",
+"tags": "",
+"hook": "",
+"syn": "faithless",
+"ant": "loyal"
+},
+"placate": {
+"word": "placate*",
+"pos": "v",
+"mean": "to appease",
+"root": "plac (please)",
+"tags": "",
+"hook": "",
+"syn": "mollify, pacify",
+"ant": "antagonize"
+},
+"platitude": {
+"word": "platitude*",
+"pos": "n",
+"mean": "a trite remark",
+"root": "plat (flat)",
+"tags": "",
+"hook": "",
+"syn": "clich\u00e9, truism",
+"ant": "profundity"
+},
+"pragmatic": {
+"word": "pragmatic*",
+"pos": "adj",
+"mean": "practical",
+"root": "pragma (deed)",
+"tags": "",
+"hook": "",
+"syn": "rational, practical",
+"ant": "impractical"
+},
+"precarious": {
+"word": "precarious*",
+"pos": "adj",
+"mean": "risky, unstable",
+"root": "prec (prayer)",
+"tags": "",
+"hook": "",
+"syn": "risky, uncertain",
+"ant": "safe, secure"
+},
+"precipitate": {
+"word": "precipitate*",
+"pos": "v",
+"mean": "to hasten/trigger \u2014 CP: \u2260 precipitous",
+"root": "prae- (before/forth) + cip (head)",
+"tags": "",
+"hook": "",
+"syn": "quicken",
+"ant": "decelerate"
+},
+"precursor": {
+"word": "precursor*",
+"pos": "n",
+"mean": "forerunner",
+"root": "prae- (before/forth) + curs (run)",
+"tags": "",
+"hook": "",
+"syn": "predecessor, herald",
+"ant": "successor"
+},
+"prevaricate": {
+"word": "prevaricate*",
+"pos": "v",
+"mean": "to lie/evade",
+"root": "prae- (before/forth) + varic (straddle)",
+"tags": "",
+"hook": "",
+"syn": "misrepresent",
+"ant": "tell truth"
+},
+"probity": {
+"word": "probity*",
+"pos": "n",
+"mean": "integrity, honesty",
+"root": "prob (good/test)",
+"tags": "",
+"hook": "",
+"syn": "uprightness",
+"ant": "deception"
+},
+"prodigal": {
+"word": "prodigal",
+"pos": "adj",
+"mean": "wastefully extravagant",
+"root": "prod- (forth) + ig (drive)",
+"tags": "",
+"hook": "",
+"syn": "profligate, lavish",
+"ant": "frugal"
+},
+"profundity": {
+"word": "profundity*",
+"pos": "n",
+"mean": "great depth",
+"root": "pro- (forward) + fund (bottom)",
+"tags": "",
+"hook": "",
+"syn": "depth",
+"ant": "shallowness"
+},
+"propensity": {
+"word": "propensity*",
+"pos": "n",
+"mean": "natural inclination",
+"root": "pro- (forward) + pend (hang)",
+"tags": "",
+"hook": "",
+"syn": "tendency, proclivity",
+"ant": "aversion"
+},
+"propitiate": {
+"word": "propitiate*",
+"pos": "v",
+"mean": "to appease \u2014 CP: propitious = favorable",
+"root": "propiti (favorable)",
+"tags": "",
+"hook": "",
+"syn": "conciliate",
+"ant": "upset"
+},
+"proscribe": {
+"word": "proscribe*",
+"pos": "v",
+"mean": "to forbid \u2014 CP: \u2260 prescribe",
+"root": "pro- (forward) + scrib (write)",
+"tags": "",
+"hook": "",
+"syn": "prohibit, ban",
+"ant": "permit"
+},
+"prudent": {
+"word": "prudent*",
+"pos": "adj",
+"mean": "wise, cautious",
+"root": "prud (foresee)",
+"tags": "",
+"hook": "",
+"syn": "judicious, careful",
+"ant": "reckless"
+},
+"pusillanimous": {
+"word": "pusillanimous",
+"pos": "adj",
+"mean": "cowardly",
+"root": "pusill (tiny) + anim (spirit)",
+"tags": "",
+"hook": "",
+"syn": "timid, craven",
+"ant": "bold"
+},
+"quiescence": {
+"word": "quiescence*",
+"pos": "n",
+"mean": "state of rest/inactivity",
+"root": "quies (rest)",
+"tags": "",
+"hook": "",
+"syn": "dormancy",
+"ant": "activity"
+},
+"rarefy": {
+"word": "rarefy*",
+"pos": "v",
+"mean": "to thin / refine",
+"root": "rar (rare)",
+"tags": "",
+"hook": "",
+"syn": "refine",
+"ant": "thicken"
+},
+"recalcitrant": {
+"word": "recalcitrant*",
+"pos": "adj",
+"mean": "defiantly disobedient",
+"root": "re- (back/again) + calc (kick)",
+"tags": "",
+"hook": "",
+"syn": "obstinate, unruly",
+"ant": "compliant"
+},
+"recluse": {
+"word": "recluse*",
+"pos": "n",
+"mean": "one who lives in seclusion",
+"root": "re- (back/again) + clud (close)",
+"tags": "",
+"hook": "",
+"syn": "hermit, solitary",
+"ant": "socialite"
+},
+"recondite": {
+"word": "recondite*",
+"pos": "adj",
+"mean": "obscure, hard to grasp",
+"root": "re- (back/again) + cond (hide)",
+"tags": "",
+"hook": "",
+"syn": "abstruse, arcane",
+"ant": "comprehensible"
+},
+"repudiate": {
+"word": "repudiate*",
+"pos": "v",
+"mean": "to reject/disown",
+"root": "re- (back/again) + pud (shame)",
+"tags": "",
+"hook": "",
+"syn": "disclaim, renounce",
+"ant": "embrace"
+},
+"reprobate": {
+"word": "reprobate*",
+"pos": "n",
+"mean": "a corrupt/depraved person",
+"root": "re- (back/again) + prob (test)",
+"tags": "",
+"hook": "",
+"syn": "scoundrel, profligate",
+"ant": "saint"
+},
+"reticent": {
+"word": "reticent*",
+"pos": "adj",
+"mean": "reserved, uncommunicative",
+"root": "re- (back/again) + tac (silent)",
+"tags": "",
+"hook": "",
+"syn": "tight-lipped",
+"ant": "talkative"
+},
+"revere": {
+"word": "revere*",
+"pos": "v",
+"mean": "to deeply respect",
+"root": "re- (intensive) + vere (awe)",
+"tags": "",
+"hook": "",
+"syn": "venerate, worship",
+"ant": "disparage"
+},
+"salubrious": {
+"word": "salubrious*",
+"pos": "adj",
+"mean": "health-promoting",
+"root": "salu (health)",
+"tags": "",
+"hook": "",
+"syn": "healthful, wholesome",
+"ant": "harmful"
+},
+"sanction": {
+"word": "sanction*",
+"pos": "n/v",
+"mean": "approval / penalty (contranym)",
+"root": "sanct (holy)",
+"tags": "",
+"hook": "",
+"syn": "authorize",
+"ant": "disallow"
+},
+"satiate": {
+"word": "satiate*",
+"pos": "v",
+"mean": "to fully satisfy",
+"root": "sat (enough)",
+"tags": "",
+"hook": "",
+"syn": "sate, glut",
+"ant": "starve"
+},
+"saturate": {
+"word": "saturate*",
+"pos": "v",
+"mean": "to fill completely",
+"root": "satur (full)",
+"tags": "",
+"hook": "",
+"syn": "soak, drench",
+"ant": "dry"
+},
+"savor": {
+"word": "savor*",
+"pos": "v",
+"mean": "to relish, enjoy",
+"root": "sapor (taste)",
+"tags": "",
+"hook": "",
+"syn": "relish, bask",
+"ant": "abhor"
+},
+"secrete": {
+"word": "secrete*",
+"pos": "v",
+"mean": "to hide / to ooze",
+"root": "secret (set apart)",
+"tags": "",
+"hook": "",
+"syn": "conceal; ooze",
+"ant": "expose"
+},
+"shard": {
+"word": "shard*",
+"pos": "n",
+"mean": "a broken fragment",
+"root": "(Gmc)",
+"tags": "",
+"hook": "",
+"syn": "splinter, sliver",
+"ant": "whole"
+},
+"skeptic": {
+"word": "skeptic*",
+"pos": "n",
+"mean": "a habitual doubter",
+"root": "skep (examine)",
+"tags": "",
+"hook": "",
+"syn": "cynic, disbeliever",
+"ant": "believer"
+},
+"soporific": {
+"word": "soporific*",
+"pos": "adj",
+"mean": "sleep-inducing",
+"root": "sopor (sleep)",
+"tags": "",
+"hook": "",
+"syn": "sedative, drowsy",
+"ant": "stimulant"
+},
+"specious": {
+"word": "specious*",
+"pos": "adj",
+"mean": "false but plausible",
+"root": "spec (look)",
+"tags": "",
+"hook": "",
+"syn": "spurious",
+"ant": "straightforward"
+},
+"sporadic": {
+"word": "sporadic*",
+"pos": "adj",
+"mean": "occasional, scattered",
+"root": "spor (seed/scatter)",
+"tags": "",
+"hook": "",
+"syn": "intermittent",
+"ant": "continuous"
+},
+"stigma": {
+"word": "stigma*",
+"pos": "n",
+"mean": "mark of disgrace",
+"root": "stig (prick/mark)",
+"tags": "",
+"hook": "",
+"syn": "blemish, disgrace",
+"ant": "honor"
+},
+"stint": {
+"word": "stint*",
+"pos": "v/n",
+"mean": "to be sparing / a fixed period",
+"root": "(Gmc)",
+"tags": "",
+"hook": "",
+"syn": "scrimp",
+"ant": "splurge"
+},
+"stipulate": {
+"word": "stipulate*",
+"pos": "v",
+"mean": "to specify as a condition",
+"root": "stip (bargain)",
+"tags": "",
+"hook": "",
+"syn": "specify, require",
+"ant": "\u2014"
+},
+"stolid": {
+"word": "stolid*",
+"pos": "adj",
+"mean": "unemotional, impassive",
+"root": "stol (dull)",
+"tags": "",
+"hook": "",
+"syn": "phlegmatic, stoic",
+"ant": "passionate"
+},
+"strut": {
+"word": "strut*",
+"pos": "v",
+"mean": "to walk proudly",
+"root": "(Gmc)",
+"tags": "",
+"hook": "",
+"syn": "swagger, flaunt",
+"ant": "downplay"
+},
+"substantiate": {
+"word": "substantiate*",
+"pos": "v",
+"mean": "to prove with evidence",
+"root": "sub- (under) + stant (stand)",
+"tags": "",
+"hook": "",
+"syn": "corroborate, verify",
+"ant": "refute"
+},
+"subside": {
+"word": "subside*",
+"pos": "v",
+"mean": "to die down",
+"root": "sub- (under) + sid (settle)",
+"tags": "",
+"hook": "",
+"syn": "abate, wane",
+"ant": "surge"
+},
+"succinct": {
+"word": "succinct*",
+"pos": "adj",
+"mean": "concise",
+"root": "sub- (under) + cinct (girded)",
+"tags": "",
+"hook": "",
+"syn": "terse, laconic",
+"ant": "verbose"
+},
+"supposition": {
+"word": "supposition*",
+"pos": "n",
+"mean": "an assumption",
+"root": "sub- (under) + pos (place)",
+"tags": "",
+"hook": "",
+"syn": "conjecture, hypothesis",
+"ant": "certainty"
+},
+"tacit": {
+"word": "tacit*",
+"pos": "adj",
+"mean": "implied, unspoken",
+"root": "tac (silent)",
+"tags": "",
+"hook": "",
+"syn": "implicit",
+"ant": "explicit"
+},
+"tangential": {
+"word": "tangential*",
+"pos": "adj",
+"mean": "only superficially related",
+"root": "tang (touch)",
+"tags": "",
+"hook": "",
+"syn": "digressive",
+"ant": "relevant"
+},
+"tenuous": {
+"word": "tenuous*",
+"pos": "adj",
+"mean": "flimsy, weak",
+"root": "tenu (thin)",
+"tags": "",
+"hook": "",
+"syn": "slight, gossamer",
+"ant": "strong, substantial"
+},
+"tirade": {
+"word": "tirade*",
+"pos": "n",
+"mean": "a long angry speech",
+"root": "(Fr)",
+"tags": "",
+"hook": "",
+"syn": "diatribe, philippic",
+"ant": "adulation"
+},
+"torpor": {
+"word": "torpor*",
+"pos": "n",
+"mean": "sluggish inactivity",
+"root": "torp (numb)",
+"tags": "",
+"hook": "",
+"syn": "lethargy, lassitude",
+"ant": "vigor"
+},
+"tortuous": {
+"word": "tortuous*",
+"pos": "adj",
+"mean": "twisting; complex \u2014 CP: \u2260 torturous",
+"root": "tort (twist)",
+"tags": "",
+"hook": "",
+"syn": "winding, circuitous",
+"ant": "straight"
+},
+"tractable": {
+"word": "tractable*",
+"pos": "adj",
+"mean": "easily managed",
+"root": "tract (pull/handle)",
+"tags": "",
+"hook": "",
+"syn": "docile, amenable",
+"ant": "obstinate"
+},
+"transgression": {
+"word": "transgression*",
+"pos": "n",
+"mean": "violation of a law/rule",
+"root": "trans- (across) + gress (step)",
+"tags": "",
+"hook": "",
+"syn": "breach",
+"ant": "conformity"
+},
+"truculent": {
+"word": "truculent*",
+"pos": "adj",
+"mean": "aggressively hostile",
+"root": "truc (fierce)",
+"tags": "",
+"hook": "",
+"syn": "belligerent, fierce",
+"ant": "gentle, mild"
+},
+"turpitude": {
+"word": "turpitude*",
+"pos": "n",
+"mean": "depravity, wickedness",
+"root": "turp (base)",
+"tags": "",
+"hook": "",
+"syn": "depravity",
+"ant": "virtue"
+},
+"unfettered": {
+"word": "unfettered*",
+"pos": "adj",
+"mean": "free of restraint",
+"root": "un- (not) + fetter (chain)",
+"tags": "",
+"hook": "",
+"syn": "unchained, free",
+"ant": "constrained"
+},
+"vacillate": {
+"word": "vacillate*",
+"pos": "v",
+"mean": "to waver indecisively",
+"root": "vacill (sway)",
+"tags": "",
+"hook": "",
+"syn": "waffle, waver",
+"ant": "be resolute"
+},
+"venerate": {
+"word": "venerate*",
+"pos": "v",
+"mean": "to revere",
+"root": "vener (worship)",
+"tags": "",
+"hook": "",
+"syn": "revere, honor",
+"ant": "dishonor"
+},
+"veracious": {
+"word": "veracious*",
+"pos": "adj",
+"mean": "truthful, accurate \u2014 CP: \u2260 voracious",
+"root": "ver (truth)",
+"tags": "",
+"hook": "",
+"syn": "candid, authentic",
+"ant": "evasive"
+},
+"verbose": {
+"word": "verbose*",
+"pos": "adj",
+"mean": "wordy",
+"root": "verb (word)",
+"tags": "",
+"hook": "",
+"syn": "prolix, redundant",
+"ant": "terse, pithy"
+},
+"viable": {
+"word": "viable*",
+"pos": "adj",
+"mean": "workable; able to live",
+"root": "vit/via (life)",
+"tags": "",
+"hook": "",
+"syn": "feasible, workable",
+"ant": "unworkable, dead"
+},
+"vindictive": {
+"word": "vindictive*",
+"pos": "adj",
+"mean": "vengeful",
+"root": "vindic (avenge)",
+"tags": "",
+"hook": "",
+"syn": "vengeful, spiteful",
+"ant": "forgiving"
+},
+"vituperation": {
+"word": "vituperation*",
+"pos": "n",
+"mean": "abusive language",
+"root": "vitu (blame)",
+"tags": "",
+"hook": "",
+"syn": "invective, abuse",
+"ant": "praise"
+},
+"volatile": {
+"word": "volatile*",
+"pos": "adj",
+"mean": "unstable; explosive",
+"root": "vol (fly)",
+"tags": "",
+"hook": "",
+"syn": "mercurial, capricious",
+"ant": "constant"
+},
+"wary": {
+"word": "wary*",
+"pos": "adj",
+"mean": "cautious, on guard",
+"root": "(Gmc war)",
+"tags": "",
+"hook": "",
+"syn": "vigilant, alert",
+"ant": "careless, inattentive"
+},
+"wheedle": {
+"word": "wheedle*",
+"pos": "v",
+"mean": "to coax by flattery",
+"root": "(Gmc)",
+"tags": "",
+"hook": "",
+"syn": "cajole, inveigle",
+"ant": "bully"
+},
+"whimsical": {
+"word": "whimsical*",
+"pos": "adj",
+"mean": "fanciful, on a whim",
+"root": "(Gmc)",
+"tags": "",
+"hook": "",
+"syn": "capricious, arbitrary",
+"ant": "rational"
+},
+"zealot": {
+"word": "zealot*",
+"pos": "n",
+"mean": "a fanatic",
+"root": "(Gk zelos)",
+"tags": "",
+"hook": "",
+"syn": "enthusiast, fanatic",
+"ant": "moderate"
+},
+"aggrandizement": {
+"word": "aggrandizement*",
+"pos": "n",
+"mean": "increase of power/wealth",
+"root": "grand (great)",
+"tags": "",
+"hook": "",
+"syn": "advancement",
+"ant": "degradation"
+},
+"allegiance": {
+"word": "allegiance*",
+"pos": "n",
+"mean": "loyalty",
+"root": "lige (bound)",
+"tags": "",
+"hook": "",
+"syn": "fidelity, devotion",
+"ant": "disloyalty"
+},
+"altruism": {
+"word": "altruism*",
+"pos": "n",
+"mean": "selfless concern for others",
+"root": "altru (other)",
+"tags": "",
+"hook": "",
+"syn": "unselfishness",
+"ant": "egoism"
+},
+"amalgam": {
+"word": "amalgam*",
+"pos": "n",
+"mean": "a blend of things",
+"root": "(alchemy)",
+"tags": "",
+"hook": "",
+"syn": "mixture, alloy",
+"ant": "\u2014"
+},
+"amiable": {
+"word": "amiable*",
+"pos": "adj",
+"mean": "friendly, likeable \u2014 CP: amiable/amicable/amenable",
+"root": "ami (friend)",
+"tags": "",
+"hook": "",
+"syn": "affable, genial",
+"ant": "surly"
+},
+"amnesty": {
+"word": "amnesty*",
+"pos": "adj\u2192n",
+"mean": "pardon",
+"root": "a- (not) + mne (memory)",
+"tags": "",
+"hook": "",
+"syn": "absolution, pardon",
+"ant": "punishment"
+},
+"anachronism": {
+"word": "anachronism",
+"pos": "n",
+"mean": "something out of its time",
+"root": "ana- (up/back) + chron (time)",
+"tags": "",
+"hook": "",
+"syn": "\u2014",
+"ant": "\u2014"
+},
+"analogy": {
+"word": "analogy*",
+"pos": "n",
+"mean": "a comparison of likeness",
+"root": "ana- (up/back) + log (ratio)",
+"tags": "",
+"hook": "",
+"syn": "parallel",
+"ant": "difference"
+},
+"arbiter": {
+"word": "arbiter",
+"pos": "n",
+"mean": "a judge/decider",
+"root": "arbit (judge)",
+"tags": "",
+"hook": "",
+"syn": "referee, mediator",
+"ant": "\u2014"
+},
+"ascetic": {
+"word": "ascetic",
+"pos": "n/adj",
+"mean": "self-denying, austere",
+"root": "ascet (exercise)",
+"tags": "",
+"hook": "",
+"syn": "austere, monastic",
+"ant": "hedonist"
+},
+"assiduous": {
+"word": "assiduous*",
+"pos": "adj",
+"mean": "diligent, persistent",
+"root": "sid (sit)",
+"tags": "",
+"hook": "",
+"syn": "diligent, industrious",
+"ant": "lazy"
+},
+"aver": {
+"word": "aver*",
+"pos": "v",
+"mean": "to declare true",
+"root": "ver (truth)",
+"tags": "",
+"hook": "",
+"syn": "assert, avow",
+"ant": "deny"
+},
+"belligerent": {
+"word": "belligerent",
+"pos": "adj",
+"mean": "warlike, hostile",
+"root": "bell (war)",
+"tags": "",
+"hook": "",
+"syn": "pugnacious, hostile",
+"ant": "peaceful"
+},
+"benevolence": {
+"word": "benevolence*",
+"pos": "n",
+"mean": "kindliness",
+"root": "bene (good) + vol (wish)",
+"tags": "",
+"hook": "",
+"syn": "altruism",
+"ant": "cruelty"
+},
+"blandishment": {
+"word": "blandishment*",
+"pos": "n",
+"mean": "flattering speech",
+"root": "(bland)",
+"tags": "",
+"hook": "",
+"syn": "cajolery, coaxing",
+"ant": "abuse"
+},
+"blasphemy": {
+"word": "blasphemy*",
+"pos": "n",
+"mean": "irreverence toward the sacred",
+"root": "blas + phem (speak)",
+"tags": "",
+"hook": "",
+"syn": "sacrilege",
+"ant": "piety"
+},
+"boisterous": {
+"word": "boisterous*",
+"pos": "adj",
+"mean": "noisy and wild",
+"root": "(Gmc)",
+"tags": "",
+"hook": "",
+"syn": "rowdy, raucous",
+"ant": "restrained"
+},
+"brusque": {
+"word": "brusque*",
+"pos": "adj",
+"mean": "abrupt in manner",
+"root": "(It brusco)",
+"tags": "",
+"hook": "",
+"syn": "curt, terse",
+"ant": "warm, gracious"
+},
+"buttress": {
+"word": "buttress*",
+"pos": "v",
+"mean": "to support",
+"root": "(architecture)",
+"tags": "",
+"hook": "",
+"syn": "reinforce, prop",
+"ant": "undermine"
+},
+"commensurate": {
+"word": "commensurate*",
+"pos": "adj",
+"mean": "proportionate",
+"root": "com- (together) + mens (measure)",
+"tags": "",
+"hook": "",
+"syn": "adequate, proportional",
+"ant": "disproportionate"
+},
+"contentious": {
+"word": "contentious*",
+"pos": "adj",
+"mean": "quarrelsome",
+"root": "con- (together) + tend (strain)",
+"tags": "",
+"hook": "",
+"syn": "combative, litigious",
+"ant": "peaceful"
+},
+"contrite": {
+"word": "contrite*",
+"pos": "adj",
+"mean": "deeply remorseful",
+"root": "con- (thoroughly) + trit (rub/grind)",
+"tags": "",
+"hook": "",
+"syn": "penitent, apologetic",
+"ant": "unrepentant"
+},
+"covet": {
+"word": "covet",
+"pos": "v",
+"mean": "to crave enviously",
+"root": "cupid (desire)",
+"tags": "",
+"hook": "",
+"syn": "desire, crave",
+"ant": "renounce"
+},
+"debilitate": {
+"word": "debilitate",
+"pos": "v",
+"mean": "to weaken",
+"root": "de- (down/away) + bil (strength)",
+"tags": "",
+"hook": "",
+"syn": "enfeeble, enervate",
+"ant": "strengthen"
+},
+"decorous": {
+"word": "decorous*",
+"pos": "adj",
+"mean": "proper, dignified",
+"root": "decor (fitting)",
+"tags": "",
+"hook": "",
+"syn": "seemly, demure",
+"ant": "unseemly"
+},
+"demur": {
+"word": "demur",
+"pos": "v",
+"mean": "to object \u2014 CP: \u2260 demure",
+"root": "(Lat mora, delay)",
+"tags": "",
+"hook": "",
+"syn": "object, dissent",
+"ant": "consent"
+},
+"didactic": {
+"word": "didactic",
+"pos": "adj",
+"mean": "intended to teach/moralize",
+"root": "didak (teach)",
+"tags": "",
+"hook": "",
+"syn": "instructive, pedantic",
+"ant": "\u2014"
+},
+"dilettante": {
+"word": "dilettante",
+"pos": "n",
+"mean": "a dabbler",
+"root": "(It, \"delighting\")",
+"tags": "",
+"hook": "",
+"syn": "amateur",
+"ant": "expert"
+},
+"dogmatic": {
+"word": "dogmatic",
+"pos": "adj",
+"mean": "asserting opinion as fact",
+"root": "dogma",
+"tags": "",
+"hook": "",
+"syn": "doctrinaire, opinionated",
+"ant": "open-minded"
+},
+"dupe": {
+"word": "dupe",
+"pos": "v/n",
+"mean": "to trick / a gull",
+"root": "(Fr)",
+"tags": "",
+"hook": "",
+"syn": "deceive, gull",
+"ant": "\u2014"
+},
+"egregious": {
+"word": "egregious",
+"pos": "adj",
+"mean": "conspicuously bad",
+"root": "e- (out) + greg (flock)",
+"tags": "",
+"hook": "",
+"syn": "flagrant, glaring",
+"ant": "ordinary"
+},
+"embellish": {
+"word": "embellish*",
+"pos": "v",
+"mean": "to decorate; to exaggerate",
+"root": "bell (beautiful)",
+"tags": "",
+"hook": "",
+"syn": "adorn, garnish",
+"ant": "strip, mar"
+},
+"enmity": {
+"word": "enmity",
+"pos": "n",
+"mean": "deep hostility",
+"root": "en- (in) + imicus (enemy)",
+"tags": "",
+"hook": "",
+"syn": "animosity, antagonism",
+"ant": "friendship"
+},
+"equanimity": {
+"word": "equanimity",
+"pos": "n",
+"mean": "calm composure",
+"root": "equ (even) + anim (mind)",
+"tags": "",
+"hook": "",
+"syn": "poise, serenity",
+"ant": "agitation"
+},
+"exacerbate": {
+"word": "exacerbate",
+"pos": "v",
+"mean": "to worsen",
+"root": "ex- (thoroughly) + acerb (bitter)",
+"tags": "",
+"hook": "",
+"syn": "aggravate, intensify",
+"ant": "alleviate"
+},
+"exonerate": {
+"word": "exonerate",
+"pos": "v",
+"mean": "to clear of blame",
+"root": "ex- (out) + oner (burden)",
+"tags": "",
+"hook": "",
+"syn": "absolve, acquit",
+"ant": "incriminate"
+},
+"extol": {
+"word": "extol",
+"pos": "v",
+"mean": "to praise highly",
+"root": "ex- (out) + toll (raise)",
+"tags": "",
+"hook": "",
+"syn": "laud, glorify",
+"ant": "disparage"
+},
+"fastidious": {
+"word": "fastidious",
+"pos": "adj",
+"mean": "hard to please, fussy",
+"root": "(Lat fastidium)",
+"tags": "",
+"hook": "",
+"syn": "meticulous, picky",
+"ant": "easygoing"
+},
+"fortuitous": {
+"word": "fortuitous",
+"pos": "adj",
+"mean": "happening by chance",
+"root": "fortu (luck)",
+"tags": "",
+"hook": "",
+"syn": "accidental, chance",
+"ant": "planned"
+},
+"fractious": {
+"word": "fractious",
+"pos": "adj",
+"mean": "irritable; unruly \u2014 CP: \u2260 factious",
+"root": "frac (break)",
+"tags": "",
+"hook": "",
+"syn": "peevish, unruly",
+"ant": "docile"
+},
+"hackneyed": {
+"word": "hackneyed",
+"pos": "adj",
+"mean": "overused, trite",
+"root": "(hackney horse)",
+"tags": "",
+"hook": "",
+"syn": "trite, stereotyped",
+"ant": "original, fresh"
+},
+"idiosyncrasy": {
+"word": "idiosyncrasy",
+"pos": "n",
+"mean": "a peculiar trait",
+"root": "idio (own)",
+"tags": "",
+"hook": "",
+"syn": "quirk, eccentricity",
+"ant": "conventionality"
+},
+"impecunious": {
+"word": "impecunious",
+"pos": "adj",
+"mean": "having no money",
+"root": "im- (not) + pecun (money)",
+"tags": "",
+"hook": "",
+"syn": "destitute, penniless",
+"ant": "wealthy"
+},
+"inchoate": {
+"word": "inchoate*",
+"pos": "adj",
+"mean": "just begun, unformed",
+"root": "in- (intensive) + cho (begin)",
+"tags": "",
+"hook": "",
+"syn": "nascent, rudimentary",
+"ant": "developed"
+},
+"incongruous": {
+"word": "incongruous*",
+"pos": "adj",
+"mean": "out of place, mismatched",
+"root": "in- (not) + congru (agree)",
+"tags": "",
+"hook": "",
+"syn": "inappropriate",
+"ant": "harmonious"
+},
+"inveigle": {
+"word": "inveigle",
+"pos": "v",
+"mean": "to entice by guile",
+"root": "(Fr)",
+"tags": "",
+"hook": "",
+"syn": "cajole, beguile",
+"ant": "repel"
+},
+"lassitude": {
+"word": "lassitude*",
+"pos": "n",
+"mean": "weariness, fatigue",
+"root": "lass (weary)",
+"tags": "",
+"hook": "",
+"syn": "languor, lethargy",
+"ant": "vigor"
+},
+"lugubrious": {
+"word": "lugubrious",
+"pos": "adj",
+"mean": "exaggeratedly mournful",
+"root": "lug (mourn)",
+"tags": "",
+"hook": "",
+"syn": "doleful, somber",
+"ant": "cheerful"
+},
+"maudlin": {
+"word": "maudlin",
+"pos": "adj",
+"mean": "tearfully sentimental",
+"root": "(Mary Magdalen)",
+"tags": "",
+"hook": "",
+"syn": "mawkish, weepy",
+"ant": "unsentimental"
+},
+"mercurial": {
+"word": "mercurial",
+"pos": "adj",
+"mean": "volatile in mood",
+"root": "(Mercury)",
+"tags": "",
+"hook": "",
+"syn": "capricious, changeable",
+"ant": "constant"
+},
+"noisome": {
+"word": "noisome",
+"pos": "adj",
+"mean": "foul-smelling, harmful",
+"root": "(annoy)",
+"tags": "",
+"hook": "",
+"syn": "fetid, offensive",
+"ant": "fragrant"
+},
+"obfuscate": {
+"word": "obfuscate",
+"pos": "v",
+"mean": "to confuse, obscure",
+"root": "ob- (over) + fusc (dark)",
+"tags": "",
+"hook": "",
+"syn": "muddle, cloud",
+"ant": "clarify"
+},
+"obstreperous": {
+"word": "obstreperous",
+"pos": "adj",
+"mean": "noisily defiant",
+"root": "ob- (against/toward) + strep (noise)",
+"tags": "",
+"hook": "",
+"syn": "unruly, vociferous",
+"ant": "docile"
+},
+"ostentatious": {
+"word": "ostentatious",
+"pos": "adj",
+"mean": "showy",
+"root": "tend (stretch out)",
+"tags": "",
+"hook": "",
+"syn": "flashy, conspicuous",
+"ant": "modest"
+},
+"parsimonious": {
+"word": "parsimonious",
+"pos": "adj",
+"mean": "stingy",
+"root": "parc (spare)",
+"tags": "",
+"hook": "",
+"syn": "miserly, tight-fisted",
+"ant": "generous"
+},
+"perspicacious": {
+"word": "perspicacious",
+"pos": "adj",
+"mean": "keenly perceptive \u2014 CP: perspicacious/perspicuous",
+"root": "per- (through) + spic (see)",
+"tags": "",
+"hook": "",
+"syn": "astute, shrewd",
+"ant": "undiscerning"
+},
+"phlegmatic": {
+"word": "phlegmatic",
+"pos": "adj",
+"mean": "calm, unemotional",
+"root": "(humor phlegm)",
+"tags": "",
+"hook": "",
+"syn": "stolid, placid",
+"ant": "excitable"
+},
+"quixotic": {
+"word": "quixotic",
+"pos": "adj",
+"mean": "impractically idealistic",
+"root": "(Don Quixote)",
+"tags": "",
+"hook": "",
+"syn": "idealistic, romantic",
+"ant": "pragmatic *(implied by source theme; see prudent/pragmatic)*"
+},
+"sagacious": {
+"word": "sagacious",
+"pos": "adj",
+"mean": "wise, shrewd",
+"root": "sag (keen)",
+"tags": "",
+"hook": "",
+"syn": "astute, perspicacious",
+"ant": "foolish"
+},
+"sanguine": {
+"word": "sanguine",
+"pos": "adj",
+"mean": "cheerfully optimistic",
+"root": "sangu (blood)",
+"tags": "",
+"hook": "",
+"syn": "hopeful, buoyant",
+"ant": "pessimistic"
+},
+"ubiquitous": {
+"word": "ubiquitous",
+"pos": "adj",
+"mean": "present everywhere",
+"root": "ubique (everywhere)",
+"tags": "",
+"hook": "",
+"syn": "omnipresent, pervasive",
+"ant": "rare"
+}
+}
