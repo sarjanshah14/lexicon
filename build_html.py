@@ -293,8 +293,11 @@ if(gh && gInput){
         r.style.display = hit ? '' : 'none';
         if(hit) vis++;
       });}
-      t.style.display = vis ? '' : 'none';
-      const h=t.previousElementSibling;
+      // a table may be wrapped in a .tscroll frame; hide the frame + its letter heading
+      const host = (t.parentElement && t.parentElement.classList.contains('tscroll'))
+                   ? t.parentElement : t;
+      host.style.display = vis ? '' : 'none';
+      const h=host.previousElementSibling;
       if(h && h.tagName==='H3') h.style.display = vis ? '' : 'none';
       shown+=vis;
     });
