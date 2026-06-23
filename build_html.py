@@ -92,24 +92,41 @@ code{
   font-size:.86em; color:#222; border:1px solid var(--line);
 }
 
-/* tables */
+/* tables — NOT inside an overflow box, so sticky headers track the PAGE scroll.
+   border-collapse:separate is required so the header's borders stay attached while it floats. */
 table{
-  border-collapse:collapse; width:100%; margin:1.2em 0; font-size:15px;
-  display:block; overflow-x:auto;
+  border-collapse:separate; border-spacing:0; width:100%; margin:1.2em 0; font-size:15px;
+  table-layout:auto; border-top:1px solid var(--line); border-left:1px solid var(--line);
 }
+th,td{
+  border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+  padding:8px 11px; vertical-align:top; overflow-wrap:break-word;
+}
+/* sticky header row: freezes at the top of the viewport while its table is in view,
+   then releases automatically once the table has scrolled past. Works on every table. */
 thead th{
   background:var(--thead); text-align:left; font-weight:700;
-  position:sticky; top:0;
+  position:-webkit-sticky; position:sticky; top:0; z-index:5;
+  box-shadow:inset 0 1px 0 var(--line);   /* keeps the top line while floating */
 }
-th,td{border:1px solid var(--line); padding:8px 11px; vertical-align:top;}
 tbody tr:nth-child(even){background:var(--zebra);}
 tbody tr:hover{background:#e9e9e6;}
 
 /* in-page ToC list (right after first h2) gets a card look via class added by JS */
 .toc-card{background:#f6f6f3; border:1px solid var(--line); border-radius:10px; padding:8px 22px;}
 
-/* top bar (mobile) */
-.topbar{display:none;}
+/* nav toggle button (always visible) */
+.nav-toggle{
+  position:fixed; top:14px; left:14px; z-index:60;
+  width:40px; height:40px; border-radius:8px; border:1px solid #000;
+  background:#1a1a1a; color:#fff; font-size:18px; cursor:pointer; line-height:1;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 1px 4px rgba(0,0,0,.25);
+}
+.nav-toggle:hover{background:#000;}
+
+/* desktop collapsed state: hide sidebar, content reflows full width */
+body.nav-collapsed .sidebar{display:none;}
 
 /* back to top */
 #toTop{
@@ -120,34 +137,65 @@ tbody tr:hover{background:#e9e9e6;}
 #toTop.show{opacity:.9; pointer-events:auto;}
 #toTop:hover{opacity:1;}
 
-/* responsive */
+.backdrop{display:none;}
+
+/* desktop: leave room at top-left of content for the floating toggle */
+.content-inner{position:relative;}
+
+/* tablet / phone */
 @media (max-width:900px){
   .sidebar{
-    position:fixed; left:0; top:0; z-index:40; transform:translateX(-100%);
-    transition:transform .25s ease; box-shadow:2px 0 16px rgba(0,0,0,.12);
+    position:fixed; left:0; top:0; z-index:50; width:84vw; max-width:320px;
+    transform:translateX(-100%); transition:transform .25s ease;
+    box-shadow:2px 0 18px rgba(0,0,0,.3);
   }
   .sidebar.open{transform:translateX(0);}
-  .topbar{
-    display:flex; align-items:center; gap:12px; position:sticky; top:0; z-index:30;
-    background:#fff; border-bottom:1px solid var(--line); padding:10px 16px;
+  .content{padding:0 12px;}
+  .content-inner{
+    margin:16px 0 70px; padding:58px 18px 70px; border-radius:8px;
   }
-  .topbar button{font-size:22px; background:none; border:none; cursor:pointer; color:var(--ink);}
-  .topbar span{font-weight:700; font-size:15px;}
-  .content{padding:0 18px;}
-  .content-inner{padding:24px 0 100px;}
   body{font-size:16px;}
-  .backdrop{position:fixed; inset:0; background:rgba(0,0,0,.35); z-index:35; display:none;}
+  .content-inner > h1:first-child{font-size:1.7rem;}
+  h2{font-size:1.4rem;}
+  h3{font-size:1.12rem;}
+  table{font-size:13.5px;}
+  th,td{padding:6px 8px;}
+  blockquote{padding:.7em .9em;}
+  .backdrop{
+    position:fixed; inset:0; background:rgba(0,0,0,.4); z-index:45; display:none;
+  }
   .backdrop.show{display:block;}
 }
+
+/* small phones */
+@media (max-width:480px){
+  body{font-size:15px;}
+  .content{padding:0 6px;}
+  .content-inner{padding:54px 12px 60px;}
+  table{font-size:12.5px;}
+  th,td{padding:5px 6px;}
+  code{font-size:.8em;}
+}
+
+/* let long table cells wrap instead of forcing huge width */
+td,th{word-break:normal; overflow-wrap:anywhere;}
 """
 
 JS = """
 const sb=document.getElementById('sidebar');
 const bd=document.getElementById('backdrop');
-function toggle(){sb.classList.toggle('open');bd.classList.toggle('show');}
-document.getElementById('menuBtn')?.addEventListener('click',toggle);
-bd?.addEventListener('click',toggle);
-sb.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(window.innerWidth<=900)toggle();}));
+const body=document.body;
+const mobile=()=>window.innerWidth<=900;
+function closeMobile(){sb.classList.remove('open');bd.classList.remove('show');}
+function toggle(){
+  if(mobile()){ sb.classList.toggle('open'); bd.classList.toggle('show'); }
+  else { body.classList.toggle('nav-collapsed'); }
+}
+document.getElementById('navToggle').addEventListener('click',toggle);
+bd.addEventListener('click',closeMobile);
+sb.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(mobile())closeMobile();}));
+// reset overlay state when crossing the breakpoint
+addEventListener('resize',()=>{ if(!mobile()) closeMobile(); });
 
 // active section highlight
 const links=[...sb.querySelectorAll('a')];
@@ -178,10 +226,7 @@ page = f"""<!DOCTYPE html>
 <style>{CSS}</style>
 </head>
 <body>
-<div class="topbar">
-  <button id="menuBtn" aria-label="Menu">&#9776;</button>
-  <span>GRE Lexicon Master Handbook</span>
-</div>
+<button id="navToggle" class="nav-toggle" aria-label="Show / hide menu" title="Show / hide menu">&#9776;</button>
 <div class="backdrop" id="backdrop"></div>
 <div class="layout">
   <aside class="sidebar" id="sidebar">

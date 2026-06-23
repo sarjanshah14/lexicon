@@ -24,19 +24,37 @@
 
 ## 1. How to Use This Handbook
 
-This is **not** a list to read front-to-back. It is a layered system. Use it like this:
+This is **not** a list to read front-to-back. It is a layered system. The key idea: **don't memorize words one at a time — learn them in families** (by root and by meaning), because that is also how the GRE tests them.
 
-- **Learn by roots first (§3).** Your brain stores words far better in families than alphabetically. When you meet *malevolent*, *malign*, *malediction*, and *malefactor* together under `mal- = bad`, one hook unlocks all four. Start every study block in the Root Encyclopedia.
-- **Then learn by meaning families (§4).** GRE almost never tests a word in isolation — it tests whether you can tell *praise* words from *criticism* words, *increase* from *decrease*. Drill the semantic clusters until you can name 5+ words per concept on demand.
-- **Use the SE clusters (§5) as answer banks.** Sentence Equivalence asks for **two** words that produce the *same* sentence meaning. The clusters are pre-built "answer pairs" — memorize which words are true synonyms (safe to pair) vs. near-misses (trap distractors).
-- **Use the Polarity Map (§6) for Text Completion.** Most TC blanks are won by polarity alone: does the sentence want a **positive**, **negative**, or **neutral** word? Train yourself to read the clue word ("although", "despite", "thus") → predict polarity → eliminate.
-- **Master the confusing pairs (§7).** Words like *disinterested/uninterested*, *credible/credulous*, *flaunt/flout* are deliberate GRE traps. Knowing the *difference* is worth more than knowing either word alone.
-- **Revise with active recall (§9), not re-reading.** Cover the answer, force recall, check. Re-reading feels productive but builds almost no durable memory.
-- **Follow the spaced schedule (§10).** Review each list on Day 1, 2, 4, 7, 14, 30. Spacing beats cramming for long-term retention — which is what the GRE actually requires.
-- **Star words first.** When time is short, drill only the `*` high-frequency words (§2). They give the highest score-per-minute return.
-- **The Master Glossary (§11) is your lookup index.** Every one of the 775 words lives there in A–Z order with meaning, synonyms, and antonyms — use it to settle any "what did that mean again?" instantly.
+### How to learn a single word (the 4-step process)
+Whenever you meet a new word, do these four things *in order*. This is the core habit of the whole handbook:
 
-**Daily loop:** (1) new root family → (2) the matching semantic cluster → (3) 10 flashcards → (4) yesterday's words re-tested. ~30 min/day.
+1. **Meaning** — read the short definition. Put it in your own words.
+2. **Root / hook** — attach it to its root or memory hook (§3). This is the glue; a word with a hook is ~3× more likely to stick.
+3. **Family** — find its synonyms and antonyms (§4, §8, §11). Never learn a word alone — learn "this word means X, *like* these, *unlike* those."
+4. **Use** — read the example sentence and picture the blank it would fill. Words you can *use* are words you'll recognize on the test.
+
+Then **test** it later from memory (§9) — recall, don't re-read.
+
+### Which section to use, and when
+| Section | What it's for | When to use it |
+|---|---|---|
+| **§2 High-Priority** | the 250 words that matter most | start here if you're short on time |
+| **§3 Roots** | learn words in root-families | **start every study block here** |
+| **§4 Meaning clusters** | tell close synonyms apart | after roots — this is the GRE's core skill |
+| **§5 SE pairs** | ready-made Sentence-Equivalence answer pairs | when practicing SE questions |
+| **§6 Polarity map** | positive / negative / neutral logic | when practicing Text Completion |
+| **§7 Confusing pairs** | deliberate look-alike traps | drill these separately; they're easy points |
+| **§8 Word groups** | every thematic group, fully listed | for broad coverage / second pass |
+| **§9 Flashcards** | active-recall self-testing | every day, on words already learned |
+| **§10 Revision plan** | the spaced schedule | to plan *when* to review |
+| **§11 Glossary** | A–Z lookup of all 775 words | to check "what did that mean again?" |
+
+### Two rules that matter most
+- **Star words first.** When time is short, drill only the `*` high-frequency words — highest score per minute.
+- **Space your reviews.** Re-test each batch on Day 1, 2, 4, 7, 14, 30 (§10). Spacing beats cramming for the long-term memory the GRE needs.
+
+**Daily loop (~30 min):** (1) one new root family (§3) → (2) its matching meaning cluster (§4) → (3) 10 flashcards (§9) → (4) re-test yesterday's words.
 
 ---
 
@@ -151,158 +169,160 @@ Ranked by GRE usefulness: star-marked frequency, TC/SE power, and how many other
 
 ### Top 101–250 (the next tier — broad coverage)
 
-These extend the priority set. Format: **word** (POS) — meaning · *root/hook* · syn → ant.
+These are the **next 150 highest-value words** (ranks 101–250). Same priority logic as the Top 100: frequency, usefulness across TC/SE/RC, and memorability. **How to read a row:** learn the *meaning* first, anchor it with the *root/hook*, then use *synonyms → antonyms* to lock the word into its meaning-family (that pairing is exactly what Sentence Equivalence tests). `*` = high-frequency. **CP** = a commonly-confused look-alike (see §7).
 
-101. **misanthrope*** (n) — hater of humankind · *mis-* (hate) + *anthrop* (human) · cynic, recluse → optimist
-102. **mordant** (adj) — bitingly sarcastic · *mord* (bite) · caustic, sharp → flattering
-103. **munificent** (adj) — extremely generous · *muni* (gift) + *fic* (make) · benevolent, lavish → miserly
-104. **nadir** (n) — lowest point · *nadir* (Arabic) · bottom → zenith, pinnacle
-105. **nebulous** (adj) — vague, hazy · *nebula* (cloud) · ambiguous, obscure → distinct
-106. **obdurate*** (adj) — stubborn, hardened · *ob-* + *dur* (hard) · inflexible → compassionate
-107. **obsequious*** (adj) — fawning, servile · *ob-* + *sequ* (follow) · sycophantic → domineering
-108. **obviate*** (v) — prevent, make unnecessary · *ob-* + *via* (way) · eliminate, preclude → create
-109. **officious*** (adj) — meddlesome · *offic* (duty) · interfering, obtrusive → (CP: ≠ official)
-110. **opprobrium*** (n) — public disgrace · *ob-* + *probr* (reproach) · infamy, disgrace → honor
-111. **oscillate*** (v) — swing/waver · *oscill* (swing) · vacillate → stay steady
-112. **ostensible*** (adj) — apparent (but not real) · *tend* (stretch/show) · professed → hidden, actual
-113. **partisan*** (n) — fervent supporter · *part* (side) · supporter, devotee → opponent
-114. **paucity*** (n) — scarcity · *pauc* (few) · dearth, scarcity → abundance
-115. **pedantic*** (adj) — fussy about rules/learning · *ped* (teach) · precise, bookish → (RC tone)
-116. **perennial*** (adj) — long-lasting, enduring · *per-* + *enn* (year) · perpetual, lasting → ephemeral
-117. **perfidious*** (adj) — treacherous, disloyal · *per-* + *fid* (faith) · faithless → loyal
-118. **placate*** (v) — to appease · *plac* (please) · mollify, pacify → antagonize
-119. **platitude*** (n) — a trite remark · *plat* (flat) · cliché, truism → profundity
-120. **pragmatic*** (adj) — practical · *pragma* (deed) · rational, practical → impractical
-121. **precarious*** (adj) — risky, unstable · *prec* (prayer) · risky, uncertain → safe, secure
-122. **precipitate*** (v) — to hasten/trigger · *prae-* + *cip* (head) · quicken → decelerate · (CP: ≠ precipitous)
-123. **precursor*** (n) — forerunner · *prae-* + *curs* (run) · predecessor, herald → successor
-124. **prevaricate*** (v) — to lie/evade · *prae-* + *varic* (straddle) · misrepresent → tell truth
-125. **probity*** (n) — integrity, honesty · *prob* (good/test) · uprightness → deception
-126. **prodigal** (adj) — wastefully extravagant · *prod-* + *ig* (drive) · profligate, lavish → frugal
-127. **profundity*** (n) — great depth · *pro-* + *fund* (bottom) · depth → shallowness
-128. **propensity*** (n) — natural inclination · *pro-* + *pend* (hang) · tendency, proclivity → aversion
-129. **propitiate*** (v) — to appease · *propiti* (favorable) · conciliate → upset · (CP: propitious = favorable)
-130. **proscribe*** (v) — to forbid · *pro-* + *scrib* (write) · prohibit, ban → permit · (CP: ≠ prescribe)
-131. **prudent*** (adj) — wise, cautious · *prud* (foresee) · judicious, careful → reckless
-132. **pusillanimous** (adj) — cowardly · *pusill* (tiny) + *anim* (spirit) · timid, craven → bold
-133. **quiescence*** (n) — state of rest/inactivity · *quies* (rest) · dormancy → activity
-134. **rarefy*** (v) — to thin / refine · *rar* (rare) · refine → thicken
-135. **recalcitrant*** (adj) — defiantly disobedient · *re-* + *calc* (kick) · obstinate, unruly → compliant
-136. **recluse*** (n) — one who lives in seclusion · *re-* + *clud* (close) · hermit, solitary → socialite
-137. **recondite*** (adj) — obscure, hard to grasp · *re-* + *cond* (hide) · abstruse, arcane → comprehensible
-138. **repudiate*** (v) — to reject/disown · *re-* + *pud* (shame) · disclaim, renounce → embrace
-139. **reprobate*** (n) — a corrupt/depraved person · *re-* + *prob* (test) · scoundrel, profligate → saint
-140. **reticent*** (adj) — reserved, uncommunicative · *re-* + *tac* (silent) · tight-lipped → talkative
-141. **revere*** (v) — to deeply respect · *re-* + *vere* (awe) · venerate, worship → disparage
-142. **salubrious*** (adj) — health-promoting · *salu* (health) · healthful, wholesome → harmful
-143. **sanction*** (n/v) — approval / penalty (contranym) · *sanct* (holy) · authorize → disallow
-144. **satiate*** (v) — to fully satisfy · *sat* (enough) · sate, glut → starve
-145. **saturate*** (v) — to fill completely · *satur* (full) · soak, drench → dry
-146. **savor*** (v) — to relish, enjoy · *sapor* (taste) · relish, bask → abhor
-147. **secrete*** (v) — to hide / to ooze · *secret* (set apart) · conceal; ooze → expose
-148. **shard*** (n) — a broken fragment · (Gmc) · splinter, sliver → whole
-149. **skeptic*** (n) — a habitual doubter · *skep* (examine) · cynic, disbeliever → believer
-150. **soporific*** (adj) — sleep-inducing · *sopor* (sleep) · sedative, drowsy → stimulant
-151. **specious*** (adj) — false but plausible · *spec* (look) · spurious → straightforward
-152. **sporadic*** (adj) — occasional, scattered · *spor* (seed/scatter) · intermittent → continuous
-153. **stigma*** (n) — mark of disgrace · *stig* (prick/mark) · blemish, disgrace → honor
-154. **stint*** (v/n) — to be sparing / a fixed period · (Gmc) · scrimp → splurge
-155. **stipulate*** (v) — to specify as a condition · *stip* (bargain) · specify, require → —
-156. **stolid*** (adj) — unemotional, impassive · *stol* (dull) · phlegmatic, stoic → passionate
-157. **strut*** (v) — to walk proudly · (Gmc) · swagger, flaunt → downplay
-158. **substantiate*** (v) — to prove with evidence · *sub-* + *stant* (stand) · corroborate, verify → refute
-159. **subside*** (v) — to die down · *sub-* + *sid* (settle) · abate, wane → surge
-160. **succinct*** (adj) — concise · *sub-* + *cinct* (girded) · terse, laconic → verbose
-161. **supposition*** (n) — an assumption · *sub-* + *pos* (place) · conjecture, hypothesis → certainty
-162. **tacit*** (adj) — implied, unspoken · *tac* (silent) · implicit → explicit
-163. **tangential*** (adj) — only superficially related · *tang* (touch) · digressive → relevant
-164. **tenuous*** (adj) — flimsy, weak · *tenu* (thin) · slight, gossamer → strong, substantial
-165. **tirade*** (n) — a long angry speech · (Fr) · diatribe, philippic → adulation
-166. **torpor*** (n) — sluggish inactivity · *torp* (numb) · lethargy, lassitude → vigor
-167. **tortuous*** (adj) — twisting; complex · *tort* (twist) · winding, circuitous → straight · (CP: ≠ torturous)
-168. **tractable*** (adj) — easily managed · *tract* (pull/handle) · docile, amenable → obstinate
-169. **transgression*** (n) — violation of a law/rule · *trans-* + *gress* (step) · breach → conformity
-170. **truculent*** (adj) — aggressively hostile · *truc* (fierce) · belligerent, fierce → gentle, mild
-171. **turpitude*** (n) — depravity, wickedness · *turp* (base) · depravity → virtue
-172. **unfettered*** (adj) — free of restraint · *un-* + *fetter* (chain) · unchained, free → constrained
-173. **vacillate*** (v) — to waver indecisively · *vacill* (sway) · waffle, waver → be resolute
-174. **venerate*** (v) — to revere · *vener* (worship) · revere, honor → dishonor
-175. **veracious*** (adj) — truthful, accurate · *ver* (truth) · candid, authentic → evasive · (CP: ≠ voracious)
-176. **verbose*** (adj) — wordy · *verb* (word) · prolix, redundant → terse, pithy
-177. **viable*** (adj) — workable; able to live · *vit/via* (life) · feasible, workable → unworkable, dead
-178. **vindictive*** (adj) — vengeful · *vindic* (avenge) · vengeful, spiteful → forgiving
-179. **vituperation*** (n) — abusive language · *vitu* (blame) · invective, abuse → praise
-180. **volatile*** (adj) — unstable; explosive · *vol* (fly) · mercurial, capricious → constant
-181. **wary*** (adj) — cautious, on guard · (Gmc *war*) · vigilant, alert → careless, inattentive
-182. **wheedle*** (v) — to coax by flattery · (Gmc) · cajole, inveigle → bully
-183. **whimsical*** (adj) — fanciful, on a whim · (Gmc) · capricious, arbitrary → rational
-184. **zealot*** (n) — a fanatic · (Gk *zelos*) · enthusiast, fanatic → moderate
-185. **aggrandizement*** (n) — increase of power/wealth · *grand* (great) · advancement → degradation
-186. **allegiance*** (n) — loyalty · *lige* (bound) · fidelity, devotion → disloyalty
-187. **altruism*** (n) — selfless concern for others · *altru* (other) · unselfishness → egoism
-188. **amalgam*** (n) — a blend of things · (alchemy) · mixture, alloy → —
-189. **amiable*** (adj) — friendly, likeable · *ami* (friend) · affable, genial → surly · (CP: amiable/amicable/amenable)
-190. **amnesty*** (adj→n) — pardon · *a-* + *mne* (memory) · absolution, pardon → punishment
-191. **anachronism** (n) — something out of its time · *ana-* + *chron* (time) · — → —
-192. **analogy*** (n) — a comparison of likeness · *ana-* + *log* (ratio) · parallel → difference
-193. **arbiter** (n) — a judge/decider · *arbit* (judge) · referee, mediator → —
-194. **ascetic** (n/adj) — self-denying, austere · *ascet* (exercise) · austere, monastic → hedonist
-195. **assiduous*** (adj) — diligent, persistent · *sid* (sit) · diligent, industrious → lazy
-196. **aver*** (v) — to declare true · *ver* (truth) · assert, avow → deny
-197. **belligerent** (adj) — warlike, hostile · *bell* (war) · pugnacious, hostile → peaceful
-198. **benevolence*** (n) — kindliness · *bene* (good) + *vol* (wish) · altruism → cruelty
-199. **blandishment*** (n) — flattering speech · (bland) · cajolery, coaxing → abuse
-200. **blasphemy*** (n) — irreverence toward the sacred · *blas* + *phem* (speak) · sacrilege → piety
-201. **boisterous*** (adj) — noisy and wild · (Gmc) · rowdy, raucous → restrained
-202. **brusque*** (adj) — abrupt in manner · (It *brusco*) · curt, terse → warm, gracious
-203. **buttress*** (v) — to support · (architecture) · reinforce, prop → undermine
-204. **commensurate*** (adj) — proportionate · *com-* + *mens* (measure) · adequate, proportional → disproportionate
-205. **contentious*** (adj) — quarrelsome · *con-* + *tend* (strain) · combative, litigious → peaceful
-206. **contrite*** (adj) — deeply remorseful · *con-* + *trit* (rub/grind) · penitent, apologetic → unrepentant
-207. **covet** (v) — to crave enviously · *cupid* (desire) · desire, crave → renounce
-208. **debilitate** (v) — to weaken · *de-* + *bil* (strength) · enfeeble, enervate → strengthen
-209. **decorous*** (adj) — proper, dignified · *decor* (fitting) · seemly, demure → unseemly
-210. **demur** (v) — to object · (Lat *mora*, delay) · object, dissent → consent · (CP: ≠ demure)
-211. **deride*** — *(see #39)*
-212. **didactic** (adj) — intended to teach/moralize · *didak* (teach) · instructive, pedantic → —
-213. **dilettante** (n) — a dabbler · (It, "delighting") · amateur → expert
-214. **dogmatic** (adj) — asserting opinion as fact · *dogma* · doctrinaire, opinionated → open-minded
-215. **dupe** (v/n) — to trick / a gull · (Fr) · deceive, gull → —
-216. **ebullient*** — *(see #48)*
-217. **egregious** (adj) — conspicuously bad · *e-* + *greg* (flock) · flagrant, glaring → ordinary
-218. **embellish*** (v) — to decorate; to exaggerate · *bell* (beautiful) · adorn, garnish → strip, mar
-219. **enmity** (n) — deep hostility · *en-* + *imicus* (enemy) · animosity, antagonism → friendship
-220. **ephemeral*** — *(see #59)*
-221. **equanimity** (n) — calm composure · *equ* (even) + *anim* (mind) · poise, serenity → agitation
-222. **exacerbate** (v) — to worsen · *ex-* + *acerb* (bitter) · aggravate, intensify → alleviate
-223. **exonerate** (v) — to clear of blame · *ex-* + *oner* (burden) · absolve, acquit → incriminate
-224. **extol** (v) — to praise highly · *ex-* + *toll* (raise) · laud, glorify → disparage
-225. **fastidious** (adj) — hard to please, fussy · (Lat *fastidium*) · meticulous, picky → easygoing
-226. **fortuitous** (adj) — happening by chance · *fortu* (luck) · accidental, chance → planned
-227. **fractious** (adj) — irritable; unruly · *frac* (break) · peevish, unruly → docile · (CP: ≠ factious)
-228. **garrulous*** — *(see #70)*
-229. **hackneyed** (adj) — overused, trite · (hackney horse) · trite, stereotyped → original, fresh
-230. **iconoclast*** — *(see #76)*
-231. **idiosyncrasy** (n) — a peculiar trait · *idio* (own) · quirk, eccentricity → conventionality
-232. **impecunious** (adj) — having no money · *im-* + *pecun* (money) · destitute, penniless → wealthy
-233. **inchoate*** (adj) — just begun, unformed · *in-* + *cho* (begin) · nascent, rudimentary → developed
-234. **incongruous*** (adj) — out of place, mismatched · *in-* + *congru* (agree) · inappropriate → harmonious
-235. **inveigle** (v) — to entice by guile · (Fr) · cajole, beguile → repel
-236. **lassitude*** (n) — weariness, fatigue · *lass* (weary) · languor, lethargy → vigor
-237. **lugubrious** (adj) — exaggeratedly mournful · *lug* (mourn) · doleful, somber → cheerful
-238. **maudlin** (adj) — tearfully sentimental · (Mary Magdalen) · mawkish, weepy → unsentimental
-239. **mercurial** (adj) — volatile in mood · (Mercury) · capricious, changeable → constant
-240. **noisome** (adj) — foul-smelling, harmful · (*annoy*) · fetid, offensive → fragrant
-241. **obfuscate** (v) — to confuse, obscure · *ob-* + *fusc* (dark) · muddle, cloud → clarify
-242. **obstreperous** (adj) — noisily defiant · *ob-* + *strep* (noise) · unruly, vociferous → docile
-243. **ostentatious** (adj) — showy · *tend* (stretch out) · flashy, conspicuous → modest
-244. **parsimonious** (adj) — stingy · *parc* (spare) · miserly, tight-fisted → generous
-245. **perspicacious** (adj) — keenly perceptive · *per-* + *spic* (see) · astute, shrewd → undiscerning · (CP: perspicacious/perspicuous)
-246. **phlegmatic** (adj) — calm, unemotional · (humor *phlegm*) · stolid, placid → excitable
-247. **quixotic** (adj) — impractically idealistic · (Don Quixote) · idealistic, romantic → pragmatic *(implied by source theme; see prudent/pragmatic)*
-248. **sagacious** (adj) — wise, shrewd · *sag* (keen) · astute, perspicacious → foolish
-249. **sanguine** (adj) — cheerfully optimistic · *sangu* (blood) · hopeful, buoyant → pessimistic
-250. **ubiquitous** (adj) — present everywhere · *ubique* (everywhere) · omnipresent, pervasive → rare
+| # | Word | POS | Meaning | Root / hook | Synonyms → Antonyms |
+|---|---|---|---|---|---|
+| 101 | **misanthrope\*** | n | hater of humankind | mis- (hate) + anthrop (human) | cynic, recluse → optimist |
+| 102 | **mordant** | adj | bitingly sarcastic | mord (bite) | caustic, sharp → flattering |
+| 103 | **munificent** | adj | extremely generous | muni (gift) + fic (make) | benevolent, lavish → miserly |
+| 104 | **nadir** | n | lowest point | nadir (Arabic) | bottom → zenith, pinnacle |
+| 105 | **nebulous** | adj | vague, hazy | nebula (cloud) | ambiguous, obscure → distinct |
+| 106 | **obdurate\*** | adj | stubborn, hardened | ob- + dur (hard) | inflexible → compassionate |
+| 107 | **obsequious\*** | adj | fawning, servile | ob- + sequ (follow) | sycophantic → domineering |
+| 108 | **obviate\*** | v | prevent, make unnecessary | ob- + via (way) | eliminate, preclude → create |
+| 109 | **officious\*** | adj | meddlesome | offic (duty) | interfering, obtrusive → (CP: ≠ official) |
+| 110 | **opprobrium\*** | n | public disgrace | ob- + probr (reproach) | infamy, disgrace → honor |
+| 111 | **oscillate\*** | v | swing/waver | oscill (swing) | vacillate → stay steady |
+| 112 | **ostensible\*** | adj | apparent (but not real) | tend (stretch/show) | professed → hidden, actual |
+| 113 | **partisan\*** | n | fervent supporter | part (side) | supporter, devotee → opponent |
+| 114 | **paucity\*** | n | scarcity | pauc (few) | dearth, scarcity → abundance |
+| 115 | **pedantic\*** | adj | fussy about rules/learning | ped (teach) | precise, bookish → (RC tone) |
+| 116 | **perennial\*** | adj | long-lasting, enduring | per- + enn (year) | perpetual, lasting → ephemeral |
+| 117 | **perfidious\*** | adj | treacherous, disloyal | per- + fid (faith) | faithless → loyal |
+| 118 | **placate\*** | v | to appease | plac (please) | mollify, pacify → antagonize |
+| 119 | **platitude\*** | n | a trite remark | plat (flat) | cliché, truism → profundity |
+| 120 | **pragmatic\*** | adj | practical | pragma (deed) | rational, practical → impractical |
+| 121 | **precarious\*** | adj | risky, unstable | prec (prayer) | risky, uncertain → safe, secure |
+| 122 | **precipitate\*** | v | to hasten/trigger — CP: ≠ precipitous | prae- + cip (head) | quicken → decelerate |
+| 123 | **precursor\*** | n | forerunner | prae- + curs (run) | predecessor, herald → successor |
+| 124 | **prevaricate\*** | v | to lie/evade | prae- + varic (straddle) | misrepresent → tell truth |
+| 125 | **probity\*** | n | integrity, honesty | prob (good/test) | uprightness → deception |
+| 126 | **prodigal** | adj | wastefully extravagant | prod- + ig (drive) | profligate, lavish → frugal |
+| 127 | **profundity\*** | n | great depth | pro- + fund (bottom) | depth → shallowness |
+| 128 | **propensity\*** | n | natural inclination | pro- + pend (hang) | tendency, proclivity → aversion |
+| 129 | **propitiate\*** | v | to appease — CP: propitious = favorable | propiti (favorable) | conciliate → upset |
+| 130 | **proscribe\*** | v | to forbid — CP: ≠ prescribe | pro- + scrib (write) | prohibit, ban → permit |
+| 131 | **prudent\*** | adj | wise, cautious | prud (foresee) | judicious, careful → reckless |
+| 132 | **pusillanimous** | adj | cowardly | pusill (tiny) + anim (spirit) | timid, craven → bold |
+| 133 | **quiescence\*** | n | state of rest/inactivity | quies (rest) | dormancy → activity |
+| 134 | **rarefy\*** | v | to thin / refine | rar (rare) | refine → thicken |
+| 135 | **recalcitrant\*** | adj | defiantly disobedient | re- + calc (kick) | obstinate, unruly → compliant |
+| 136 | **recluse\*** | n | one who lives in seclusion | re- + clud (close) | hermit, solitary → socialite |
+| 137 | **recondite\*** | adj | obscure, hard to grasp | re- + cond (hide) | abstruse, arcane → comprehensible |
+| 138 | **repudiate\*** | v | to reject/disown | re- + pud (shame) | disclaim, renounce → embrace |
+| 139 | **reprobate\*** | n | a corrupt/depraved person | re- + prob (test) | scoundrel, profligate → saint |
+| 140 | **reticent\*** | adj | reserved, uncommunicative | re- + tac (silent) | tight-lipped → talkative |
+| 141 | **revere\*** | v | to deeply respect | re- + vere (awe) | venerate, worship → disparage |
+| 142 | **salubrious\*** | adj | health-promoting | salu (health) | healthful, wholesome → harmful |
+| 143 | **sanction\*** | n/v | approval / penalty (contranym) | sanct (holy) | authorize → disallow |
+| 144 | **satiate\*** | v | to fully satisfy | sat (enough) | sate, glut → starve |
+| 145 | **saturate\*** | v | to fill completely | satur (full) | soak, drench → dry |
+| 146 | **savor\*** | v | to relish, enjoy | sapor (taste) | relish, bask → abhor |
+| 147 | **secrete\*** | v | to hide / to ooze | secret (set apart) | conceal; ooze → expose |
+| 148 | **shard\*** | n | a broken fragment | (Gmc) | splinter, sliver → whole |
+| 149 | **skeptic\*** | n | a habitual doubter | skep (examine) | cynic, disbeliever → believer |
+| 150 | **soporific\*** | adj | sleep-inducing | sopor (sleep) | sedative, drowsy → stimulant |
+| 151 | **specious\*** | adj | false but plausible | spec (look) | spurious → straightforward |
+| 152 | **sporadic\*** | adj | occasional, scattered | spor (seed/scatter) | intermittent → continuous |
+| 153 | **stigma\*** | n | mark of disgrace | stig (prick/mark) | blemish, disgrace → honor |
+| 154 | **stint\*** | v/n | to be sparing / a fixed period | (Gmc) | scrimp → splurge |
+| 155 | **stipulate\*** | v | to specify as a condition | stip (bargain) | specify, require → — |
+| 156 | **stolid\*** | adj | unemotional, impassive | stol (dull) | phlegmatic, stoic → passionate |
+| 157 | **strut\*** | v | to walk proudly | (Gmc) | swagger, flaunt → downplay |
+| 158 | **substantiate\*** | v | to prove with evidence | sub- + stant (stand) | corroborate, verify → refute |
+| 159 | **subside\*** | v | to die down | sub- + sid (settle) | abate, wane → surge |
+| 160 | **succinct\*** | adj | concise | sub- + cinct (girded) | terse, laconic → verbose |
+| 161 | **supposition\*** | n | an assumption | sub- + pos (place) | conjecture, hypothesis → certainty |
+| 162 | **tacit\*** | adj | implied, unspoken | tac (silent) | implicit → explicit |
+| 163 | **tangential\*** | adj | only superficially related | tang (touch) | digressive → relevant |
+| 164 | **tenuous\*** | adj | flimsy, weak | tenu (thin) | slight, gossamer → strong, substantial |
+| 165 | **tirade\*** | n | a long angry speech | (Fr) | diatribe, philippic → adulation |
+| 166 | **torpor\*** | n | sluggish inactivity | torp (numb) | lethargy, lassitude → vigor |
+| 167 | **tortuous\*** | adj | twisting; complex — CP: ≠ torturous | tort (twist) | winding, circuitous → straight |
+| 168 | **tractable\*** | adj | easily managed | tract (pull/handle) | docile, amenable → obstinate |
+| 169 | **transgression\*** | n | violation of a law/rule | trans- + gress (step) | breach → conformity |
+| 170 | **truculent\*** | adj | aggressively hostile | truc (fierce) | belligerent, fierce → gentle, mild |
+| 171 | **turpitude\*** | n | depravity, wickedness | turp (base) | depravity → virtue |
+| 172 | **unfettered\*** | adj | free of restraint | un- + fetter (chain) | unchained, free → constrained |
+| 173 | **vacillate\*** | v | to waver indecisively | vacill (sway) | waffle, waver → be resolute |
+| 174 | **venerate\*** | v | to revere | vener (worship) | revere, honor → dishonor |
+| 175 | **veracious\*** | adj | truthful, accurate — CP: ≠ voracious | ver (truth) | candid, authentic → evasive |
+| 176 | **verbose\*** | adj | wordy | verb (word) | prolix, redundant → terse, pithy |
+| 177 | **viable\*** | adj | workable; able to live | vit/via (life) | feasible, workable → unworkable, dead |
+| 178 | **vindictive\*** | adj | vengeful | vindic (avenge) | vengeful, spiteful → forgiving |
+| 179 | **vituperation\*** | n | abusive language | vitu (blame) | invective, abuse → praise |
+| 180 | **volatile\*** | adj | unstable; explosive | vol (fly) | mercurial, capricious → constant |
+| 181 | **wary\*** | adj | cautious, on guard | (Gmc war) | vigilant, alert → careless, inattentive |
+| 182 | **wheedle\*** | v | to coax by flattery | (Gmc) | cajole, inveigle → bully |
+| 183 | **whimsical\*** | adj | fanciful, on a whim | (Gmc) | capricious, arbitrary → rational |
+| 184 | **zealot\*** | n | a fanatic | (Gk zelos) | enthusiast, fanatic → moderate |
+| 185 | **aggrandizement\*** | n | increase of power/wealth | grand (great) | advancement → degradation |
+| 186 | **allegiance\*** | n | loyalty | lige (bound) | fidelity, devotion → disloyalty |
+| 187 | **altruism\*** | n | selfless concern for others | altru (other) | unselfishness → egoism |
+| 188 | **amalgam\*** | n | a blend of things | (alchemy) | mixture, alloy → — |
+| 189 | **amiable\*** | adj | friendly, likeable — CP: amiable/amicable/amenable | ami (friend) | affable, genial → surly |
+| 190 | **amnesty\*** | adj→n | pardon | a- + mne (memory) | absolution, pardon → punishment |
+| 191 | **anachronism** | n | something out of its time | ana- + chron (time) | — → — |
+| 192 | **analogy\*** | n | a comparison of likeness | ana- + log (ratio) | parallel → difference |
+| 193 | **arbiter** | n | a judge/decider | arbit (judge) | referee, mediator → — |
+| 194 | **ascetic** | n/adj | self-denying, austere | ascet (exercise) | austere, monastic → hedonist |
+| 195 | **assiduous\*** | adj | diligent, persistent | sid (sit) | diligent, industrious → lazy |
+| 196 | **aver\*** | v | to declare true | ver (truth) | assert, avow → deny |
+| 197 | **belligerent** | adj | warlike, hostile | bell (war) | pugnacious, hostile → peaceful |
+| 198 | **benevolence\*** | n | kindliness | bene (good) + vol (wish) | altruism → cruelty |
+| 199 | **blandishment\*** | n | flattering speech | (bland) | cajolery, coaxing → abuse |
+| 200 | **blasphemy\*** | n | irreverence toward the sacred | blas + phem (speak) | sacrilege → piety |
+| 201 | **boisterous\*** | adj | noisy and wild | (Gmc) | rowdy, raucous → restrained |
+| 202 | **brusque\*** | adj | abrupt in manner | (It brusco) | curt, terse → warm, gracious |
+| 203 | **buttress\*** | v | to support | (architecture) | reinforce, prop → undermine |
+| 204 | **commensurate\*** | adj | proportionate | com- + mens (measure) | adequate, proportional → disproportionate |
+| 205 | **contentious\*** | adj | quarrelsome | con- + tend (strain) | combative, litigious → peaceful |
+| 206 | **contrite\*** | adj | deeply remorseful | con- + trit (rub/grind) | penitent, apologetic → unrepentant |
+| 207 | **covet** | v | to crave enviously | cupid (desire) | desire, crave → renounce |
+| 208 | **debilitate** | v | to weaken | de- + bil (strength) | enfeeble, enervate → strengthen |
+| 209 | **decorous\*** | adj | proper, dignified | decor (fitting) | seemly, demure → unseemly |
+| 210 | **demur** | v | to object — CP: ≠ demure | (Lat mora, delay) | object, dissent → consent |
+| 211 | **deride\*** |  | see entry #39 for full treatment |  |  |
+| 212 | **didactic** | adj | intended to teach/moralize | didak (teach) | instructive, pedantic → — |
+| 213 | **dilettante** | n | a dabbler | (It, "delighting") | amateur → expert |
+| 214 | **dogmatic** | adj | asserting opinion as fact | dogma | doctrinaire, opinionated → open-minded |
+| 215 | **dupe** | v/n | to trick / a gull | (Fr) | deceive, gull → — |
+| 216 | **ebullient\*** |  | see entry #48 for full treatment |  |  |
+| 217 | **egregious** | adj | conspicuously bad | e- + greg (flock) | flagrant, glaring → ordinary |
+| 218 | **embellish\*** | v | to decorate; to exaggerate | bell (beautiful) | adorn, garnish → strip, mar |
+| 219 | **enmity** | n | deep hostility | en- + imicus (enemy) | animosity, antagonism → friendship |
+| 220 | **ephemeral\*** |  | see entry #59 for full treatment |  |  |
+| 221 | **equanimity** | n | calm composure | equ (even) + anim (mind) | poise, serenity → agitation |
+| 222 | **exacerbate** | v | to worsen | ex- + acerb (bitter) | aggravate, intensify → alleviate |
+| 223 | **exonerate** | v | to clear of blame | ex- + oner (burden) | absolve, acquit → incriminate |
+| 224 | **extol** | v | to praise highly | ex- + toll (raise) | laud, glorify → disparage |
+| 225 | **fastidious** | adj | hard to please, fussy | (Lat fastidium) | meticulous, picky → easygoing |
+| 226 | **fortuitous** | adj | happening by chance | fortu (luck) | accidental, chance → planned |
+| 227 | **fractious** | adj | irritable; unruly — CP: ≠ factious | frac (break) | peevish, unruly → docile |
+| 228 | **garrulous\*** |  | see entry #70 for full treatment |  |  |
+| 229 | **hackneyed** | adj | overused, trite | (hackney horse) | trite, stereotyped → original, fresh |
+| 230 | **iconoclast\*** |  | see entry #76 for full treatment |  |  |
+| 231 | **idiosyncrasy** | n | a peculiar trait | idio (own) | quirk, eccentricity → conventionality |
+| 232 | **impecunious** | adj | having no money | im- + pecun (money) | destitute, penniless → wealthy |
+| 233 | **inchoate\*** | adj | just begun, unformed | in- + cho (begin) | nascent, rudimentary → developed |
+| 234 | **incongruous\*** | adj | out of place, mismatched | in- + congru (agree) | inappropriate → harmonious |
+| 235 | **inveigle** | v | to entice by guile | (Fr) | cajole, beguile → repel |
+| 236 | **lassitude\*** | n | weariness, fatigue | lass (weary) | languor, lethargy → vigor |
+| 237 | **lugubrious** | adj | exaggeratedly mournful | lug (mourn) | doleful, somber → cheerful |
+| 238 | **maudlin** | adj | tearfully sentimental | (Mary Magdalen) | mawkish, weepy → unsentimental |
+| 239 | **mercurial** | adj | volatile in mood | (Mercury) | capricious, changeable → constant |
+| 240 | **noisome** | adj | foul-smelling, harmful | (annoy) | fetid, offensive → fragrant |
+| 241 | **obfuscate** | v | to confuse, obscure | ob- + fusc (dark) | muddle, cloud → clarify |
+| 242 | **obstreperous** | adj | noisily defiant | ob- + strep (noise) | unruly, vociferous → docile |
+| 243 | **ostentatious** | adj | showy | tend (stretch out) | flashy, conspicuous → modest |
+| 244 | **parsimonious** | adj | stingy | parc (spare) | miserly, tight-fisted → generous |
+| 245 | **perspicacious** | adj | keenly perceptive — CP: perspicacious/perspicuous | per- + spic (see) | astute, shrewd → undiscerning |
+| 246 | **phlegmatic** | adj | calm, unemotional | (humor phlegm) | stolid, placid → excitable |
+| 247 | **quixotic** | adj | impractically idealistic | (Don Quixote) | idealistic, romantic → pragmatic *(implied by source theme; see prudent/pragmatic)* |
+| 248 | **sagacious** | adj | wise, shrewd | sag (keen) | astute, perspicacious → foolish |
+| 249 | **sanguine** | adj | cheerfully optimistic | sangu (blood) | hopeful, buoyant → pessimistic |
+| 250 | **ubiquitous** | adj | present everywhere | ubique (everywhere) | omnipresent, pervasive → rare |
 
 > Beyond 250: every remaining word in the lexicon (rarer entries) is fully defined in **§11 Master Glossary**, grouped by root in **§3**, and placed in a meaning cluster in **§4/§8**. No word is dropped — lower-frequency words simply sit lower in study priority.
 
@@ -555,23 +575,66 @@ The single highest-leverage way to memorize. Learn the root once; every member o
 - **synchronous** (adj) — occurring at the same time (*syn* together + *chron*). syn: concurrent, coincident → unrelated.
 - **chronic** (implied) — lasting over time.
 
-### `path/cred/dur` already covered — additional high-yield mini-roots
+### Additional high-yield mini-roots
 
-**`ambi-`/`amphi-` = both:** **ambivalence*** (both feelings), **ambiguous** (both meanings), **ambidextrous** (both hands).
-**`circum-` = around:** **circumlocution** (talking around), **circumspect** (looking around → cautious), **circumvent** (going around → evade), **circumscribe** (drawing a line around).
-**`ob-` = against/toward (intensive):** **obdurate** (hardened against), **obstreperous** (noisy against), **obsequious** (following toward → fawning), **obviate** (meet in the way → prevent), **obfuscate** (darken), **obtrude** (thrust against).
-**`per-` = through / thoroughly (or "wrongly"):** **perspicacious** (seeing through), **pervade/pervasive** (going through), **perfidious** (faith-betrayal), **pernicious** (thoroughly destructive), **peruse** (read through).
-**`equ-`/`equi-` = equal, even:** **equanimity** (even mind), **equivocal** (equal voices), **equable/equitable** (even/fair), **iniquity** (un-evenness → wickedness, implied).
-**`sol-` = alone:** **solitary / recluse** (alone), **solipsism** (implied), **desolate** (Word-Groups: sad).
-**`tort/tract/dur/plac`** twin-antonym pairs to drill: **tractable ↔ intractable**, **placate ↔ provoke / implacable**, **benevolent ↔ malevolent**, **benediction ↔ malediction**, **euphony ↔ cacophony**, **eulogy ↔ diatribe**, **veracious ↔ mendacious**.
+`path-`, `cred-`, and `dur-` are covered above. Here are six more roots worth knowing — **read one row at a time**: cover the right column, say the root's meaning, then check.
 
-> **How to drill roots:** pick one root box per day. Cover the words, read only the root + hook, and try to *generate* the family from the meaning. Then check. Cross-links like `bene-/mal-` and `loqu-/tac-` are antonym pairs — learn them back-to-back so each reinforces the other.
+| Root | Meaning | Word family (with mini-hook) |
+|---|---|---|
+| `ambi-` / `amphi-` | both | **ambivalence\*** = both feelings · **ambiguous** = both meanings · **ambidextrous** = both hands |
+| `circum-` | around | **circumlocution** = talking around · **circumspect** = looking around → cautious · **circumvent** = going around → evade · **circumscribe** = drawing a line around |
+| `ob-` | against / toward (intensive) | **obdurate** = hardened against · **obstreperous** = noisy against · **obsequious** = following toward → fawning · **obviate** = meet in the way → prevent · **obfuscate** = darken · **obtrude** = thrust against |
+| `per-` | through / thoroughly (or "wrongly") | **perspicacious** = seeing through · **pervade / pervasive** = going through · **perfidious** = faith-betrayal · **pernicious** = thoroughly destructive · **peruse** = read through |
+| `equ-` / `equi-` | equal, even | **equanimity** = even mind · **equivocal** = equal voices · **equable / equitable** = even / fair · **iniquity** = un-evenness → wickedness |
+| `sol-` | alone | **solitary / recluse** = alone · **solipsism** = self alone · **desolate** = left alone → bleak |
+
+**Twin-antonym pairs to drill back-to-back.** These are opposites built on the roots above — learning each pair *together* makes both stick, and they show up constantly in Sentence Equivalence:
+
+| Word | ↔ | Opposite |
+|---|---|---|
+| tractable (manageable) | ↔ | intractable (unmanageable) |
+| placate (calm) | ↔ | provoke / implacable (cannot be calmed) |
+| benevolent (good-willed) | ↔ | malevolent (ill-willed) |
+| benediction (blessing) | ↔ | malediction (curse) |
+| euphony (pleasant sound) | ↔ | cacophony (harsh sound) |
+| eulogy (speech of praise) | ↔ | diatribe (speech of attack) |
+| veracious (truthful) | ↔ | mendacious (lying) |
+
+> **How to drill roots (do this daily):**
+> 1. Pick **one** root box per day.
+> 2. Cover the word list; read **only** the root and its meaning.
+> 3. Try to *generate* the family yourself from the meaning — say each word and its hook aloud.
+> 4. Uncover and check. Mark any you missed.
+> 5. Learn antonym roots **as pairs** (`bene-/mal-`, `loqu-/tac-`, `eu-/caco-`) — each one reinforces the other.
 
 ---
 
 ## 4. Semantic / Synonym Clusters
 
-> The GRE rarely tests a word in isolation — it tests whether you can tell **near-synonyms apart**. Each cluster below gives the **core meaning** (the idea the blank points to), the **members**, the **fine distinctions** that decide the right answer, the **highest-yield** words, the **traps** (words that look like they belong but shade off in meaning), an **SE-style clue**, and a **hook**. Cross-links point to the same word's other homes — a word in two clusters is a word the test loves.
+**What this section is, in one line:** words grouped by *what they mean*, so you learn 10 related words as one idea instead of 10 separate facts.
+
+**Why it matters:** the GRE almost never asks "what does X mean?" in isolation. It asks you to tell **close synonyms apart** — which "praise" word fits, which "criticism" word is too strong, which two words mean the *same* thing. That skill is what these clusters build.
+
+**Each cluster has the same seven labels. Here is exactly what each one means:**
+
+| Label | What it tells you | How to use it |
+|---|---|---|
+| **Core meaning** | the single idea all the words share | this is what a blank "pointing here" wants |
+| **Words** | every member of the family | your raw vocabulary to learn |
+| **Key differences** | the fine shades that separate near-synonyms | this decides the *right* answer vs. a close-but-wrong one |
+| **Most useful** | the highest-frequency words to learn first | learn these before the rare ones |
+| **Traps** | words that look like they belong but don't (or flip meaning) | the GRE plants these as wrong answers |
+| **SE clue** | a sample Sentence-Equivalence sentence | shows how the idea appears on the test |
+| **Hook** | a memory aid | makes the words stick |
+
+**How to study one cluster (5 minutes):**
+1. Read the **Core meaning** and the **Words**. Say each word + its meaning aloud.
+2. Read **Key differences** twice — this is the part that earns points.
+3. Cover the cluster and try to list 5+ words from the Core meaning alone.
+4. Note the **Traps** so you can reject them on test day.
+5. Come back tomorrow and re-test (see §10).
+
+> **Note on cross-links:** a word listed in two clusters (e.g. *adulation* in both Praise and Flattery) is one the test loves to make ambiguous — pay attention to which clue word tips it one way or the other.
 
 ### 4.1 PRAISE / APPROVAL
 - **Core meaning:** to express high approval; an expression of it.

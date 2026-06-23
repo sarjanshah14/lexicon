@@ -75,24 +75,41 @@ code{
   font-size:.86em; color:#222; border:1px solid var(--line);
 }
 
-/* tables */
+/* tables — NOT inside an overflow box, so sticky headers track the PAGE scroll.
+   border-collapse:separate is required so the header's borders stay attached while it floats. */
 table{
-  border-collapse:collapse; width:100%; margin:1.2em 0; font-size:15px;
-  display:block; overflow-x:auto;
+  border-collapse:separate; border-spacing:0; width:100%; margin:1.2em 0; font-size:15px;
+  table-layout:auto; border-top:1px solid var(--line); border-left:1px solid var(--line);
 }
+th,td{
+  border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+  padding:8px 11px; vertical-align:top; overflow-wrap:break-word;
+}
+/* sticky header row: freezes at the top of the viewport while its table is in view,
+   then releases automatically once the table has scrolled past. Works on every table. */
 thead th{
   background:var(--thead); text-align:left; font-weight:700;
-  position:sticky; top:0;
+  position:-webkit-sticky; position:sticky; top:0; z-index:5;
+  box-shadow:inset 0 1px 0 var(--line);   /* keeps the top line while floating */
 }
-th,td{border:1px solid var(--line); padding:8px 11px; vertical-align:top;}
 tbody tr:nth-child(even){background:var(--zebra);}
 tbody tr:hover{background:#e9e9e6;}
 
 /* in-page ToC list (right after first h2) gets a card look via class added by JS */
 .toc-card{background:#f6f6f3; border:1px solid var(--line); border-radius:10px; padding:8px 22px;}
 
-/* top bar (mobile) */
-.topbar{display:none;}
+/* nav toggle button (always visible) */
+.nav-toggle{
+  position:fixed; top:14px; left:14px; z-index:60;
+  width:40px; height:40px; border-radius:8px; border:1px solid #000;
+  background:#1a1a1a; color:#fff; font-size:18px; cursor:pointer; line-height:1;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 1px 4px rgba(0,0,0,.25);
+}
+.nav-toggle:hover{background:#000;}
+
+/* desktop collapsed state: hide sidebar, content reflows full width */
+body.nav-collapsed .sidebar{display:none;}
 
 /* back to top */
 #toTop{
@@ -103,32 +120,52 @@ tbody tr:hover{background:#e9e9e6;}
 #toTop.show{opacity:.9; pointer-events:auto;}
 #toTop:hover{opacity:1;}
 
-/* responsive */
+.backdrop{display:none;}
+
+/* desktop: leave room at top-left of content for the floating toggle */
+.content-inner{position:relative;}
+
+/* tablet / phone */
 @media (max-width:900px){
   .sidebar{
-    position:fixed; left:0; top:0; z-index:40; transform:translateX(-100%);
-    transition:transform .25s ease; box-shadow:2px 0 16px rgba(0,0,0,.12);
+    position:fixed; left:0; top:0; z-index:50; width:84vw; max-width:320px;
+    transform:translateX(-100%); transition:transform .25s ease;
+    box-shadow:2px 0 18px rgba(0,0,0,.3);
   }
   .sidebar.open{transform:translateX(0);}
-  .topbar{
-    display:flex; align-items:center; gap:12px; position:sticky; top:0; z-index:30;
-    background:#fff; border-bottom:1px solid var(--line); padding:10px 16px;
+  .content{padding:0 12px;}
+  .content-inner{
+    margin:16px 0 70px; padding:58px 18px 70px; border-radius:8px;
   }
-  .topbar button{font-size:22px; background:none; border:none; cursor:pointer; color:var(--ink);}
-  .topbar span{font-weight:700; font-size:15px;}
-  .content{padding:0 18px;}
-  .content-inner{padding:24px 0 100px;}
   body{font-size:16px;}
-  .backdrop{position:fixed; inset:0; background:rgba(0,0,0,.35); z-index:35; display:none;}
+  .content-inner > h1:first-child{font-size:1.7rem;}
+  h2{font-size:1.4rem;}
+  h3{font-size:1.12rem;}
+  table{font-size:13.5px;}
+  th,td{padding:6px 8px;}
+  blockquote{padding:.7em .9em;}
+  .backdrop{
+    position:fixed; inset:0; background:rgba(0,0,0,.4); z-index:45; display:none;
+  }
   .backdrop.show{display:block;}
 }
+
+/* small phones */
+@media (max-width:480px){
+  body{font-size:15px;}
+  .content{padding:0 6px;}
+  .content-inner{padding:54px 12px 60px;}
+  table{font-size:12.5px;}
+  th,td{padding:5px 6px;}
+  code{font-size:.8em;}
+}
+
+/* let long table cells wrap instead of forcing huge width */
+td,th{word-break:normal; overflow-wrap:anywhere;}
 </style>
 </head>
 <body>
-<div class="topbar">
-  <button id="menuBtn" aria-label="Menu">&#9776;</button>
-  <span>GRE Lexicon Master Handbook</span>
-</div>
+<button id="navToggle" class="nav-toggle" aria-label="Show / hide menu" title="Show / hide menu">&#9776;</button>
 <div class="backdrop" id="backdrop"></div>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
@@ -193,49 +230,102 @@ Flashcards</a></li>
 <hr />
 <h2 id="1-how-to-use-this-handbook">1. How to Use This Handbook</h2>
 <p>This is <strong>not</strong> a list to read front-to-back. It is a
-layered system. Use it like this:</p>
+layered system. The key idea: <strong>don't memorize words one at a time
+— learn them in families</strong> (by root and by meaning), because that
+is also how the GRE tests them.</p>
+<h3 id="how-to-learn-a-single-word-the-4-step-process">How to learn a
+single word (the 4-step process)</h3>
+<p>Whenever you meet a new word, do these four things <em>in order</em>.
+This is the core habit of the whole handbook:</p>
+<ol type="1">
+<li><strong>Meaning</strong> — read the short definition. Put it in your
+own words.</li>
+<li><strong>Root / hook</strong> — attach it to its root or memory hook
+(§3). This is the glue; a word with a hook is ~3× more likely to
+stick.</li>
+<li><strong>Family</strong> — find its synonyms and antonyms (§4, §8,
+§11). Never learn a word alone — learn "this word means X, <em>like</em>
+these, <em>unlike</em> those."</li>
+<li><strong>Use</strong> — read the example sentence and picture the
+blank it would fill. Words you can <em>use</em> are words you'll
+recognize on the test.</li>
+</ol>
+<p>Then <strong>test</strong> it later from memory (§9) — recall, don't
+re-read.</p>
+<h3 id="which-section-to-use-and-when">Which section to use, and
+when</h3>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>What it's for</th>
+<th>When to use it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>§2 High-Priority</strong></td>
+<td>the 250 words that matter most</td>
+<td>start here if you're short on time</td>
+</tr>
+<tr>
+<td><strong>§3 Roots</strong></td>
+<td>learn words in root-families</td>
+<td><strong>start every study block here</strong></td>
+</tr>
+<tr>
+<td><strong>§4 Meaning clusters</strong></td>
+<td>tell close synonyms apart</td>
+<td>after roots — this is the GRE's core skill</td>
+</tr>
+<tr>
+<td><strong>§5 SE pairs</strong></td>
+<td>ready-made Sentence-Equivalence answer pairs</td>
+<td>when practicing SE questions</td>
+</tr>
+<tr>
+<td><strong>§6 Polarity map</strong></td>
+<td>positive / negative / neutral logic</td>
+<td>when practicing Text Completion</td>
+</tr>
+<tr>
+<td><strong>§7 Confusing pairs</strong></td>
+<td>deliberate look-alike traps</td>
+<td>drill these separately; they're easy points</td>
+</tr>
+<tr>
+<td><strong>§8 Word groups</strong></td>
+<td>every thematic group, fully listed</td>
+<td>for broad coverage / second pass</td>
+</tr>
+<tr>
+<td><strong>§9 Flashcards</strong></td>
+<td>active-recall self-testing</td>
+<td>every day, on words already learned</td>
+</tr>
+<tr>
+<td><strong>§10 Revision plan</strong></td>
+<td>the spaced schedule</td>
+<td>to plan <em>when</em> to review</td>
+</tr>
+<tr>
+<td><strong>§11 Glossary</strong></td>
+<td>A–Z lookup of all 775 words</td>
+<td>to check "what did that mean again?"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="two-rules-that-matter-most">Two rules that matter most</h3>
 <ul>
-<li><strong>Learn by roots first (§3).</strong> Your brain stores words
-far better in families than alphabetically. When you meet
-<em>malevolent</em>, <em>malign</em>, <em>malediction</em>, and
-<em>malefactor</em> together under <code>mal- = bad</code>, one hook
-unlocks all four. Start every study block in the Root Encyclopedia.</li>
-<li><strong>Then learn by meaning families (§4).</strong> GRE almost
-never tests a word in isolation — it tests whether you can tell
-<em>praise</em> words from <em>criticism</em> words, <em>increase</em>
-from <em>decrease</em>. Drill the semantic clusters until you can name
-5+ words per concept on demand.</li>
-<li><strong>Use the SE clusters (§5) as answer banks.</strong> Sentence
-Equivalence asks for <strong>two</strong> words that produce the
-<em>same</em> sentence meaning. The clusters are pre-built "answer
-pairs" — memorize which words are true synonyms (safe to pair) vs.
-near-misses (trap distractors).</li>
-<li><strong>Use the Polarity Map (§6) for Text Completion.</strong> Most
-TC blanks are won by polarity alone: does the sentence want a
-<strong>positive</strong>, <strong>negative</strong>, or
-<strong>neutral</strong> word? Train yourself to read the clue word
-("although", "despite", "thus") → predict polarity → eliminate.</li>
-<li><strong>Master the confusing pairs (§7).</strong> Words like
-<em>disinterested/uninterested</em>, <em>credible/credulous</em>,
-<em>flaunt/flout</em> are deliberate GRE traps. Knowing the
-<em>difference</em> is worth more than knowing either word alone.</li>
-<li><strong>Revise with active recall (§9), not re-reading.</strong>
-Cover the answer, force recall, check. Re-reading feels productive but
-builds almost no durable memory.</li>
-<li><strong>Follow the spaced schedule (§10).</strong> Review each list
-on Day 1, 2, 4, 7, 14, 30. Spacing beats cramming for long-term
-retention — which is what the GRE actually requires.</li>
 <li><strong>Star words first.</strong> When time is short, drill only
-the <code>*</code> high-frequency words (§2). They give the highest
-score-per-minute return.</li>
-<li><strong>The Master Glossary (§11) is your lookup index.</strong>
-Every one of the 775 words lives there in A–Z order with meaning,
-synonyms, and antonyms — use it to settle any "what did that mean
-again?" instantly.</li>
+the <code>*</code> high-frequency words — highest score per minute.</li>
+<li><strong>Space your reviews.</strong> Re-test each batch on Day 1, 2,
+4, 7, 14, 30 (§10). Spacing beats cramming for the long-term memory the
+GRE needs.</li>
 </ul>
-<p><strong>Daily loop:</strong> (1) new root family → (2) the matching
-semantic cluster → (3) 10 flashcards → (4) yesterday's words re-tested.
-~30 min/day.</p>
+<p><strong>Daily loop (~30 min):</strong> (1) one new root family (§3) →
+(2) its matching meaning cluster (§4) → (3) 10 flashcards (§9) → (4)
+re-test yesterday's words.</p>
 <hr />
 <h2 id="2-high-priority-gre-words">2. High-Priority GRE Words</h2>
 <p>Ranked by GRE usefulness: star-marked frequency, TC/SE power, and how
@@ -1364,319 +1454,1229 @@ norm</td>
 </table>
 <h3 id="top-101250-the-next-tier--broad-coverage">Top 101–250 (the next
 tier — broad coverage)</h3>
-<p>These extend the priority set. Format: <strong>word</strong> (POS) —
-meaning · <em>root/hook</em> · syn → ant.</p>
-<ol start="101" type="1">
-<li><strong>misanthrope</strong>* (n) — hater of humankind ·
-<em>mis-</em> (hate) + <em>anthrop</em> (human) · cynic, recluse →
-optimist</li>
-<li><strong>mordant</strong> (adj) — bitingly sarcastic · <em>mord</em>
-(bite) · caustic, sharp → flattering</li>
-<li><strong>munificent</strong> (adj) — extremely generous ·
-<em>muni</em> (gift) + <em>fic</em> (make) · benevolent, lavish →
-miserly</li>
-<li><strong>nadir</strong> (n) — lowest point · <em>nadir</em> (Arabic)
-· bottom → zenith, pinnacle</li>
-<li><strong>nebulous</strong> (adj) — vague, hazy · <em>nebula</em>
-(cloud) · ambiguous, obscure → distinct</li>
-<li><strong>obdurate</strong>* (adj) — stubborn, hardened · <em>ob-</em>
-+ <em>dur</em> (hard) · inflexible → compassionate</li>
-<li><strong>obsequious</strong>* (adj) — fawning, servile · <em>ob-</em>
-+ <em>sequ</em> (follow) · sycophantic → domineering</li>
-<li><strong>obviate</strong>* (v) — prevent, make unnecessary ·
-<em>ob-</em> + <em>via</em> (way) · eliminate, preclude → create</li>
-<li><strong>officious</strong>* (adj) — meddlesome · <em>offic</em>
-(duty) · interfering, obtrusive → (CP: ≠ official)</li>
-<li><strong>opprobrium</strong>* (n) — public disgrace · <em>ob-</em> +
-<em>probr</em> (reproach) · infamy, disgrace → honor</li>
-<li><strong>oscillate</strong>* (v) — swing/waver · <em>oscill</em>
-(swing) · vacillate → stay steady</li>
-<li><strong>ostensible</strong>* (adj) — apparent (but not real) ·
-<em>tend</em> (stretch/show) · professed → hidden, actual</li>
-<li><strong>partisan</strong>* (n) — fervent supporter · <em>part</em>
-(side) · supporter, devotee → opponent</li>
-<li><strong>paucity</strong>* (n) — scarcity · <em>pauc</em> (few) ·
-dearth, scarcity → abundance</li>
-<li><strong>pedantic</strong>* (adj) — fussy about rules/learning ·
-<em>ped</em> (teach) · precise, bookish → (RC tone)</li>
-<li><strong>perennial</strong>* (adj) — long-lasting, enduring ·
-<em>per-</em> + <em>enn</em> (year) · perpetual, lasting →
-ephemeral</li>
-<li><strong>perfidious</strong>* (adj) — treacherous, disloyal ·
-<em>per-</em> + <em>fid</em> (faith) · faithless → loyal</li>
-<li><strong>placate</strong>* (v) — to appease · <em>plac</em> (please)
-· mollify, pacify → antagonize</li>
-<li><strong>platitude</strong>* (n) — a trite remark · <em>plat</em>
-(flat) · cliché, truism → profundity</li>
-<li><strong>pragmatic</strong>* (adj) — practical · <em>pragma</em>
-(deed) · rational, practical → impractical</li>
-<li><strong>precarious</strong>* (adj) — risky, unstable · <em>prec</em>
-(prayer) · risky, uncertain → safe, secure</li>
-<li><strong>precipitate</strong>* (v) — to hasten/trigger ·
-<em>prae-</em> + <em>cip</em> (head) · quicken → decelerate · (CP: ≠
-precipitous)</li>
-<li><strong>precursor</strong>* (n) — forerunner · <em>prae-</em> +
-<em>curs</em> (run) · predecessor, herald → successor</li>
-<li><strong>prevaricate</strong>* (v) — to lie/evade · <em>prae-</em> +
-<em>varic</em> (straddle) · misrepresent → tell truth</li>
-<li><strong>probity</strong>* (n) — integrity, honesty · <em>prob</em>
-(good/test) · uprightness → deception</li>
-<li><strong>prodigal</strong> (adj) — wastefully extravagant ·
-<em>prod-</em> + <em>ig</em> (drive) · profligate, lavish → frugal</li>
-<li><strong>profundity</strong>* (n) — great depth · <em>pro-</em> +
-<em>fund</em> (bottom) · depth → shallowness</li>
-<li><strong>propensity</strong>* (n) — natural inclination ·
-<em>pro-</em> + <em>pend</em> (hang) · tendency, proclivity →
-aversion</li>
-<li><strong>propitiate</strong>* (v) — to appease · <em>propiti</em>
-(favorable) · conciliate → upset · (CP: propitious = favorable)</li>
-<li><strong>proscribe</strong>* (v) — to forbid · <em>pro-</em> +
-<em>scrib</em> (write) · prohibit, ban → permit · (CP: ≠ prescribe)</li>
-<li><strong>prudent</strong>* (adj) — wise, cautious · <em>prud</em>
-(foresee) · judicious, careful → reckless</li>
-<li><strong>pusillanimous</strong> (adj) — cowardly · <em>pusill</em>
-(tiny) + <em>anim</em> (spirit) · timid, craven → bold</li>
-<li><strong>quiescence</strong>* (n) — state of rest/inactivity ·
-<em>quies</em> (rest) · dormancy → activity</li>
-<li><strong>rarefy</strong>* (v) — to thin / refine · <em>rar</em>
-(rare) · refine → thicken</li>
-<li><strong>recalcitrant</strong>* (adj) — defiantly disobedient ·
-<em>re-</em> + <em>calc</em> (kick) · obstinate, unruly → compliant</li>
-<li><strong>recluse</strong>* (n) — one who lives in seclusion ·
-<em>re-</em> + <em>clud</em> (close) · hermit, solitary → socialite</li>
-<li><strong>recondite</strong>* (adj) — obscure, hard to grasp ·
-<em>re-</em> + <em>cond</em> (hide) · abstruse, arcane →
-comprehensible</li>
-<li><strong>repudiate</strong>* (v) — to reject/disown · <em>re-</em> +
-<em>pud</em> (shame) · disclaim, renounce → embrace</li>
-<li><strong>reprobate</strong>* (n) — a corrupt/depraved person ·
-<em>re-</em> + <em>prob</em> (test) · scoundrel, profligate → saint</li>
-<li><strong>reticent</strong>* (adj) — reserved, uncommunicative ·
-<em>re-</em> + <em>tac</em> (silent) · tight-lipped → talkative</li>
-<li><strong>revere</strong>* (v) — to deeply respect · <em>re-</em> +
-<em>vere</em> (awe) · venerate, worship → disparage</li>
-<li><strong>salubrious</strong>* (adj) — health-promoting ·
-<em>salu</em> (health) · healthful, wholesome → harmful</li>
-<li><strong>sanction</strong>* (n/v) — approval / penalty (contranym) ·
-<em>sanct</em> (holy) · authorize → disallow</li>
-<li><strong>satiate</strong>* (v) — to fully satisfy · <em>sat</em>
-(enough) · sate, glut → starve</li>
-<li><strong>saturate</strong>* (v) — to fill completely · <em>satur</em>
-(full) · soak, drench → dry</li>
-<li><strong>savor</strong>* (v) — to relish, enjoy · <em>sapor</em>
-(taste) · relish, bask → abhor</li>
-<li><strong>secrete</strong>* (v) — to hide / to ooze · <em>secret</em>
-(set apart) · conceal; ooze → expose</li>
-<li><strong>shard</strong>* (n) — a broken fragment · (Gmc) · splinter,
-sliver → whole</li>
-<li><strong>skeptic</strong>* (n) — a habitual doubter · <em>skep</em>
-(examine) · cynic, disbeliever → believer</li>
-<li><strong>soporific</strong>* (adj) — sleep-inducing · <em>sopor</em>
-(sleep) · sedative, drowsy → stimulant</li>
-<li><strong>specious</strong>* (adj) — false but plausible ·
-<em>spec</em> (look) · spurious → straightforward</li>
-<li><strong>sporadic</strong>* (adj) — occasional, scattered ·
-<em>spor</em> (seed/scatter) · intermittent → continuous</li>
-<li><strong>stigma</strong>* (n) — mark of disgrace · <em>stig</em>
-(prick/mark) · blemish, disgrace → honor</li>
-<li><strong>stint</strong>* (v/n) — to be sparing / a fixed period ·
-(Gmc) · scrimp → splurge</li>
-<li><strong>stipulate</strong>* (v) — to specify as a condition ·
-<em>stip</em> (bargain) · specify, require → —</li>
-<li><strong>stolid</strong>* (adj) — unemotional, impassive ·
-<em>stol</em> (dull) · phlegmatic, stoic → passionate</li>
-<li><strong>strut</strong>* (v) — to walk proudly · (Gmc) · swagger,
-flaunt → downplay</li>
-<li><strong>substantiate</strong>* (v) — to prove with evidence ·
-<em>sub-</em> + <em>stant</em> (stand) · corroborate, verify →
-refute</li>
-<li><strong>subside</strong>* (v) — to die down · <em>sub-</em> +
-<em>sid</em> (settle) · abate, wane → surge</li>
-<li><strong>succinct</strong>* (adj) — concise · <em>sub-</em> +
-<em>cinct</em> (girded) · terse, laconic → verbose</li>
-<li><strong>supposition</strong>* (n) — an assumption · <em>sub-</em> +
-<em>pos</em> (place) · conjecture, hypothesis → certainty</li>
-<li><strong>tacit</strong>* (adj) — implied, unspoken · <em>tac</em>
-(silent) · implicit → explicit</li>
-<li><strong>tangential</strong>* (adj) — only superficially related ·
-<em>tang</em> (touch) · digressive → relevant</li>
-<li><strong>tenuous</strong>* (adj) — flimsy, weak · <em>tenu</em>
-(thin) · slight, gossamer → strong, substantial</li>
-<li><strong>tirade</strong>* (n) — a long angry speech · (Fr) ·
-diatribe, philippic → adulation</li>
-<li><strong>torpor</strong>* (n) — sluggish inactivity · <em>torp</em>
-(numb) · lethargy, lassitude → vigor</li>
-<li><strong>tortuous</strong>* (adj) — twisting; complex · <em>tort</em>
-(twist) · winding, circuitous → straight · (CP: ≠ torturous)</li>
-<li><strong>tractable</strong>* (adj) — easily managed · <em>tract</em>
-(pull/handle) · docile, amenable → obstinate</li>
-<li><strong>transgression</strong>* (n) — violation of a law/rule ·
-<em>trans-</em> + <em>gress</em> (step) · breach → conformity</li>
-<li><strong>truculent</strong>* (adj) — aggressively hostile ·
-<em>truc</em> (fierce) · belligerent, fierce → gentle, mild</li>
-<li><strong>turpitude</strong>* (n) — depravity, wickedness ·
-<em>turp</em> (base) · depravity → virtue</li>
-<li><strong>unfettered</strong>* (adj) — free of restraint ·
-<em>un-</em> + <em>fetter</em> (chain) · unchained, free →
-constrained</li>
-<li><strong>vacillate</strong>* (v) — to waver indecisively ·
-<em>vacill</em> (sway) · waffle, waver → be resolute</li>
-<li><strong>venerate</strong>* (v) — to revere · <em>vener</em>
-(worship) · revere, honor → dishonor</li>
-<li><strong>veracious</strong>* (adj) — truthful, accurate ·
-<em>ver</em> (truth) · candid, authentic → evasive · (CP: ≠
-voracious)</li>
-<li><strong>verbose</strong>* (adj) — wordy · <em>verb</em> (word) ·
-prolix, redundant → terse, pithy</li>
-<li><strong>viable</strong>* (adj) — workable; able to live ·
-<em>vit/via</em> (life) · feasible, workable → unworkable, dead</li>
-<li><strong>vindictive</strong>* (adj) — vengeful · <em>vindic</em>
-(avenge) · vengeful, spiteful → forgiving</li>
-<li><strong>vituperation</strong>* (n) — abusive language ·
-<em>vitu</em> (blame) · invective, abuse → praise</li>
-<li><strong>volatile</strong>* (adj) — unstable; explosive ·
-<em>vol</em> (fly) · mercurial, capricious → constant</li>
-<li><strong>wary</strong>* (adj) — cautious, on guard · (Gmc
-<em>war</em>) · vigilant, alert → careless, inattentive</li>
-<li><strong>wheedle</strong>* (v) — to coax by flattery · (Gmc) ·
-cajole, inveigle → bully</li>
-<li><strong>whimsical</strong>* (adj) — fanciful, on a whim · (Gmc) ·
-capricious, arbitrary → rational</li>
-<li><strong>zealot</strong>* (n) — a fanatic · (Gk <em>zelos</em>) ·
-enthusiast, fanatic → moderate</li>
-<li><strong>aggrandizement</strong>* (n) — increase of power/wealth ·
-<em>grand</em> (great) · advancement → degradation</li>
-<li><strong>allegiance</strong>* (n) — loyalty · <em>lige</em> (bound) ·
-fidelity, devotion → disloyalty</li>
-<li><strong>altruism</strong>* (n) — selfless concern for others ·
-<em>altru</em> (other) · unselfishness → egoism</li>
-<li><strong>amalgam</strong>* (n) — a blend of things · (alchemy) ·
-mixture, alloy → —</li>
-<li><strong>amiable</strong>* (adj) — friendly, likeable · <em>ami</em>
-(friend) · affable, genial → surly · (CP:
-amiable/amicable/amenable)</li>
-<li><strong>amnesty</strong>* (adj→n) — pardon · <em>a-</em> +
-<em>mne</em> (memory) · absolution, pardon → punishment</li>
-<li><strong>anachronism</strong> (n) — something out of its time ·
-<em>ana-</em> + <em>chron</em> (time) · — → —</li>
-<li><strong>analogy</strong>* (n) — a comparison of likeness ·
-<em>ana-</em> + <em>log</em> (ratio) · parallel → difference</li>
-<li><strong>arbiter</strong> (n) — a judge/decider · <em>arbit</em>
-(judge) · referee, mediator → —</li>
-<li><strong>ascetic</strong> (n/adj) — self-denying, austere ·
-<em>ascet</em> (exercise) · austere, monastic → hedonist</li>
-<li><strong>assiduous</strong>* (adj) — diligent, persistent ·
-<em>sid</em> (sit) · diligent, industrious → lazy</li>
-<li><strong>aver</strong>* (v) — to declare true · <em>ver</em> (truth)
-· assert, avow → deny</li>
-<li><strong>belligerent</strong> (adj) — warlike, hostile ·
-<em>bell</em> (war) · pugnacious, hostile → peaceful</li>
-<li><strong>benevolence</strong>* (n) — kindliness · <em>bene</em>
-(good) + <em>vol</em> (wish) · altruism → cruelty</li>
-<li><strong>blandishment</strong>* (n) — flattering speech · (bland) ·
-cajolery, coaxing → abuse</li>
-<li><strong>blasphemy</strong>* (n) — irreverence toward the sacred ·
-<em>blas</em> + <em>phem</em> (speak) · sacrilege → piety</li>
-<li><strong>boisterous</strong>* (adj) — noisy and wild · (Gmc) · rowdy,
-raucous → restrained</li>
-<li><strong>brusque</strong>* (adj) — abrupt in manner · (It
-<em>brusco</em>) · curt, terse → warm, gracious</li>
-<li><strong>buttress</strong>* (v) — to support · (architecture) ·
-reinforce, prop → undermine</li>
-<li><strong>commensurate</strong>* (adj) — proportionate · <em>com-</em>
-+ <em>mens</em> (measure) · adequate, proportional →
-disproportionate</li>
-<li><strong>contentious</strong>* (adj) — quarrelsome · <em>con-</em> +
-<em>tend</em> (strain) · combative, litigious → peaceful</li>
-<li><strong>contrite</strong>* (adj) — deeply remorseful · <em>con-</em>
-+ <em>trit</em> (rub/grind) · penitent, apologetic → unrepentant</li>
-<li><strong>covet</strong> (v) — to crave enviously · <em>cupid</em>
-(desire) · desire, crave → renounce</li>
-<li><strong>debilitate</strong> (v) — to weaken · <em>de-</em> +
-<em>bil</em> (strength) · enfeeble, enervate → strengthen</li>
-<li><strong>decorous</strong>* (adj) — proper, dignified ·
-<em>decor</em> (fitting) · seemly, demure → unseemly</li>
-<li><strong>demur</strong> (v) — to object · (Lat <em>mora</em>, delay)
-· object, dissent → consent · (CP: ≠ demure)</li>
-<li><strong>deride</strong>* — <em>(see #39)</em></li>
-<li><strong>didactic</strong> (adj) — intended to teach/moralize ·
-<em>didak</em> (teach) · instructive, pedantic → —</li>
-<li><strong>dilettante</strong> (n) — a dabbler · (It, "delighting") ·
-amateur → expert</li>
-<li><strong>dogmatic</strong> (adj) — asserting opinion as fact ·
-<em>dogma</em> · doctrinaire, opinionated → open-minded</li>
-<li><strong>dupe</strong> (v/n) — to trick / a gull · (Fr) · deceive,
-gull → —</li>
-<li><strong>ebullient</strong>* — <em>(see #48)</em></li>
-<li><strong>egregious</strong> (adj) — conspicuously bad · <em>e-</em> +
-<em>greg</em> (flock) · flagrant, glaring → ordinary</li>
-<li><strong>embellish</strong>* (v) — to decorate; to exaggerate ·
-<em>bell</em> (beautiful) · adorn, garnish → strip, mar</li>
-<li><strong>enmity</strong> (n) — deep hostility · <em>en-</em> +
-<em>imicus</em> (enemy) · animosity, antagonism → friendship</li>
-<li><strong>ephemeral</strong>* — <em>(see #59)</em></li>
-<li><strong>equanimity</strong> (n) — calm composure · <em>equ</em>
-(even) + <em>anim</em> (mind) · poise, serenity → agitation</li>
-<li><strong>exacerbate</strong> (v) — to worsen · <em>ex-</em> +
-<em>acerb</em> (bitter) · aggravate, intensify → alleviate</li>
-<li><strong>exonerate</strong> (v) — to clear of blame · <em>ex-</em> +
-<em>oner</em> (burden) · absolve, acquit → incriminate</li>
-<li><strong>extol</strong> (v) — to praise highly · <em>ex-</em> +
-<em>toll</em> (raise) · laud, glorify → disparage</li>
-<li><strong>fastidious</strong> (adj) — hard to please, fussy · (Lat
-<em>fastidium</em>) · meticulous, picky → easygoing</li>
-<li><strong>fortuitous</strong> (adj) — happening by chance ·
-<em>fortu</em> (luck) · accidental, chance → planned</li>
-<li><strong>fractious</strong> (adj) — irritable; unruly · <em>frac</em>
-(break) · peevish, unruly → docile · (CP: ≠ factious)</li>
-<li><strong>garrulous</strong>* — <em>(see #70)</em></li>
-<li><strong>hackneyed</strong> (adj) — overused, trite · (hackney horse)
-· trite, stereotyped → original, fresh</li>
-<li><strong>iconoclast</strong>* — <em>(see #76)</em></li>
-<li><strong>idiosyncrasy</strong> (n) — a peculiar trait · <em>idio</em>
-(own) · quirk, eccentricity → conventionality</li>
-<li><strong>impecunious</strong> (adj) — having no money · <em>im-</em>
-+ <em>pecun</em> (money) · destitute, penniless → wealthy</li>
-<li><strong>inchoate</strong>* (adj) — just begun, unformed ·
-<em>in-</em> + <em>cho</em> (begin) · nascent, rudimentary →
-developed</li>
-<li><strong>incongruous</strong>* (adj) — out of place, mismatched ·
-<em>in-</em> + <em>congru</em> (agree) · inappropriate → harmonious</li>
-<li><strong>inveigle</strong> (v) — to entice by guile · (Fr) · cajole,
-beguile → repel</li>
-<li><strong>lassitude</strong>* (n) — weariness, fatigue · <em>lass</em>
-(weary) · languor, lethargy → vigor</li>
-<li><strong>lugubrious</strong> (adj) — exaggeratedly mournful ·
-<em>lug</em> (mourn) · doleful, somber → cheerful</li>
-<li><strong>maudlin</strong> (adj) — tearfully sentimental · (Mary
-Magdalen) · mawkish, weepy → unsentimental</li>
-<li><strong>mercurial</strong> (adj) — volatile in mood · (Mercury) ·
-capricious, changeable → constant</li>
-<li><strong>noisome</strong> (adj) — foul-smelling, harmful ·
-(<em>annoy</em>) · fetid, offensive → fragrant</li>
-<li><strong>obfuscate</strong> (v) — to confuse, obscure · <em>ob-</em>
-+ <em>fusc</em> (dark) · muddle, cloud → clarify</li>
-<li><strong>obstreperous</strong> (adj) — noisily defiant · <em>ob-</em>
-+ <em>strep</em> (noise) · unruly, vociferous → docile</li>
-<li><strong>ostentatious</strong> (adj) — showy · <em>tend</em> (stretch
-out) · flashy, conspicuous → modest</li>
-<li><strong>parsimonious</strong> (adj) — stingy · <em>parc</em> (spare)
-· miserly, tight-fisted → generous</li>
-<li><strong>perspicacious</strong> (adj) — keenly perceptive ·
-<em>per-</em> + <em>spic</em> (see) · astute, shrewd → undiscerning ·
-(CP: perspicacious/perspicuous)</li>
-<li><strong>phlegmatic</strong> (adj) — calm, unemotional · (humor
-<em>phlegm</em>) · stolid, placid → excitable</li>
-<li><strong>quixotic</strong> (adj) — impractically idealistic · (Don
-Quixote) · idealistic, romantic → pragmatic <em>(implied by source
-theme; see prudent/pragmatic)</em></li>
-<li><strong>sagacious</strong> (adj) — wise, shrewd · <em>sag</em>
-(keen) · astute, perspicacious → foolish</li>
-<li><strong>sanguine</strong> (adj) — cheerfully optimistic ·
-<em>sangu</em> (blood) · hopeful, buoyant → pessimistic</li>
-<li><strong>ubiquitous</strong> (adj) — present everywhere ·
-<em>ubique</em> (everywhere) · omnipresent, pervasive → rare</li>
-</ol>
+<p>These are the <strong>next 150 highest-value words</strong> (ranks
+101–250). Same priority logic as the Top 100: frequency, usefulness
+across TC/SE/RC, and memorability. <strong>How to read a row:</strong>
+learn the <em>meaning</em> first, anchor it with the <em>root/hook</em>,
+then use <em>synonyms → antonyms</em> to lock the word into its
+meaning-family (that pairing is exactly what Sentence Equivalence
+tests). <code>*</code> = high-frequency. <strong>CP</strong> = a
+commonly-confused look-alike (see §7).</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Word</th>
+<th>POS</th>
+<th>Meaning</th>
+<th>Root / hook</th>
+<th>Synonyms → Antonyms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101</td>
+<td><strong>misanthrope*</strong></td>
+<td>n</td>
+<td>hater of humankind</td>
+<td>mis- (hate) + anthrop (human)</td>
+<td>cynic, recluse → optimist</td>
+</tr>
+<tr>
+<td>102</td>
+<td><strong>mordant</strong></td>
+<td>adj</td>
+<td>bitingly sarcastic</td>
+<td>mord (bite)</td>
+<td>caustic, sharp → flattering</td>
+</tr>
+<tr>
+<td>103</td>
+<td><strong>munificent</strong></td>
+<td>adj</td>
+<td>extremely generous</td>
+<td>muni (gift) + fic (make)</td>
+<td>benevolent, lavish → miserly</td>
+</tr>
+<tr>
+<td>104</td>
+<td><strong>nadir</strong></td>
+<td>n</td>
+<td>lowest point</td>
+<td>nadir (Arabic)</td>
+<td>bottom → zenith, pinnacle</td>
+</tr>
+<tr>
+<td>105</td>
+<td><strong>nebulous</strong></td>
+<td>adj</td>
+<td>vague, hazy</td>
+<td>nebula (cloud)</td>
+<td>ambiguous, obscure → distinct</td>
+</tr>
+<tr>
+<td>106</td>
+<td><strong>obdurate*</strong></td>
+<td>adj</td>
+<td>stubborn, hardened</td>
+<td>ob- + dur (hard)</td>
+<td>inflexible → compassionate</td>
+</tr>
+<tr>
+<td>107</td>
+<td><strong>obsequious*</strong></td>
+<td>adj</td>
+<td>fawning, servile</td>
+<td>ob- + sequ (follow)</td>
+<td>sycophantic → domineering</td>
+</tr>
+<tr>
+<td>108</td>
+<td><strong>obviate*</strong></td>
+<td>v</td>
+<td>prevent, make unnecessary</td>
+<td>ob- + via (way)</td>
+<td>eliminate, preclude → create</td>
+</tr>
+<tr>
+<td>109</td>
+<td><strong>officious*</strong></td>
+<td>adj</td>
+<td>meddlesome</td>
+<td>offic (duty)</td>
+<td>interfering, obtrusive → (CP: ≠ official)</td>
+</tr>
+<tr>
+<td>110</td>
+<td><strong>opprobrium*</strong></td>
+<td>n</td>
+<td>public disgrace</td>
+<td>ob- + probr (reproach)</td>
+<td>infamy, disgrace → honor</td>
+</tr>
+<tr>
+<td>111</td>
+<td><strong>oscillate*</strong></td>
+<td>v</td>
+<td>swing/waver</td>
+<td>oscill (swing)</td>
+<td>vacillate → stay steady</td>
+</tr>
+<tr>
+<td>112</td>
+<td><strong>ostensible*</strong></td>
+<td>adj</td>
+<td>apparent (but not real)</td>
+<td>tend (stretch/show)</td>
+<td>professed → hidden, actual</td>
+</tr>
+<tr>
+<td>113</td>
+<td><strong>partisan*</strong></td>
+<td>n</td>
+<td>fervent supporter</td>
+<td>part (side)</td>
+<td>supporter, devotee → opponent</td>
+</tr>
+<tr>
+<td>114</td>
+<td><strong>paucity*</strong></td>
+<td>n</td>
+<td>scarcity</td>
+<td>pauc (few)</td>
+<td>dearth, scarcity → abundance</td>
+</tr>
+<tr>
+<td>115</td>
+<td><strong>pedantic*</strong></td>
+<td>adj</td>
+<td>fussy about rules/learning</td>
+<td>ped (teach)</td>
+<td>precise, bookish → (RC tone)</td>
+</tr>
+<tr>
+<td>116</td>
+<td><strong>perennial*</strong></td>
+<td>adj</td>
+<td>long-lasting, enduring</td>
+<td>per- + enn (year)</td>
+<td>perpetual, lasting → ephemeral</td>
+</tr>
+<tr>
+<td>117</td>
+<td><strong>perfidious*</strong></td>
+<td>adj</td>
+<td>treacherous, disloyal</td>
+<td>per- + fid (faith)</td>
+<td>faithless → loyal</td>
+</tr>
+<tr>
+<td>118</td>
+<td><strong>placate*</strong></td>
+<td>v</td>
+<td>to appease</td>
+<td>plac (please)</td>
+<td>mollify, pacify → antagonize</td>
+</tr>
+<tr>
+<td>119</td>
+<td><strong>platitude*</strong></td>
+<td>n</td>
+<td>a trite remark</td>
+<td>plat (flat)</td>
+<td>cliché, truism → profundity</td>
+</tr>
+<tr>
+<td>120</td>
+<td><strong>pragmatic*</strong></td>
+<td>adj</td>
+<td>practical</td>
+<td>pragma (deed)</td>
+<td>rational, practical → impractical</td>
+</tr>
+<tr>
+<td>121</td>
+<td><strong>precarious*</strong></td>
+<td>adj</td>
+<td>risky, unstable</td>
+<td>prec (prayer)</td>
+<td>risky, uncertain → safe, secure</td>
+</tr>
+<tr>
+<td>122</td>
+<td><strong>precipitate*</strong></td>
+<td>v</td>
+<td>to hasten/trigger — CP: ≠ precipitous</td>
+<td>prae- + cip (head)</td>
+<td>quicken → decelerate</td>
+</tr>
+<tr>
+<td>123</td>
+<td><strong>precursor*</strong></td>
+<td>n</td>
+<td>forerunner</td>
+<td>prae- + curs (run)</td>
+<td>predecessor, herald → successor</td>
+</tr>
+<tr>
+<td>124</td>
+<td><strong>prevaricate*</strong></td>
+<td>v</td>
+<td>to lie/evade</td>
+<td>prae- + varic (straddle)</td>
+<td>misrepresent → tell truth</td>
+</tr>
+<tr>
+<td>125</td>
+<td><strong>probity*</strong></td>
+<td>n</td>
+<td>integrity, honesty</td>
+<td>prob (good/test)</td>
+<td>uprightness → deception</td>
+</tr>
+<tr>
+<td>126</td>
+<td><strong>prodigal</strong></td>
+<td>adj</td>
+<td>wastefully extravagant</td>
+<td>prod- + ig (drive)</td>
+<td>profligate, lavish → frugal</td>
+</tr>
+<tr>
+<td>127</td>
+<td><strong>profundity*</strong></td>
+<td>n</td>
+<td>great depth</td>
+<td>pro- + fund (bottom)</td>
+<td>depth → shallowness</td>
+</tr>
+<tr>
+<td>128</td>
+<td><strong>propensity*</strong></td>
+<td>n</td>
+<td>natural inclination</td>
+<td>pro- + pend (hang)</td>
+<td>tendency, proclivity → aversion</td>
+</tr>
+<tr>
+<td>129</td>
+<td><strong>propitiate*</strong></td>
+<td>v</td>
+<td>to appease — CP: propitious = favorable</td>
+<td>propiti (favorable)</td>
+<td>conciliate → upset</td>
+</tr>
+<tr>
+<td>130</td>
+<td><strong>proscribe*</strong></td>
+<td>v</td>
+<td>to forbid — CP: ≠ prescribe</td>
+<td>pro- + scrib (write)</td>
+<td>prohibit, ban → permit</td>
+</tr>
+<tr>
+<td>131</td>
+<td><strong>prudent*</strong></td>
+<td>adj</td>
+<td>wise, cautious</td>
+<td>prud (foresee)</td>
+<td>judicious, careful → reckless</td>
+</tr>
+<tr>
+<td>132</td>
+<td><strong>pusillanimous</strong></td>
+<td>adj</td>
+<td>cowardly</td>
+<td>pusill (tiny) + anim (spirit)</td>
+<td>timid, craven → bold</td>
+</tr>
+<tr>
+<td>133</td>
+<td><strong>quiescence*</strong></td>
+<td>n</td>
+<td>state of rest/inactivity</td>
+<td>quies (rest)</td>
+<td>dormancy → activity</td>
+</tr>
+<tr>
+<td>134</td>
+<td><strong>rarefy*</strong></td>
+<td>v</td>
+<td>to thin / refine</td>
+<td>rar (rare)</td>
+<td>refine → thicken</td>
+</tr>
+<tr>
+<td>135</td>
+<td><strong>recalcitrant*</strong></td>
+<td>adj</td>
+<td>defiantly disobedient</td>
+<td>re- + calc (kick)</td>
+<td>obstinate, unruly → compliant</td>
+</tr>
+<tr>
+<td>136</td>
+<td><strong>recluse*</strong></td>
+<td>n</td>
+<td>one who lives in seclusion</td>
+<td>re- + clud (close)</td>
+<td>hermit, solitary → socialite</td>
+</tr>
+<tr>
+<td>137</td>
+<td><strong>recondite*</strong></td>
+<td>adj</td>
+<td>obscure, hard to grasp</td>
+<td>re- + cond (hide)</td>
+<td>abstruse, arcane → comprehensible</td>
+</tr>
+<tr>
+<td>138</td>
+<td><strong>repudiate*</strong></td>
+<td>v</td>
+<td>to reject/disown</td>
+<td>re- + pud (shame)</td>
+<td>disclaim, renounce → embrace</td>
+</tr>
+<tr>
+<td>139</td>
+<td><strong>reprobate*</strong></td>
+<td>n</td>
+<td>a corrupt/depraved person</td>
+<td>re- + prob (test)</td>
+<td>scoundrel, profligate → saint</td>
+</tr>
+<tr>
+<td>140</td>
+<td><strong>reticent*</strong></td>
+<td>adj</td>
+<td>reserved, uncommunicative</td>
+<td>re- + tac (silent)</td>
+<td>tight-lipped → talkative</td>
+</tr>
+<tr>
+<td>141</td>
+<td><strong>revere*</strong></td>
+<td>v</td>
+<td>to deeply respect</td>
+<td>re- + vere (awe)</td>
+<td>venerate, worship → disparage</td>
+</tr>
+<tr>
+<td>142</td>
+<td><strong>salubrious*</strong></td>
+<td>adj</td>
+<td>health-promoting</td>
+<td>salu (health)</td>
+<td>healthful, wholesome → harmful</td>
+</tr>
+<tr>
+<td>143</td>
+<td><strong>sanction*</strong></td>
+<td>n/v</td>
+<td>approval / penalty (contranym)</td>
+<td>sanct (holy)</td>
+<td>authorize → disallow</td>
+</tr>
+<tr>
+<td>144</td>
+<td><strong>satiate*</strong></td>
+<td>v</td>
+<td>to fully satisfy</td>
+<td>sat (enough)</td>
+<td>sate, glut → starve</td>
+</tr>
+<tr>
+<td>145</td>
+<td><strong>saturate*</strong></td>
+<td>v</td>
+<td>to fill completely</td>
+<td>satur (full)</td>
+<td>soak, drench → dry</td>
+</tr>
+<tr>
+<td>146</td>
+<td><strong>savor*</strong></td>
+<td>v</td>
+<td>to relish, enjoy</td>
+<td>sapor (taste)</td>
+<td>relish, bask → abhor</td>
+</tr>
+<tr>
+<td>147</td>
+<td><strong>secrete*</strong></td>
+<td>v</td>
+<td>to hide / to ooze</td>
+<td>secret (set apart)</td>
+<td>conceal; ooze → expose</td>
+</tr>
+<tr>
+<td>148</td>
+<td><strong>shard*</strong></td>
+<td>n</td>
+<td>a broken fragment</td>
+<td>(Gmc)</td>
+<td>splinter, sliver → whole</td>
+</tr>
+<tr>
+<td>149</td>
+<td><strong>skeptic*</strong></td>
+<td>n</td>
+<td>a habitual doubter</td>
+<td>skep (examine)</td>
+<td>cynic, disbeliever → believer</td>
+</tr>
+<tr>
+<td>150</td>
+<td><strong>soporific*</strong></td>
+<td>adj</td>
+<td>sleep-inducing</td>
+<td>sopor (sleep)</td>
+<td>sedative, drowsy → stimulant</td>
+</tr>
+<tr>
+<td>151</td>
+<td><strong>specious*</strong></td>
+<td>adj</td>
+<td>false but plausible</td>
+<td>spec (look)</td>
+<td>spurious → straightforward</td>
+</tr>
+<tr>
+<td>152</td>
+<td><strong>sporadic*</strong></td>
+<td>adj</td>
+<td>occasional, scattered</td>
+<td>spor (seed/scatter)</td>
+<td>intermittent → continuous</td>
+</tr>
+<tr>
+<td>153</td>
+<td><strong>stigma*</strong></td>
+<td>n</td>
+<td>mark of disgrace</td>
+<td>stig (prick/mark)</td>
+<td>blemish, disgrace → honor</td>
+</tr>
+<tr>
+<td>154</td>
+<td><strong>stint*</strong></td>
+<td>v/n</td>
+<td>to be sparing / a fixed period</td>
+<td>(Gmc)</td>
+<td>scrimp → splurge</td>
+</tr>
+<tr>
+<td>155</td>
+<td><strong>stipulate*</strong></td>
+<td>v</td>
+<td>to specify as a condition</td>
+<td>stip (bargain)</td>
+<td>specify, require → —</td>
+</tr>
+<tr>
+<td>156</td>
+<td><strong>stolid*</strong></td>
+<td>adj</td>
+<td>unemotional, impassive</td>
+<td>stol (dull)</td>
+<td>phlegmatic, stoic → passionate</td>
+</tr>
+<tr>
+<td>157</td>
+<td><strong>strut*</strong></td>
+<td>v</td>
+<td>to walk proudly</td>
+<td>(Gmc)</td>
+<td>swagger, flaunt → downplay</td>
+</tr>
+<tr>
+<td>158</td>
+<td><strong>substantiate*</strong></td>
+<td>v</td>
+<td>to prove with evidence</td>
+<td>sub- + stant (stand)</td>
+<td>corroborate, verify → refute</td>
+</tr>
+<tr>
+<td>159</td>
+<td><strong>subside*</strong></td>
+<td>v</td>
+<td>to die down</td>
+<td>sub- + sid (settle)</td>
+<td>abate, wane → surge</td>
+</tr>
+<tr>
+<td>160</td>
+<td><strong>succinct*</strong></td>
+<td>adj</td>
+<td>concise</td>
+<td>sub- + cinct (girded)</td>
+<td>terse, laconic → verbose</td>
+</tr>
+<tr>
+<td>161</td>
+<td><strong>supposition*</strong></td>
+<td>n</td>
+<td>an assumption</td>
+<td>sub- + pos (place)</td>
+<td>conjecture, hypothesis → certainty</td>
+</tr>
+<tr>
+<td>162</td>
+<td><strong>tacit*</strong></td>
+<td>adj</td>
+<td>implied, unspoken</td>
+<td>tac (silent)</td>
+<td>implicit → explicit</td>
+</tr>
+<tr>
+<td>163</td>
+<td><strong>tangential*</strong></td>
+<td>adj</td>
+<td>only superficially related</td>
+<td>tang (touch)</td>
+<td>digressive → relevant</td>
+</tr>
+<tr>
+<td>164</td>
+<td><strong>tenuous*</strong></td>
+<td>adj</td>
+<td>flimsy, weak</td>
+<td>tenu (thin)</td>
+<td>slight, gossamer → strong, substantial</td>
+</tr>
+<tr>
+<td>165</td>
+<td><strong>tirade*</strong></td>
+<td>n</td>
+<td>a long angry speech</td>
+<td>(Fr)</td>
+<td>diatribe, philippic → adulation</td>
+</tr>
+<tr>
+<td>166</td>
+<td><strong>torpor*</strong></td>
+<td>n</td>
+<td>sluggish inactivity</td>
+<td>torp (numb)</td>
+<td>lethargy, lassitude → vigor</td>
+</tr>
+<tr>
+<td>167</td>
+<td><strong>tortuous*</strong></td>
+<td>adj</td>
+<td>twisting; complex — CP: ≠ torturous</td>
+<td>tort (twist)</td>
+<td>winding, circuitous → straight</td>
+</tr>
+<tr>
+<td>168</td>
+<td><strong>tractable*</strong></td>
+<td>adj</td>
+<td>easily managed</td>
+<td>tract (pull/handle)</td>
+<td>docile, amenable → obstinate</td>
+</tr>
+<tr>
+<td>169</td>
+<td><strong>transgression*</strong></td>
+<td>n</td>
+<td>violation of a law/rule</td>
+<td>trans- + gress (step)</td>
+<td>breach → conformity</td>
+</tr>
+<tr>
+<td>170</td>
+<td><strong>truculent*</strong></td>
+<td>adj</td>
+<td>aggressively hostile</td>
+<td>truc (fierce)</td>
+<td>belligerent, fierce → gentle, mild</td>
+</tr>
+<tr>
+<td>171</td>
+<td><strong>turpitude*</strong></td>
+<td>n</td>
+<td>depravity, wickedness</td>
+<td>turp (base)</td>
+<td>depravity → virtue</td>
+</tr>
+<tr>
+<td>172</td>
+<td><strong>unfettered*</strong></td>
+<td>adj</td>
+<td>free of restraint</td>
+<td>un- + fetter (chain)</td>
+<td>unchained, free → constrained</td>
+</tr>
+<tr>
+<td>173</td>
+<td><strong>vacillate*</strong></td>
+<td>v</td>
+<td>to waver indecisively</td>
+<td>vacill (sway)</td>
+<td>waffle, waver → be resolute</td>
+</tr>
+<tr>
+<td>174</td>
+<td><strong>venerate*</strong></td>
+<td>v</td>
+<td>to revere</td>
+<td>vener (worship)</td>
+<td>revere, honor → dishonor</td>
+</tr>
+<tr>
+<td>175</td>
+<td><strong>veracious*</strong></td>
+<td>adj</td>
+<td>truthful, accurate — CP: ≠ voracious</td>
+<td>ver (truth)</td>
+<td>candid, authentic → evasive</td>
+</tr>
+<tr>
+<td>176</td>
+<td><strong>verbose*</strong></td>
+<td>adj</td>
+<td>wordy</td>
+<td>verb (word)</td>
+<td>prolix, redundant → terse, pithy</td>
+</tr>
+<tr>
+<td>177</td>
+<td><strong>viable*</strong></td>
+<td>adj</td>
+<td>workable; able to live</td>
+<td>vit/via (life)</td>
+<td>feasible, workable → unworkable, dead</td>
+</tr>
+<tr>
+<td>178</td>
+<td><strong>vindictive*</strong></td>
+<td>adj</td>
+<td>vengeful</td>
+<td>vindic (avenge)</td>
+<td>vengeful, spiteful → forgiving</td>
+</tr>
+<tr>
+<td>179</td>
+<td><strong>vituperation*</strong></td>
+<td>n</td>
+<td>abusive language</td>
+<td>vitu (blame)</td>
+<td>invective, abuse → praise</td>
+</tr>
+<tr>
+<td>180</td>
+<td><strong>volatile*</strong></td>
+<td>adj</td>
+<td>unstable; explosive</td>
+<td>vol (fly)</td>
+<td>mercurial, capricious → constant</td>
+</tr>
+<tr>
+<td>181</td>
+<td><strong>wary*</strong></td>
+<td>adj</td>
+<td>cautious, on guard</td>
+<td>(Gmc war)</td>
+<td>vigilant, alert → careless, inattentive</td>
+</tr>
+<tr>
+<td>182</td>
+<td><strong>wheedle*</strong></td>
+<td>v</td>
+<td>to coax by flattery</td>
+<td>(Gmc)</td>
+<td>cajole, inveigle → bully</td>
+</tr>
+<tr>
+<td>183</td>
+<td><strong>whimsical*</strong></td>
+<td>adj</td>
+<td>fanciful, on a whim</td>
+<td>(Gmc)</td>
+<td>capricious, arbitrary → rational</td>
+</tr>
+<tr>
+<td>184</td>
+<td><strong>zealot*</strong></td>
+<td>n</td>
+<td>a fanatic</td>
+<td>(Gk zelos)</td>
+<td>enthusiast, fanatic → moderate</td>
+</tr>
+<tr>
+<td>185</td>
+<td><strong>aggrandizement*</strong></td>
+<td>n</td>
+<td>increase of power/wealth</td>
+<td>grand (great)</td>
+<td>advancement → degradation</td>
+</tr>
+<tr>
+<td>186</td>
+<td><strong>allegiance*</strong></td>
+<td>n</td>
+<td>loyalty</td>
+<td>lige (bound)</td>
+<td>fidelity, devotion → disloyalty</td>
+</tr>
+<tr>
+<td>187</td>
+<td><strong>altruism*</strong></td>
+<td>n</td>
+<td>selfless concern for others</td>
+<td>altru (other)</td>
+<td>unselfishness → egoism</td>
+</tr>
+<tr>
+<td>188</td>
+<td><strong>amalgam*</strong></td>
+<td>n</td>
+<td>a blend of things</td>
+<td>(alchemy)</td>
+<td>mixture, alloy → —</td>
+</tr>
+<tr>
+<td>189</td>
+<td><strong>amiable*</strong></td>
+<td>adj</td>
+<td>friendly, likeable — CP: amiable/amicable/amenable</td>
+<td>ami (friend)</td>
+<td>affable, genial → surly</td>
+</tr>
+<tr>
+<td>190</td>
+<td><strong>amnesty*</strong></td>
+<td>adj→n</td>
+<td>pardon</td>
+<td>a- + mne (memory)</td>
+<td>absolution, pardon → punishment</td>
+</tr>
+<tr>
+<td>191</td>
+<td><strong>anachronism</strong></td>
+<td>n</td>
+<td>something out of its time</td>
+<td>ana- + chron (time)</td>
+<td>— → —</td>
+</tr>
+<tr>
+<td>192</td>
+<td><strong>analogy*</strong></td>
+<td>n</td>
+<td>a comparison of likeness</td>
+<td>ana- + log (ratio)</td>
+<td>parallel → difference</td>
+</tr>
+<tr>
+<td>193</td>
+<td><strong>arbiter</strong></td>
+<td>n</td>
+<td>a judge/decider</td>
+<td>arbit (judge)</td>
+<td>referee, mediator → —</td>
+</tr>
+<tr>
+<td>194</td>
+<td><strong>ascetic</strong></td>
+<td>n/adj</td>
+<td>self-denying, austere</td>
+<td>ascet (exercise)</td>
+<td>austere, monastic → hedonist</td>
+</tr>
+<tr>
+<td>195</td>
+<td><strong>assiduous*</strong></td>
+<td>adj</td>
+<td>diligent, persistent</td>
+<td>sid (sit)</td>
+<td>diligent, industrious → lazy</td>
+</tr>
+<tr>
+<td>196</td>
+<td><strong>aver*</strong></td>
+<td>v</td>
+<td>to declare true</td>
+<td>ver (truth)</td>
+<td>assert, avow → deny</td>
+</tr>
+<tr>
+<td>197</td>
+<td><strong>belligerent</strong></td>
+<td>adj</td>
+<td>warlike, hostile</td>
+<td>bell (war)</td>
+<td>pugnacious, hostile → peaceful</td>
+</tr>
+<tr>
+<td>198</td>
+<td><strong>benevolence*</strong></td>
+<td>n</td>
+<td>kindliness</td>
+<td>bene (good) + vol (wish)</td>
+<td>altruism → cruelty</td>
+</tr>
+<tr>
+<td>199</td>
+<td><strong>blandishment*</strong></td>
+<td>n</td>
+<td>flattering speech</td>
+<td>(bland)</td>
+<td>cajolery, coaxing → abuse</td>
+</tr>
+<tr>
+<td>200</td>
+<td><strong>blasphemy*</strong></td>
+<td>n</td>
+<td>irreverence toward the sacred</td>
+<td>blas + phem (speak)</td>
+<td>sacrilege → piety</td>
+</tr>
+<tr>
+<td>201</td>
+<td><strong>boisterous*</strong></td>
+<td>adj</td>
+<td>noisy and wild</td>
+<td>(Gmc)</td>
+<td>rowdy, raucous → restrained</td>
+</tr>
+<tr>
+<td>202</td>
+<td><strong>brusque*</strong></td>
+<td>adj</td>
+<td>abrupt in manner</td>
+<td>(It brusco)</td>
+<td>curt, terse → warm, gracious</td>
+</tr>
+<tr>
+<td>203</td>
+<td><strong>buttress*</strong></td>
+<td>v</td>
+<td>to support</td>
+<td>(architecture)</td>
+<td>reinforce, prop → undermine</td>
+</tr>
+<tr>
+<td>204</td>
+<td><strong>commensurate*</strong></td>
+<td>adj</td>
+<td>proportionate</td>
+<td>com- + mens (measure)</td>
+<td>adequate, proportional → disproportionate</td>
+</tr>
+<tr>
+<td>205</td>
+<td><strong>contentious*</strong></td>
+<td>adj</td>
+<td>quarrelsome</td>
+<td>con- + tend (strain)</td>
+<td>combative, litigious → peaceful</td>
+</tr>
+<tr>
+<td>206</td>
+<td><strong>contrite*</strong></td>
+<td>adj</td>
+<td>deeply remorseful</td>
+<td>con- + trit (rub/grind)</td>
+<td>penitent, apologetic → unrepentant</td>
+</tr>
+<tr>
+<td>207</td>
+<td><strong>covet</strong></td>
+<td>v</td>
+<td>to crave enviously</td>
+<td>cupid (desire)</td>
+<td>desire, crave → renounce</td>
+</tr>
+<tr>
+<td>208</td>
+<td><strong>debilitate</strong></td>
+<td>v</td>
+<td>to weaken</td>
+<td>de- + bil (strength)</td>
+<td>enfeeble, enervate → strengthen</td>
+</tr>
+<tr>
+<td>209</td>
+<td><strong>decorous*</strong></td>
+<td>adj</td>
+<td>proper, dignified</td>
+<td>decor (fitting)</td>
+<td>seemly, demure → unseemly</td>
+</tr>
+<tr>
+<td>210</td>
+<td><strong>demur</strong></td>
+<td>v</td>
+<td>to object — CP: ≠ demure</td>
+<td>(Lat mora, delay)</td>
+<td>object, dissent → consent</td>
+</tr>
+<tr>
+<td>211</td>
+<td><strong>deride*</strong></td>
+<td></td>
+<td>see entry #39 for full treatment</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>212</td>
+<td><strong>didactic</strong></td>
+<td>adj</td>
+<td>intended to teach/moralize</td>
+<td>didak (teach)</td>
+<td>instructive, pedantic → —</td>
+</tr>
+<tr>
+<td>213</td>
+<td><strong>dilettante</strong></td>
+<td>n</td>
+<td>a dabbler</td>
+<td>(It, "delighting")</td>
+<td>amateur → expert</td>
+</tr>
+<tr>
+<td>214</td>
+<td><strong>dogmatic</strong></td>
+<td>adj</td>
+<td>asserting opinion as fact</td>
+<td>dogma</td>
+<td>doctrinaire, opinionated → open-minded</td>
+</tr>
+<tr>
+<td>215</td>
+<td><strong>dupe</strong></td>
+<td>v/n</td>
+<td>to trick / a gull</td>
+<td>(Fr)</td>
+<td>deceive, gull → —</td>
+</tr>
+<tr>
+<td>216</td>
+<td><strong>ebullient*</strong></td>
+<td></td>
+<td>see entry #48 for full treatment</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>217</td>
+<td><strong>egregious</strong></td>
+<td>adj</td>
+<td>conspicuously bad</td>
+<td>e- + greg (flock)</td>
+<td>flagrant, glaring → ordinary</td>
+</tr>
+<tr>
+<td>218</td>
+<td><strong>embellish*</strong></td>
+<td>v</td>
+<td>to decorate; to exaggerate</td>
+<td>bell (beautiful)</td>
+<td>adorn, garnish → strip, mar</td>
+</tr>
+<tr>
+<td>219</td>
+<td><strong>enmity</strong></td>
+<td>n</td>
+<td>deep hostility</td>
+<td>en- + imicus (enemy)</td>
+<td>animosity, antagonism → friendship</td>
+</tr>
+<tr>
+<td>220</td>
+<td><strong>ephemeral*</strong></td>
+<td></td>
+<td>see entry #59 for full treatment</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>221</td>
+<td><strong>equanimity</strong></td>
+<td>n</td>
+<td>calm composure</td>
+<td>equ (even) + anim (mind)</td>
+<td>poise, serenity → agitation</td>
+</tr>
+<tr>
+<td>222</td>
+<td><strong>exacerbate</strong></td>
+<td>v</td>
+<td>to worsen</td>
+<td>ex- + acerb (bitter)</td>
+<td>aggravate, intensify → alleviate</td>
+</tr>
+<tr>
+<td>223</td>
+<td><strong>exonerate</strong></td>
+<td>v</td>
+<td>to clear of blame</td>
+<td>ex- + oner (burden)</td>
+<td>absolve, acquit → incriminate</td>
+</tr>
+<tr>
+<td>224</td>
+<td><strong>extol</strong></td>
+<td>v</td>
+<td>to praise highly</td>
+<td>ex- + toll (raise)</td>
+<td>laud, glorify → disparage</td>
+</tr>
+<tr>
+<td>225</td>
+<td><strong>fastidious</strong></td>
+<td>adj</td>
+<td>hard to please, fussy</td>
+<td>(Lat fastidium)</td>
+<td>meticulous, picky → easygoing</td>
+</tr>
+<tr>
+<td>226</td>
+<td><strong>fortuitous</strong></td>
+<td>adj</td>
+<td>happening by chance</td>
+<td>fortu (luck)</td>
+<td>accidental, chance → planned</td>
+</tr>
+<tr>
+<td>227</td>
+<td><strong>fractious</strong></td>
+<td>adj</td>
+<td>irritable; unruly — CP: ≠ factious</td>
+<td>frac (break)</td>
+<td>peevish, unruly → docile</td>
+</tr>
+<tr>
+<td>228</td>
+<td><strong>garrulous*</strong></td>
+<td></td>
+<td>see entry #70 for full treatment</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>229</td>
+<td><strong>hackneyed</strong></td>
+<td>adj</td>
+<td>overused, trite</td>
+<td>(hackney horse)</td>
+<td>trite, stereotyped → original, fresh</td>
+</tr>
+<tr>
+<td>230</td>
+<td><strong>iconoclast*</strong></td>
+<td></td>
+<td>see entry #76 for full treatment</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>231</td>
+<td><strong>idiosyncrasy</strong></td>
+<td>n</td>
+<td>a peculiar trait</td>
+<td>idio (own)</td>
+<td>quirk, eccentricity → conventionality</td>
+</tr>
+<tr>
+<td>232</td>
+<td><strong>impecunious</strong></td>
+<td>adj</td>
+<td>having no money</td>
+<td>im- + pecun (money)</td>
+<td>destitute, penniless → wealthy</td>
+</tr>
+<tr>
+<td>233</td>
+<td><strong>inchoate*</strong></td>
+<td>adj</td>
+<td>just begun, unformed</td>
+<td>in- + cho (begin)</td>
+<td>nascent, rudimentary → developed</td>
+</tr>
+<tr>
+<td>234</td>
+<td><strong>incongruous*</strong></td>
+<td>adj</td>
+<td>out of place, mismatched</td>
+<td>in- + congru (agree)</td>
+<td>inappropriate → harmonious</td>
+</tr>
+<tr>
+<td>235</td>
+<td><strong>inveigle</strong></td>
+<td>v</td>
+<td>to entice by guile</td>
+<td>(Fr)</td>
+<td>cajole, beguile → repel</td>
+</tr>
+<tr>
+<td>236</td>
+<td><strong>lassitude*</strong></td>
+<td>n</td>
+<td>weariness, fatigue</td>
+<td>lass (weary)</td>
+<td>languor, lethargy → vigor</td>
+</tr>
+<tr>
+<td>237</td>
+<td><strong>lugubrious</strong></td>
+<td>adj</td>
+<td>exaggeratedly mournful</td>
+<td>lug (mourn)</td>
+<td>doleful, somber → cheerful</td>
+</tr>
+<tr>
+<td>238</td>
+<td><strong>maudlin</strong></td>
+<td>adj</td>
+<td>tearfully sentimental</td>
+<td>(Mary Magdalen)</td>
+<td>mawkish, weepy → unsentimental</td>
+</tr>
+<tr>
+<td>239</td>
+<td><strong>mercurial</strong></td>
+<td>adj</td>
+<td>volatile in mood</td>
+<td>(Mercury)</td>
+<td>capricious, changeable → constant</td>
+</tr>
+<tr>
+<td>240</td>
+<td><strong>noisome</strong></td>
+<td>adj</td>
+<td>foul-smelling, harmful</td>
+<td>(annoy)</td>
+<td>fetid, offensive → fragrant</td>
+</tr>
+<tr>
+<td>241</td>
+<td><strong>obfuscate</strong></td>
+<td>v</td>
+<td>to confuse, obscure</td>
+<td>ob- + fusc (dark)</td>
+<td>muddle, cloud → clarify</td>
+</tr>
+<tr>
+<td>242</td>
+<td><strong>obstreperous</strong></td>
+<td>adj</td>
+<td>noisily defiant</td>
+<td>ob- + strep (noise)</td>
+<td>unruly, vociferous → docile</td>
+</tr>
+<tr>
+<td>243</td>
+<td><strong>ostentatious</strong></td>
+<td>adj</td>
+<td>showy</td>
+<td>tend (stretch out)</td>
+<td>flashy, conspicuous → modest</td>
+</tr>
+<tr>
+<td>244</td>
+<td><strong>parsimonious</strong></td>
+<td>adj</td>
+<td>stingy</td>
+<td>parc (spare)</td>
+<td>miserly, tight-fisted → generous</td>
+</tr>
+<tr>
+<td>245</td>
+<td><strong>perspicacious</strong></td>
+<td>adj</td>
+<td>keenly perceptive — CP: perspicacious/perspicuous</td>
+<td>per- + spic (see)</td>
+<td>astute, shrewd → undiscerning</td>
+</tr>
+<tr>
+<td>246</td>
+<td><strong>phlegmatic</strong></td>
+<td>adj</td>
+<td>calm, unemotional</td>
+<td>(humor phlegm)</td>
+<td>stolid, placid → excitable</td>
+</tr>
+<tr>
+<td>247</td>
+<td><strong>quixotic</strong></td>
+<td>adj</td>
+<td>impractically idealistic</td>
+<td>(Don Quixote)</td>
+<td>idealistic, romantic → pragmatic <em>(implied by source theme; see
+prudent/pragmatic)</em></td>
+</tr>
+<tr>
+<td>248</td>
+<td><strong>sagacious</strong></td>
+<td>adj</td>
+<td>wise, shrewd</td>
+<td>sag (keen)</td>
+<td>astute, perspicacious → foolish</td>
+</tr>
+<tr>
+<td>249</td>
+<td><strong>sanguine</strong></td>
+<td>adj</td>
+<td>cheerfully optimistic</td>
+<td>sangu (blood)</td>
+<td>hopeful, buoyant → pessimistic</td>
+</tr>
+<tr>
+<td>250</td>
+<td><strong>ubiquitous</strong></td>
+<td>adj</td>
+<td>present everywhere</td>
+<td>ubique (everywhere)</td>
+<td>omnipresent, pervasive → rare</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
 <p>Beyond 250: every remaining word in the lexicon (rarer entries) is
 fully defined in <strong>§11 Master Glossary</strong>, grouped by root
@@ -2217,62 +3217,211 @@ rule.</li>
 unrelated.</li>
 <li><strong>chronic</strong> (implied) — lasting over time.</li>
 </ul>
-<h3
-id="pathcreddur-already-covered--additional-high-yield-mini-roots"><code>path/cred/dur</code>
-already covered — additional high-yield mini-roots</h3>
-<p><strong><code>ambi-</code>/<code>amphi-</code> = both:</strong>
-<strong>ambivalence</strong>* (both feelings),
-<strong>ambiguous</strong> (both meanings),
-<strong>ambidextrous</strong> (both hands). <strong><code>circum-</code>
-= around:</strong> <strong>circumlocution</strong> (talking around),
-<strong>circumspect</strong> (looking around → cautious),
-<strong>circumvent</strong> (going around → evade),
-<strong>circumscribe</strong> (drawing a line around).
-<strong><code>ob-</code> = against/toward (intensive):</strong>
-<strong>obdurate</strong> (hardened against),
-<strong>obstreperous</strong> (noisy against),
-<strong>obsequious</strong> (following toward → fawning),
-<strong>obviate</strong> (meet in the way → prevent),
-<strong>obfuscate</strong> (darken), <strong>obtrude</strong> (thrust
-against). <strong><code>per-</code> = through / thoroughly (or
-"wrongly"):</strong> <strong>perspicacious</strong> (seeing through),
-<strong>pervade/pervasive</strong> (going through),
-<strong>perfidious</strong> (faith-betrayal),
-<strong>pernicious</strong> (thoroughly destructive),
-<strong>peruse</strong> (read through).
-<strong><code>equ-</code>/<code>equi-</code> = equal, even:</strong>
-<strong>equanimity</strong> (even mind), <strong>equivocal</strong>
-(equal voices), <strong>equable/equitable</strong> (even/fair),
-<strong>iniquity</strong> (un-evenness → wickedness, implied).
-<strong><code>sol-</code> = alone:</strong> <strong>solitary /
-recluse</strong> (alone), <strong>solipsism</strong> (implied),
-<strong>desolate</strong> (Word-Groups: sad).
-<strong><code>tort/tract/dur/plac</code></strong> twin-antonym pairs to
-drill: <strong>tractable ↔︎ intractable</strong>, <strong>placate ↔︎
-provoke / implacable</strong>, <strong>benevolent ↔︎ malevolent</strong>,
-<strong>benediction ↔︎ malediction</strong>, <strong>euphony ↔︎
-cacophony</strong>, <strong>eulogy ↔︎ diatribe</strong>,
-<strong>veracious ↔︎ mendacious</strong>.</p>
+<h3 id="additional-high-yield-mini-roots">Additional high-yield
+mini-roots</h3>
+<p><code>path-</code>, <code>cred-</code>, and <code>dur-</code> are
+covered above. Here are six more roots worth knowing — <strong>read one
+row at a time</strong>: cover the right column, say the root's meaning,
+then check.</p>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Meaning</th>
+<th>Word family (with mini-hook)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ambi-</code> / <code>amphi-</code></td>
+<td>both</td>
+<td><strong>ambivalence*</strong> = both feelings ·
+<strong>ambiguous</strong> = both meanings ·
+<strong>ambidextrous</strong> = both hands</td>
+</tr>
+<tr>
+<td><code>circum-</code></td>
+<td>around</td>
+<td><strong>circumlocution</strong> = talking around ·
+<strong>circumspect</strong> = looking around → cautious ·
+<strong>circumvent</strong> = going around → evade ·
+<strong>circumscribe</strong> = drawing a line around</td>
+</tr>
+<tr>
+<td><code>ob-</code></td>
+<td>against / toward (intensive)</td>
+<td><strong>obdurate</strong> = hardened against ·
+<strong>obstreperous</strong> = noisy against ·
+<strong>obsequious</strong> = following toward → fawning ·
+<strong>obviate</strong> = meet in the way → prevent ·
+<strong>obfuscate</strong> = darken · <strong>obtrude</strong> = thrust
+against</td>
+</tr>
+<tr>
+<td><code>per-</code></td>
+<td>through / thoroughly (or "wrongly")</td>
+<td><strong>perspicacious</strong> = seeing through · <strong>pervade /
+pervasive</strong> = going through · <strong>perfidious</strong> =
+faith-betrayal · <strong>pernicious</strong> = thoroughly destructive ·
+<strong>peruse</strong> = read through</td>
+</tr>
+<tr>
+<td><code>equ-</code> / <code>equi-</code></td>
+<td>equal, even</td>
+<td><strong>equanimity</strong> = even mind · <strong>equivocal</strong>
+= equal voices · <strong>equable / equitable</strong> = even / fair ·
+<strong>iniquity</strong> = un-evenness → wickedness</td>
+</tr>
+<tr>
+<td><code>sol-</code></td>
+<td>alone</td>
+<td><strong>solitary / recluse</strong> = alone ·
+<strong>solipsism</strong> = self alone · <strong>desolate</strong> =
+left alone → bleak</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Twin-antonym pairs to drill back-to-back.</strong> These are
+opposites built on the roots above — learning each pair
+<em>together</em> makes both stick, and they show up constantly in
+Sentence Equivalence:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>↔︎</th>
+<th>Opposite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tractable (manageable)</td>
+<td>↔︎</td>
+<td>intractable (unmanageable)</td>
+</tr>
+<tr>
+<td>placate (calm)</td>
+<td>↔︎</td>
+<td>provoke / implacable (cannot be calmed)</td>
+</tr>
+<tr>
+<td>benevolent (good-willed)</td>
+<td>↔︎</td>
+<td>malevolent (ill-willed)</td>
+</tr>
+<tr>
+<td>benediction (blessing)</td>
+<td>↔︎</td>
+<td>malediction (curse)</td>
+</tr>
+<tr>
+<td>euphony (pleasant sound)</td>
+<td>↔︎</td>
+<td>cacophony (harsh sound)</td>
+</tr>
+<tr>
+<td>eulogy (speech of praise)</td>
+<td>↔︎</td>
+<td>diatribe (speech of attack)</td>
+</tr>
+<tr>
+<td>veracious (truthful)</td>
+<td>↔︎</td>
+<td>mendacious (lying)</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-<p><strong>How to drill roots:</strong> pick one root box per day. Cover
-the words, read only the root + hook, and try to <em>generate</em> the
-family from the meaning. Then check. Cross-links like
-<code>bene-/mal-</code> and <code>loqu-/tac-</code> are antonym pairs —
-learn them back-to-back so each reinforces the other.</p>
+<p><strong>How to drill roots (do this daily):</strong></p>
+<ol type="1">
+<li>Pick <strong>one</strong> root box per day.</li>
+<li>Cover the word list; read <strong>only</strong> the root and its
+meaning.</li>
+<li>Try to <em>generate</em> the family yourself from the meaning — say
+each word and its hook aloud.</li>
+<li>Uncover and check. Mark any you missed.</li>
+<li>Learn antonym roots <strong>as pairs</strong>
+(<code>bene-/mal-</code>, <code>loqu-/tac-</code>,
+<code>eu-/caco-</code>) — each one reinforces the other.</li>
+</ol>
 </blockquote>
 <hr />
 <h2 id="4-semantic--synonym-clusters">4. Semantic / Synonym
 Clusters</h2>
+<p><strong>What this section is, in one line:</strong> words grouped by
+<em>what they mean</em>, so you learn 10 related words as one idea
+instead of 10 separate facts.</p>
+<p><strong>Why it matters:</strong> the GRE almost never asks "what does
+X mean?" in isolation. It asks you to tell <strong>close synonyms
+apart</strong> — which "praise" word fits, which "criticism" word is too
+strong, which two words mean the <em>same</em> thing. That skill is what
+these clusters build.</p>
+<p><strong>Each cluster has the same seven labels. Here is exactly what
+each one means:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>What it tells you</th>
+<th>How to use it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Core meaning</strong></td>
+<td>the single idea all the words share</td>
+<td>this is what a blank "pointing here" wants</td>
+</tr>
+<tr>
+<td><strong>Words</strong></td>
+<td>every member of the family</td>
+<td>your raw vocabulary to learn</td>
+</tr>
+<tr>
+<td><strong>Key differences</strong></td>
+<td>the fine shades that separate near-synonyms</td>
+<td>this decides the <em>right</em> answer vs. a close-but-wrong
+one</td>
+</tr>
+<tr>
+<td><strong>Most useful</strong></td>
+<td>the highest-frequency words to learn first</td>
+<td>learn these before the rare ones</td>
+</tr>
+<tr>
+<td><strong>Traps</strong></td>
+<td>words that look like they belong but don't (or flip meaning)</td>
+<td>the GRE plants these as wrong answers</td>
+</tr>
+<tr>
+<td><strong>SE clue</strong></td>
+<td>a sample Sentence-Equivalence sentence</td>
+<td>shows how the idea appears on the test</td>
+</tr>
+<tr>
+<td><strong>Hook</strong></td>
+<td>a memory aid</td>
+<td>makes the words stick</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How to study one cluster (5 minutes):</strong></p>
+<ol type="1">
+<li>Read the <strong>Core meaning</strong> and the
+<strong>Words</strong>. Say each word + its meaning aloud.</li>
+<li>Read <strong>Key differences</strong> twice — this is the part that
+earns points.</li>
+<li>Cover the cluster and try to list 5+ words from the Core meaning
+alone.</li>
+<li>Note the <strong>Traps</strong> so you can reject them on test
+day.</li>
+<li>Come back tomorrow and re-test (see §10).</li>
+</ol>
 <blockquote>
-<p>The GRE rarely tests a word in isolation — it tests whether you can
-tell <strong>near-synonyms apart</strong>. Each cluster below gives the
-<strong>core meaning</strong> (the idea the blank points to), the
-<strong>members</strong>, the <strong>fine distinctions</strong> that
-decide the right answer, the <strong>highest-yield</strong> words, the
-<strong>traps</strong> (words that look like they belong but shade off
-in meaning), an <strong>SE-style clue</strong>, and a
-<strong>hook</strong>. Cross-links point to the same word's other homes
-— a word in two clusters is a word the test loves.</p>
+<p><strong>Note on cross-links:</strong> a word listed in two clusters
+(e.g. <em>adulation</em> in both Praise and Flattery) is one the test
+loves to make ambiguous — pay attention to which clue word tips it one
+way or the other.</p>
 </blockquote>
 <h3 id="41-praise--approval">4.1 PRAISE / APPROVAL</h3>
 <ul>
@@ -10625,10 +11774,18 @@ represented above. Good luck. Now go drill the leech deck.</em></p>
 <script>
 const sb=document.getElementById('sidebar');
 const bd=document.getElementById('backdrop');
-function toggle(){sb.classList.toggle('open');bd.classList.toggle('show');}
-document.getElementById('menuBtn')?.addEventListener('click',toggle);
-bd?.addEventListener('click',toggle);
-sb.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(window.innerWidth<=900)toggle();}));
+const body=document.body;
+const mobile=()=>window.innerWidth<=900;
+function closeMobile(){sb.classList.remove('open');bd.classList.remove('show');}
+function toggle(){
+  if(mobile()){ sb.classList.toggle('open'); bd.classList.toggle('show'); }
+  else { body.classList.toggle('nav-collapsed'); }
+}
+document.getElementById('navToggle').addEventListener('click',toggle);
+bd.addEventListener('click',closeMobile);
+sb.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(mobile())closeMobile();}));
+// reset overlay state when crossing the breakpoint
+addEventListener('resize',()=>{ if(!mobile()) closeMobile(); });
 
 // active section highlight
 const links=[...sb.querySelectorAll('a')];
