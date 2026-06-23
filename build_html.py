@@ -162,6 +162,18 @@ tbody tr:hover{background:#e9e9e6;}
 /* frozen glossary headers sit just below the sticky search bar */
 table.gloss thead th{top:calc(var(--head-top) + 56px);}
 
+/* a too-wide table is auto-wrapped in this scroll frame (JS) so columns are never
+   cut off; the header stays frozen at the top of the frame, and you scroll the table
+   sideways/vertically inside it. */
+.tscroll{
+  overflow:auto; max-height:82vh; margin:1.2em 0;
+  border:1px solid var(--line); border-radius:8px;
+  -webkit-overflow-scrolling:touch;
+}
+.tscroll table{margin:0; border-top:0; border-left:0;}
+.tscroll thead th{top:0;}              /* freeze to the frame top (no page offset) */
+.tscroll thead th::before{display:none;}/* no gap mask needed inside the frame */
+
 /* nav toggle button (always visible) */
 .nav-toggle{
   position:fixed; top:14px; left:14px; z-index:60;
@@ -239,7 +251,7 @@ const mobile=()=>window.innerWidth<=900;
 function closeMobile(){sb.classList.remove('open');bd.classList.remove('show');}
 function toggle(){
   if(mobile()){ sb.classList.toggle('open'); bd.classList.toggle('show'); }
-  else { body.classList.toggle('nav-collapsed'); }
+  else { body.classList.toggle('nav-collapsed'); setTimeout(()=>refitTables(), 320); }
 }
 document.getElementById('navToggle').addEventListener('click',toggle);
 bd.addEventListener('click',closeMobile);
@@ -290,6 +302,24 @@ if(gh && gInput){
   };
   gInput.addEventListener('input', filter);
 }
+
+// ===== auto-fit wide tables: wrap any table that overflows its width in a scroll frame
+// (keeps the header frozen at the frame top); unwrap again if it fits after a resize =====
+function refitTables(){
+  document.querySelectorAll('table').forEach(t=>{
+    const pane = t.parentElement && t.parentElement.classList.contains('tscroll')
+                 ? t.parentElement : null;
+    const overflowing = t.scrollWidth > t.clientWidth + 1;
+    if(overflowing && !pane){
+      const w=document.createElement('div'); w.className='tscroll';
+      t.parentNode.insertBefore(w, t); w.appendChild(t);
+    }else if(!overflowing && pane){
+      pane.parentNode.insertBefore(t, pane); pane.remove();
+    }
+  });
+}
+let _rt; addEventListener('resize',()=>{clearTimeout(_rt); _rt=setTimeout(refitTables,150);});
+refitTables();
 
 // back to top
 const btn=document.getElementById('toTop');
