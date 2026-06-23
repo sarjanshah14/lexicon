@@ -69,14 +69,14 @@ Ranked by GRE usefulness: star-marked frequency, TC/SE power, and how many other
 | 1 | aberration* | n | deviation from the normal | *ab-* (away) + *err* (wander) | HF·TC | something that **err**s **a**way from norm | anomaly, deviation | conformity, norm |
 | 2 | abeyance* | n | temporary suspension | (possible root) | HF·TC | held in "a-bay", waiting | suspension, dormancy | continuation, revival |
 | 3 | abscond* | v | run away and hide (esp. to escape law) | *abs-* (away) + *cond* (hide) | HF | **abs**-cond = hide away | decamp, flee | remain, stay |
-| 4 | abstemious* | adj | moderate, esp. in eating/drinking | *abs-* + *tem* (drink) | HF·TC | abstains from "stomach" excess | temperate | self-indulgent |
-| 5 | abstruse* | adj | hard to understand | *abs-* + *trus* (push) | HF·TC | pushed away from grasp | obscure, recondite | simple, plain |
+| 4 | abstemious* | adj | moderate, esp. in eating/drinking | *abs-* (away) + *tem* (drink) | HF·TC | abstains from "stomach" excess | temperate | self-indulgent |
+| 5 | abstruse* | adj | hard to understand | *abs-* (away) + *trus* (push) | HF·TC | pushed away from grasp | obscure, recondite | simple, plain |
 | 6 | accolade* | n | award, honor, praise | *col* (neck) | HF·SE | a knighting tap on the neck | tribute, laurels | criticism, rebuke |
 | 7 | acquiescent* | adj | willing to go along | *quie* (quiet/rest) | HF | quietly agreeing | agreeable, compliant | opposed, adverse |
 | 8 | adulation* | n | excessive praise | (possible root) | HF·SE | over-the-top flattery | applause, tribute | criticism |
 | 9 | adulterate* | v | make impure by adding inferior matter | *alter* (other) | HF·TC | add "other" stuff, debase | debase, dilute, pollute | purify, refine |
 | 10 | aesthetic* | adj | relating to beauty/taste | (Gk *aisthesis*, perception) | HF·RC | an **aes**thete loves beauty | artistic, tasteful | displeasing, ugly |
-| 11 | affable* | adj | pleasant, easy to approach | *aff-* + *fabl* (speak) | HF | easy to "fable"/talk with | cordial, genial | disagreeable |
+| 11 | affable* | adj | pleasant, easy to approach | *aff-* (to) + *fabl* (speak) | HF | easy to "fable"/talk with | cordial, genial | disagreeable |
 | 12 | alacrity* | n | brisk, cheerful readiness | (possible root) | HF·SE | quick + glad to act | promptness, eagerness | reluctance, sluggishness |
 | 13 | ambivalence* | n | conflicting feelings at once | *ambi-* (both) + *val* (strength) | HF·TC | pulled "both" ways | doubt, oscillation | certainty |
 | 14 | ameliorate* | v | make better | *melior* (better) | HF·TC | make "meliorate"/better | improve, upgrade | worsen, aggravate |
@@ -89,7 +89,7 @@ Ranked by GRE usefulness: star-marked frequency, TC/SE power, and how many other
 | 21 | assuage* | v | to ease, relieve | (possible root) | HF·SE | soothe a "savage" pain | alleviate, mitigate | aggravate, exacerbate |
 | 22 | audacity* | n | boldness; nerve | *aud* (bold) | HF | "audacious" daring | bravery, nerve | timidity |
 | 23 | banal* | adj | trite, dull from overuse | (possible root) | HF·TC | a "bland" cliché | stereotyped, vapid | original, fresh |
-| 24 | belie | v | contradict / misrepresent | *be-* + *lie* | TC·SE | it tells a "lie" about the truth | contradict, disguise | reveal, confirm |
+| 24 | belie | v | contradict / misrepresent | *be-* (intensive) + *lie* | TC·SE | it tells a "lie" about the truth | contradict, disguise | reveal, confirm |
 | 25 | bolster* | v | to support, prop up | (a bolster = pillow) | HF·SE | prop up with a pillow | reinforce, shore up | undermine, weaken |
 | 26 | bombastic | adj | pompous, inflated speech | (bombast = padding) | TC·RC | speech "padded" with hot air | grandiloquent, turgid | plain, restrained |
 | 27 | burgeon* | v | grow/develop rapidly | (Fr *bourgeon*, bud) | HF·SE | a bud "burgeons" into bloom | flourish, proliferate | wither, shrink |
@@ -98,35 +98,35 @@ Ranked by GRE usefulness: star-marked frequency, TC/SE power, and how many other
 | 30 | castigate* | v | criticize severely | *cast* (pure) + *-igate* | HF·SE | "purify" by harsh scolding | berate, rebuke, reprimand | praise, laud |
 | 31 | caustic* | adj | biting, corrosive (lit/fig) | (Gk *kaustikos*, burning) | HF·SE | words that "burn" | acerbic, scathing, mordant | mild, soothing |
 | 32 | charlatan* | n | a fraud, fake expert | (It *ciarlare*, to chatter) | HF | a "chatter"-ing fake doctor | quack, impostor | — |
-| 33 | cogent* | adj | convincing, compelling | *co-* + *ag* (drive) | HF·SE | "drives" the mind to agree | forceful, persuasive | weak, ineffective |
+| 33 | cogent* | adj | convincing, compelling | *co-* (together) + *ag* (drive) | HF·SE | "drives" the mind to agree | forceful, persuasive | weak, ineffective |
 | 34 | complaisant* | adj | eager to please | (Fr *complaire*, to please) | HF·CP | wants to "please" (≠ complacent) | agreeable, obliging | surly, antagonistic |
 | 35 | corroborate* | v | to confirm with evidence | *robor* (strength) | HF·SE | add strength to a claim | verify, substantiate | contradict, refute |
 | 36 | culpable* | adj | deserving blame | *culp* (fault) | HF·TC | full of "fault" | blameworthy, guilty | innocent, blameless |
 | 37 | daunt* | v | to discourage, intimidate | (Lat *domitare*, tame) | HF·SE | "tame" someone's courage | intimidate, cow | encourage, embolden |
 | 38 | decimate* | v | destroy a large portion of | *decim* (tenth) | HF | originally kill 1 in 10 | massacre, exterminate | preserve, create |
-| 39 | deride* | v | to mock, ridicule | *de-* + *ris* (laugh) | HF·SE | laugh down at | mock, scorn | praise, admire |
-| 40 | desultory* | adj | aimless, disconnected | *de-* + *salt* (leap) | HF·TC | leaping topic to topic | haphazard, random | focused, methodical |
+| 39 | deride* | v | to mock, ridicule | *de-* (down/away) + *ris* (laugh) | HF·SE | laugh down at | mock, scorn | praise, admire |
+| 40 | desultory* | adj | aimless, disconnected | *de-* (down) + *salt* (leap) | HF·TC | leaping topic to topic | haphazard, random | focused, methodical |
 | 41 | diatribe* | n | bitter, abusive speech | *dia-* (through) + *trib* (rub) | HF·SE | a "rubbing" verbal attack | harangue, tirade | praise, eulogy |
-| 42 | diffidence* | n | shyness, lack of confidence | *dis-* + *fid* (trust) | HF·TC | doesn't "trust" self | timidity, shyness | self-assurance, boldness |
-| 43 | diffuse* | adj/v | spread out / wordy | *dif-* + *fus* (pour) | HF·TC | poured out widely | verbose, scattered | concise; concentrated |
-| 44 | discrete* | adj | separate, distinct | *dis-* + *cret* (separate) | HF·CP | discrete = separate (≠ discreet) | distinct, separate | connected, joined |
-| 45 | disinterested* | adj | impartial, unbiased | *dis-* + *interest* | HF·CP | no stake → fair (≠ uninterested) | impartial, unbiased | biased, partial |
-| 46 | dissemble* | v | conceal true feelings; feign | *dis-* + *sembl* (seem) | HF·SE | make things "seem" otherwise | feign, disguise | reveal, expose |
-| 47 | disseminate* | v | spread widely | *dis-* + *semin* (seed) | HF·SE | scatter like "seeds" | broadcast, propagate | suppress, conceal |
-| 48 | ebullient* | adj | bubbling with enthusiasm | *e-* + *bull* (boil) | HF·SE | "boiling" over with joy | exuberant, vivacious | unenthusiastic, bored |
-| 49 | eclectic* | adj | drawing from many sources | *ec-* + *lect* (choose) | HF·TC | "chooses" best of all | broad, varied | narrow, limited |
-| 50 | efficacious* | adj | effective, produces result | *ex-* + *fac* (do/make) | HF·SE | it "makes" the result | effective, potent | ineffective, futile |
-| 51 | effrontery* | n | shameless boldness | *ef-* + *front* (forehead) | HF | brazen "in-your-face" nerve | audacity, gall | courtesy, deference |
+| 42 | diffidence* | n | shyness, lack of confidence | *dis-* (apart) + *fid* (trust) | HF·TC | doesn't "trust" self | timidity, shyness | self-assurance, boldness |
+| 43 | diffuse* | adj/v | spread out / wordy | *dif-* (apart) + *fus* (pour) | HF·TC | poured out widely | verbose, scattered | concise; concentrated |
+| 44 | discrete* | adj | separate, distinct | *dis-* (apart) + *cret* (separate) | HF·CP | discrete = separate (≠ discreet) | distinct, separate | connected, joined |
+| 45 | disinterested* | adj | impartial, unbiased | *dis-* (not) + *interest* | HF·CP | no stake → fair (≠ uninterested) | impartial, unbiased | biased, partial |
+| 46 | dissemble* | v | conceal true feelings; feign | *dis-* (apart) + *sembl* (seem) | HF·SE | make things "seem" otherwise | feign, disguise | reveal, expose |
+| 47 | disseminate* | v | spread widely | *dis-* (apart) + *semin* (seed) | HF·SE | scatter like "seeds" | broadcast, propagate | suppress, conceal |
+| 48 | ebullient* | adj | bubbling with enthusiasm | *e-* (out) + *bull* (boil) | HF·SE | "boiling" over with joy | exuberant, vivacious | unenthusiastic, bored |
+| 49 | eclectic* | adj | drawing from many sources | *ec-* (out) + *lect* (choose) | HF·TC | "chooses" best of all | broad, varied | narrow, limited |
+| 50 | efficacious* | adj | effective, produces result | *ex-* (out) + *fac* (do/make) | HF·SE | it "makes" the result | effective, potent | ineffective, futile |
+| 51 | effrontery* | n | shameless boldness | *ef-* (out) + *front* (forehead) | HF | brazen "in-your-face" nerve | audacity, gall | courtesy, deference |
 | 52 | elegiac* | adj | mournful, expressing sorrow | (Gk *elegos*, lament) | HF·RC | like an "elegy" | melancholy, plaintive | joyful, jubilant |
-| 53 | elicit* | v | draw out (a response) | *e-* + *lic* (entice) | HF·CP | draw out (≠ illicit) | extract, evoke | suppress |
+| 53 | elicit* | v | draw out (a response) | *e-* (out) + *lic* (entice) | HF·CP | draw out (≠ illicit) | extract, evoke | suppress |
 | 54 | emulation* | n | striving to equal/surpass | *aemul* (rivaling) | HF | rival to match a model | striving, imitation | apathy, sloth |
-| 55 | endemic* | adj | native to a place/group | *en-* + *dem* (people) | HF·CP | "in the people" of a region | indigenous, native | alien, foreign |
-| 56 | enervate* | v | to weaken, drain energy | *e-* + *nerv* (sinew) | HF·SE | cut the "nerve"/strength | enfeeble, debilitate | invigorate, strengthen |
-| 57 | engender* | v | to give rise to, produce | *en-* + *gen* (birth) | HF | "generate" / give birth to | produce, provoke | destroy, suppress |
+| 55 | endemic* | adj | native to a place/group | *en-* (in) + *dem* (people) | HF·CP | "in the people" of a region | indigenous, native | alien, foreign |
+| 56 | enervate* | v | to weaken, drain energy | *e-* (out) + *nerv* (sinew) | HF·SE | cut the "nerve"/strength | enfeeble, debilitate | invigorate, strengthen |
+| 57 | engender* | v | to give rise to, produce | *en-* (make) + *gen* (birth) | HF | "generate" / give birth to | produce, provoke | destroy, suppress |
 | 58 | enigma* | n | a puzzle, riddle | (Gk *ainigma*) | HF·TC | a baffling mystery | puzzle, riddle | clarity |
-| 59 | ephemeral* | adj | short-lived | *epi-* + *hemer* (day) | HF·SE | lasts but "a day" | fleeting, transient | permanent, enduring |
+| 59 | ephemeral* | adj | short-lived | *epi-* (on) + *hemer* (day) | HF·SE | lasts but "a day" | fleeting, transient | permanent, enduring |
 | 60 | equivocal* | adj | ambiguous, open to two readings | *equi-* (equal) + *voc* (voice) | HF·TC | "equal voices"/two meanings | ambiguous, vague | clear, unequivocal |
-| 61 | erudite* | adj | very learned, scholarly | *e-* + *rud* (rough/raw) | HF·RC | refined out of the "raw" | scholarly, cultured | ignorant, unlettered |
+| 61 | erudite* | adj | very learned, scholarly | *e-* (out) + *rud* (rough/raw) | HF·RC | refined out of the "raw" | scholarly, cultured | ignorant, unlettered |
 | 62 | esoteric* | adj | understood by few; obscure | (Gk *esotero*, inner) | HF·TC | "inner-circle" knowledge | arcane, recondite | simple, exoteric |
 | 63 | espousal* | n | support/adoption of a cause | *spons* (pledge) | HF·SE | to "espouse"/pledge to a cause | advocacy, championing | disapproval |
 | 64 | eulogy* | n | speech of high praise | *eu-* (good) + *log* (speech) | HF·SE | "good words" for someone | encomium, panegyric | diatribe, condemnation |
@@ -143,16 +143,16 @@ Ranked by GRE usefulness: star-marked frequency, TC/SE power, and how many other
 | 75 | heresy* | n | belief against orthodoxy | (Gk *hairesis*, choosing) | HF | "choosing" against doctrine | dissent, apostasy | orthodoxy, piety |
 | 76 | iconoclast* | n | attacker of cherished beliefs | *icono* (image) + *clast* (break) | HF·RC | "image-breaker" | maverick, nonconformist | conformist, traditionalist |
 | 77 | impassive* | adj | showing no emotion | *im-* (not) + *pass* (feeling) | HF·RC | no "passion" shown | unmoved, stolid | emotional, demonstrative |
-| 78 | impervious* | adj | impenetrable; not receptive | *im-* + *per-* + *via* (way) | HF·TC | no "way" through | impenetrable; unreceptive | porous; receptive |
-| 79 | implacable* | adj | unappeasable | *im-* + *plac* (please/calm) | HF·SE | can't be "placated" | relentless, unforgiving | lenient, forgiving |
-| 80 | implicit* | adj | implied; or unreserved | *im-* + *plic* (fold) | HF·TC | "folded in", not stated | tacit, inferred | explicit, expressed |
+| 78 | impervious* | adj | impenetrable; not receptive | *im-* (not) + *per-* (through) + *via* (way) | HF·TC | no "way" through | impenetrable; unreceptive | porous; receptive |
+| 79 | implacable* | adj | unappeasable | *im-* (not) + *plac* (please/calm) | HF·SE | can't be "placated" | relentless, unforgiving | lenient, forgiving |
+| 80 | implicit* | adj | implied; or unreserved | *im-* (in) + *plic* (fold) | HF·TC | "folded in", not stated | tacit, inferred | explicit, expressed |
 | 81 | indigent* | adj | very poor | *indig* (in need) | HF·CP | needy/poor (≠ indignant/indolent) | destitute, penniless | rich, prosperous |
-| 82 | indolent* | adj | lazy | *in-* + *dol* (pain/effort) | HF | won't take the "effort" | idle, slothful | active, energetic |
-| 83 | innocuous* | adj | harmless | *in-* + *noc* (harm) | HF·TC | no "harm" (cf. noxious) | harmless, bland | harmful, dangerous |
+| 82 | indolent* | adj | lazy | *in-* (not) + *dol* (pain/effort) | HF | won't take the "effort" | idle, slothful | active, energetic |
+| 83 | innocuous* | adj | harmless | *in-* (not) + *noc* (harm) | HF·TC | no "harm" (cf. noxious) | harmless, bland | harmful, dangerous |
 | 84 | insinuate* | v | hint slyly; work in subtly | *sinu* (curve/bend) | HF·SE | "bend" an idea in indirectly | imply, hint | state openly |
-| 85 | insipid* | adj | bland, dull, flavorless | *in-* + *sap* (taste) | HF·SE | "no taste" | vapid, flat | flavorful, lively |
-| 86 | intractable* | adj | stubborn, hard to control | *in-* + *tract* (pull/handle) | HF·SE | can't be "handled" | unruly, obstinate | docile, tractable |
-| 87 | intransigent* | adj | refusing to compromise | *in-* + *trans-* + *ig* (drive) | HF·SE | won't "cross over"/budge | uncompromising, adamant | flexible, cooperative |
+| 85 | insipid* | adj | bland, dull, flavorless | *in-* (not) + *sap* (taste) | HF·SE | "no taste" | vapid, flat | flavorful, lively |
+| 86 | intractable* | adj | stubborn, hard to control | *in-* (not) + *tract* (pull/handle) | HF·SE | can't be "handled" | unruly, obstinate | docile, tractable |
+| 87 | intransigent* | adj | refusing to compromise | *in-* (not) + *trans-* (across) + *ig* (drive) | HF·SE | won't "cross over"/budge | uncompromising, adamant | flexible, cooperative |
 | 88 | irascible* | adj | easily angered | *ira* (anger) | HF·SE | full of "ire" | irritable, choleric | calm, tranquil |
 | 89 | laconic* | adj | using few words | (Gk *Lakon*, Spartan) | HF·SE | Spartan-brief | terse, pithy | verbose, garrulous |
 | 90 | latent* | adj | present but not active | *lat* (hidden/lie) | HF·TC | "lying" hidden | dormant, potential | active, manifest |
@@ -178,42 +178,42 @@ These are the **next 150 highest-value words** (ranks 101–250). Same priority 
 | 103 | **munificent** | adj | extremely generous | muni (gift) + fic (make) | benevolent, lavish → miserly |
 | 104 | **nadir** | n | lowest point | nadir (Arabic) | bottom → zenith, pinnacle |
 | 105 | **nebulous** | adj | vague, hazy | nebula (cloud) | ambiguous, obscure → distinct |
-| 106 | **obdurate\*** | adj | stubborn, hardened | ob- + dur (hard) | inflexible → compassionate |
-| 107 | **obsequious\*** | adj | fawning, servile | ob- + sequ (follow) | sycophantic → domineering |
-| 108 | **obviate\*** | v | prevent, make unnecessary | ob- + via (way) | eliminate, preclude → create |
+| 106 | **obdurate\*** | adj | stubborn, hardened | ob- (against/toward) + dur (hard) | inflexible → compassionate |
+| 107 | **obsequious\*** | adj | fawning, servile | ob- (against/toward) + sequ (follow) | sycophantic → domineering |
+| 108 | **obviate\*** | v | prevent, make unnecessary | ob- (against/toward) + via (way) | eliminate, preclude → create |
 | 109 | **officious\*** | adj | meddlesome | offic (duty) | interfering, obtrusive → (CP: ≠ official) |
-| 110 | **opprobrium\*** | n | public disgrace | ob- + probr (reproach) | infamy, disgrace → honor |
+| 110 | **opprobrium\*** | n | public disgrace | ob- (against/toward) + probr (reproach) | infamy, disgrace → honor |
 | 111 | **oscillate\*** | v | swing/waver | oscill (swing) | vacillate → stay steady |
 | 112 | **ostensible\*** | adj | apparent (but not real) | tend (stretch/show) | professed → hidden, actual |
 | 113 | **partisan\*** | n | fervent supporter | part (side) | supporter, devotee → opponent |
 | 114 | **paucity\*** | n | scarcity | pauc (few) | dearth, scarcity → abundance |
 | 115 | **pedantic\*** | adj | fussy about rules/learning | ped (teach) | precise, bookish → (RC tone) |
-| 116 | **perennial\*** | adj | long-lasting, enduring | per- + enn (year) | perpetual, lasting → ephemeral |
-| 117 | **perfidious\*** | adj | treacherous, disloyal | per- + fid (faith) | faithless → loyal |
+| 116 | **perennial\*** | adj | long-lasting, enduring | per- (through) + enn (year) | perpetual, lasting → ephemeral |
+| 117 | **perfidious\*** | adj | treacherous, disloyal | per- (through) + fid (faith) | faithless → loyal |
 | 118 | **placate\*** | v | to appease | plac (please) | mollify, pacify → antagonize |
 | 119 | **platitude\*** | n | a trite remark | plat (flat) | cliché, truism → profundity |
 | 120 | **pragmatic\*** | adj | practical | pragma (deed) | rational, practical → impractical |
 | 121 | **precarious\*** | adj | risky, unstable | prec (prayer) | risky, uncertain → safe, secure |
-| 122 | **precipitate\*** | v | to hasten/trigger — CP: ≠ precipitous | prae- + cip (head) | quicken → decelerate |
-| 123 | **precursor\*** | n | forerunner | prae- + curs (run) | predecessor, herald → successor |
-| 124 | **prevaricate\*** | v | to lie/evade | prae- + varic (straddle) | misrepresent → tell truth |
+| 122 | **precipitate\*** | v | to hasten/trigger — CP: ≠ precipitous | prae- (before/forth) + cip (head) | quicken → decelerate |
+| 123 | **precursor\*** | n | forerunner | prae- (before/forth) + curs (run) | predecessor, herald → successor |
+| 124 | **prevaricate\*** | v | to lie/evade | prae- (before/forth) + varic (straddle) | misrepresent → tell truth |
 | 125 | **probity\*** | n | integrity, honesty | prob (good/test) | uprightness → deception |
-| 126 | **prodigal** | adj | wastefully extravagant | prod- + ig (drive) | profligate, lavish → frugal |
-| 127 | **profundity\*** | n | great depth | pro- + fund (bottom) | depth → shallowness |
-| 128 | **propensity\*** | n | natural inclination | pro- + pend (hang) | tendency, proclivity → aversion |
+| 126 | **prodigal** | adj | wastefully extravagant | prod- (forth) + ig (drive) | profligate, lavish → frugal |
+| 127 | **profundity\*** | n | great depth | pro- (forward) + fund (bottom) | depth → shallowness |
+| 128 | **propensity\*** | n | natural inclination | pro- (forward) + pend (hang) | tendency, proclivity → aversion |
 | 129 | **propitiate\*** | v | to appease — CP: propitious = favorable | propiti (favorable) | conciliate → upset |
-| 130 | **proscribe\*** | v | to forbid — CP: ≠ prescribe | pro- + scrib (write) | prohibit, ban → permit |
+| 130 | **proscribe\*** | v | to forbid — CP: ≠ prescribe | pro- (forward) + scrib (write) | prohibit, ban → permit |
 | 131 | **prudent\*** | adj | wise, cautious | prud (foresee) | judicious, careful → reckless |
 | 132 | **pusillanimous** | adj | cowardly | pusill (tiny) + anim (spirit) | timid, craven → bold |
 | 133 | **quiescence\*** | n | state of rest/inactivity | quies (rest) | dormancy → activity |
 | 134 | **rarefy\*** | v | to thin / refine | rar (rare) | refine → thicken |
-| 135 | **recalcitrant\*** | adj | defiantly disobedient | re- + calc (kick) | obstinate, unruly → compliant |
-| 136 | **recluse\*** | n | one who lives in seclusion | re- + clud (close) | hermit, solitary → socialite |
-| 137 | **recondite\*** | adj | obscure, hard to grasp | re- + cond (hide) | abstruse, arcane → comprehensible |
-| 138 | **repudiate\*** | v | to reject/disown | re- + pud (shame) | disclaim, renounce → embrace |
-| 139 | **reprobate\*** | n | a corrupt/depraved person | re- + prob (test) | scoundrel, profligate → saint |
-| 140 | **reticent\*** | adj | reserved, uncommunicative | re- + tac (silent) | tight-lipped → talkative |
-| 141 | **revere\*** | v | to deeply respect | re- + vere (awe) | venerate, worship → disparage |
+| 135 | **recalcitrant\*** | adj | defiantly disobedient | re- (back/again) + calc (kick) | obstinate, unruly → compliant |
+| 136 | **recluse\*** | n | one who lives in seclusion | re- (back/again) + clud (close) | hermit, solitary → socialite |
+| 137 | **recondite\*** | adj | obscure, hard to grasp | re- (back/again) + cond (hide) | abstruse, arcane → comprehensible |
+| 138 | **repudiate\*** | v | to reject/disown | re- (back/again) + pud (shame) | disclaim, renounce → embrace |
+| 139 | **reprobate\*** | n | a corrupt/depraved person | re- (back/again) + prob (test) | scoundrel, profligate → saint |
+| 140 | **reticent\*** | adj | reserved, uncommunicative | re- (back/again) + tac (silent) | tight-lipped → talkative |
+| 141 | **revere\*** | v | to deeply respect | re- (intensive) + vere (awe) | venerate, worship → disparage |
 | 142 | **salubrious\*** | adj | health-promoting | salu (health) | healthful, wholesome → harmful |
 | 143 | **sanction\*** | n/v | approval / penalty (contranym) | sanct (holy) | authorize → disallow |
 | 144 | **satiate\*** | v | to fully satisfy | sat (enough) | sate, glut → starve |
@@ -230,10 +230,10 @@ These are the **next 150 highest-value words** (ranks 101–250). Same priority 
 | 155 | **stipulate\*** | v | to specify as a condition | stip (bargain) | specify, require → — |
 | 156 | **stolid\*** | adj | unemotional, impassive | stol (dull) | phlegmatic, stoic → passionate |
 | 157 | **strut\*** | v | to walk proudly | (Gmc) | swagger, flaunt → downplay |
-| 158 | **substantiate\*** | v | to prove with evidence | sub- + stant (stand) | corroborate, verify → refute |
-| 159 | **subside\*** | v | to die down | sub- + sid (settle) | abate, wane → surge |
-| 160 | **succinct\*** | adj | concise | sub- + cinct (girded) | terse, laconic → verbose |
-| 161 | **supposition\*** | n | an assumption | sub- + pos (place) | conjecture, hypothesis → certainty |
+| 158 | **substantiate\*** | v | to prove with evidence | sub- (under) + stant (stand) | corroborate, verify → refute |
+| 159 | **subside\*** | v | to die down | sub- (under) + sid (settle) | abate, wane → surge |
+| 160 | **succinct\*** | adj | concise | sub- (under) + cinct (girded) | terse, laconic → verbose |
+| 161 | **supposition\*** | n | an assumption | sub- (under) + pos (place) | conjecture, hypothesis → certainty |
 | 162 | **tacit\*** | adj | implied, unspoken | tac (silent) | implicit → explicit |
 | 163 | **tangential\*** | adj | only superficially related | tang (touch) | digressive → relevant |
 | 164 | **tenuous\*** | adj | flimsy, weak | tenu (thin) | slight, gossamer → strong, substantial |
@@ -241,10 +241,10 @@ These are the **next 150 highest-value words** (ranks 101–250). Same priority 
 | 166 | **torpor\*** | n | sluggish inactivity | torp (numb) | lethargy, lassitude → vigor |
 | 167 | **tortuous\*** | adj | twisting; complex — CP: ≠ torturous | tort (twist) | winding, circuitous → straight |
 | 168 | **tractable\*** | adj | easily managed | tract (pull/handle) | docile, amenable → obstinate |
-| 169 | **transgression\*** | n | violation of a law/rule | trans- + gress (step) | breach → conformity |
+| 169 | **transgression\*** | n | violation of a law/rule | trans- (across) + gress (step) | breach → conformity |
 | 170 | **truculent\*** | adj | aggressively hostile | truc (fierce) | belligerent, fierce → gentle, mild |
 | 171 | **turpitude\*** | n | depravity, wickedness | turp (base) | depravity → virtue |
-| 172 | **unfettered\*** | adj | free of restraint | un- + fetter (chain) | unchained, free → constrained |
+| 172 | **unfettered\*** | adj | free of restraint | un- (not) + fetter (chain) | unchained, free → constrained |
 | 173 | **vacillate\*** | v | to waver indecisively | vacill (sway) | waffle, waver → be resolute |
 | 174 | **venerate\*** | v | to revere | vener (worship) | revere, honor → dishonor |
 | 175 | **veracious\*** | adj | truthful, accurate — CP: ≠ voracious | ver (truth) | candid, authentic → evasive |
@@ -262,9 +262,9 @@ These are the **next 150 highest-value words** (ranks 101–250). Same priority 
 | 187 | **altruism\*** | n | selfless concern for others | altru (other) | unselfishness → egoism |
 | 188 | **amalgam\*** | n | a blend of things | (alchemy) | mixture, alloy → — |
 | 189 | **amiable\*** | adj | friendly, likeable — CP: amiable/amicable/amenable | ami (friend) | affable, genial → surly |
-| 190 | **amnesty\*** | adj→n | pardon | a- + mne (memory) | absolution, pardon → punishment |
-| 191 | **anachronism** | n | something out of its time | ana- + chron (time) | — → — |
-| 192 | **analogy\*** | n | a comparison of likeness | ana- + log (ratio) | parallel → difference |
+| 190 | **amnesty\*** | adj→n | pardon | a- (not) + mne (memory) | absolution, pardon → punishment |
+| 191 | **anachronism** | n | something out of its time | ana- (up/back) + chron (time) | — → — |
+| 192 | **analogy\*** | n | a comparison of likeness | ana- (up/back) + log (ratio) | parallel → difference |
 | 193 | **arbiter** | n | a judge/decider | arbit (judge) | referee, mediator → — |
 | 194 | **ascetic** | n/adj | self-denying, austere | ascet (exercise) | austere, monastic → hedonist |
 | 195 | **assiduous\*** | adj | diligent, persistent | sid (sit) | diligent, industrious → lazy |
@@ -276,11 +276,11 @@ These are the **next 150 highest-value words** (ranks 101–250). Same priority 
 | 201 | **boisterous\*** | adj | noisy and wild | (Gmc) | rowdy, raucous → restrained |
 | 202 | **brusque\*** | adj | abrupt in manner | (It brusco) | curt, terse → warm, gracious |
 | 203 | **buttress\*** | v | to support | (architecture) | reinforce, prop → undermine |
-| 204 | **commensurate\*** | adj | proportionate | com- + mens (measure) | adequate, proportional → disproportionate |
-| 205 | **contentious\*** | adj | quarrelsome | con- + tend (strain) | combative, litigious → peaceful |
-| 206 | **contrite\*** | adj | deeply remorseful | con- + trit (rub/grind) | penitent, apologetic → unrepentant |
+| 204 | **commensurate\*** | adj | proportionate | com- (together) + mens (measure) | adequate, proportional → disproportionate |
+| 205 | **contentious\*** | adj | quarrelsome | con- (together) + tend (strain) | combative, litigious → peaceful |
+| 206 | **contrite\*** | adj | deeply remorseful | con- (thoroughly) + trit (rub/grind) | penitent, apologetic → unrepentant |
 | 207 | **covet** | v | to crave enviously | cupid (desire) | desire, crave → renounce |
-| 208 | **debilitate** | v | to weaken | de- + bil (strength) | enfeeble, enervate → strengthen |
+| 208 | **debilitate** | v | to weaken | de- (down/away) + bil (strength) | enfeeble, enervate → strengthen |
 | 209 | **decorous\*** | adj | proper, dignified | decor (fitting) | seemly, demure → unseemly |
 | 210 | **demur** | v | to object — CP: ≠ demure | (Lat mora, delay) | object, dissent → consent |
 | 211 | **deride\*** |  | see entry #39 for full treatment |  |  |
@@ -289,14 +289,14 @@ These are the **next 150 highest-value words** (ranks 101–250). Same priority 
 | 214 | **dogmatic** | adj | asserting opinion as fact | dogma | doctrinaire, opinionated → open-minded |
 | 215 | **dupe** | v/n | to trick / a gull | (Fr) | deceive, gull → — |
 | 216 | **ebullient\*** |  | see entry #48 for full treatment |  |  |
-| 217 | **egregious** | adj | conspicuously bad | e- + greg (flock) | flagrant, glaring → ordinary |
+| 217 | **egregious** | adj | conspicuously bad | e- (out) + greg (flock) | flagrant, glaring → ordinary |
 | 218 | **embellish\*** | v | to decorate; to exaggerate | bell (beautiful) | adorn, garnish → strip, mar |
-| 219 | **enmity** | n | deep hostility | en- + imicus (enemy) | animosity, antagonism → friendship |
+| 219 | **enmity** | n | deep hostility | en- (in) + imicus (enemy) | animosity, antagonism → friendship |
 | 220 | **ephemeral\*** |  | see entry #59 for full treatment |  |  |
 | 221 | **equanimity** | n | calm composure | equ (even) + anim (mind) | poise, serenity → agitation |
-| 222 | **exacerbate** | v | to worsen | ex- + acerb (bitter) | aggravate, intensify → alleviate |
-| 223 | **exonerate** | v | to clear of blame | ex- + oner (burden) | absolve, acquit → incriminate |
-| 224 | **extol** | v | to praise highly | ex- + toll (raise) | laud, glorify → disparage |
+| 222 | **exacerbate** | v | to worsen | ex- (thoroughly) + acerb (bitter) | aggravate, intensify → alleviate |
+| 223 | **exonerate** | v | to clear of blame | ex- (out) + oner (burden) | absolve, acquit → incriminate |
+| 224 | **extol** | v | to praise highly | ex- (out) + toll (raise) | laud, glorify → disparage |
 | 225 | **fastidious** | adj | hard to please, fussy | (Lat fastidium) | meticulous, picky → easygoing |
 | 226 | **fortuitous** | adj | happening by chance | fortu (luck) | accidental, chance → planned |
 | 227 | **fractious** | adj | irritable; unruly — CP: ≠ factious | frac (break) | peevish, unruly → docile |
@@ -304,20 +304,20 @@ These are the **next 150 highest-value words** (ranks 101–250). Same priority 
 | 229 | **hackneyed** | adj | overused, trite | (hackney horse) | trite, stereotyped → original, fresh |
 | 230 | **iconoclast\*** |  | see entry #76 for full treatment |  |  |
 | 231 | **idiosyncrasy** | n | a peculiar trait | idio (own) | quirk, eccentricity → conventionality |
-| 232 | **impecunious** | adj | having no money | im- + pecun (money) | destitute, penniless → wealthy |
-| 233 | **inchoate\*** | adj | just begun, unformed | in- + cho (begin) | nascent, rudimentary → developed |
-| 234 | **incongruous\*** | adj | out of place, mismatched | in- + congru (agree) | inappropriate → harmonious |
+| 232 | **impecunious** | adj | having no money | im- (not) + pecun (money) | destitute, penniless → wealthy |
+| 233 | **inchoate\*** | adj | just begun, unformed | in- (intensive) + cho (begin) | nascent, rudimentary → developed |
+| 234 | **incongruous\*** | adj | out of place, mismatched | in- (not) + congru (agree) | inappropriate → harmonious |
 | 235 | **inveigle** | v | to entice by guile | (Fr) | cajole, beguile → repel |
 | 236 | **lassitude\*** | n | weariness, fatigue | lass (weary) | languor, lethargy → vigor |
 | 237 | **lugubrious** | adj | exaggeratedly mournful | lug (mourn) | doleful, somber → cheerful |
 | 238 | **maudlin** | adj | tearfully sentimental | (Mary Magdalen) | mawkish, weepy → unsentimental |
 | 239 | **mercurial** | adj | volatile in mood | (Mercury) | capricious, changeable → constant |
 | 240 | **noisome** | adj | foul-smelling, harmful | (annoy) | fetid, offensive → fragrant |
-| 241 | **obfuscate** | v | to confuse, obscure | ob- + fusc (dark) | muddle, cloud → clarify |
-| 242 | **obstreperous** | adj | noisily defiant | ob- + strep (noise) | unruly, vociferous → docile |
+| 241 | **obfuscate** | v | to confuse, obscure | ob- (over) + fusc (dark) | muddle, cloud → clarify |
+| 242 | **obstreperous** | adj | noisily defiant | ob- (against/toward) + strep (noise) | unruly, vociferous → docile |
 | 243 | **ostentatious** | adj | showy | tend (stretch out) | flashy, conspicuous → modest |
 | 244 | **parsimonious** | adj | stingy | parc (spare) | miserly, tight-fisted → generous |
-| 245 | **perspicacious** | adj | keenly perceptive — CP: perspicacious/perspicuous | per- + spic (see) | astute, shrewd → undiscerning |
+| 245 | **perspicacious** | adj | keenly perceptive — CP: perspicacious/perspicuous | per- (through) + spic (see) | astute, shrewd → undiscerning |
 | 246 | **phlegmatic** | adj | calm, unemotional | (humor phlegm) | stolid, placid → excitable |
 | 247 | **quixotic** | adj | impractically idealistic | (Don Quixote) | idealistic, romantic → pragmatic *(implied by source theme; see prudent/pragmatic)* |
 | 248 | **sagacious** | adj | wise, shrewd | sag (keen) | astute, perspicacious → foolish |

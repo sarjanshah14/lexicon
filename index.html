@@ -11,6 +11,7 @@
   --zebra:#f6f6f3; --thead:#ececea; --panel:#ffffff;
   --sidebar:#1a1a1a; --sidebar-ink:#cfcfca; --sidebar-hover:#2b2b2b;
   --content-width:880px; --sidebar-width:300px;
+  --head-top:18px;        /* gap kept above a frozen header row */
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -54,7 +55,7 @@ a:hover{opacity:.7;}
 }
 
 /* typography */
-h1,h2,h3,h4{line-height:1.3; font-weight:700; scroll-margin-top:24px;}
+h1,h2,h3,h4{line-height:1.3; font-weight:700; scroll-margin-top:calc(var(--head-top) + 12px);}
 .content-inner > h1:first-child{font-size:2.1rem; margin:0 0 .2em;}
 h2{font-size:1.6rem; margin:2.4em 0 .8em; padding-bottom:.3em; border-bottom:2px solid var(--line);}
 h3{font-size:1.22rem; margin:1.8em 0 .6em; color:#111;}
@@ -88,14 +89,17 @@ table{
 }
 th,td{
   border-right:1px solid var(--line); border-bottom:1px solid var(--line);
-  padding:8px 11px; vertical-align:top; overflow-wrap:break-word;
+  padding:8px 11px; vertical-align:top;
+  /* keep whole words intact — wrap only at spaces, never split a word into characters */
+  overflow-wrap:normal; word-break:normal; hyphens:none;
 }
-/* sticky header row: freezes at the top of the viewport while its table is in view,
-   then releases automatically once the table has scrolled past. Works on every table. */
+/* sticky header row: freezes a little BELOW the top of the viewport (--head-top) while its
+   table is in view, then releases once the table has scrolled past. The downward box-shadow
+   in panel colour masks any rows passing through the gap above the frozen header. */
 thead th{
   background:var(--thead); text-align:left; font-weight:700;
-  position:-webkit-sticky; position:sticky; top:0; z-index:5;
-  box-shadow:inset 0 1px 0 var(--line);   /* keeps the top line while floating */
+  position:-webkit-sticky; position:sticky; top:var(--head-top); z-index:5;
+  box-shadow:inset 0 1px 0 var(--line), 0 calc(-1 * var(--head-top) - 2px) 0 var(--panel);
 }
 tbody tr:nth-child(even){background:var(--zebra);}
 tbody tr:hover{background:#e9e9e6;}
@@ -103,11 +107,12 @@ tbody tr:hover{background:#e9e9e6;}
 /* in-page ToC list (right after first h2) gets a card look via class added by JS */
 .toc-card{background:#f6f6f3; border:1px solid var(--line); border-radius:10px; padding:8px 22px;}
 
-/* glossary live-search bar (sticky at top of §11) */
+/* glossary live-search bar (sticky just below the top gap, masks rows above it) */
 .gloss-search{
-  position:-webkit-sticky; position:sticky; top:0; z-index:7;
+  position:-webkit-sticky; position:sticky; top:var(--head-top); z-index:7;
   background:var(--panel); padding:10px 0; border-bottom:1px solid var(--line);
   display:flex; gap:12px; align-items:center; margin-bottom:6px;
+  box-shadow:0 calc(-1 * var(--head-top) - 2px) 0 var(--panel);
 }
 .gloss-search input{
   flex:1; padding:9px 13px; font-size:16px; border:1px solid #b5b5b5;
@@ -116,7 +121,7 @@ tbody tr:hover{background:#e9e9e6;}
 .gloss-search input:focus{outline:2px solid #555; border-color:#555;}
 .gloss-search .cnt{font-size:12.5px; color:var(--muted); white-space:nowrap;}
 /* frozen glossary headers sit just below the sticky search bar */
-table.gloss thead th{top:60px;}
+table.gloss thead th{top:calc(var(--head-top) + 52px);}
 
 /* nav toggle button (always visible) */
 .nav-toggle{
@@ -149,6 +154,7 @@ body.nav-collapsed .content-inner{max-width:none; width:90%;}
 
 /* tablet / phone */
 @media (max-width:900px){
+  :root{--head-top:54px;}   /* clear the floating menu button on small screens */
   .sidebar{
     position:fixed; left:0; top:0; z-index:50; width:84vw; max-width:320px;
     transform:translateX(-100%); transition:transform .25s ease;
@@ -183,8 +189,45 @@ body.nav-collapsed .content-inner{max-width:none; width:90%;}
   code{font-size:.8em;}
 }
 
-/* let long table cells wrap instead of forcing huge width */
-td,th{word-break:normal; overflow-wrap:anywhere;}
+/* ===== Card view (toggleable per section) =====
+   A row becomes a self-contained card; column names become inline labels.
+   On wide screens cards flow as a grid; on phones they stack one per row. */
+table.cards{display:block; border:0; margin:1.2em 0;}
+table.cards thead{display:none;}
+table.cards tbody{
+  display:grid; gap:14px;
+  grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
+}
+table.cards tbody tr{
+  display:flex; flex-direction:column; background:var(--panel) !important;
+  border:1px solid var(--line); border-radius:10px; padding:10px 14px;
+  box-shadow:0 1px 2px rgba(0,0,0,.05);
+}
+table.cards tbody td{
+  border:0; padding:4px 0; display:flex; gap:8px; align-items:baseline;
+}
+table.cards tbody td::before{
+  content:attr(data-label); font-weight:700; color:var(--muted);
+  flex:0 0 92px; font-size:.85em; text-transform:uppercase; letter-spacing:.02em;
+}
+table.cards tbody td:empty{display:none;}
+
+/* per-section view toggle, appears on the right edge while a wide table is in view */
+#viewToggle{
+  position:fixed; right:14px; top:50%; transform:translateY(-50%);
+  z-index:55; display:none; flex-direction:column; gap:6px;
+  background:#1a1a1a; color:#fff; padding:8px; border-radius:12px;
+  box-shadow:0 3px 14px rgba(0,0,0,.3); font-size:12px;
+}
+#viewToggle.show{display:flex;}
+#viewToggle .lbl{font-size:10px; text-align:center; color:#9a9a95; letter-spacing:.04em;}
+#viewToggle button{
+  border:0; border-radius:7px; padding:7px 12px; cursor:pointer;
+  background:#333; color:#ddd; font-size:12px; font-weight:600;
+}
+#viewToggle button.on{background:#fff; color:#111;}
+#viewToggle button:hover{background:#4a4a4a; color:#fff;}
+#viewToggle button.on:hover{background:#fff; color:#111;}
 </style>
 </head>
 <body>
@@ -413,7 +456,7 @@ norm</td>
 <td>abstemious*</td>
 <td>adj</td>
 <td>moderate, esp. in eating/drinking</td>
-<td><em>abs-</em> + <em>tem</em> (drink)</td>
+<td><em>abs-</em> (away) + <em>tem</em> (drink)</td>
 <td>HF·TC</td>
 <td>abstains from "stomach" excess</td>
 <td>temperate</td>
@@ -424,7 +467,7 @@ norm</td>
 <td>abstruse*</td>
 <td>adj</td>
 <td>hard to understand</td>
-<td><em>abs-</em> + <em>trus</em> (push)</td>
+<td><em>abs-</em> (away) + <em>trus</em> (push)</td>
 <td>HF·TC</td>
 <td>pushed away from grasp</td>
 <td>obscure, recondite</td>
@@ -490,7 +533,7 @@ norm</td>
 <td>affable*</td>
 <td>adj</td>
 <td>pleasant, easy to approach</td>
-<td><em>aff-</em> + <em>fabl</em> (speak)</td>
+<td><em>aff-</em> (to) + <em>fabl</em> (speak)</td>
 <td>HF</td>
 <td>easy to "fable"/talk with</td>
 <td>cordial, genial</td>
@@ -633,7 +676,7 @@ norm</td>
 <td>belie</td>
 <td>v</td>
 <td>contradict / misrepresent</td>
-<td><em>be-</em> + <em>lie</em></td>
+<td><em>be-</em> (intensive) + <em>lie</em></td>
 <td>TC·SE</td>
 <td>it tells a "lie" about the truth</td>
 <td>contradict, disguise</td>
@@ -732,7 +775,7 @@ norm</td>
 <td>cogent*</td>
 <td>adj</td>
 <td>convincing, compelling</td>
-<td><em>co-</em> + <em>ag</em> (drive)</td>
+<td><em>co-</em> (together) + <em>ag</em> (drive)</td>
 <td>HF·SE</td>
 <td>"drives" the mind to agree</td>
 <td>forceful, persuasive</td>
@@ -798,7 +841,7 @@ norm</td>
 <td>deride*</td>
 <td>v</td>
 <td>to mock, ridicule</td>
-<td><em>de-</em> + <em>ris</em> (laugh)</td>
+<td><em>de-</em> (down/away) + <em>ris</em> (laugh)</td>
 <td>HF·SE</td>
 <td>laugh down at</td>
 <td>mock, scorn</td>
@@ -809,7 +852,7 @@ norm</td>
 <td>desultory*</td>
 <td>adj</td>
 <td>aimless, disconnected</td>
-<td><em>de-</em> + <em>salt</em> (leap)</td>
+<td><em>de-</em> (down) + <em>salt</em> (leap)</td>
 <td>HF·TC</td>
 <td>leaping topic to topic</td>
 <td>haphazard, random</td>
@@ -831,7 +874,7 @@ norm</td>
 <td>diffidence*</td>
 <td>n</td>
 <td>shyness, lack of confidence</td>
-<td><em>dis-</em> + <em>fid</em> (trust)</td>
+<td><em>dis-</em> (apart) + <em>fid</em> (trust)</td>
 <td>HF·TC</td>
 <td>doesn't "trust" self</td>
 <td>timidity, shyness</td>
@@ -842,7 +885,7 @@ norm</td>
 <td>diffuse*</td>
 <td>adj/v</td>
 <td>spread out / wordy</td>
-<td><em>dif-</em> + <em>fus</em> (pour)</td>
+<td><em>dif-</em> (apart) + <em>fus</em> (pour)</td>
 <td>HF·TC</td>
 <td>poured out widely</td>
 <td>verbose, scattered</td>
@@ -853,7 +896,7 @@ norm</td>
 <td>discrete*</td>
 <td>adj</td>
 <td>separate, distinct</td>
-<td><em>dis-</em> + <em>cret</em> (separate)</td>
+<td><em>dis-</em> (apart) + <em>cret</em> (separate)</td>
 <td>HF·CP</td>
 <td>discrete = separate (≠ discreet)</td>
 <td>distinct, separate</td>
@@ -864,7 +907,7 @@ norm</td>
 <td>disinterested*</td>
 <td>adj</td>
 <td>impartial, unbiased</td>
-<td><em>dis-</em> + <em>interest</em></td>
+<td><em>dis-</em> (not) + <em>interest</em></td>
 <td>HF·CP</td>
 <td>no stake → fair (≠ uninterested)</td>
 <td>impartial, unbiased</td>
@@ -875,7 +918,7 @@ norm</td>
 <td>dissemble*</td>
 <td>v</td>
 <td>conceal true feelings; feign</td>
-<td><em>dis-</em> + <em>sembl</em> (seem)</td>
+<td><em>dis-</em> (apart) + <em>sembl</em> (seem)</td>
 <td>HF·SE</td>
 <td>make things "seem" otherwise</td>
 <td>feign, disguise</td>
@@ -886,7 +929,7 @@ norm</td>
 <td>disseminate*</td>
 <td>v</td>
 <td>spread widely</td>
-<td><em>dis-</em> + <em>semin</em> (seed)</td>
+<td><em>dis-</em> (apart) + <em>semin</em> (seed)</td>
 <td>HF·SE</td>
 <td>scatter like "seeds"</td>
 <td>broadcast, propagate</td>
@@ -897,7 +940,7 @@ norm</td>
 <td>ebullient*</td>
 <td>adj</td>
 <td>bubbling with enthusiasm</td>
-<td><em>e-</em> + <em>bull</em> (boil)</td>
+<td><em>e-</em> (out) + <em>bull</em> (boil)</td>
 <td>HF·SE</td>
 <td>"boiling" over with joy</td>
 <td>exuberant, vivacious</td>
@@ -908,7 +951,7 @@ norm</td>
 <td>eclectic*</td>
 <td>adj</td>
 <td>drawing from many sources</td>
-<td><em>ec-</em> + <em>lect</em> (choose)</td>
+<td><em>ec-</em> (out) + <em>lect</em> (choose)</td>
 <td>HF·TC</td>
 <td>"chooses" best of all</td>
 <td>broad, varied</td>
@@ -919,7 +962,7 @@ norm</td>
 <td>efficacious*</td>
 <td>adj</td>
 <td>effective, produces result</td>
-<td><em>ex-</em> + <em>fac</em> (do/make)</td>
+<td><em>ex-</em> (out) + <em>fac</em> (do/make)</td>
 <td>HF·SE</td>
 <td>it "makes" the result</td>
 <td>effective, potent</td>
@@ -930,7 +973,7 @@ norm</td>
 <td>effrontery*</td>
 <td>n</td>
 <td>shameless boldness</td>
-<td><em>ef-</em> + <em>front</em> (forehead)</td>
+<td><em>ef-</em> (out) + <em>front</em> (forehead)</td>
 <td>HF</td>
 <td>brazen "in-your-face" nerve</td>
 <td>audacity, gall</td>
@@ -952,7 +995,7 @@ norm</td>
 <td>elicit*</td>
 <td>v</td>
 <td>draw out (a response)</td>
-<td><em>e-</em> + <em>lic</em> (entice)</td>
+<td><em>e-</em> (out) + <em>lic</em> (entice)</td>
 <td>HF·CP</td>
 <td>draw out (≠ illicit)</td>
 <td>extract, evoke</td>
@@ -974,7 +1017,7 @@ norm</td>
 <td>endemic*</td>
 <td>adj</td>
 <td>native to a place/group</td>
-<td><em>en-</em> + <em>dem</em> (people)</td>
+<td><em>en-</em> (in) + <em>dem</em> (people)</td>
 <td>HF·CP</td>
 <td>"in the people" of a region</td>
 <td>indigenous, native</td>
@@ -985,7 +1028,7 @@ norm</td>
 <td>enervate*</td>
 <td>v</td>
 <td>to weaken, drain energy</td>
-<td><em>e-</em> + <em>nerv</em> (sinew)</td>
+<td><em>e-</em> (out) + <em>nerv</em> (sinew)</td>
 <td>HF·SE</td>
 <td>cut the "nerve"/strength</td>
 <td>enfeeble, debilitate</td>
@@ -996,7 +1039,7 @@ norm</td>
 <td>engender*</td>
 <td>v</td>
 <td>to give rise to, produce</td>
-<td><em>en-</em> + <em>gen</em> (birth)</td>
+<td><em>en-</em> (make) + <em>gen</em> (birth)</td>
 <td>HF</td>
 <td>"generate" / give birth to</td>
 <td>produce, provoke</td>
@@ -1018,7 +1061,7 @@ norm</td>
 <td>ephemeral*</td>
 <td>adj</td>
 <td>short-lived</td>
-<td><em>epi-</em> + <em>hemer</em> (day)</td>
+<td><em>epi-</em> (on) + <em>hemer</em> (day)</td>
 <td>HF·SE</td>
 <td>lasts but "a day"</td>
 <td>fleeting, transient</td>
@@ -1040,7 +1083,7 @@ norm</td>
 <td>erudite*</td>
 <td>adj</td>
 <td>very learned, scholarly</td>
-<td><em>e-</em> + <em>rud</em> (rough/raw)</td>
+<td><em>e-</em> (out) + <em>rud</em> (rough/raw)</td>
 <td>HF·RC</td>
 <td>refined out of the "raw"</td>
 <td>scholarly, cultured</td>
@@ -1227,7 +1270,8 @@ norm</td>
 <td>impervious*</td>
 <td>adj</td>
 <td>impenetrable; not receptive</td>
-<td><em>im-</em> + <em>per-</em> + <em>via</em> (way)</td>
+<td><em>im-</em> (not) + <em>per-</em> (through) + <em>via</em>
+(way)</td>
 <td>HF·TC</td>
 <td>no "way" through</td>
 <td>impenetrable; unreceptive</td>
@@ -1238,7 +1282,7 @@ norm</td>
 <td>implacable*</td>
 <td>adj</td>
 <td>unappeasable</td>
-<td><em>im-</em> + <em>plac</em> (please/calm)</td>
+<td><em>im-</em> (not) + <em>plac</em> (please/calm)</td>
 <td>HF·SE</td>
 <td>can't be "placated"</td>
 <td>relentless, unforgiving</td>
@@ -1249,7 +1293,7 @@ norm</td>
 <td>implicit*</td>
 <td>adj</td>
 <td>implied; or unreserved</td>
-<td><em>im-</em> + <em>plic</em> (fold)</td>
+<td><em>im-</em> (in) + <em>plic</em> (fold)</td>
 <td>HF·TC</td>
 <td>"folded in", not stated</td>
 <td>tacit, inferred</td>
@@ -1271,7 +1315,7 @@ norm</td>
 <td>indolent*</td>
 <td>adj</td>
 <td>lazy</td>
-<td><em>in-</em> + <em>dol</em> (pain/effort)</td>
+<td><em>in-</em> (not) + <em>dol</em> (pain/effort)</td>
 <td>HF</td>
 <td>won't take the "effort"</td>
 <td>idle, slothful</td>
@@ -1282,7 +1326,7 @@ norm</td>
 <td>innocuous*</td>
 <td>adj</td>
 <td>harmless</td>
-<td><em>in-</em> + <em>noc</em> (harm)</td>
+<td><em>in-</em> (not) + <em>noc</em> (harm)</td>
 <td>HF·TC</td>
 <td>no "harm" (cf. noxious)</td>
 <td>harmless, bland</td>
@@ -1304,7 +1348,7 @@ norm</td>
 <td>insipid*</td>
 <td>adj</td>
 <td>bland, dull, flavorless</td>
-<td><em>in-</em> + <em>sap</em> (taste)</td>
+<td><em>in-</em> (not) + <em>sap</em> (taste)</td>
 <td>HF·SE</td>
 <td>"no taste"</td>
 <td>vapid, flat</td>
@@ -1315,7 +1359,7 @@ norm</td>
 <td>intractable*</td>
 <td>adj</td>
 <td>stubborn, hard to control</td>
-<td><em>in-</em> + <em>tract</em> (pull/handle)</td>
+<td><em>in-</em> (not) + <em>tract</em> (pull/handle)</td>
 <td>HF·SE</td>
 <td>can't be "handled"</td>
 <td>unruly, obstinate</td>
@@ -1326,7 +1370,8 @@ norm</td>
 <td>intransigent*</td>
 <td>adj</td>
 <td>refusing to compromise</td>
-<td><em>in-</em> + <em>trans-</em> + <em>ig</em> (drive)</td>
+<td><em>in-</em> (not) + <em>trans-</em> (across) + <em>ig</em>
+(drive)</td>
 <td>HF·SE</td>
 <td>won't "cross over"/budge</td>
 <td>uncompromising, adamant</td>
@@ -1544,7 +1589,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>obdurate*</strong></td>
 <td>adj</td>
 <td>stubborn, hardened</td>
-<td>ob- + dur (hard)</td>
+<td>ob- (against/toward) + dur (hard)</td>
 <td>inflexible → compassionate</td>
 </tr>
 <tr>
@@ -1552,7 +1597,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>obsequious*</strong></td>
 <td>adj</td>
 <td>fawning, servile</td>
-<td>ob- + sequ (follow)</td>
+<td>ob- (against/toward) + sequ (follow)</td>
 <td>sycophantic → domineering</td>
 </tr>
 <tr>
@@ -1560,7 +1605,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>obviate*</strong></td>
 <td>v</td>
 <td>prevent, make unnecessary</td>
-<td>ob- + via (way)</td>
+<td>ob- (against/toward) + via (way)</td>
 <td>eliminate, preclude → create</td>
 </tr>
 <tr>
@@ -1576,7 +1621,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>opprobrium*</strong></td>
 <td>n</td>
 <td>public disgrace</td>
-<td>ob- + probr (reproach)</td>
+<td>ob- (against/toward) + probr (reproach)</td>
 <td>infamy, disgrace → honor</td>
 </tr>
 <tr>
@@ -1624,7 +1669,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>perennial*</strong></td>
 <td>adj</td>
 <td>long-lasting, enduring</td>
-<td>per- + enn (year)</td>
+<td>per- (through) + enn (year)</td>
 <td>perpetual, lasting → ephemeral</td>
 </tr>
 <tr>
@@ -1632,7 +1677,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>perfidious*</strong></td>
 <td>adj</td>
 <td>treacherous, disloyal</td>
-<td>per- + fid (faith)</td>
+<td>per- (through) + fid (faith)</td>
 <td>faithless → loyal</td>
 </tr>
 <tr>
@@ -1672,7 +1717,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>precipitate*</strong></td>
 <td>v</td>
 <td>to hasten/trigger — CP: ≠ precipitous</td>
-<td>prae- + cip (head)</td>
+<td>prae- (before/forth) + cip (head)</td>
 <td>quicken → decelerate</td>
 </tr>
 <tr>
@@ -1680,7 +1725,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>precursor*</strong></td>
 <td>n</td>
 <td>forerunner</td>
-<td>prae- + curs (run)</td>
+<td>prae- (before/forth) + curs (run)</td>
 <td>predecessor, herald → successor</td>
 </tr>
 <tr>
@@ -1688,7 +1733,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>prevaricate*</strong></td>
 <td>v</td>
 <td>to lie/evade</td>
-<td>prae- + varic (straddle)</td>
+<td>prae- (before/forth) + varic (straddle)</td>
 <td>misrepresent → tell truth</td>
 </tr>
 <tr>
@@ -1704,7 +1749,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>prodigal</strong></td>
 <td>adj</td>
 <td>wastefully extravagant</td>
-<td>prod- + ig (drive)</td>
+<td>prod- (forth) + ig (drive)</td>
 <td>profligate, lavish → frugal</td>
 </tr>
 <tr>
@@ -1712,7 +1757,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>profundity*</strong></td>
 <td>n</td>
 <td>great depth</td>
-<td>pro- + fund (bottom)</td>
+<td>pro- (forward) + fund (bottom)</td>
 <td>depth → shallowness</td>
 </tr>
 <tr>
@@ -1720,7 +1765,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>propensity*</strong></td>
 <td>n</td>
 <td>natural inclination</td>
-<td>pro- + pend (hang)</td>
+<td>pro- (forward) + pend (hang)</td>
 <td>tendency, proclivity → aversion</td>
 </tr>
 <tr>
@@ -1736,7 +1781,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>proscribe*</strong></td>
 <td>v</td>
 <td>to forbid — CP: ≠ prescribe</td>
-<td>pro- + scrib (write)</td>
+<td>pro- (forward) + scrib (write)</td>
 <td>prohibit, ban → permit</td>
 </tr>
 <tr>
@@ -1776,7 +1821,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>recalcitrant*</strong></td>
 <td>adj</td>
 <td>defiantly disobedient</td>
-<td>re- + calc (kick)</td>
+<td>re- (back/again) + calc (kick)</td>
 <td>obstinate, unruly → compliant</td>
 </tr>
 <tr>
@@ -1784,7 +1829,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>recluse*</strong></td>
 <td>n</td>
 <td>one who lives in seclusion</td>
-<td>re- + clud (close)</td>
+<td>re- (back/again) + clud (close)</td>
 <td>hermit, solitary → socialite</td>
 </tr>
 <tr>
@@ -1792,7 +1837,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>recondite*</strong></td>
 <td>adj</td>
 <td>obscure, hard to grasp</td>
-<td>re- + cond (hide)</td>
+<td>re- (back/again) + cond (hide)</td>
 <td>abstruse, arcane → comprehensible</td>
 </tr>
 <tr>
@@ -1800,7 +1845,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>repudiate*</strong></td>
 <td>v</td>
 <td>to reject/disown</td>
-<td>re- + pud (shame)</td>
+<td>re- (back/again) + pud (shame)</td>
 <td>disclaim, renounce → embrace</td>
 </tr>
 <tr>
@@ -1808,7 +1853,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>reprobate*</strong></td>
 <td>n</td>
 <td>a corrupt/depraved person</td>
-<td>re- + prob (test)</td>
+<td>re- (back/again) + prob (test)</td>
 <td>scoundrel, profligate → saint</td>
 </tr>
 <tr>
@@ -1816,7 +1861,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>reticent*</strong></td>
 <td>adj</td>
 <td>reserved, uncommunicative</td>
-<td>re- + tac (silent)</td>
+<td>re- (back/again) + tac (silent)</td>
 <td>tight-lipped → talkative</td>
 </tr>
 <tr>
@@ -1824,7 +1869,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>revere*</strong></td>
 <td>v</td>
 <td>to deeply respect</td>
-<td>re- + vere (awe)</td>
+<td>re- (intensive) + vere (awe)</td>
 <td>venerate, worship → disparage</td>
 </tr>
 <tr>
@@ -1960,7 +2005,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>substantiate*</strong></td>
 <td>v</td>
 <td>to prove with evidence</td>
-<td>sub- + stant (stand)</td>
+<td>sub- (under) + stant (stand)</td>
 <td>corroborate, verify → refute</td>
 </tr>
 <tr>
@@ -1968,7 +2013,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>subside*</strong></td>
 <td>v</td>
 <td>to die down</td>
-<td>sub- + sid (settle)</td>
+<td>sub- (under) + sid (settle)</td>
 <td>abate, wane → surge</td>
 </tr>
 <tr>
@@ -1976,7 +2021,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>succinct*</strong></td>
 <td>adj</td>
 <td>concise</td>
-<td>sub- + cinct (girded)</td>
+<td>sub- (under) + cinct (girded)</td>
 <td>terse, laconic → verbose</td>
 </tr>
 <tr>
@@ -1984,7 +2029,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>supposition*</strong></td>
 <td>n</td>
 <td>an assumption</td>
-<td>sub- + pos (place)</td>
+<td>sub- (under) + pos (place)</td>
 <td>conjecture, hypothesis → certainty</td>
 </tr>
 <tr>
@@ -2048,7 +2093,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>transgression*</strong></td>
 <td>n</td>
 <td>violation of a law/rule</td>
-<td>trans- + gress (step)</td>
+<td>trans- (across) + gress (step)</td>
 <td>breach → conformity</td>
 </tr>
 <tr>
@@ -2072,7 +2117,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>unfettered*</strong></td>
 <td>adj</td>
 <td>free of restraint</td>
-<td>un- + fetter (chain)</td>
+<td>un- (not) + fetter (chain)</td>
 <td>unchained, free → constrained</td>
 </tr>
 <tr>
@@ -2216,7 +2261,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>amnesty*</strong></td>
 <td>adj→n</td>
 <td>pardon</td>
-<td>a- + mne (memory)</td>
+<td>a- (not) + mne (memory)</td>
 <td>absolution, pardon → punishment</td>
 </tr>
 <tr>
@@ -2224,7 +2269,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>anachronism</strong></td>
 <td>n</td>
 <td>something out of its time</td>
-<td>ana- + chron (time)</td>
+<td>ana- (up/back) + chron (time)</td>
 <td>— → —</td>
 </tr>
 <tr>
@@ -2232,7 +2277,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>analogy*</strong></td>
 <td>n</td>
 <td>a comparison of likeness</td>
-<td>ana- + log (ratio)</td>
+<td>ana- (up/back) + log (ratio)</td>
 <td>parallel → difference</td>
 </tr>
 <tr>
@@ -2328,7 +2373,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>commensurate*</strong></td>
 <td>adj</td>
 <td>proportionate</td>
-<td>com- + mens (measure)</td>
+<td>com- (together) + mens (measure)</td>
 <td>adequate, proportional → disproportionate</td>
 </tr>
 <tr>
@@ -2336,7 +2381,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>contentious*</strong></td>
 <td>adj</td>
 <td>quarrelsome</td>
-<td>con- + tend (strain)</td>
+<td>con- (together) + tend (strain)</td>
 <td>combative, litigious → peaceful</td>
 </tr>
 <tr>
@@ -2344,7 +2389,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>contrite*</strong></td>
 <td>adj</td>
 <td>deeply remorseful</td>
-<td>con- + trit (rub/grind)</td>
+<td>con- (thoroughly) + trit (rub/grind)</td>
 <td>penitent, apologetic → unrepentant</td>
 </tr>
 <tr>
@@ -2360,7 +2405,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>debilitate</strong></td>
 <td>v</td>
 <td>to weaken</td>
-<td>de- + bil (strength)</td>
+<td>de- (down/away) + bil (strength)</td>
 <td>enfeeble, enervate → strengthen</td>
 </tr>
 <tr>
@@ -2432,7 +2477,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>egregious</strong></td>
 <td>adj</td>
 <td>conspicuously bad</td>
-<td>e- + greg (flock)</td>
+<td>e- (out) + greg (flock)</td>
 <td>flagrant, glaring → ordinary</td>
 </tr>
 <tr>
@@ -2448,7 +2493,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>enmity</strong></td>
 <td>n</td>
 <td>deep hostility</td>
-<td>en- + imicus (enemy)</td>
+<td>en- (in) + imicus (enemy)</td>
 <td>animosity, antagonism → friendship</td>
 </tr>
 <tr>
@@ -2472,7 +2517,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>exacerbate</strong></td>
 <td>v</td>
 <td>to worsen</td>
-<td>ex- + acerb (bitter)</td>
+<td>ex- (thoroughly) + acerb (bitter)</td>
 <td>aggravate, intensify → alleviate</td>
 </tr>
 <tr>
@@ -2480,7 +2525,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>exonerate</strong></td>
 <td>v</td>
 <td>to clear of blame</td>
-<td>ex- + oner (burden)</td>
+<td>ex- (out) + oner (burden)</td>
 <td>absolve, acquit → incriminate</td>
 </tr>
 <tr>
@@ -2488,7 +2533,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>extol</strong></td>
 <td>v</td>
 <td>to praise highly</td>
-<td>ex- + toll (raise)</td>
+<td>ex- (out) + toll (raise)</td>
 <td>laud, glorify → disparage</td>
 </tr>
 <tr>
@@ -2552,7 +2597,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>impecunious</strong></td>
 <td>adj</td>
 <td>having no money</td>
-<td>im- + pecun (money)</td>
+<td>im- (not) + pecun (money)</td>
 <td>destitute, penniless → wealthy</td>
 </tr>
 <tr>
@@ -2560,7 +2605,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>inchoate*</strong></td>
 <td>adj</td>
 <td>just begun, unformed</td>
-<td>in- + cho (begin)</td>
+<td>in- (intensive) + cho (begin)</td>
 <td>nascent, rudimentary → developed</td>
 </tr>
 <tr>
@@ -2568,7 +2613,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>incongruous*</strong></td>
 <td>adj</td>
 <td>out of place, mismatched</td>
-<td>in- + congru (agree)</td>
+<td>in- (not) + congru (agree)</td>
 <td>inappropriate → harmonious</td>
 </tr>
 <tr>
@@ -2624,7 +2669,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>obfuscate</strong></td>
 <td>v</td>
 <td>to confuse, obscure</td>
-<td>ob- + fusc (dark)</td>
+<td>ob- (over) + fusc (dark)</td>
 <td>muddle, cloud → clarify</td>
 </tr>
 <tr>
@@ -2632,7 +2677,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>obstreperous</strong></td>
 <td>adj</td>
 <td>noisily defiant</td>
-<td>ob- + strep (noise)</td>
+<td>ob- (against/toward) + strep (noise)</td>
 <td>unruly, vociferous → docile</td>
 </tr>
 <tr>
@@ -2656,7 +2701,7 @@ commonly-confused look-alike (see §7).</p>
 <td><strong>perspicacious</strong></td>
 <td>adj</td>
 <td>keenly perceptive — CP: perspicacious/perspicuous</td>
-<td>per- + spic (see)</td>
+<td>per- (through) + spic (see)</td>
 <td>astute, shrewd → undiscerning</td>
 </tr>
 <tr>
@@ -11797,6 +11842,11 @@ represented above. Good luck. Now go drill the leech deck.</em></p>
     </article>
   </main>
 </div>
+<div id="viewToggle" role="group" aria-label="Table view switch">
+  <span class="lbl">VIEW</span>
+  <button id="vtTable" type="button">Table</button>
+  <button id="vtCards" type="button">Cards</button>
+</div>
 <button id="toTop" aria-label="Back to top">&#8593;</button>
 <script>
 const sb=document.getElementById('sidebar');
@@ -11857,6 +11907,63 @@ if(gh && gInput){
   };
   gInput.addEventListener('input', filter);
 }
+
+// ===== per-section Table/Cards view toggle (only for tables with 4+ columns) =====
+(function(){
+  const all=[...document.querySelectorAll('table')];
+  const wide=all.filter(t=>{
+    const h=t.tHead||t.querySelector('thead');
+    return h && h.rows[0] && h.rows[0].cells.length>=4;
+  });
+  if(!wide.length) return;
+  // tag each wide table with its section (nearest preceding h2) + add data-labels
+  const sectionOf=t=>{
+    let n=t;
+    while(n){ if(n.tagName==='H2') return n.id||'_'; n=n.previousElementSibling
+      || (n.parentElement && n.parentElement!==document.body ? n.parentElement : null); }
+    return '_';
+  };
+  const groups={};   // sectionId -> [tables]
+  wide.forEach(t=>{
+    t.classList.add('switchable');
+    const heads=[...(t.tHead?t.tHead.rows[0].cells:[])].map(c=>c.textContent.trim());
+    [...t.tBodies].forEach(tb=>[...tb.rows].forEach(r=>{
+      [...r.cells].forEach((c,i)=>{ if(heads[i]) c.setAttribute('data-label', heads[i]); });
+    }));
+    const sec=sectionOf(t);
+    t.dataset.section=sec;
+    (groups[sec]=groups[sec]||[]).push(t);
+  });
+  const mode={};     // sectionId -> 'table' | 'cards'  (default table)
+  Object.keys(groups).forEach(s=>mode[s]='table');
+
+  const tgl=document.getElementById('viewToggle');
+  const bT=document.getElementById('vtTable'), bC=document.getElementById('vtCards');
+  let active=null;
+  const reflect=()=>{
+    if(!active){tgl.classList.remove('show'); return;}
+    tgl.classList.add('show');
+    const m=mode[active];
+    bT.classList.toggle('on', m==='table');
+    bC.classList.toggle('on', m==='cards');
+  };
+  const apply=(sec)=>{
+    groups[sec].forEach(t=>t.classList.toggle('cards', mode[sec]==='cards'));
+  };
+  bT.addEventListener('click',()=>{ if(active){mode[active]='table'; apply(active); reflect();} });
+  bC.addEventListener('click',()=>{ if(active){mode[active]='cards'; apply(active); reflect();} });
+
+  // track which wide table is currently most in view -> its section is active
+  const vis=new Map();
+  const io=new IntersectionObserver((es)=>{
+    es.forEach(e=>vis.set(e.target, e.isIntersecting?e.intersectionRatio:0));
+    let best=null,br=0;
+    vis.forEach((r,t)=>{ if(r>br){br=r; best=t;} });
+    const sec = best && br>0 ? best.dataset.section : null;
+    if(sec!==active){ active=sec; reflect(); }
+  },{threshold:[0,0.01,0.15,0.4,0.75]});
+  wide.forEach(t=>io.observe(t));
+})();
 
 // back to top
 const btn=document.getElementById('toTop');
