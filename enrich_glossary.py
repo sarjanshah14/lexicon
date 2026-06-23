@@ -16,6 +16,27 @@ md = open("GRE-Lexicon-Master-Handbook.md", encoding="utf-8").read()
 s7 = md[md.index("## 7."):md.index("## 8.")]
 cp = set(w.lower() for w in re.findall(r'\*([a-zA-Zé -]+)\*', s7))
 
+def is_forced(p):
+    """A root 'part' that is not a real morpheme: eponyms, literary coinages,
+    bare foreign borrowings, vague origin notes."""
+    p = p.strip()
+    if re.search(r'origin uncertain', p, re.I): return True
+    if re.search(r'\bafter [A-Z]', p): return True            # 'after Thomas Bowdler'
+    if re.fullmatch(r'\([A-Za-z]{2,4}\.? [a-zé]+\)', p): return True   # bare '(It brusco)'
+    if re.fullmatch(r'\([A-Z][a-zé.]+\)', p): return True             # '(Mercury)', '(Germanic)'
+    # name-coinages / literary refs count as forced only when there is no real
+    # etymology gloss '(...)' present (so 'Gk. aigis (Zeus's shield)' is kept)
+    if '(' not in p:
+        if re.search(r"[A-Z][a-z]+'s ", p): return True       # "Spenser's ...", "Milton's hell"
+        if re.search(r'boastful character|Dance of Death|the brutes|\bMilton\b|\bSpenser\b|\bSwift\b|Quixote|Gulliver', p): return True
+    return False
+
+def clean_root(r):
+    if not r: return ""
+    parts = re.split(r'\s*;\s*', r)
+    kept = [p for p in parts if p.strip() and not is_forced(p)]
+    return "; ".join(kept) if kept else "—"
+
 def short_mean(m):
     m = re.sub(r'\b\d\]\s*', '', m).strip()
     ci = m.find(':')
@@ -29,6 +50,7 @@ def cell(x): return (x or "").replace("|", "/").strip()
 
 rows = []
 missing = []
+blanked = []
 for e in g:
     w = e["word"]; key = w.lower()
     star = e["star"]
@@ -42,6 +64,10 @@ for e in g:
         pos, root, hook = EXTRA[key]
     else:
         missing.append(w)
+    _old = root
+    root = clean_root(root)
+    if root == "—" and _old.strip():
+        blanked.append((w, _old))
     # tags: ensure HF for starred, add CP if a confusing-pair word
     tagstr = "·".join(t for t in tags if t).strip("·")
     if star and "HF" not in tagstr:
@@ -62,8 +88,10 @@ for e in g:
         "sort": key,
     })
 
-print("rows:", len(rows), " unmatched:", len(missing))
+print("rows:", len(rows), " unmatched:", len(missing), " roots blanked:", len(blanked))
 if missing: print("UNMATCHED:", missing[:30])
+for w, old in blanked:
+    print(f"  blanked  {w:18} <- {old}")
 
 rows.sort(key=lambda r: r["sort"])
 buckets = defaultdict(list)

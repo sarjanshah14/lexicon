@@ -2445,7 +2445,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **array** | n | An array of things or people, especially when they are impressive or attractive | Old Fr. areer (to arrange) | — | an arranged display → impressive collection | — | — |
 | **arrogate** | v | Take or claim unjustly | ad- (to) + rog (ask/claim) | — | claim to oneself unjustly → seize | appropriate, seize, usurp | renounce, relinquish |
 | **artifice** | n | The clever use of tricks to deceive | L. arti (skill) + fic (make) | — | skillful making → a cunning trick | — | — |
-| **askance** | adv | With distrust: Farmers look askance at city slickers. With a side glance, obliquely: She looked askance at… | origin uncertain (poss.) | — | look 'a-skance'/sideways → with distrust | 2] indirect, sidelong | — |
+| **askance** | adv | With distrust: Farmers look askance at city slickers. With a side glance, obliquely: She looked askance at… | — | — | look 'a-skance'/sideways → with distrust | 2] indirect, sidelong | — |
 | **assay** | v | To test the fineness, purity An appraisal of the state of affairs A trial or an attempt | Old Fr. assai (a trial/test) | — | to test/try (esp. metal purity) | 2] attempt, check | — |
 | **assiduous\*** | adj | Showing or marked by constant effort and attention; an assiduous student; assiduous research | sid (sit) | HF | — | diligent | lazy, lax |
 | **assuage\*** | v | To make less harsh or severe | (possible root) | HF·SE | soothe a "savage" pain | alleviate, appease, mitigate, sate | aggravate, exacerbate |
@@ -2470,16 +2470,16 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 |---|---|---|---|---|---|---|---|
 | **bacchanal** | n | Wild, drunken merry-making. Etym | L. Bacchus (god of wine) | — | a Bacchus-feast → drunken revelry | revelry, jollity | — |
 | **badger** | v | To nag at or harass | from 'badger' the animal (baited) | — | to bait like a badger → nag, harass | pester, pressure, irritate, hound | — |
-| **baffle** | v | To confuse, bewilder, perplex | origin uncertain (poss.) | — | to confound → perplex | confound, mystify | explain, enlighten |
+| **baffle** | v | To confuse, bewilder, perplex | — | — | to confound → perplex | confound, mystify | explain, enlighten |
 | **bailiwick** | n | One's particular area of activity, authority or interest; generally used in the context of politician's… | bailiff + wick (Old Eng. district) | — | a bailiff's district → one's area of expertise | in | — |
-| **balderdash** | n | Senseless talk or writing; nonsense | origin uncertain (poss.) | — | frothy nonsense → senseless talk | rubbish, twaddle | meaningful, sensible |
+| **balderdash** | n | Senseless talk or writing; nonsense | — | — | frothy nonsense → senseless talk | rubbish, twaddle | meaningful, sensible |
 | **baleful** | adj | Evil, sinister, harmful. The prisoner gave the judge a baleful look | Old Eng. bealu (evil/harm) | CP | full of bale/harm → menacing, sinister | menacing, ominous | benign, innocuous |
 | **balk** | v | To stop short and refuse to proceed or take action | Old Eng. balca (ridge/obstacle) | — | hit a ridge → stop short, refuse | deterrent, impediment not | — |
 | **baloney** | n | Nonsense: The plot of the film is pure baloney | from Bologna sausage | — | cheap sausage → nonsense | — | — |
-| **bamboozle** | v | To deceive or cheat by trickery; dupe; to confuse; to puzzle | origin uncertain (poss.) | — | to bamboozle → trick, deceive, confuse | mystify, stump | — |
+| **bamboozle** | v | To deceive or cheat by trickery; dupe; to confuse; to puzzle | — | — | to bamboozle → trick, deceive, confuse | mystify, stump | — |
 | **banal\*** | adj | Meaningless from overuse; trite | (possible root) | HF·TC | a "bland" cliché | stereotyped, vapid place. | original |
 | **bane** | n | The cause of distress, death or ruin; curse. The costly system of and folders is the bane of hospital… | Old Eng. bana (slayer/poison) | — | a poison → cause of ruin (cf. baneful) | files curse, nemesis, scourge | — |
-| **banter** | n | Playful ridicule: He was amused by their banter about his late arrival | origin uncertain (poss.) | — | playful teasing → light ridicule | badinage, raillery, repartee, riposte | — |
+| **banter** | n | Playful ridicule: He was amused by their banter about his late arrival | — | — | playful teasing → light ridicule | badinage, raillery, repartee, riposte | — |
 | **barb** | n | Pointedness or sting, as of wit; also, a stinging remark | L. barba (beard/hook) | — | a sharp hook → a stinging remark | jibe | compliment |
 | **baroque** | adj | Of or characteristic of the art and architecture of the 17th century, which was elaborately ornate and had… | Port. barroco (irregular pearl) | — | ornate, irregular 17th-c. style | midst | — |
 | **bastion** | n | In fortifications, the part of a rampart that projects so as to a wider firing range. Any fortified or… | It. bastire (to build) | — | a built fortification → a stronghold | give defense a | — |
@@ -2517,27 +2517,27 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **bleak** | adj | Cold; dismal; barren | Old Norse bleikr (pale) | — | pale & barren → cheerless, gloomy | cheerless, bare, gloomy | sunny |
 | **blithe** | adj | Joyous, gay: a blithe spirit | Old Eng. blithe (joyous) | — | carefree → merry, lighthearted | jocund, sprightly | morose, somber |
 | **bohemian\*** | n | A person, especially an artist, poet, etc. who lives in an nonconformist unconventional, non-conforming way.… | Fr. (gypsy of Bohemia) | HF | an unconventional, free-living artist | traditionalist | — |
-| **boisterous\*** | adj | Noisy and wild: a boisterous mob | (Gmc) | HF | — | raucous, rowdy, riotous | restrained |
+| **boisterous\*** | adj | Noisy and wild: a boisterous mob | — | HF | — | raucous, rowdy, riotous | restrained |
 | **bolster\*** | v | To encourage, support | (a bolster = pillow) | HF·SE | prop up with a pillow | reinforce, shore | undermine, weaken |
 | **bon mot** | n | (From French) An apt, clever, or witty remark | Fr. 'good word' | — | a clever, witty remark | — | — |
 | **bondage** | n | Slavery, serfdom. How distinctly 'bond' and 'bondage' differ in their meanings is brought out by Oscar Wilde | Old Eng. bonda (bound) | — | being bound → slavery | slavery, thrall | emancipation |
-| **bowdlerize** | v | To prudishly remove supposedly objectionable matter from a censor, manuscript, etc | after Thomas Bowdler (expurgator) | — | to 'Bowdler-ize' → prudishly censor | expurgate | — |
-| **braggadocio** | n | Empty boasting, or a person who engages in such boasting | Spenser's boastful character | — | empty boasting | bluster | humility |
+| **bowdlerize** | v | To prudishly remove supposedly objectionable matter from a censor, manuscript, etc | — | — | to 'Bowdler-ize' → prudishly censor | expurgate | — |
+| **braggadocio** | n | Empty boasting, or a person who engages in such boasting | — | — | empty boasting | bluster | humility |
 | **bravado** | n | A pretense of bravery | Sp. bravata (boast) | — | a swaggering pretense of bravery | bluster, bombast | cowardice, modesty |
 | **bravura** | n | A bold attempt or display of daring; dashing | It. bravura (skill/spirit) | — | a dazzling display of daring/skill | ostentatious, showy skill | — |
-| **brawl** | n | A noisy quarrel or fight | origin uncertain (poss.) | — | a noisy fight | affray, altercation, ruckus, wrangle, scrap | fracas, concord, peace, union |
+| **brawl** | n | A noisy quarrel or fight | — | — | a noisy fight | affray, altercation, ruckus, wrangle, scrap | fracas, concord, peace, union |
 | **breakthrough** | n | A major advance in knowledge or negotiations | break + through | — | a barrier broken → a major advance | insight | — |
 | **broach** | v | To mention or suggest for the first time | L. brocca (spike) → tap a cask | CP | to pierce/open → bring up a topic | the address, initiate wine. | — |
 | **brook** | v | Tolerate, allow.: He is too authoritarian in his ways to brook any interference in his plans | Old Eng. brucan (to use/endure) | — | to put up with → tolerate | bear, stomach, tolerate | — |
-| **brusque\*** | adj | Rough and abrupt in manner; blunt | (It brusco) | HF·CP | — | curt, terse, laconic, uncivil | expansive, talkative, warm, ingratiating |
+| **brusque\*** | adj | Rough and abrupt in manner; blunt | — | HF·CP | — | curt, terse, laconic, uncivil | expansive, talkative, warm, ingratiating |
 | **bucolic** | adj | Rustic; of country life and farming | Gk. boukolos (cowherd) | — | of cowherds → rustic, pastoral | loutish, pastoral, provincial | cultured, refined, polite |
 | **bug** | v | To annoy, bother, or anger | from 'bug' (insect) | — | to pester like a bug → annoy | badger, beleaguer | — |
 | **bumptious** | adj | Disagreeably conceited or self-important | bump + (pretentious) | — | obtrusively bumping in → conceited | arrogant, brash, conceited, cocky | humble, tentative, timid, uncertain |
-| **bungle** | v | The thief bungled and set off the alarm while trying to open the | origin uncertain (poss.) | — | to botch clumsily → blunder | safe. blunder | — |
+| **bungle** | v | The thief bungled and set off the alarm while trying to open the | — | — | to botch clumsily → blunder | safe. blunder | — |
 | **buoyancy** | n | Highness of spirits; cheerfulness | Sp. boyar (to float) | — | the float-iness → cheerfulness, lift | vivacity, hopefulness, jubilation | dejection, depression |
 | **burgeon\*** | v | To grow or develop rapidly; proliferate; flourish | (Fr *bourgeon*, bud) | HF·SE | a bud "burgeons" into bloom | thrive | shrivel, wither |
 | **burnish\*** | v | To polish by rubbing; make or become shiny or lustrous | Fr. brunir (to make brown/shine) | HF | rub till it shines → polish | shine buff, glaze, gloss, luster, sheen | dull, tarnish |
-| **bustle** | n | Excited activity; noisy stir | origin uncertain (poss.) | — | noisy busy activity → flurry | fuss, flutter, scurry, commotion, flurry, haste | relax, inertia |
+| **bustle** | n | Excited activity; noisy stir | — | — | noisy busy activity → flurry | fuss, flutter, scurry, commotion, flurry, haste | relax, inertia |
 | **buttress\*** | v | Something that strengthens, defends, or upholds | (architecture) | HF | — | strengthen, brace, prop | undermine, weaken |
 
 ### C
@@ -2548,7 +2548,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **cache** | n | To conceal or store in a secret place | Fr. cacher (to hide) | — | a hidden store | amalgamate hoard, stash | 1] expose 2] disperse, spend |
 | **cacophony\*** | n | Disagreeable or discordant sound | *caco-* (bad) + *phon* (sound) | HF·SE | bad sound | dissonance, noise, clamor, hubbub, racket, uproar | harmony |
 | **cadence** | n | Rhythmic or measured flow or beat | L. cad (fall) | — | the falling rhythm of the voice → measured flow | inflection, modulation, swing, tempo sentence. piece | — |
-| **cahoots** | n | Questionable or illegal collaboration. In cahoots with a dishonest politician | origin uncertain (poss. Fr. cahute, cabin) | — | secretly partnered → in collusion | collusion, connivance | — |
+| **cahoots** | n | Questionable or illegal collaboration. In cahoots with a dishonest politician | — | — | secretly partnered → in collusion | collusion, connivance | — |
 | **caitiff** | n | A mean, evil or cowardly person | L. captivus (captive/wretch) | — | a captive wretch → cowardly villain | dastard, knave corrupt, degenerate, nefariou | hero |
 | **cajole** | v | To coax with flattery | Fr. cajoler (to coax) | — | sweet-talk → coax with flattery | they beguile, coax, inveigle, palaver | bully, force |
 | **callow** | adj | Inexperienced: immature. A callow youth is an immature or inexperienced one | Old Eng. calu (bald/unfledged) | — | unfeathered chick → immature, inexperienced | green, naive, immature, juvenile, puerile, unsophisticated | adult, experienced, mature, sophisticated |
@@ -2621,7 +2621,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | Word | POS | Short meaning | Root | Tags | Memory hook | Synonyms | Antonyms |
 |---|---|---|---|---|---|---|---|
 | **daunt\*** | v | To dishearten, frighten, or discourage | (Lat *domitare*, tame) | HF·SE | "tame" someone's courage | intimidate, cow, dismay, abash | encourage, hearten, embolden |
-| **dawdle** | v | To waste time in slow trifling | origin uncertain (poss.) | — | to dilly-dawdle → waste time, linger | idle, dally, loiter, fiddle | hurry, rush, hasten |
+| **dawdle** | v | To waste time in slow trifling | — | — | to dilly-dawdle → waste time, linger | idle, dally, loiter, fiddle | hurry, rush, hasten |
 | **debauch** | v | To corrupt in morals or principles | Fr. débaucher (to lead astray) | — | lead into excess → corrupt morally | seduce, degrade dissipate, carouse. orgy, carousal temperance | 1] purify, uplift 2] abstain self denial, continence |
 | **debilitate** | v | To make feeble or languid | de- (down/away) + bil (strength) | — | — | weaken, enfeeble, enervate | strengthen, invigorate, enliven |
 | **debrief** | v | To receive information from (a pilot emissary, intelligence agent, etc.) concerning flight or mission just… | de- (reverse) + brief | — | un-brief → question after a mission | disclose, divulge, apprise back | conceal, hide, hold |
@@ -2686,7 +2686,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **enigma\*** | n | A baffling or ambiguous saying; also, anything that puzzles or baffles | (Gk *ainigma*) | HF·TC | a baffling mystery | bewilderment, puzzle, unambiguity | explicitness, lucidity |
 | **ennui** | n | Weary listlessness or discontent; boredom | Fr. ennui (boredom; cf. annoy) | — | weary discontent → boredom | weariness, indifference, lethargy | enthusiasm, activity, interest |
 | **ephemeral\*** | — | Lasting but a short time; transitory | (possible root) | HF | — | fleeting, evanescent, short-lived | permanent, enduring, imperishable |
-| **epicure** | n | A person given to luxurious living and discriminating gratification of the senses; especially, a fastidious… | after Epicurus (pleasure) | — | a refined pleasure-seeker → gourmet | gourmet, sybarite, gastronome | — |
+| **epicure** | n | A person given to luxurious living and discriminating gratification of the senses; especially, a fastidious… | — | — | a refined pleasure-seeker → gourmet | gourmet, sybarite, gastronome | — |
 | **equivocal\*** | adj | Open to two or more interpretations and often intended to mislead | *equi-* (equal) + *voc* (voice) | HF·TC | "equal voices"/two meanings | ambiguous, ambivalent, dubious, evasive | certain, clear, definite, obvious |
 | **errant** | adj | Roving or wandering, especially in search of adventure | L. errare (to wander/err) | CP | wandering; straying from right | 1] roaming, traveling. 2] wayward, erring | natural, standard, typical |
 | **ersatz** | adj | Substitute, and usually inferior | Ger. Ersatz (replacement) | — | a substitute → inferior imitation | imitation, pretended, bogus, counterfeit | real, genuine |
@@ -2715,7 +2715,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **facile** | adj | Not hard to do or achieve, easy | L. fac (do/make) | — | easily done → easy; superficial | 1] ready, expert, dextrous. 2] genteel, agreeable, yielding | 1] laborious, complicated 2] inept |
 | **factitious** | adj | Not natural or genuine or spontaneous; forced or artificial. The bogus, word differs in meaning from… | L. fact (made) | CP | manufactured → artificial, not genuine | counterfeit, ersatz, natural, fabricated, faked | authentic, genuine, real |
 | **fallible** | adj | Liable to err, to be misled, or to be wrong | L. fall (deceive/fail) | — | able to fail → liable to err | imperfect, errable, faulty unerring | infallible, perfect |
-| **fastidious** | adj | Hard to please in matters of taste | (Lat fastidium) | — | — | refined, particular | uncritical, easygoing |
+| **fastidious** | adj | Hard to please in matters of taste | — | — | — | refined, particular | uncritical, easygoing |
 | **fatuous\*** | adj | Foolish or idiotic in a self-satisfied way | (possible root) | HF·TC | self-satisfied & dumb | silly, inane, vacant, stupid smart, wise | brilliant, intelligent |
 | **faux pas** | n | A French phrase that literally means a false step; a mistake or error, especially a breach of etiquette | Fr. 'false step' | — | a social blunder | misconduct, bungle | — |
 | **fawn\*** | v | To act in an excessively friendly manner in order to win favour | (a fawn cringes) | HF·SE | grovel for favor | dance attendance, know despise, tow, submit | domineer, ignore, insult |
@@ -2753,7 +2753,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **glut** | v | To stuff full of food | L. gluttire (to swallow) | — | gulp down → oversupply, stuff full | 1] gorge, satiate. 2] flood, deluge, swamp. oversupply, plethora, superabundance | starve, shortage, scarcity |
 | **gratuitous** | adj | Given or accepted without requirement of payment or return; gratis; free | L. gratis (free) | — | given free/unprovoked → uncalled-for | 1] charge-less, complimentary 2] uncalled-for, unwarranted, needless | based, founded, substantial, well-founded |
 | **gregarious\*** | adj | Always associating with others. As in flocks, herds, or groups. Enjoying or seeking the company of others | *greg* (flock/herd) | HF·SE | likes the "herd" | sociable, friendly, chummy | antagonistic, cold, nasty, unfriendly |
-| **guile\*** | n | Treacherous, cunning, or crafty | (Gmc) | HF·SE | sly trickery | deceit, slyness, trickery naivete | honesty, guilelessness |
+| **guile\*** | n | Treacherous, cunning, or crafty | — | HF·SE | sly trickery | deceit, slyness, trickery naivete | honesty, guilelessness |
 | **gullible\*** | adj | Easily cheated or fooled | (root of *gull*, to dupe) | HF | a "gull" is easily caught | unsophisticated, inexperienced sophisticated | disbelieving, distrustful |
 
 ### H
@@ -2808,7 +2808,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **intractable\*** | adj | Stubborn and uncooperative; difficult to control | *in-* (not) + *tract* (pull/handle) | HF·SE | can't be "handled" | unmalleable, disobedient, tractable, strongwilled, unruly | docile, submissive |
 | **intransigent\*** | adj | Refusing to compromise | *in-* (not) + *trans-* (across) + *ig* (drive) | HF·SE | won't "cross over"/budge | uncompromising, unbending, adamant. irreconcilable, die-hard. | reasonable, cooperative, flexible |
 | **intrepid** | adj | Unusually brave; fearless | in- (not) + trepid (alarmed) | — | without trembling → fearless | dauntless, heroic yellow | cowardly, craven |
-| **inveigle** | v | To coax or entice by guile or flattery | (Fr) | — | — | beguile discourage, dissuade | deter, repel |
+| **inveigle** | v | To coax or entice by guile or flattery | — | — | — | beguile discourage, dissuade | deter, repel |
 | **irascible\*** | adj | Easily provoked to anger | *ira* (anger) | HF·SE | full of "ire" | irritable, quick-tempered tranquil, relaxed | calm, content |
 
 ### J
@@ -2870,7 +2870,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **mellow** | adj | Ripe, soft, and with good flavour; sweet and juicy | Old Eng. mearu (soft) | — | ripe & soft → mild, mature | 1] grow, mellow 2] cultured, matured, seasoned 4] amicable | 1] raw 2] unseasoned 4] antisocial |
 | **mendacious\*** | adj | Lying; deceitful, or false | *mend* (fault/lie) | HF·SE·CP | full of lies (cf. mendicant) | deceitful, deceptive, duplicitous | honest, trustworthy |
 | **mendicant** | n | A beggar: a mendicant beseeching passersby for money | L. mendicare (to beg) | — | a beggar | panhandler benefactor, philanthropic | philanthropist |
-| **mercurial** | adj | Lively, quick-witted, and characterised by rapid unpredictable volatile, changes of mood or activity | (Mercury) | — | — | changeable, clumsy, oafish | constant, predictable |
+| **mercurial** | adj | Lively, quick-witted, and characterised by rapid unpredictable volatile, changes of mood or activity | — | — | — | changeable, clumsy, oafish | constant, predictable |
 | **meticulous\*** | adj | Very or excessively careful about details, including tiny and painstaking, unimportant details | *metic* (fear) | HF·SE | "fearfully" precise | finicky, careful, precise | careless, sloppy |
 | **misanthrope\*** | n | A person who hates his fellow men. Avoids human society, loner, recluse, unsociable | mis- (hate) + anthrop (human) | HF | — | cynic, misogynist, recluse, skeptic | believer, optimist |
 | **misconstrue** | v | To interpret wrongly | mis- (wrongly) + construe | — | build the wrong meaning → misinterpret | misunderstand, misinterpret | interpret, right, straighten out, untwist |
@@ -2925,7 +2925,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 |---|---|---|---|---|---|---|---|
 | **paean** | n | A hymn of praise; used figuratively for any lavish praise | Gk. paian (hymn to Apollo) | — | a hymn of praise | psalm, anthem | condemnation |
 | **palpable** | adj | Readily perceived: There is a palpable difference between obvious, chocolate and vanilla. Capable of being… | L. palpare (to touch) | — | touchable → readily perceived, obvious | evident | concealed, hidden |
-| **pandemonium** | n | Wild disorder and uproar | pan- (all) + daimon (demon); Milton's hell | — | all-demons place → wild uproar | chaos, riot, bedlam | order, orderliness |
+| **pandemonium** | n | Wild disorder and uproar | pan- (all) + daimon (demon) | — | all-demons place → wild uproar | chaos, riot, bedlam | order, orderliness |
 | **paradigm** | n | A pattern, example or model. An overall concept a ccepted by most people in an intellectual community, as a… | para- (beside) + deig (show) | — | a shown example → a model, pattern | — | — |
 | **parity** | n | The state or condition of being the same in power, value, rank, etc | L. par (equal) | — | equalness → equivalence in rank/value | evenness | inequality |
 | **parochial** | adj | Provincial; narrow-minded | L. parochia (parish) | — | of one parish → narrow, provincial | narrow, limited, insular | broad, cosmopolitan |
@@ -2934,7 +2934,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **paucity\*** | n | Smallness of number or of quantity | pauc (few) | HF | — | dearth, scarcity | abundance |
 | **pedantic\*** | adj | Characterized by a narrow, often ostentatious concern for book learning and formal rules | ped (teach) | HF | — | precise | — |
 | **pedestrian** | adj | Going or done on foot, walking. Of or for pedestrians (a pedestrian crossing). Lacking quality or… | L. ped (foot) | — | on foot → plodding, dull, commonplace | monotonous | electrifying |
-| **peevish** | adj | Cross, fretful, complaining | origin uncertain (poss.) | — | fretful → irritable, querulous | petulant, pettish, irritable cheerful | uncomplaining |
+| **peevish** | adj | Cross, fretful, complaining | — | — | fretful → irritable, querulous | petulant, pettish, irritable cheerful | uncomplaining |
 | **penitent** | adj | Affected by a sense of guilt and resolved to do better | L. paenitere (to repent) | — | repenting → feeling guilt, contrite | regretful, contrite | impenitent |
 | **penury\*** | n | Extreme poverty and want | L. penuria (want) | HF·CP | an empty purse → extreme poverty | indigence, destitution | wealth, riches |
 | **perennial\*** | adj | Lasting for a very long time; enduring | per- (through) + enn (year) | HF | — | the abiding, continual, permanent, perpetual, everlasting, eternal | short-lived, transient, ephemeral, off-and-on, casual |
@@ -2980,7 +2980,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | Word | POS | Short meaning | Root | Tags | Memory hook | Synonyms | Antonyms |
 |---|---|---|---|---|---|---|---|
 | **qualm** | n | A painful feeling of uneasiness arising from a consciousness that one is or may be acting wrongly | Old Eng. cwealm (sickness) | — | a pang → uneasy doubt of conscience | scruple, compunction, misgiving | indifference |
-| **quandary** | n | A state of uncertainty; perplexing situation or position; dilemma | origin uncertain (poss.) | — | a perplexing fix → a dilemma | predicament, difficulty, puzzle | serenity |
+| **quandary** | n | A state of uncertainty; perplexing situation or position; dilemma | — | — | a perplexing fix → a dilemma | predicament, difficulty, puzzle | serenity |
 | **quiescence\*** | n | Being quiet, still, or at rest; inactive | quies (rest) | HF | — | dormancy | continuance |
 | **quintessence** | n | The purest form of some quality; pure essence. The perfect example of something | L. quinta essentia (fifth essence) | — | the purest essence → perfect example | pith | — |
 | **quizzical** | adj | Puzzled: a quizzical glance | from 'quiz' (poss.) | — | questioning → puzzled, mildly mocking | skeptical, curious | believing, trusting |
@@ -2991,7 +2991,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 |---|---|---|---|---|---|---|---|
 | **racy** | adj | Vigorous, lively: a racy, unpretentious style of writing. Having an agreeably peculiar taste or flavour: a… | from 'race' (lively flavor) | — | lively & vigorous; risqué | 1] spirited 2] piquant | spiritless spicy |
 | **raison d' etre** | n | Reason for being; justification for existence | Fr. 'reason for being' | — | the justification for existing | — | — |
-| **rambunctious** | adj | Wild, disorderly, boisterous, unruly etc | origin uncertain (poss.) | — | wild and boisterous, unruly | termagant, unruly | laid-back |
+| **rambunctious** | adj | Wild, disorderly, boisterous, unruly etc | — | — | wild and boisterous, unruly | termagant, unruly | laid-back |
 | **rancor** | n | Bitter and vindictive hatred; spitefulness | L. rancere (to be rancid) | — | rancid bitterness → deep spiteful hatred | malice, spite | friendliness |
 | **rapacious** | adj | Greedy; grasping; extortionate | L. rap (seize) | — | grasping → greedy, plundering | predatory | gentle |
 | **rarefy\*** | v | To make or become thin or less (the rarefied mountain air). To make or become more refined, subtle | rar (rare) | HF | — | extract | dirty |
@@ -3048,10 +3048,10 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **sentient** | adj | Endowed with feeling and unstructured consciousness. Consciously perceiving | L. sentire (to feel) | — | feeling → able to perceive | perceptive, sensible, savy unaware | ignorant, insensitive |
 | **sermon** | n | An address of a religious nature (usually delivered during a preaching, church service). A moralistic rebuke | L. sermo (discourse) | — | a religious discourse → a moralizing talk | discourse, doctrine | — |
 | **servile** | adj | Pertaining to or involving slaves. Submissive or fawning in attitude or behavior | L. servus (slave) | — | slave-like → submissive, fawning | grovelling, abject exalted | dignified, esteemed |
-| **shard\*** | n | A broken piece of a brittle artifact | (Gmc) | HF | — | specimen, splinter, speck | total, whole |
+| **shard\*** | n | A broken piece of a brittle artifact | — | HF | — | specimen, splinter, speck | total, whole |
 | **shelve** | v | To lay aside, as if on a shelf; to defer | from 'shelf' | — | set on a shelf → put aside, defer | prorogue, put off | keep on |
 | **shirk** | v | Avoid (one's assigned duties) | poss. Ger. Schurke (rogue) | — | dodge a duty → evade work | elude, eschew, evade abide | comply, conform |
-| **simper** | v | Smile affectedly or derisively | origin uncertain (poss.) | — | to smirk → smile affectedly | smirk, sneer, leer | — |
+| **simper** | v | Smile affectedly or derisively | — | — | to smirk → smile affectedly | smirk, sneer, leer | — |
 | **skeptic\*** | n | Someone who habitually doubts accepted beliefs | skep (examine) | HF | — | agnostic, atheist, disbeliever, cynic | believer, faithful |
 | **skinflint** | n | A selfish person who is unwilling to give or spend | one who'd 'skin a flint' for gain | — | a miser → a stingy person | stingy, miserly, parsimonious | generous, liberal, extravagant |
 | **skirmish** | n | A minor short-term fight. Engage in a skirmish | Old Fr. escarmouche | — | a minor brief clash → small fight | clash, encounter, combat, conflict | agreement, tranquility, calm, quiet, peace |
@@ -3066,7 +3066,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **spasmodic** | adj | Resembling a spasm: a spasmodic cough. Figurative: Sudden, violent, but brief; Occuring very irregularly,… | Gk. spasma (spasm) | — | in spasms → fitful, intermittent | 3] fitful steady, uninterrupted | 3] regular, constant |
 | **specious\*** | adj | Apparently good, right, or true; but actually not | spec (look) | HF·CP | — | spurious | straightforward |
 | **sporadic\*** | adj | Appearing now and then, or at intervals in time; occasional; intermittent scattered | spor (seed/scatter) | HF | — | continuous | — |
-| **squander** | v | Spend thoughtlessly; throw away. Spend extravagantly or wastefully on | origin uncertain (poss.) | — | scatter wastefully → waste money | dissipate, expend, misspend | thrifty, economize |
+| **squander** | v | Spend thoughtlessly; throw away. Spend extravagantly or wastefully on | — | — | scatter wastefully → waste money | dissipate, expend, misspend | thrifty, economize |
 | **squelch** | v | Suppress or crush completely | imitative (squishing sound) | — | stamp out → suppress, crush | suppress, repress | endorse, permit |
 | **statute** | n | An act passed by a legislative body. Enacted by a legislative body | L. statuere (to set up) | — | a set-up law → a written enactment | ordinance, regulation, edict | — |
 | **stealth** | n | Avoiding detection by moving carefully | Old Eng. stelan (to steal) | — | thief-like quiet → secret movement | concealment , confidential, covertness | overt, public |
@@ -3074,11 +3074,11 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **stentorian** | adj | Extremely loud: the drill sergeant's stentorian voice | Gk. Stentor (loud-voiced herald) | — | Stentor-loud → extremely loud | deafening, thunderous | soft, low, weak |
 | **stickler** | n | Someone who insists on something Something puzzling or difficult | Old Eng. stihtan (to set in order) | — | one who insists on details | 1] disciplinarian, martinet | — |
 | **stigma\*** | n | A symbol of disgrace or infamy. A skin lesion that is a diagnostic sign of some disease | stig (prick/mark) | HF | — | 1] blemish, disgrace, smudge | 1] esteem, honor, regard |
-| **stint\*** | v/n | An, unbroken period of time during which you do something. Supply sparingly, with a meager allowance | (Gmc) | HF | — | 1] scrimp, scrape | 2] spend, squander |
+| **stint\*** | v/n | An, unbroken period of time during which you do something. Supply sparingly, with a meager allowance | — | HF | — | 1] scrimp, scrape | 2] spend, squander |
 | **stipulate\*** | v | Specify as a condition or requirement in a contract or agreement Give a guarantee or promise of | stip (bargain) | HF | — | specify, transact 2] vouch | 1] disagree 2] renege |
 | **stolid\*** | adj | Having or revealing little emotion or sensibility; not easily aroused or excited | stol (dull) | HF | — | passive, phlegmatic, stoic, callous | concerned, interested, passionate |
 | **stratagem** | n | A trick or ruse to win a battle, outwit an opponent, or obtain wile, something by misleading or deceiving; a… | Gk. strategos (general) | — | a general's trick → a cunning ruse | subterfuge | forthrightness |
-| **strut\*** | v | To walk with a lofty proud gait, often in an attempt to impress flaunt, others | (Gmc) | HF | — | flounce, stride, swagger, swank | conceal, modest, downplay |
+| **strut\*** | v | To walk with a lofty proud gait, often in an attempt to impress flaunt, others | — | HF | — | flounce, stride, swagger, swank | conceal, modest, downplay |
 | **stultify** | v | To make worthless or ineffectual; frustrate; invalidate | L. stultus (foolish) | — | make foolish → frustrate, render useless | nullify, blunt, dull, paralyse | vitalise, stir, enliven |
 | **stupefy** | v | To dull the senses or faculties of; stun | L. stupere (to be stunned) | — | stun → dull the senses, amaze | daze, bewilder, flabbergast | sensitise, alert |
 | **stygian** | adj | Dark and dismal | Gk. Styx (river of the underworld) | — | of the Styx → dark and dismal | gloomy, infernal | bright, sunny |
@@ -3133,7 +3133,7 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **thrift** | n | Extreme care in spending money Vigorous growth of living things, such as plants | Old Norse thrift (prosperity) | — | careful prospering → economy in spending | austerity, frugality, parsimony | charity, philanthropy |
 | **thwart** | v | Hinder or prevent (the efforts, plans, or desires) of | Old Norse thvert (across/crosswise) | — | go across → block, frustrate | frustrate, hinder, oppose unblock | assist, encourage |
 | **timorous** | adj | Full of, or subject to, fear; timid | L. timor (fear) | — | full of fear → timid | fainthearted | bold, brave |
-| **tirade\*** | n | A speech of violent denunciation | (Fr) | HF | — | diatribe, philippic | adulation, compliment |
+| **tirade\*** | n | A speech of violent denunciation | — | HF | — | diatribe, philippic | adulation, compliment |
 | **toady** | n | A person who tries to please someone in order to gain a personal advantage | from 'toad-eater' (quack's helper) | — | a servile flatterer → a sycophant | sycophant, truckle | domineer, intimidate |
 | **torpor\*** | n | A state of motor and mental inactivity Inactivity resulting from lack of vigor or energy The dormant,… | torp (numb) | HF | — | 1] oblivion 2] lassitude, animal | 1] cognizance lethargy |
 | **torrid** | adj | Characterized by intense emotion Rapid | L. torrere (to parch/burn) | — | burning hot → intensely passionate | 1] ardent, fervent 3] sultry | 1] frigid 3] chilly |
@@ -3229,10 +3229,10 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 | **wane** | v | To lose size; become smaller | Old Eng. wanian (to lessen) | — | the moon wanes → decrease, decline | enlarge waning. | — |
 | **wanton** | adj | Undisciplined; unmanageable (a wanton child). Sexually loose or unrestrained (a wanton woman). Frisky,… | Old Eng. wan- (lacking) + togen (trained) | — | untrained → undisciplined; loose | immoral, lustful | reserved |
 | **warrant** | v | To guarantee or attest to the character, quality, accuracy, or condition of | Old Fr. warant (guarantee) | — | to guarantee → justify, vouch for | sanction, approve, endorse | controvert, prohibit |
-| **wary\*** | adj | On one's guard against danger or deception | (Gmc war) | HF | — | alert, vigilant, watchful, guarded | asleep, inattentive |
+| **wary\*** | adj | On one's guard against danger or deception | — | HF | — | alert, vigilant, watchful, guarded | asleep, inattentive |
 | **waver** | v | Pause or hold back in uncertainty Move hesitatingly Move to and fro | Old Eng. wafian (to fluctuate) | — | sway to and fro → be irresolute | 1] waffle 2] falter 3] flicker | 1] persist |
-| **wheedle\*** | v | To persuade by flattery smooth words, or caresses; coax | (Gmc) | HF | — | influence | bully |
-| **whimsical\*** | adj | Determined by chance, impulse or whim-whimsy | (Gmc) | HF | — | arbitrary, capricious | assured, rational |
+| **wheedle\*** | v | To persuade by flattery smooth words, or caresses; coax | — | HF | — | influence | bully |
+| **whimsical\*** | adj | Determined by chance, impulse or whim-whimsy | — | HF | — | arbitrary, capricious | assured, rational |
 | **wile** | n | A sly trick; deceitful artifice, stratagem | Old Eng. wil (trick) | — | a sly trick → a cunning stratagem | deceptive | naivety, yielding |
 | **wilful** | adj | Done by design or with a purpose Habitually disposed to disobedience and opposition | will + -ful | CP | full of self-will → deliberate; stubborn | 1] deliberate 2] froward headstrong | flourish, bloom |
 | **winsome** | adj | Attractive in a sweet, engaging way; charming | Old Eng. wynn (joy) + -some | — | full of joy → charming, engaging | pretty | repulsive, ugly |
@@ -3249,15 +3249,15 @@ Keep a running list here. A word earns a tally each time you miss it; at **3 tal
 
 | Word | POS | Short meaning | Root | Tags | Memory hook | Synonyms | Antonyms |
 |---|---|---|---|---|---|---|---|
-| **yahoo** | n | a person who is variously thought of as coarse, uneducated, rustic, oaf, bumpkin unrefined,… | the brutes in Swift's 'Gulliver' | — | a coarse, uncouth person | — | — |
+| **yahoo** | n | a person who is variously thought of as coarse, uneducated, rustic, oaf, bumpkin unrefined,… | — | — | a coarse, uncouth person | — | — |
 | **yield** | v | Produce, give forth, or give in return | Old Eng. gieldan (to pay/produce) | — | give forth → produce; give in | impede | — |
-| **yokel** | n | A person living in a rural area; country bumpkin | origin uncertain (poss. dialect) | — | a country bumpkin → a rustic | rustic gentleman | — |
+| **yokel** | n | A person living in a rural area; country bumpkin | — | — | a country bumpkin → a rustic | rustic gentleman | — |
 
 ### Z
 
 | Word | POS | Short meaning | Root | Tags | Memory hook | Synonyms | Antonyms |
 |---|---|---|---|---|---|---|---|
-| **zealot\*** | n | An immoderate partisan; a fanatic | (Gk zelos) | HF | — | enthusiast disparager | — |
+| **zealot\*** | n | An immoderate partisan; a fanatic | — | HF | — | enthusiast disparager | — |
 | **zealous** | adj | Filled with or incited by great interest and devotion | Gk. zelos (ardor) | — | full of zeal → fervently devoted | slack, hardworking | unenthusiastic |
 | **zeitgeist** | n | (German: Pronounced Tsit'gist): the spirit of the age; the trend of - thought and feeling in a period | Ger. Zeit (time) + Geist (spirit) | — | the spirit of the age | — | — |
 | **zenith** | n | The point of heavens that is directly overhead, and opposite to summit the nadir. The highest point or… | Arabic samt (path/overhead) | — | the point overhead → the highest point | lowest | — |
