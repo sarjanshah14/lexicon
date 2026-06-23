@@ -56,10 +56,14 @@ a:hover{opacity:.7;}
 /* layout */
 .layout{display:flex; align-items:flex-start;}
 .sidebar{
-  width:var(--sidebar-width); flex:0 0 var(--sidebar-width);
-  position:sticky; top:0; height:100vh; overflow-y:auto;
+  width:var(--sidebar-width); flex:0 0 auto;
+  position:sticky; top:0; height:100vh; overflow-x:hidden; overflow-y:auto;
   background:var(--sidebar); border-right:1px solid #000;
-  padding:24px 18px 60px;
+  transition:width .28s ease, border-color .28s ease;
+}
+.sidebar-inner{
+  width:var(--sidebar-width); box-sizing:border-box;
+  padding:62px 18px 60px;   /* top padding clears the fixed toggle button */
 }
 .sidebar h1{font-size:17px; margin:4px 8px 16px; line-height:1.4; color:#fff;}
 .sidebar .sub{font-size:12.5px; color:#8a8a85; margin:0 8px 18px; font-weight:400;}
@@ -77,6 +81,7 @@ a:hover{opacity:.7;}
   width:100%; max-width:var(--content-width); margin:34px 0 80px;
   background:var(--panel); border:1px solid var(--line); border-radius:10px;
   padding:48px 56px 90px; box-shadow:0 1px 3px rgba(0,0,0,.06);
+  transition:max-width .28s ease, width .28s ease;
 }
 
 /* typography */
@@ -154,8 +159,10 @@ table.gloss thead th{top:60px;}
 }
 .nav-toggle:hover{background:#000;}
 
-/* desktop collapsed state: hide sidebar, content reflows full width */
-body.nav-collapsed .sidebar{display:none;}
+/* desktop collapsed state: sidebar slides/clips away smoothly, content widens to ~90% */
+body.nav-collapsed .sidebar{width:0; border-right-color:transparent;}
+body.nav-collapsed .content{padding:0;}
+body.nav-collapsed .content-inner{max-width:none; width:90%;}
 
 /* back to top */
 #toTop{
@@ -179,6 +186,7 @@ body.nav-collapsed .sidebar{display:none;}
     box-shadow:2px 0 18px rgba(0,0,0,.3);
   }
   .sidebar.open{transform:translateX(0);}
+  .sidebar-inner{width:100%;}
   .content{padding:0 12px;}
   .content-inner{
     margin:16px 0 70px; padding:58px 18px 70px; border-radius:8px;
@@ -289,11 +297,13 @@ page = f"""<!DOCTYPE html>
 <div class="backdrop" id="backdrop"></div>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <h1>GRE Lexicon<br>Master Handbook</h1>
-    <div class="sub">Text Completion &middot; Sentence Equivalence &middot; RC vocab</div>
-    <nav><ol>
+    <div class="sidebar-inner">
+      <h1>GRE Lexicon<br>Master Handbook</h1>
+      <div class="sub">Text Completion &middot; Sentence Equivalence &middot; RC vocab</div>
+      <nav><ol>
 {nav_html}
-    </ol></nav>
+      </ol></nav>
+    </div>
   </aside>
   <main class="content">
     <article class="content-inner">
