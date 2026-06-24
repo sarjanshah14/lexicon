@@ -49,11 +49,14 @@ def after_h2(num_prefix, btn):
 # global launcher right after the page's H1 title
 body = re.sub(r'(</h1>)', r'\1' + launcher("", "Test me now").replace('\\', '\\\\'),
               body, count=1)
-after_h2("2",  launcher("hf",       "Test these high-priority words"))
-after_h2("3",  launcher("roots",    "Test these roots"))
-after_h2("4",  launcher("clusters", "Test these clusters"))
-after_h2("5",  launcher("tcse",     "Practice Text Completion &amp; SE"))
-after_h2("11", launcher("glossary", "Test glossary words"))
+after_h2("2",  launcher("hf",         "Test these high-priority words"))
+after_h2("3",  launcher("roots",      "Test these roots"))
+after_h2("4",  launcher("clusters",   "Test these clusters"))
+after_h2("5",  launcher("se",         "Test these SE groups"))
+after_h2("6",  launcher("polarity",   "Test this polarity bank"))
+after_h2("7",  launcher("confusing",  "Test the confusing words"))
+after_h2("8",  launcher("wordgroups", "Test these word groups"))
+after_h2("11", launcher("glossary",   "Test glossary words"))
 
 CSS = """
 :root{

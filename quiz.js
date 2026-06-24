@@ -19,10 +19,9 @@ function esc(s){ return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").repla
 var LAB = ["A","B","C","D","E","F"];
 
 /* ---------- persisted "studied up to here" markers ---------- */
-var LS_ROOTS="gre_roots_studied", LS_GLOSS="gre_gloss_studied";
+var LS_GLOSS="gre_gloss_studied";
 function get(k,d){ try{ var v=localStorage.getItem(k); return v===null?d:v; }catch(e){ return d; } }
 function set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
-function studiedRoots(){ return parseInt(get(LS_ROOTS,"0"),10)||0; }
 function studiedGloss(){ return get(LS_GLOSS,""); }
 
 /* ================= MODAL SHELL ================= */
@@ -42,42 +41,40 @@ document.addEventListener("keydown", function(e){ if(e.key==="Escape" && overlay
 function open(){ overlay.classList.add("open"); }
 function close(){ overlay.classList.remove("open"); run=null; }
 
-/* ================= POOL (decided by scope + markers) ================= */
-function rootsPool(n){
-  var src = (n>0) ? Q.roots.slice(0,n) : Q.roots;
-  var set={}; src.forEach(function(r){ (r.words||[]).forEach(function(w){ if(BYWORD[w]) set[w]=1; }); });
-  return Object.keys(set).map(function(k){ return BYWORD[k]; });
-}
+/* ================= POOL (decided by scope + per-section "studied" markers) ================= */
+function allFmts(withRoot){ var f={def:true,rev:true,syn:true,ant:true,tc:true,se:true}; if(withRoot) f.root=true; return f; }
 function glossPool(letter){
   if(!letter) return WORDS.slice();
   return WORDS.filter(function(w){ return w.w[0].toUpperCase() <= letter; });
 }
-function clusterPool(){
-  var set={}; Q.clusters.forEach(function(c){ (c.words||[]).forEach(function(w){ if(BYWORD[w]) set[w]=1; }); });
-  return Object.keys(set).map(function(k){ return BYWORD[k]; });
-}
+function toWordObjs(keys){ return keys.map(function(k){ return BYWORD[k]; }).filter(Boolean); }
+
 function poolFor(scope){
-  var n,L;
-  if(scope==="roots"){ n=studiedRoots();
-    return {pool:rootsPool(n), label:(n?("your studied roots (1–"+n+" of "+Q.roots.length+")"):"all "+Q.roots.length+" root families"),
-            fmts:allFmts(true)}; }
-  if(scope==="glossary"){ L=studiedGloss();
+  if(scope==="glossary"){ var L=studiedGloss();
     return {pool:glossPool(L), label:(L?("glossary A–"+L):"the whole glossary"), fmts:allFmts(false)}; }
   if(scope==="hf"){ return {pool:WORDS.filter(function(w){return w.hf;}), label:"the high-priority words", fmts:allFmts(false)}; }
-  if(scope==="clusters"){ return {pool:clusterPool(), label:"the meaning-cluster words", fmts:allFmts(false)}; }
-  if(scope==="tcse"){ return {pool:WORDS.slice(), label:"Text Completion & Sentence Equivalence", fmts:{tc:true,se:true}}; }
-  // global "Test me now": everything you've marked studied
-  n=studiedRoots(); L=studiedGloss();
-  if(n||L){
+  if(scope===""){ // global: union of everything marked studied across all sections + glossary
     var set={};
-    rootsPool(n).forEach(function(w){ set[w.w.toLowerCase()]=1; });
-    if(L) glossPool(L).forEach(function(w){ set[w.w.toLowerCase()]=1; });
-    return {pool:Object.keys(set).map(function(k){return BYWORD[k];}), label:"everything you've marked studied", fmts:allFmts(true)};
+    Object.keys(REG).forEach(function(s){ sectionWords(s,true).forEach(function(w){ set[w]=1; }); });
+    var L2=studiedGloss(); if(L2) glossPool(L2).forEach(function(w){ set[w.w.toLowerCase()]=1; });
+    var keys=Object.keys(set);
+    if(keys.length) return {pool:toWordObjs(keys), label:"everything you've marked studied", fmts:allFmts(true)};
+    return {pool:WORDS.filter(function(w){return w.hf;}),
+            label:"the high-priority words (mark sections “studied up to here” to focus your tests)", fmts:allFmts(true)};
   }
-  return {pool:WORDS.filter(function(w){return w.hf;}),
-          label:"the high-priority words (mark a section “studied up to here” to focus your tests)", fmts:allFmts(true)};
+  var rt=REG[scope];
+  if(rt){
+    var words=toWordObjs(sectionWords(scope,false));
+    var n=mark(rt);
+    var label = rt.whole ? ("the "+rt.noun)
+              : (n ? ("your studied "+rt.noun+" (1–"+n+" of "+rt.heads.length+")")
+                   : ("all "+rt.heads.length+" "+rt.noun));
+    var f=allFmts(scope==="roots");
+    if(rt.fullBank){ f.tc=true; f.se=true; }
+    return {pool:words, label:label, fmts:f, fullBank:rt.fullBank};
+  }
+  return {pool:WORDS.filter(function(w){return w.hf;}), label:"the high-priority words", fmts:allFmts(true)};
 }
-function allFmts(withRoot){ var f={def:true,rev:true,syn:true,ant:true,tc:true,se:true}; if(withRoot) f.root=true; return f; }
 
 /* ================= SETUP SCREEN (count only) ================= */
 var current=null, lastScope="";
@@ -174,8 +171,8 @@ function makeRoot(){
   });
   return { type:"Root", stem:"What does the root <b>"+esc(r.root)+"</b> mean?", opts:opts, multi:false };
 }
-function bankInPool(b,poolNames,pool){
-  if(pool.length===WORDS.length) return true;
+function bankInPool(b,poolNames,pool,fullBank){
+  if(fullBank || pool.length===WORDS.length) return true;
   return (b.words||[]).some(function(w){ return poolNames[w.toLowerCase()]; });
 }
 function tcseCard(it){
@@ -195,7 +192,7 @@ function tcseCard(it){
   }
   return null;
 }
-function buildQueue(pool,fmts,count){
+function buildQueue(pool,fmts,count,fullBank){
   var poolNames={}; pool.forEach(function(w){poolNames[w.w.toLowerCase()]=1;});
   var gens=[];
   if(fmts.def) gens.push(function(){return makeDef(pool);});
@@ -204,8 +201,8 @@ function buildQueue(pool,fmts,count){
   if(fmts.ant) gens.push(function(){return makeAnt(pool);});
   if(fmts.root) gens.push(makeRoot);
   var bankItems=[];
-  if(fmts.se) BANK.filter(function(b){return b.type==="SE" && bankInPool(b,poolNames,pool);}).forEach(function(b){ bankItems.push({se:b}); });
-  if(fmts.tc) BANK.filter(function(b){return b.type==="TC" && bankInPool(b,poolNames,pool);}).forEach(function(b){
+  if(fmts.se) BANK.filter(function(b){return b.type==="SE" && bankInPool(b,poolNames,pool,fullBank);}).forEach(function(b){ bankItems.push({se:b}); });
+  if(fmts.tc) BANK.filter(function(b){return b.type==="TC" && bankInPool(b,poolNames,pool,fullBank);}).forEach(function(b){
     b.blanks.forEach(function(bl,bi){ bankItems.push({tc:b,bi:bi}); });
   });
   bankItems=shuffle(bankItems);
@@ -225,7 +222,7 @@ function dup(queue,q){ return queue.some(function(x){return x.stem===q.stem;}); 
 /* ================= RUN A TEST ================= */
 var run=null;
 function start(){
-  var queue=buildQueue(current.pool, current.fmts, current.count||15);
+  var queue=buildQueue(current.pool, current.fmts, current.count||15, current.fullBank);
   if(!queue.length){ body.querySelector('.qz-start').insertAdjacentHTML('beforebegin','<div class="qz-err">Couldn\'t build questions for this pool — try a broader Test button.</div>'); return; }
   run = { queue:queue, i:0, score:0, streak:0, correct:0, missed:[] };
   titleEl.textContent = "Test in progress";
@@ -307,68 +304,111 @@ function results(){
   body.querySelector('#qzDone').addEventListener('click', close);
 }
 
-/* ================= STUDIED-MARKER UI (injected into §3 and §11) ================= */
+/* ================= STUDIED-MARKER UI (generic, every word-bearing section) ================= */
 function sectionEls(h2id){
   var h2=document.getElementById(h2id); if(!h2) return [];
   var els=[], n=h2.nextElementSibling;
   while(n && n.tagName!=='H2'){ els.push(n); n=n.nextElementSibling; }
   return els;
 }
-var rootHeads=[], glossHeads=[], glossLetters=[];
-function initStudy(){
-  // roots: h3s in §3 that name a root family (have a <code> and an "=")
-  rootHeads = sectionEls("3-root-word-encyclopedia").filter(function(e){
-    return e.tagName==="H3" && e.querySelector("code") && /=/.test(e.textContent);
+// extract glossary words mentioned anywhere in an element's text
+function tokWords(el){
+  var set={}, m=el.textContent.toLowerCase().match(/[a-zé][a-zé'-]{2,}/g)||[];
+  m.forEach(function(t){ if(BYWORD[t]) set[t]=1; });
+  return Object.keys(set);
+}
+// the sections that get per-unit "studied up to here" markers
+var SECTIONS = [
+  {scope:"roots",      h2:"3-root-word-encyclopedia",        noun:"root families"},
+  {scope:"clusters",   h2:"4-semantic--synonym-clusters",    noun:"meaning clusters"},
+  {scope:"se",         h2:"5-sentence-equivalence-clusters",  noun:"SE groups",        fullBank:true},
+  {scope:"polarity",   h2:"6-text-completion-polarity-map",   noun:"polarity banks",   fullBank:true},
+  {scope:"confusing",  h2:"7-common-confusing-words",         noun:"confusing words"},
+  {scope:"wordgroups", h2:"8-word-groups-rebuilt-for-memory", noun:"word groups"},
+];
+var REG = {};   // scope -> {def, heads:[{el,words}], whole:[words], noun, fullBank}
+function mark(rt){ return parseInt(get("gre_sm_"+rt.def.scope,"0"),10)||0; }
+function setMark(rt,v){ set("gre_sm_"+rt.def.scope, String(v)); }
+
+function setupSection(def){
+  var els=sectionEls(def.h2); if(!els.length) return;
+  var heads=[], cur=null;
+  els.forEach(function(e){
+    if(e.tagName==="H3"){ cur={el:e, nodes:[e]}; heads.push(cur); }
+    else if(cur){ cur.nodes.push(e); }
   });
-  if(rootHeads.length){
-    var bar=document.createElement("div"); bar.className="study-progress"; bar.id="rootsProgress";
-    var h2=document.getElementById("3-root-word-encyclopedia");
-    h2.parentNode.insertBefore(bar, h2.nextSibling);
-    rootHeads.forEach(function(h,i){
+  heads.forEach(function(hd){
+    var set={}; hd.nodes.forEach(function(n){ tokWords(n).forEach(function(w){ set[w]=1; }); });
+    hd.words=Object.keys(set);
+  });
+  heads=heads.filter(function(hd){ return hd.words.length>0; });
+  var rt={def:def, heads:heads, noun:def.noun, fullBank:def.fullBank};
+  if(!heads.length){
+    var set2={}; els.forEach(function(n){ tokWords(n).forEach(function(w){ set2[w]=1; }); });
+    rt.whole=Object.keys(set2);
+  } else {
+    var bar=document.createElement("div"); bar.className="study-progress"; bar.id="prog_"+def.scope;
+    var h2=document.getElementById(def.h2); h2.parentNode.insertBefore(bar, h2.nextSibling);
+    heads.forEach(function(hd,i){
       var b=document.createElement("button"); b.className="study-mark"; b.type="button";
       b.addEventListener("click",function(ev){ ev.preventDefault();
-        var cur=studiedRoots(); set(LS_ROOTS, String(cur===i+1 ? i : i+1)); renderRootMarks();
+        var c=mark(rt); setMark(rt, c===i+1 ? i : i+1); renderMarks(rt);
       });
-      h.appendChild(b);
+      hd.el.appendChild(b);
     });
-    renderRootMarks();
+    renderMarks(rt);
   }
-  // glossary: single-letter h3s in §11
+  REG[def.scope]=rt;
+}
+function renderMarks(rt){
+  var n=mark(rt);
+  rt.heads.forEach(function(hd,i){
+    hd.el.classList.toggle("studied", i<n);
+    var b=hd.el.querySelector(".study-mark");
+    if(i===n-1){ b.textContent="✓ studied up to here"; b.classList.add("here"); }
+    else { b.textContent="mark studied to here"; b.classList.remove("here"); }
+  });
+  var p=document.getElementById("prog_"+rt.def.scope);
+  if(p) p.innerHTML="📍 You've studied <b>"+n+" / "+rt.heads.length+"</b> "+rt.noun+
+    ". This section's <b>Test</b> button will quiz you on "+(n?"just these.":"all of them — mark a stopping point to narrow it.");
+}
+// words to test for a section. forGlobal=true means only count it if explicitly marked.
+function sectionWords(scope, forGlobal){
+  var rt=REG[scope]; if(!rt) return [];
+  if(rt.whole) return forGlobal ? [] : rt.whole;
+  var n=mark(rt);
+  var hs = (n>0) ? rt.heads.slice(0,n) : (forGlobal ? [] : rt.heads);
+  var set={}; hs.forEach(function(hd){ hd.words.forEach(function(w){ set[w]=1; }); });
+  return Object.keys(set);
+}
+
+// glossary §11 keeps its own letter-based marker (its tables are too big to tokenize)
+var glossHeads=[], glossLetters=[];
+function initGloss(){
   glossHeads = sectionEls("11-master-az-glossary-every-word").filter(function(e){
     return e.tagName==="H3" && /^[A-Z]$/.test(e.textContent.trim());
   });
   glossLetters = glossHeads.map(function(h){ return h.textContent.trim(); });
-  if(glossHeads.length){
-    glossHeads.forEach(function(h,i){
-      var b=document.createElement("button"); b.className="study-mark"; b.type="button";
-      b.addEventListener("click",function(ev){ ev.preventDefault();
-        var cur=studiedGloss(); set(LS_GLOSS, cur===glossLetters[i] ? (glossLetters[i-1]||"") : glossLetters[i]); renderGlossMarks();
-      });
-      h.appendChild(b);
+  if(!glossHeads.length) return;
+  glossHeads.forEach(function(h,i){
+    var b=document.createElement("button"); b.className="study-mark"; b.type="button";
+    b.addEventListener("click",function(ev){ ev.preventDefault();
+      var cur=studiedGloss(); set(LS_GLOSS, cur===glossLetters[i] ? (glossLetters[i-1]||"") : glossLetters[i]); renderGlossMarks();
     });
-    renderGlossMarks();
-  }
-}
-function renderRootMarks(){
-  var n=studiedRoots();
-  rootHeads.forEach(function(h,i){
-    h.classList.toggle("studied", i<n);
-    var b=h.querySelector(".study-mark");
-    if(i===n-1){ b.textContent="✓ studied up to here"; b.classList.add("here"); }
-    else { b.textContent="mark studied to here"; b.classList.remove("here"); }
+    h.appendChild(b);
   });
-  var p=document.getElementById("rootsProgress");
-  if(p) p.innerHTML = "📍 You've studied <b>"+n+" / "+rootHeads.length+"</b> root families. The <b>Test these roots</b> button will quiz you on just these.";
+  renderGlossMarks();
 }
 function renderGlossMarks(){
-  var L=studiedGloss(); var idx=glossLetters.indexOf(L);
+  var L=studiedGloss(), idx=glossLetters.indexOf(L);
   glossHeads.forEach(function(h,i){
     h.classList.toggle("studied", L && i<=idx);
     var b=h.querySelector(".study-mark");
     if(i===idx){ b.textContent="✓ studied through "+L; b.classList.add("here"); }
-    else { b.textContent="studied to here"; b.classList.remove("here"); }
+    else { b.textContent="mark studied to here"; b.classList.remove("here"); }
   });
 }
+function initStudy(){ SECTIONS.forEach(setupSection); initGloss(); }
 
 /* ================= LAUNCHERS ================= */
 function wireLaunchers(){
