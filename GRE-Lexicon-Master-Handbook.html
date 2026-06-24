@@ -218,6 +218,7 @@ body.nav-collapsed .content-inner{max-width:none; width:90%;}
 }
 
 </style>
+<link rel="stylesheet" href="quiz.css">
 </head>
 <body>
 <button id="navToggle" class="nav-toggle" aria-label="Show / hide menu" title="Show / hide menu">&#9776;</button>
@@ -250,6 +251,8 @@ Word)</a></li>
   <main class="content">
     <article class="content-inner">
 <h1 id="gre-lexicon-master-handbook">GRE Lexicon Master Handbook</h1>
+<button class="quiz-launch" data-scope=""><span class="ic">&#128221;</span> Test me now</button>
+
 <blockquote>
 <p>A memory-optimized rebuild of the <strong>IMS GRE® Lexicon
 2024</strong> (31 wordlists × 25 words = 775 entries, plus Word Groups
@@ -385,6 +388,8 @@ GRE needs.</li>
 re-test yesterday's words.</p>
 <hr />
 <h2 id="2-high-priority-gre-words">2. High-Priority GRE Words</h2>
+<button class="quiz-launch" data-scope="hf"><span class="ic">&#128221;</span> Test these high-priority words</button>
+
 <p>Ranked by GRE usefulness: star-marked frequency, TC/SE power, and how
 many other words they cluster with. Tags: <strong>HF</strong> =
 high-frequency (<code>*</code> in source), <strong>TC</strong>,
@@ -2744,6 +2749,8 @@ in <strong>§3</strong>, and placed in a meaning cluster in
 simply sit lower in study priority.</p>
 </blockquote>
 <h2 id="3-root-word-encyclopedia">3. Root Word Encyclopedia</h2>
+<button class="quiz-launch" data-scope="roots"><span class="ic">&#128221;</span> Test these roots</button>
+
 <p>The single highest-leverage way to memorize. Learn the root once;
 every member of its family becomes a derivation, not a separate fact.
 Only <strong>defensible</strong> roots are used; uncertain ones are
@@ -3407,6 +3414,8 @@ each word and its hook aloud.</li>
 <hr />
 <h2 id="4-semantic--synonym-clusters">4. Semantic / Synonym
 Clusters</h2>
+<button class="quiz-launch" data-scope="clusters"><span class="ic">&#128221;</span> Test these clusters</button>
+
 <p><strong>What this section is, in one line:</strong> words grouped by
 <em>what they mean</em>, so you learn 10 related words as one idea
 instead of 10 separate facts.</p>
@@ -4009,6 +4018,8 @@ exactly what SE rewards.</p>
 <hr />
 <h2 id="5-sentence-equivalence-clusters">5. Sentence Equivalence
 Clusters</h2>
+<button class="quiz-launch" data-scope="tcse"><span class="ic">&#128221;</span> Practice Text Completion &amp; SE</button>
+
 <blockquote>
 <p><strong>What SE actually tests:</strong> you pick
 <strong>two</strong> words that (a) both fit the sentence and (b)
@@ -6482,6 +6493,8 @@ blank.</p>
 <hr />
 <h2 id="11-master-az-glossary-every-word">11. Master A–Z Glossary (Every
 Word)</h2>
+<button class="quiz-launch" data-scope=""><span class="ic">&#128221;</span> Test glossary words</button>
+
 <div class="gloss-search"><input id="glossSearch" type="search" autocomplete="off" placeholder="Search the glossary — type a word or part of a meaning…"><span class="cnt" id="glossCount"></span></div>
 
 <blockquote>
@@ -15075,5 +15088,8 @@ const btn=document.getElementById('toTop');
 addEventListener('scroll',()=>{btn.classList.toggle('show',scrollY>600);});
 btn.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
 </script>
+<script src="quizdata.js"></script>
+<script src="tcse.js"></script>
+<script src="quiz.js"></script>
 </body>
 </html>

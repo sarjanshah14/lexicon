@@ -35,6 +35,26 @@ body = re.sub(
     body, count=1, flags=re.S,
 )
 
+# ---- inject "Test now" launcher buttons ----
+def launcher(scope, label):
+    return (f'\n<button class="quiz-launch" data-scope="{scope}">'
+            f'<span class="ic">&#128221;</span> {label}</button>\n')
+
+def after_h2(num_prefix, btn):
+    """insert a launcher right after the </h2> of the heading whose id starts with num_prefix"""
+    global body
+    body = re.sub(r'(<h2 id="' + num_prefix + r'-[^"]*">.*?</h2>)',
+                  lambda m: m.group(1) + btn, body, count=1, flags=re.S)
+
+# global launcher right after the page's H1 title
+body = re.sub(r'(</h1>)', r'\1' + launcher("", "Test me now").replace('\\', '\\\\'),
+              body, count=1)
+after_h2("2",  launcher("hf",       "Test these high-priority words"))
+after_h2("3",  launcher("roots",    "Test these roots"))
+after_h2("4",  launcher("clusters", "Test these clusters"))
+after_h2("5",  launcher("tcse",     "Practice Text Completion &amp; SE"))
+after_h2("11", launcher("",         "Test glossary words"))
+
 CSS = """
 :root{
   --ink:#161616; --muted:#5a5a5a; --line:#d6d6d2; --bg:#e7e7e3;
@@ -336,6 +356,7 @@ page = f"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GRE Lexicon Master Handbook</title>
 <style>{CSS}</style>
+<link rel="stylesheet" href="quiz.css">
 </head>
 <body>
 <button id="navToggle" class="nav-toggle" aria-label="Show / hide menu" title="Show / hide menu">&#9776;</button>
@@ -358,6 +379,9 @@ page = f"""<!DOCTYPE html>
 </div>
 <button id="toTop" aria-label="Back to top">&#8593;</button>
 <script>{JS}</script>
+<script src="quizdata.js"></script>
+<script src="tcse.js"></script>
+<script src="quiz.js"></script>
 </body>
 </html>
 """
