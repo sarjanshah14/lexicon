@@ -37,6 +37,8 @@
 .qz-body{padding:22px 24px 26px;}
 
 /* setup screen */
+.qz-lead{font-size:16px; margin:0 0 6px;}
+.qz-sub2{font-size:13px; color:#6a6a6a; margin:0 0 4px;}
 .qz-set h4{margin:18px 0 8px; font-size:13px; text-transform:uppercase; letter-spacing:.04em; color:#5a5a5a;}
 .qz-set h4:first-child{margin-top:0;}
 .qz-chips{display:flex; flex-wrap:wrap; gap:8px;}
@@ -125,3 +127,21 @@
   .qz-stem{font-size:16.5px;}
   .qz-opt{font-size:15px; padding:11px 13px;}
 }
+
+/* ===== "studied up to here" markers (in §3 roots and §11 glossary) ===== */
+.study-progress{
+  margin:10px 0 4px; padding:9px 14px; border-radius:9px;
+  background:#eef0ee; border:1px solid #d6d6d2; font-size:13.5px; color:#444;
+}
+.study-mark{
+  margin-left:10px; padding:2px 9px; border-radius:20px; vertical-align:middle;
+  border:1px solid #c4c4be; background:#f3f3ef; color:#666;
+  font:600 11px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  cursor:pointer; white-space:nowrap; opacity:.55; transition:.12s;
+}
+h3:hover > .study-mark{opacity:1;}
+.study-mark:hover{border-color:#26543c; color:#26543c; background:#e8f0ea;}
+.study-mark.here{opacity:1; background:#26543c; color:#fff; border-color:#1d3f2d;}
+/* studied headings get a green spine + subtle tint */
+h3.studied{border-left:4px solid #26543c; padding-left:10px; background:linear-gradient(90deg,#f0f6f2,transparent 60%);}
+h3.studied > .study-mark:not(.here){opacity:.5;}

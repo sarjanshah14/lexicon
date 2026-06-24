@@ -65,8 +65,9 @@ for m in re.finditer(r'^### (.+)$', s3, re.M):
             lw = tok.lower()
             if lw in WORDSET and lw not in members:
                 members.append(lw)
-    if members:
-        roots.append({"root": label, "mean": mean, "words": members})
+    # keep every root family (even one with no glossary member words) so the on-page
+    # "studied up to here" markers line up 1:1 with this list
+    roots.append({"root": label, "mean": mean, "words": members})
 
 # ---- clusters (§4) ----
 s4 = md[md.index("## 4."):md.index("## 5.")]
