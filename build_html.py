@@ -10,19 +10,7 @@ body = subprocess.run(
     ["pandoc", MD, "-f", "gfm", "-t", "html", "--syntax-highlighting=none"],
     capture_output=True, text=True, check=True).stdout
 
-# Build the top navbar from H2 headings (skip the in-page Table of Contents heading itself).
-# Short labels keep all 11 links fitting in the bar; the full title stays as a hover tooltip.
-SHORT = {
-    "1": "How to Use", "2": "High-Priority", "3": "Roots", "4": "Clusters",
-    "5": "SE Pairs", "6": "TC Polarity", "7": "Confusing", "8": "Word Groups",
-    "9": "Flashcards", "10": "Revision", "11": "Glossary",
-}
-def short_label(text):
-    m = re.match(r'\s*(\d+)\.', text)
-    if m and m.group(1) in SHORT:
-        return f'{m.group(1)}. {SHORT[m.group(1)]}'
-    return text if len(text) <= 16 else text[:15] + "…"
-
+# Build sidebar from H2 headings (skip the in-page Table of Contents heading itself)
 nav_items = []
 for m in re.finditer(r'<h2 id="([^"]+)">(.*?)</h2>', body, re.S):
     hid, text = m.group(1), re.sub(r'<[^>]+>', '', m.group(2)).strip()
@@ -31,8 +19,7 @@ for m in re.finditer(r'<h2 id="([^"]+)">(.*?)</h2>', body, re.S):
     nav_items.append((hid, text))
 
 nav_html = "\n".join(
-    f'        <li><a href="#{hid}" title="{html.escape(t)}">{html.escape(short_label(t))}</a></li>'
-    for hid, t in nav_items
+    f'      <li><a href="#{hid}">{html.escape(t)}</a></li>' for hid, t in nav_items
 )
 
 # inject a live-search bar right after the §11 glossary heading
@@ -74,8 +61,8 @@ CSS = """
   --accent:#111111; --accent-soft:#e9e9e6; --code-bg:#efefec;
   --zebra:#f6f6f3; --thead:#ececea; --panel:#ffffff;
   --sidebar:#1a1a1a; --sidebar-ink:#cfcfca; --sidebar-hover:#2b2b2b;
-  --content-width:1000px;
-  --head-top:60px;        /* gap above a frozen header row; set to navbar height by JS */
+  --content-width:880px; --sidebar-width:300px;
+  --head-top:12px;        /* small gap kept above a frozen header row */
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -87,47 +74,35 @@ body{
 a{color:var(--accent); text-decoration:underline; text-underline-offset:2px;}
 a:hover{opacity:.7;}
 
-/* ===== top navbar (replaces the old left sidebar) ===== */
-.topbar{
-  position:sticky; top:0; z-index:60;
-  background:var(--sidebar); border-bottom:1px solid #000;
-  box-shadow:0 1px 6px rgba(0,0,0,.18);
+/* layout */
+.layout{display:flex; align-items:flex-start;}
+.sidebar{
+  width:var(--sidebar-width); flex:0 0 auto;
+  position:sticky; top:0; height:100vh; overflow-x:hidden; overflow-y:auto;
+  background:var(--sidebar); border-right:1px solid #000;
+  transition:width .28s ease, border-color .28s ease;
 }
-.topbar-inner{
-  display:flex; align-items:center; gap:14px;
-  max-width:1240px; margin:0 auto; padding:8px 18px;
+.sidebar-inner{
+  width:var(--sidebar-width); box-sizing:border-box;
+  padding:62px 18px 60px;   /* top padding clears the fixed toggle button */
 }
-.brand{
-  color:#fff; font-weight:700; font-size:15.5px; line-height:1.15;
-  text-decoration:none; white-space:nowrap; flex:0 0 auto;
+.sidebar h1{font-size:17px; margin:4px 8px 16px; line-height:1.4; color:#fff;}
+.sidebar .sub{font-size:12.5px; color:#8a8a85; margin:0 8px 18px; font-weight:400;}
+.sidebar ol{list-style:none; margin:0; padding:0; counter-reset:nav;}
+.sidebar li{margin:0;}
+.sidebar li a{
+  display:block; padding:7px 10px; border-radius:6px; text-decoration:none;
+  color:var(--sidebar-ink); font-size:14px; line-height:1.35;
 }
-.brand span{display:block; font-size:11px; font-weight:400; color:#8a8a85;}
-.topnav{flex:1 1 auto; min-width:0;}
-.topnav ol{
-  display:flex; flex-wrap:wrap; gap:5px;
-  list-style:none; margin:0; padding:0; justify-content:flex-end;
-}
-.topnav li{margin:0;}
-.topnav a{
-  display:block; padding:6px 11px; border-radius:7px; text-decoration:none;
-  color:var(--sidebar-ink); font-size:13px; line-height:1.2; white-space:nowrap;
-}
-.topnav a:hover{background:var(--sidebar-hover); color:#fff; opacity:1;}
-.topnav a.active{background:#fff; color:#111; font-weight:600;}
+.sidebar li a:hover{background:var(--sidebar-hover); color:#fff; opacity:1;}
+.sidebar li a.active{background:#fff; color:#111; font-weight:600;}
 
-.nav-toggle{
-  display:none; flex:0 0 auto; margin-left:auto;
-  width:38px; height:34px; border-radius:7px; border:1px solid #000;
-  background:#2b2b2b; color:#fff; font-size:17px; cursor:pointer; line-height:1;
-  align-items:center; justify-content:center;
-}
-.nav-toggle:hover{background:#000;}
-
-.content{display:flex; justify-content:center; padding:0 28px;}
+.content{flex:1 1 auto; min-width:0; display:flex; justify-content:center; padding:0 32px;}
 .content-inner{
-  width:100%; max-width:var(--content-width); margin:30px 0 80px;
+  width:100%; max-width:var(--content-width); margin:34px 0 80px;
   background:var(--panel); border:1px solid var(--line); border-radius:10px;
-  padding:46px 54px 90px; box-shadow:0 1px 3px rgba(0,0,0,.06);
+  padding:48px 56px 90px; box-shadow:0 1px 3px rgba(0,0,0,.06);
+  transition:max-width .28s ease, width .28s ease;
 }
 
 /* typography */
@@ -226,7 +201,20 @@ tbody tr:hover{background:#e9e9e6;}
 table.gloss thead th{top:calc(var(--head-top) + 56px);}
 
 
-.content-inner{position:relative;}
+/* nav toggle button (always visible) */
+.nav-toggle{
+  position:fixed; top:14px; left:14px; z-index:60;
+  width:40px; height:40px; border-radius:8px; border:1px solid #000;
+  background:#1a1a1a; color:#fff; font-size:18px; cursor:pointer; line-height:1;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 1px 4px rgba(0,0,0,.25);
+}
+.nav-toggle:hover{background:#000;}
+
+/* desktop collapsed state: sidebar slides/clips away smoothly, content widens to ~90% */
+body.nav-collapsed .sidebar{width:0; border-right-color:transparent;}
+body.nav-collapsed .content{padding:0;}
+body.nav-collapsed .content-inner{max-width:none; width:90%;}
 
 /* back to top */
 #toTop{
@@ -237,22 +225,26 @@ table.gloss thead th{top:calc(var(--head-top) + 56px);}
 #toTop.show{opacity:.9; pointer-events:auto;}
 #toTop:hover{opacity:1;}
 
-/* ===== responsive navbar: collapse links into a dropdown on narrow screens ===== */
-@media (max-width:860px){
-  .nav-toggle{display:flex;}
-  .topnav{
-    position:absolute; left:0; right:0; top:100%;
-    background:var(--sidebar); border-bottom:1px solid #000;
-    max-height:0; overflow:hidden; transition:max-height .28s ease;
-    box-shadow:0 8px 18px rgba(0,0,0,.3);
-  }
-  .topnav.open{max-height:80vh; overflow-y:auto;}
-  .topnav ol{flex-direction:column; flex-wrap:nowrap; gap:0; padding:6px 10px 10px; justify-content:flex-start;}
-  .topnav a{font-size:14.5px; padding:9px 10px; border-radius:6px;}
-}
+.backdrop{display:none;}
+
+/* desktop: leave room at top-left of content for the floating toggle */
+.content-inner{position:relative;}
+
+/* tablet / phone */
 @media (max-width:900px){
+  /* move the menu button to the BOTTOM-left so it never overlaps a frozen header */
+  .nav-toggle{top:auto; bottom:18px; left:16px;}
+  .sidebar{
+    position:fixed; left:0; top:0; z-index:50; width:84vw; max-width:320px;
+    transform:translateX(-100%); transition:transform .25s ease;
+    box-shadow:2px 0 18px rgba(0,0,0,.3);
+  }
+  .sidebar.open{transform:translateX(0);}
+  .sidebar-inner{width:100%;}
   .content{padding:0 12px;}
-  .content-inner{margin:16px 0 70px; padding:26px 16px 70px; border-radius:8px;}
+  .content-inner{
+    margin:16px 0 70px; padding:26px 16px 70px; border-radius:8px;
+  }
   body{font-size:16px;}
   .content-inner > h1:first-child{font-size:1.7rem;}
   h2{font-size:1.4rem;}
@@ -260,6 +252,10 @@ table.gloss thead th{top:calc(var(--head-top) + 56px);}
   table{font-size:13.5px;}
   th,td{padding:6px 8px;}
   blockquote{padding:.7em .9em;}
+  .backdrop{
+    position:fixed; inset:0; background:rgba(0,0,0,.4); z-index:45; display:none;
+  }
+  .backdrop.show{display:block;}
 }
 
 /* small phones */
@@ -267,7 +263,6 @@ table.gloss thead th{top:calc(var(--head-top) + 56px);}
   body{font-size:15px;}
   .content{padding:0 6px;}
   .content-inner{padding:24px 12px 60px;}
-  .topbar-inner{padding:7px 12px;}
   table{font-size:12.5px;}
   th,td{padding:5px 6px;}
   code{font-size:.8em;}
@@ -276,27 +271,23 @@ table.gloss thead th{top:calc(var(--head-top) + 56px);}
 """
 
 JS = """
-const topbar=document.getElementById('topbar');
-const topnav=document.getElementById('topnav');
-
-// keep the frozen-table offset (--head-top) exactly equal to the navbar's height,
-// so sticky table headers and the glossary search bar sit just below the bar.
-function setHeadTop(){
-  const h=topbar.offsetHeight;
-  document.documentElement.style.setProperty('--head-top', (h+4)+'px');
+const sb=document.getElementById('sidebar');
+const bd=document.getElementById('backdrop');
+const body=document.body;
+const mobile=()=>window.innerWidth<=900;
+function closeMobile(){sb.classList.remove('open');bd.classList.remove('show');}
+function toggle(){
+  if(mobile()){ sb.classList.toggle('open'); bd.classList.toggle('show'); }
+  else { body.classList.toggle('nav-collapsed'); }
 }
-setHeadTop();
-addEventListener('load', setHeadTop);
-addEventListener('resize', setHeadTop);
-
-// mobile dropdown toggle
-document.getElementById('navToggle').addEventListener('click',()=>topnav.classList.toggle('open'));
-topnav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-  topnav.classList.remove('open'); setTimeout(setHeadTop,0);
-}));
+document.getElementById('navToggle').addEventListener('click',toggle);
+bd.addEventListener('click',closeMobile);
+sb.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(mobile())closeMobile();}));
+// reset overlay state when crossing the breakpoint
+addEventListener('resize',()=>{ if(!mobile()) closeMobile(); });
 
 // active section highlight
-const links=[...topnav.querySelectorAll('a')];
+const links=[...sb.querySelectorAll('a')];
 const map={}; links.forEach(a=>map[a.getAttribute('href').slice(1)]=a);
 const heads=[...document.querySelectorAll('h2[id]')];
 const obs=new IntersectionObserver((es)=>{
@@ -368,20 +359,24 @@ page = f"""<!DOCTYPE html>
 <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-<header class="topbar" id="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="#" title="Back to top">GRE Lexicon<span>Master Handbook</span></a>
-    <button id="navToggle" class="nav-toggle" aria-label="Show / hide menu" title="Show / hide menu">&#9776;</button>
-    <nav class="topnav" id="topnav"><ol>
+<button id="navToggle" class="nav-toggle" aria-label="Show / hide menu" title="Show / hide menu">&#9776;</button>
+<div class="backdrop" id="backdrop"></div>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <h1>GRE Lexicon<br>Master Handbook</h1>
+      <div class="sub">Text Completion &middot; Sentence Equivalence &middot; RC vocab</div>
+      <nav><ol>
 {nav_html}
       </ol></nav>
-  </div>
-</header>
-<main class="content">
-  <article class="content-inner">
+    </div>
+  </aside>
+  <main class="content">
+    <article class="content-inner">
 {body}
-  </article>
-</main>
+    </article>
+  </main>
+</div>
 <button id="toTop" aria-label="Back to top">&#8593;</button>
 <script>{JS}</script>
 <script src="quizdata.js"></script>
@@ -393,4 +388,4 @@ page = f"""<!DOCTYPE html>
 
 for out in OUTS:
     open(out, "w", encoding="utf-8").write(page)
-print(f"Wrote {', '.join(OUTS)} with {len(nav_items)} navbar sections.")
+print(f"Wrote {', '.join(OUTS)} with {len(nav_items)} sidebar sections.")
